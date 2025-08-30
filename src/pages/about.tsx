@@ -7,8 +7,8 @@ const About = () => {
     <div className="about">
       {/* Hero Section */}
       <section className="about-hero">
-        <div className="container">
-          <div className="hero-content">
+        <div className="about-container">
+          <div className="about-hero-content">
             <h1>About Shield Foundation</h1>
             <p className="hero-subtitle">
               Empowering communities through innovation, capacity building, and sustainable development
@@ -19,7 +19,7 @@ const About = () => {
 
       {/* Mission & Vision */}
       <section className="mission-vision">
-        <div className="container">
+        <div className="about-container">
           <div className="mission-vision-grid">
             <div className="mission-vision-item">
               <div className="image-placeholder large">
@@ -57,10 +57,10 @@ const About = () => {
 
       {/* Services Overview */}
       <section className="services-overview">
-        <div className="container">
+        <div className="about-container">
           <h2>Our Core Services</h2>
           <div className="services-intro">
-            <div className="image-placeholder medium">
+            <div className="about-image-placeholder medium">
               <span>⚙️</span>
               <p>Innovation Hub</p>
             </div>
@@ -75,8 +75,8 @@ const About = () => {
           </div>
 
           <div className="services-grid">
-            <div className="service-card">
-              <div className="service-icon">🤝</div>
+            <div className="about-service-card">
+              <div className="about-service-icon">🤝</div>
               <h3>Innovation Services</h3>
               <ul>
                 <li>Co-creating & planning innovative solutions</li>
@@ -86,8 +86,8 @@ const About = () => {
               </ul>
             </div>
 
-            <div className="service-card">
-              <div className="service-icon">✍️</div>
+            <div className="about-service-card">
+              <div className="about-service-icon">✍️</div>
               <h3>Capacity Building</h3>
               <ul>
                 <li>Strategic planning & writing workshops</li>
@@ -97,8 +97,8 @@ const About = () => {
               </ul>
             </div>
 
-            <div className="service-card">
-              <div className="service-icon">🔍</div>
+            <div className="about-service-card">
+              <div className="about-service-icon">🔍</div>
               <h3>Digital Transformation</h3>
               <ul>
                 <li>Data analysis & insights</li>
@@ -108,8 +108,8 @@ const About = () => {
               </ul>
             </div>
 
-            <div className="service-card">
-              <div className="service-icon">👥</div>
+            <div className="about-service-card">
+              <div className="about-service-icon">👥</div>
               <h3>Social Impact</h3>
               <ul>
                 <li>Community engagement strategies</li>
@@ -119,8 +119,8 @@ const About = () => {
               </ul>
             </div>
 
-            <div className="service-card">
-              <div className="service-icon">🔬</div>
+            <div className="about-service-card">
+              <div className="about-service-icon">🔬</div>
               <h3>Research & Development</h3>
               <ul>
                 <li>Evidence-based research studies</li>
@@ -135,7 +135,7 @@ const About = () => {
 
       {/* Process Section */}
       <section className="process-section">
-        <div className="container">
+        <div className="about-container">
           <h2>Our Approach</h2>
           <div className="process-content">
             <div className="image-placeholder large">

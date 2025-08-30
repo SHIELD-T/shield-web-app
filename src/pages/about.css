@@ -5,14 +5,14 @@
   font-family: 'Inter', sans-serif;
 }
 
-.container {
+.about-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-/* Buttons - reusing from Home.css */
-.btn {
+/* About Page Buttons */
+.about-btn {
   display: inline-block;
   padding: 14px 28px;
   text-decoration: none;
@@ -24,32 +24,32 @@
   border: 2px solid transparent;
 }
 
-.btn-primary {
+.about-btn-primary {
   background-color: #063762;
   color: white;
   border-color: #063762;
 }
 
-.btn-primary:hover {
+.about-btn-primary:hover {
   background-color: #0a4a7a;
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(6, 55, 98, 0.3);
 }
 
-.btn-secondary {
+.about-btn-secondary {
   background-color: #87CEEB;
   color: #063762;
   border-color: #87CEEB;
 }
 
-.btn-secondary:hover {
+.about-btn-secondary:hover {
   background-color: #7AB8D3;
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(135, 206, 235, 0.3);
 }
 
-/* Image Placeholders */
-.image-placeholder {
+/* About Image Placeholders */
+.about-image-placeholder {
   border-radius: 12px;
   display: flex;
   flex-direction: column;
@@ -213,7 +213,7 @@
   margin-top: 60px;
 }
 
-.service-card {
+.about-service-card {
   background: white;
   padding: 40px 30px;
   border-radius: 12px;
@@ -221,19 +221,19 @@
   transition: all 0.3s ease;
 }
 
-.service-card:hover {
+.about-service-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
 }
 
-.service-icon {
+.about-service-icon {
   font-size: 3rem;
   margin-bottom: 20px;
   text-align: center;
   display: block;
 }
 
-.service-card h3 {
+.about-service-card h3 {
   font-size: 1.5rem;
   color: #063762;
   margin-bottom: 20px;
@@ -241,12 +241,12 @@
   text-align: center;
 }
 
-.service-card ul {
+.about-service-card ul {
   list-style: none;
   padding: 0;
 }
 
-.service-card ul li {
+.about-service-card ul li {
   color: #4a5568;
   margin-bottom: 10px;
   padding-left: 20px;
@@ -254,7 +254,7 @@
   line-height: 1.5;
 }
 
-.service-card ul li::before {
+.about-service-card ul li::before {
   content: '✓';
   position: absolute;
   left: 0;
