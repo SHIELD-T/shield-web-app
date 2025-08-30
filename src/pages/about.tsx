@@ -179,6 +179,108 @@ const About = () => {
         </div>
       </section>
 
+      {/* Facilities Overview */}
+      <section className="facilities-overview">
+        <div className="container">
+          <h2>Our Facilities & Services</h2>
+          <div className="facilities-intro">
+            <p>
+              To successfully deliver our programs, we are setting up innovative hubs that are accessible, inclusive, youth-focused to support youth and small entrepreneurs from underserved communities.
+            </p>
+          </div>
+
+          {/* Co-working Spaces */}
+          <div className="facility-section">
+            <div className="facility-content">
+              <div className="facility-card">
+                <h3>CO-WORKING SPACES</h3>
+                <div className="facility-icon">
+                  <span>💼</span>
+                </div>
+                <ul>
+                  <li>Desk and Chair</li>
+                  <li>Access to Internet</li>
+                  <li>Phone booths</li>
+                  <li>Complementary services</li>
+                </ul>
+              </div>
+              <div className="facility-description">
+                <p>
+                  Our co-working space is more than just an office—it's a vibrant community designed to inspire creativity, collaboration, and productivity. With state-of-the-art amenities, comfortable workstations, and flexible membership options in open and private rooms, we provide everything you need to succeed. Whether you're an entrepreneur, freelancer, or part of a growing team, our flexible membership plans allow you to choose what works best for your needs. Plus, our community events and networking opportunities connect you with like-minded professionals, helping you grow both personally and professionally. Join us today and experience a workplace that fuels your ambition!
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Creative Studios */}
+          <div className="facility-section reverse">
+            <div className="facility-content">
+              <div className="facility-description">
+                <p>
+                  Our creative studio is a one-stop destination for creators, offering top-tier podcast, photography, and videography facilities to bring your vision to life. Equipped with state-of-the-art technology, soundproofed rooms, professional-grade lighting, and cutting-edge editing tools, we cater to all your creative needs with unlimited possibilities for excellence. Our flexible booking options and supportive environment ensure you have the time and space to create without limits. Plus, being part of our creative community means access to networking opportunities and inspiration from fellow creators. Sign up today and turn your creative ideas into reality with ease and excellence!
+                </p>
+              </div>
+              <div className="facility-card">
+                <h3>CREATIVE STUDIOS</h3>
+                <div className="facility-icon">
+                  <span>📹</span>
+                </div>
+                <ul>
+                  <li>Podcast Studios</li>
+                  <li>Videography studios</li>
+                  <li>Music Studio</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Rooms */}
+          <div className="facility-section">
+            <div className="facility-content">
+              <div className="facility-card">
+                <h3>ROOMS</h3>
+                <div className="facility-icon">
+                  <span>🏢</span>
+                </div>
+                <ul>
+                  <li>Meeting Rooms</li>
+                  <li>Board Rooms</li>
+                  <li>Training rooms</li>
+                  <li>Brainstorming rooms</li>
+                </ul>
+              </div>
+              <div className="facility-description">
+                <p>
+                  Our diverse range of rooms—meeting rooms, boardrooms, training spaces, and brainstorming hubs—are thoughtfully designed to elevate every interaction and session. Equipped with modern technology, comfortable seating, and customizable layouts, these spaces create the perfect environment for productive meetings, dynamic training sessions and innovative brainstorming sessions. Whether you need a professional setting to impress clients or a creative space to spark new ideas, our rooms provide the perfect backdrop. With seamless booking and a supportive staff to ensure everything runs smoothly, your events will be memorable and more. Sign up today to take your meetings and events to the next level!
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* Community Spaces */}
+          <div className="facility-section reverse">
+            <div className="facility-content">
+              <div className="facility-description">
+                <p>
+                  Our community spaces—spanning conference halls, exhibition areas, and a welcoming restaurant—are at the heart of connection and collaboration. These versatile spaces are perfect for hosting conferences, exhibitions, cultural events, and enjoying meaningful conversations over a delicious meal. Designed to foster interaction and inspire innovation, they combine style and functionality to create memorable experiences. Whether you're organizing a large-scale conference, an intimate exhibition, or simply looking for a place to connect and share ideas, we have the perfect occasion. Sign up today and immerse yourself in a vibrant environment where ideas flourish, connections thrive, and opportunities abound!
+                </p>
+              </div>
+              <div className="facility-card">
+                <h3>COMMUNITY SPACES</h3>
+                <div className="facility-icon">
+                  <span>🏛️</span>
+                </div>
+                <ul>
+                  <li>Conference facilities</li>
+                  <li>Exhibition spaces</li>
+                  <li>Restaurant</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Team Section */}
       <section className="team-section">
         <div className="container">
