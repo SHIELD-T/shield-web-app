@@ -10,7 +10,7 @@ import Podcast from "./pages/podcast";
 
 import "./App.css";
 import Programs from "./pages/programs";
-
+import Donate from "./pages/donate";
 function App() {
   return (
     <Router>
@@ -23,17 +23,14 @@ function App() {
             <Route path="/podcast" element={<Podcast />} />
             <Route path="/programs" element={<Programs />} />
 
-            {/* <Route path="/" element={<Report />} />
-            <Route path="/" element={<Donate />} /> */}
+            {/* <Route path="/" element={<Report />} /> */}
+            <Route path="/donate" element={<Donate />} />
 
             <Route
               path="/report"
               element={<PlaceholderPage title="Reports" />}
             />
-            <Route
-              path="/donate"
-              element={<PlaceholderPage title="Donate" />}
-            />
+            
           </Routes>
         </main>
         <Footer />
