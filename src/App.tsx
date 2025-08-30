@@ -6,6 +6,7 @@ import Footer from "./components/footer";
 
 import Home from "./pages/home";
 import About from './pages/about';
+import Podcast from './pages/podcast';
 
 
 import "./App.css";
@@ -19,16 +20,13 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            {/* <Route path="/" element={<Podcast />} />
-            <Route path="/" element={<Report />} />
+            <Route path="/podcast" element={<Podcast />} />
+            {/* <Route path="/" element={<Report />} />
             <Route path="/" element={<Donate />} /> */}
 
             {/* Placeholder routes - remove when actual pages are created */}
             
-            <Route
-              path="/podcast"
-              element={<PlaceholderPage title="Book a Podcast" />}
-            />
+            
             <Route
               path="/report"
               element={<PlaceholderPage title="Reports" />}
