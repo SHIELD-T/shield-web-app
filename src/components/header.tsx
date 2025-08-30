@@ -26,7 +26,7 @@ const Header = () => {
           <div className="navbar">
             <div className="logo">
                 <Link to="/" className="logo-link">
-                <img src="/assets/Logos/shieldLogoblue.png" alt="Shield Logo" className="logo-image" />
+                <img src="/assets/Logos/shieldLogoblue.png" alt="Shield International Logo" className="logo-image" />
                 </Link>
             </div>
             
@@ -42,7 +42,10 @@ const Header = () => {
                   <Link to="/podcast" className="nav-link">Book a Podcast</Link>
                 </li>
                 <li>
-                  <Link to="/report" className="nav-link">Report</Link>
+                  <Link to="/programs" className="nav-link">Programs</Link>
+                </li>
+                <li>
+                  <Link to="/impact" className="nav-link">Impact</Link>
                 </li>
                 <li>
                   <Link to="/donate" className="nav-link donate-btn">Donate</Link>

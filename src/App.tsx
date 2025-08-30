@@ -5,11 +5,11 @@ import Header from "./components/header";
 import Footer from "./components/footer";
 
 import Home from "./pages/home";
-import About from './pages/about';
-import Podcast from './pages/podcast';
-
+import About from "./pages/about";
+import Podcast from "./pages/podcast";
 
 import "./App.css";
+import Programs from "./pages/programs";
 
 function App() {
   return (
@@ -21,12 +21,11 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/podcast" element={<Podcast />} />
+            <Route path="/programs" element={<Programs />} />
+
             {/* <Route path="/" element={<Report />} />
             <Route path="/" element={<Donate />} /> */}
 
-            {/* Placeholder routes - remove when actual pages are created */}
-            
-            
             <Route
               path="/report"
               element={<PlaceholderPage title="Reports" />}

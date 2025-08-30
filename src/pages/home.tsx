@@ -30,30 +30,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Impact Stats */}
-      {/* <section className="stats-section">
-        <div className="container">
-          <h2>Our Impact in Numbers</h2>
-          <div className="stats-grid">
-            <div className="stat-item">
-              <div className="stat-number">10,000+</div>
-              <div className="stat-label">Lives Impacted</div>
-            </div>
-            <div className="stat-item">
-              <div className="stat-number">50+</div>
-              <div className="stat-label">Programs Running</div>
-            </div>
-            <div className="stat-item">
-              <div className="stat-number">25</div>
-              <div className="stat-label">Communities Served</div>
-            </div>
-            <div className="stat-item">
-              <div className="stat-number">500+</div>
-              <div className="stat-label">Volunteers</div>
-            </div>
-          </div>
-        </div>
-      </section> */}
+     
 
       {/* About Section */}
       <section className="about-preview">
@@ -82,8 +59,8 @@ const Home = () => {
                 Read Our Full Story
               </Link>
             </div>
-            <div className="about-image">
-              <div className="image-placeholder"></div>
+            <div className="h-about-image">
+              <div className="h-image-placeholder"></div>
             </div>
           </div>
         </div>
@@ -141,16 +118,16 @@ const Home = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="cta-section">
+      <section className="hcta-section">
         <div className="container">
-          <div className="cta-content">
+          <div className="hcta-content">
             <h2>Ready to Make a Difference?</h2>
             <p>
               Your support can help us continue our mission of creating positive
               change in communities. Every contribution, no matter the size,
               makes a difference.
             </p>
-            <div className="cta-buttons">
+            <div className="hcta-buttons">
               <Link to="/donate" className="btn btn-primary">
                 Make a Donation
               </Link>

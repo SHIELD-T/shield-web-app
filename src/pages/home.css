@@ -198,7 +198,7 @@
   margin-bottom: 20px;
 }
 
-.image-placeholder {
+.h-image-placeholder {
   background: url('/assets/images/wwa.JPG') center/cover no-repeat;
   border-radius: 6px;
   padding: 60px 40px;
@@ -213,7 +213,7 @@
   overflow: hidden;
 }
 
-.image-placeholder::after {
+.h-image-placeholder::after {
   content: '';
   position: absolute;
   top: 0;
@@ -224,18 +224,18 @@
   z-index: 1;
 }
 
-.image-placeholder * {
+.h-image-placeholder * {
   position: relative;
   z-index: 2;
 }
 
-.image-placeholder span {
+.h-image-placeholder span {
   font-size: 4rem;
   margin-bottom: 20px;
   display: block;
 }
 
-.image-placeholder p {
+.h-image-placeholder p {
   font-size: 1.3rem;
   font-weight: 600;
   margin: 0;
@@ -295,21 +295,21 @@
 }
 
 /* Call to Action Section */
-.cta-section {
+.hcta-section {
   padding: 100px 0;
   background: #f8fafc;
   color: white;
   text-align: center;
 }
 
-.cta-content h2 {
+.hcta-content h2 {
   color: #063762;
   font-size: 2.5rem;
   margin-bottom: 20px;
   font-weight: 700;
 }
 
-.cta-content p {
+.hcta-content p {
   font-size: 1.2rem;
   margin-bottom: 40px;
   max-width: 600px;
@@ -319,7 +319,7 @@
   color: #000;
 }
 
-.cta-buttons {
+.hcta-buttons {
   display: flex;
   gap: 20px;
   justify-content: center;
@@ -348,7 +348,7 @@
   .stats-section h2,
   .about-text h2,
   .programs-section h2,
-  .cta-content h2 {
+  .hcta-content h2 {
     font-size: 2rem;
   }
   
@@ -371,7 +371,7 @@
     font-size: 2.5rem;
   }
   
-  .cta-buttons {
+  .hcta-buttons {
     flex-direction: column;
     align-items: center;
   }
