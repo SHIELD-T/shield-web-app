@@ -8,6 +8,9 @@
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+.logo-image {
+  height: 40px;
+}
 /* Upper Section */
 .header-top {
   background-color: #063762;

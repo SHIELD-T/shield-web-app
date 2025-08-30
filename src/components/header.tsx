@@ -11,10 +11,10 @@ const Header = () => {
         <div className="container">
           <div className="contact-info">
             <span className="phone">
-              📞 Call Us: +254 700 123 456
+              📞 Call Us: +254 700 366 137
             </span>
             <span className="email">
-              ✉️ info@npo-organization.org
+              ✉️ info@shieldintl.org
             </span>
           </div>
         </div>
@@ -25,9 +25,9 @@ const Header = () => {
         <div className="container">
           <div className="navbar">
             <div className="logo">
-              <Link to="/" className="logo-link">
-                <h2>NPO Foundation</h2>
-              </Link>
+                <Link to="/" className="logo-link">
+                <img src="/assets/Logos/shieldLogoblue.png" alt="Shield Logo" className="logo-image" />
+                </Link>
             </div>
             
             <nav className="nav-menu">

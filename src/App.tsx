@@ -1,13 +1,12 @@
 // src/App.jsx
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './components/header';
-import Footer from './components/footer';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Header from "./components/header";
+import Footer from "./components/footer";
 
-import Home from './pages/home';
+import Home from "./pages/home";
 
-
-import './App.css';
+import "./App.css";
 
 function App() {
   return (
@@ -17,17 +16,28 @@ function App() {
         <main className="main-content">
           <Routes>
             <Route path="/" element={<Home />} />
-            {/* Uncomment these routes when pages are created */}
-            {/* <Route path="/about" element={<About />} /> */}
-            {/* <Route path="/podcast" element={<Podcast />} /> */}
-            {/* <Route path="/report" element={<Report />} /> */}
-            {/* <Route path="/donate" element={<Donate />} /> */}
-            
+            {/* <Route path="/" element={<About />} />
+            <Route path="/" element={<Podcast />} />
+            <Route path="/" element={<Report />} />
+            <Route path="/" element={<Donate />} /> */}
+
             {/* Placeholder routes - remove when actual pages are created */}
-            <Route path="/about" element={<PlaceholderPage title="About Us" />} />
-            <Route path="/podcast" element={<PlaceholderPage title="Book a Podcast" />} />
-            <Route path="/report" element={<PlaceholderPage title="Reports" />} />
-            <Route path="/donate" element={<PlaceholderPage title="Donate" />} />
+            <Route
+              path="/about"
+              element={<PlaceholderPage title="About Us" />}
+            />
+            <Route
+              path="/podcast"
+              element={<PlaceholderPage title="Book a Podcast" />}
+            />
+            <Route
+              path="/report"
+              element={<PlaceholderPage title="Reports" />}
+            />
+            <Route
+              path="/donate"
+              element={<PlaceholderPage title="Donate" />}
+            />
           </Routes>
         </main>
         <Footer />
@@ -43,28 +53,34 @@ type PlaceholderPageProps = {
 
 const PlaceholderPage: React.FC<PlaceholderPageProps> = ({ title }) => {
   return (
-    <div style={{ 
-      minHeight: '60vh', 
-      display: 'flex', 
-      alignItems: 'center', 
-      justifyContent: 'center',
-      flexDirection: 'column',
-      textAlign: 'center',
-      padding: '40px 20px'
-    }}>
-      <h1 style={{ 
-        color: '#063762', 
-        fontSize: '2.5rem', 
-        marginBottom: '20px',
-        fontFamily: 'Inter, sans-serif'
-      }}>
+    <div
+      style={{
+        minHeight: "60vh",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        flexDirection: "column",
+        textAlign: "center",
+        padding: "40px 20px",
+      }}
+    >
+      <h1
+        style={{
+          color: "#063762",
+          fontSize: "2.5rem",
+          marginBottom: "20px",
+          fontFamily: "Inter, sans-serif",
+        }}
+      >
         {title}
       </h1>
-      <p style={{ 
-        color: '#4a5568', 
-        fontSize: '1.2rem',
-        fontFamily: 'Inter, sans-serif'
-      }}>
+      <p
+        style={{
+          color: "#4a5568",
+          fontSize: "1.2rem",
+          fontFamily: "Inter, sans-serif",
+        }}
+      >
         This page is coming soon. We're working hard to bring you this content!
       </p>
     </div>
