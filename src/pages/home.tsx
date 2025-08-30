@@ -83,9 +83,7 @@ const Home = () => {
               </Link>
             </div>
             <div className="about-image">
-              <div className="image-placeholder">
-                
-              </div>
+              <div className="image-placeholder"></div>
             </div>
           </div>
         </div>
@@ -98,36 +96,44 @@ const Home = () => {
           <div className="programs-grid">
             <div className="program-card">
               <div className="program-icon">🎓</div>
-              <h3>Education Initiative</h3>
+              <h3>Design Thinking School</h3>
               <p>
-                Providing quality education resources and support to underserved
-                communities, including scholarship programs and learning
-                materials.
+                Within the context of the design thinking process, we empower
+                youth in underprivileged communities with the skills to
+                collaborate and think of themselves as problem solvers and to
+                pioneer solutions to the problems they face within their
+                community.
               </p>
             </div>
             <div className="program-card">
               <div className="program-icon">🏥</div>
-              <h3>Healthcare Access</h3>
+              <h3>SHIELD Entrepreneurship</h3>
               <p>
-                Improving healthcare accessibility through mobile clinics,
-                health awareness campaigns, and medical supply donations.
+                This program is tailored at supporting any business especially
+                those that are not venture backable. The SMEs will receive
+                personalized training and mentorship focused on building their
+                capacity to operate the business successfully, unlock financing
+                from financial institutions and scale to new levels.
               </p>
             </div>
             <div className="program-card">
               <div className="program-icon">🌱</div>
-              <h3>Environmental Conservation</h3>
+              <h3>Software Development</h3>
               <p>
-                Promoting sustainable practices, tree planting initiatives, and
-                environmental education in local communities.
+                We provide a community for learning and earning opportunities.
+                Our certifications prepare you for a career in software
+                development, equip you with business acumen to help take your
+                idea to the next level.
               </p>
             </div>
             <div className="program-card">
               <div className="program-icon">💼</div>
-              <h3>Economic Empowerment</h3>
+              <h3>SIDLabs (Research & Development)</h3>
               <p>
-                Supporting small businesses, providing microfinance
-                opportunities, and offering skills training for sustainable
-                livelihoods.
+                SID is a hub for innovation, entrepreneurship, and research,
+                driving societal impact through collaborative spaces,
+                transformative programs, and cutting-edge development
+                initiatives.
               </p>
             </div>
           </div>
