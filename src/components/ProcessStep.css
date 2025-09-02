@@ -25,6 +25,7 @@
   min-height: 48px;
   text-align: center;
   line-height: 1;
+  box-shadow: 0 2px 8px rgba(6, 55, 98, 0.2);
 }
 
 .process-step-content {
