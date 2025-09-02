@@ -10,23 +10,6 @@ const AboutSection: React.FC = () => {
     { number: '10+', label: 'Communities Served' }
   ];
 
-  const values = [
-    {
-      icon: '🎯',
-      title: 'Innovation',
-      description: 'Fostering creative solutions to community challenges through design thinking and technology.'
-    },
-    {
-      icon: '🤝',
-      title: 'Inclusion',
-      description: 'Ensuring equal access to opportunities for all marginalized groups and communities.'
-    },
-    {
-      icon: '🚀',
-      title: 'Impact',
-      description: 'Creating lasting change through sustainable ventures and community-driven solutions.'
-    }
-  ];
 
   return (
     <section className="about-section">
@@ -96,18 +79,6 @@ const AboutSection: React.FC = () => {
             </div>
           </div>
 
-          <div className="about-values">
-            <h3>Our Core Values</h3>
-            <div className="values-grid">
-              {values.map((value, index) => (
-                <div key={index} className="value-card">
-                  <div className="value-icon">{value.icon}</div>
-                  <h4>{value.title}</h4>
-                  <p>{value.description}</p>
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
       </div>
     </section>
