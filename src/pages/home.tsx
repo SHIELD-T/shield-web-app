@@ -2,6 +2,7 @@
 import React, { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import BlogSection from "../components/BlogSection";
+import ProcessList from "../components/ProcessList";
 import "./home.css";
 
 const Home = () => {
@@ -119,61 +120,38 @@ const Home = () => {
         <div className="container">
           <div className="why-shield-content">
             <div className="why-shield-header">
-              <h2>Why SHIELD is Essential</h2>
+              <h2>Why SHIELD Makes a Difference</h2>
               <p className="section-subtitle">
                 Breaking the cycle of unemployment in underserved communities requires more than just skills training
               </p>
             </div>
             
-            <div className="challenges-grid">
-              <div className="challenge-item">
-                <div className="challenge-icon">📊</div>
-                <h3>Saturated Job Market</h3>
-                <p>
-                  Even with digital skills, youth face a competitive job market where traditional employment opportunities are limited. Many skilled individuals remain unemployed due to lack of connections and opportunities.
-                </p>
-              </div>
-              
-              <div className="challenge-item">
-                <div className="challenge-icon">🔗</div>
-                <h3>Missing Networks</h3>
-                <p>
-                  Underserved communities lack access to professional networks, mentorship, and industry connections that are crucial for career advancement and entrepreneurial success.
-                </p>
-              </div>
-              
-              <div className="challenge-item">
-                <div className="challenge-icon">💡</div>
-                <h3>Innovation Gap</h3>
-                <p>
-                  Innovation resources are concentrated in affluent areas and universities, leaving talented youth in underserved communities without platforms to develop and showcase their ideas.
-                </p>
-              </div>
-              
-              <div className="challenge-item">
-                <div className="challenge-icon">🌱</div>
-                <h3>Lack of Entrepreneurial Support</h3>
-                <p>
-                  While many have business ideas, they lack access to incubation programs, funding opportunities, and the ecosystem needed to transform ideas into sustainable ventures.
-                </p>
-              </div>
-              
-              <div className="challenge-item">
-                <div className="challenge-icon">🎯</div>
-                <h3>Skills-Opportunity Mismatch</h3>
-                <p>
-                  Training programs often don't align with real market needs or fail to provide pathways to actual employment and entrepreneurial opportunities.
-                </p>
-              </div>
-              
-              <div className="challenge-item">
-                <div className="challenge-icon">🚪</div>
-                <h3>Systemic Barriers</h3>
-                <p>
-                  Geographic isolation, limited infrastructure, and socioeconomic barriers create additional obstacles that prevent talented individuals from accessing opportunities.
-                </p>
-              </div>
-            </div>
+            <ProcessList items={[
+              {
+                title: "Saturated Job Market",
+                description: "Even with digital skills, youth face a competitive job market where traditional employment opportunities are limited. Many skilled individuals remain unemployed due to lack of connections and opportunities."
+              },
+              {
+                title: "Missing Networks", 
+                description: "Underserved communities lack access to professional networks, mentorship, and industry connections that are crucial for career advancement and entrepreneurial success."
+              },
+              {
+                title: "Innovation Gap",
+                description: "Innovation resources are concentrated in affluent areas and universities, leaving talented youth in underserved communities without platforms to develop and showcase their ideas."
+              },
+              {
+                title: "Lack of Entrepreneurial Support",
+                description: "While many have business ideas, they lack access to incubation programs, funding opportunities, and the ecosystem needed to transform ideas into sustainable ventures."
+              },
+              {
+                title: "Skills-Opportunity Mismatch",
+                description: "Training programs often don't align with real market needs or fail to provide pathways to actual employment and entrepreneurial opportunities."
+              },
+              {
+                title: "Systemic Barriers",
+                description: "Geographic isolation, limited infrastructure, and socioeconomic barriers create additional obstacles that prevent talented individuals from accessing opportunities."
+              }
+            ]} />
             
             <div className="shield-solution">
               <h3>SHIELD's Approach</h3>
@@ -213,7 +191,13 @@ const Home = () => {
           <div className="events-scroll-container">
             <div className="events-grid" ref={eventsGridRef}>
               <div className="event-card">
-                <div className="event-image" style={{backgroundImage: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'}}>
+                <div className="event-image">
+                  <img 
+                    src="https://images.unsplash.com/photo-1677506048148-0c914dd8197b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTAwNDR8MHwxfHNlYXJjaHwyfHx3b3Jrc2hvcCUyMGJyYWluc3Rvcm1pbmclMjBkZXNpZ24lMjB0aGlua2luZyUyMGNvbGxhYm9yYXRpb258ZW58MHwwfHx8MTc1NjgwODE2Nnww&ixlib=rb-4.1.0&q=85"
+                    alt="Design thinking workshop, creative collaboration, brainstorming session, sticky notes - Paymo on Unsplash"
+                    width="100%"
+                    height="180"
+                  />
                   <div className="event-date">
                     <span className="day">15</span>
                     <span className="month">OCT</span>
@@ -228,7 +212,13 @@ const Home = () => {
               </div>
               
               <div className="event-card">
-                <div className="event-image" style={{backgroundImage: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)'}}>
+                <div className="event-image">
+                  <img 
+                    src="https://images.unsplash.com/photo-1709377303352-7c845ac999ac?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTAwNDR8MHwxfHNlYXJjaHw4fHxwcmVzZW50YXRpb24lMjBpbm5vdmF0aW9uJTIwdGVjaG5vbG9neSUyMHNob3djYXNlfGVufDB8MHx8Ymx1ZXwxNzU2ODA4MTY1fDA&ixlib=rb-4.1.0&q=85"
+                    alt="Innovation showcase, presentation, technology demo, startup pitch - Herlambang Tinasih Gusti on Unsplash"
+                    width="100%"
+                    height="180"
+                  />
                   <div className="event-date">
                     <span className="day">22</span>
                     <span className="month">OCT</span>
@@ -243,7 +233,13 @@ const Home = () => {
               </div>
               
               <div className="event-card">
-                <div className="event-image" style={{backgroundImage: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)'}}>
+                <div className="event-image">
+                  <img 
+                    src="https://images.unsplash.com/photo-1568716353609-12ddc5c67f04?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTAwNDR8MHwxfHNlYXJjaHw0fHxjb2RpbmclMjBwcm9ncmFtbWluZyUyMGJvb3RjYW1wJTIwbGVhcm5pbmd8ZW58MHwwfHx8MTc1NjgwODE2Nnww&ixlib=rb-4.1.0&q=85"
+                    alt="Coding bootcamp, software development, programming, learning environment - Patrick Martin on Unsplash"
+                    width="100%"
+                    height="180"
+                  />
                   <div className="event-date">
                     <span className="day">05</span>
                     <span className="month">NOV</span>
@@ -258,7 +254,13 @@ const Home = () => {
               </div>
               
               <div className="event-card">
-                <div className="event-image" style={{backgroundImage: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)'}}>
+                <div className="event-image">
+                  <img 
+                    src="https://images.unsplash.com/photo-1573165231977-3f0e27806045?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTAwNDR8MHwxfHNlYXJjaHw4fHx3b21lbiUyMHRlY2hub2xvZ3klMjBjb25mZXJlbmNlJTIwbmV0d29ya2luZ3xlbnwwfDB8fHwxNzU2ODA4MTY2fDA&ixlib=rb-4.1.0&q=85"
+                    alt="Women in tech, professional networking, female empowerment, tech conference - Christina @ wocintechchat.com on Unsplash"
+                    width="100%"
+                    height="180"
+                  />
                   <div className="event-date">
                     <span className="day">12</span>
                     <span className="month">NOV</span>

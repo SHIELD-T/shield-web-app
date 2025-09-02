@@ -1,0 +1,26 @@
+.process-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.process-list-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1024px) {
+  .process-list {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .process-list {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+}
