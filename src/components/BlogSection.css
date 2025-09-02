@@ -1,0 +1,29 @@
+.blog-section {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+  border-top: 1px solid #e2e8f0;
+}
+
+.blog-scroll-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.blog-grid {
+  display: flex;
+  gap: 20px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+  align-items: stretch;
+}
+
+@media (max-width: 768px) {
+  .blog-section {
+    padding: 60px 0;
+  }
+  
+  .blog-grid {
+    gap: 15px;
+  }
+}

@@ -1,7 +1,8 @@
 // src/pages/Home.jsx
 import React, { useState, useRef } from "react";
 import { Link } from "react-router-dom";
-import "./Home.css";
+import BlogSection from "../components/BlogSection";
+import "./home.css";
 
 const Home = () => {
   const [eventScrollIndex, setEventScrollIndex] = useState(0);
@@ -298,76 +299,7 @@ const Home = () => {
       </section>
 
       {/* Blog Section - Now Below CTA */}
-      <section className="blog-section">
-        <div className="container">
-          <div className="section-header">
-            <h2>Latest News & Articles</h2>
-            <div className="nav-arrows">
-              <button 
-                className={`nav-arrow ${blogScrollIndex === 0 ? 'disabled' : ''}`}
-                onClick={() => scrollBlogs('left')}
-                disabled={blogScrollIndex === 0}
-              >
-                ←
-              </button>
-              <button 
-                className={`nav-arrow ${blogScrollIndex === 3 ? 'disabled' : ''}`}
-                onClick={() => scrollBlogs('right')}
-                disabled={blogScrollIndex === 3}
-              >
-                →
-              </button>
-            </div>
-          </div>
-          <div className="blog-scroll-container">
-            <div className="blog-grid" ref={blogGridRef}>
-              <div className="blog-card">
-                <div className="blog-image" style={{backgroundImage: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'}}>
-                  <div className="blog-category">Innovation</div>
-                </div>
-                <div className="blog-content">
-                  <h3>Design Thinking Transforming Youth Entrepreneurship</h3>
-                  <p>Impact of human-centered design on sustainable community solutions.</p>
-                  <Link to="/blog" className="blog-link">Read More →</Link>
-                </div>
-              </div>
-              
-              <div className="blog-card">
-                <div className="blog-image" style={{backgroundImage: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)'}}>
-                  <div className="blog-category">Technology</div>
-                </div>
-                <div className="blog-content">
-                  <h3>Future of Digital Skills Training</h3>
-                  <p>How technology hubs bridge the digital divide for marginalized youth.</p>
-                  <Link to="/blog" className="blog-link">Read More →</Link>
-                </div>
-              </div>
-              
-              <div className="blog-card">
-                <div className="blog-image" style={{backgroundImage: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)'}}>
-                  <div className="blog-category">Impact Stories</div>
-                </div>
-                <div className="blog-content">
-                  <h3>From Idea to Implementation</h3>
-                  <p>Success stories from SHIELD graduates who created thriving enterprises.</p>
-                  <Link to="/blog" className="blog-link">Read More →</Link>
-                </div>
-              </div>
-              
-              <div className="blog-card">
-                <div className="blog-image" style={{backgroundImage: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)'}}>
-                  <div className="blog-category">Research</div>
-                </div>
-                <div className="blog-content">
-                  <h3>5 Barriers to Innovation in Low-Income Communities</h3>
-                  <p>Research reveals systemic challenges preventing innovation ecosystems.</p>
-                  <Link to="/blog" className="blog-link">Read More →</Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <BlogSection />
     </div>
   );
 };
