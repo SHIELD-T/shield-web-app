@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 /* Import component styles */
+@import './components/AboutSection.css';
 @import './components/BlogArticle.css';
 @import './components/BlogSection.css';
 @import './components/SectionHeader.css';

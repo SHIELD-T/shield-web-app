@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import BlogSection from "../components/BlogSection";
 import ProcessList from "../components/ProcessList";
 import TeamSection from "../components/TeamSection";
+import AboutSection from "../components/AboutSection";
 import "./home.css";
 
 const Home = () => {
@@ -83,38 +84,7 @@ const Home = () => {
       </section>
 
       {/* About Section */}
-      <section className="about-preview">
-        <div className="container">
-          <div className="about-content">
-            <div className="about-text">
-              <h2>Who We Are</h2>
-              <p>
-                The Social Hub for Innovation, Entrepreneurship, Leadership and
-                Design-Thinking (SHIELD) is a non-profit social innovation and
-                technology hub founded in 2023 to tackle unemployment in
-                underserved communities. We empower youth, gender minorities,
-                persons with disabilities, and other marginalized groups to
-                develop entrepreneurial and digital skills, launch social
-                ventures, and access employment opportunities.
-              </p>
-              <p>
-                SHIELD was created to bridge the gap in innovation resources,
-                which are often concentrated in universities and affluent urban
-                areas, leaving underserved youth behind. By building hubs within
-                these communities, we enable young people to learn, collaborate,
-                and create impactful solutions to local social challenges,
-                driving inclusive socio-economic growth.
-              </p>
-              <Link to="/about" className="btn btn-outline">
-                Read Our Full Story
-              </Link>
-            </div>
-            <div className="h-about-image">
-              <div className="h-image-placeholder"></div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <AboutSection />
 
       {/* Why SHIELD is Essential Section */}
       <section className="why-shield-section">
