@@ -1,9 +1,58 @@
 // src/pages/Home.jsx
-import React from "react";
+import React, { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
 
 const Home = () => {
+  const [eventScrollIndex, setEventScrollIndex] = useState(0);
+  const [blogScrollIndex, setBlogScrollIndex] = useState(0);
+  const eventsGridRef = useRef<HTMLDivElement>(null);
+  const blogGridRef = useRef<HTMLDivElement>(null);
+
+  const scrollEvents = (direction: 'left' | 'right') => {
+    const container = eventsGridRef.current;
+    if (!container) return;
+    
+    const cardWidth = 330; // card width + gap
+    const maxScroll = 4; // total cards
+    
+    if (direction === 'left' && eventScrollIndex > 0) {
+      setEventScrollIndex(eventScrollIndex - 1);
+      container.scrollTo({
+        left: (eventScrollIndex - 1) * cardWidth,
+        behavior: 'smooth'
+      });
+    } else if (direction === 'right' && eventScrollIndex < maxScroll - 1) {
+      setEventScrollIndex(eventScrollIndex + 1);
+      container.scrollTo({
+        left: (eventScrollIndex + 1) * cardWidth,
+        behavior: 'smooth'
+      });
+    }
+  };
+
+  const scrollBlogs = (direction: 'left' | 'right') => {
+    const container = blogGridRef.current;
+    if (!container) return;
+    
+    const cardWidth = 330; // card width + gap
+    const maxScroll = 4; // total cards
+    
+    if (direction === 'left' && blogScrollIndex > 0) {
+      setBlogScrollIndex(blogScrollIndex - 1);
+      container.scrollTo({
+        left: (blogScrollIndex - 1) * cardWidth,
+        behavior: 'smooth'
+      });
+    } else if (direction === 'right' && blogScrollIndex < maxScroll - 1) {
+      setBlogScrollIndex(blogScrollIndex + 1);
+      container.scrollTo({
+        left: (blogScrollIndex + 1) * cardWidth,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   return (
     <div className="home">
       {/* Hero Section */}
@@ -29,8 +78,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-     
 
       {/* About Section */}
       <section className="about-preview">
@@ -66,124 +113,162 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Programs Section */}
-      <section className="programs-section">
+      {/* Why SHIELD is Essential Section */}
+      <section className="why-shield-section">
         <div className="container">
-          <h2>Our Key Programs</h2>
-          <div className="programs-grid">
-            <div className="program-card">
-              <div className="program-icon">🎓</div>
-              <h3>Design Thinking School</h3>
-              <p>
-                Within the context of the design thinking process, we empower
-                youth in underprivileged communities with the skills to
-                collaborate and think of themselves as problem solvers and to
-                pioneer solutions to the problems they face within their
-                community.
+          <div className="why-shield-content">
+            <div className="why-shield-header">
+              <h2>Why SHIELD is Essential</h2>
+              <p className="section-subtitle">
+                Breaking the cycle of unemployment in underserved communities requires more than just skills training
               </p>
             </div>
-            <div className="program-card">
-              <div className="program-icon">🏥</div>
-              <h3>SHIELD Entrepreneurship</h3>
-              <p>
-                This program is tailored at supporting any business especially
-                those that are not venture backable. The SMEs will receive
-                personalized training and mentorship focused on building their
-                capacity to operate the business successfully, unlock financing
-                from financial institutions and scale to new levels.
-              </p>
+            
+            <div className="challenges-grid">
+              <div className="challenge-item">
+                <div className="challenge-icon">📊</div>
+                <h3>Saturated Job Market</h3>
+                <p>
+                  Even with digital skills, youth face a competitive job market where traditional employment opportunities are limited. Many skilled individuals remain unemployed due to lack of connections and opportunities.
+                </p>
+              </div>
+              
+              <div className="challenge-item">
+                <div className="challenge-icon">🔗</div>
+                <h3>Missing Networks</h3>
+                <p>
+                  Underserved communities lack access to professional networks, mentorship, and industry connections that are crucial for career advancement and entrepreneurial success.
+                </p>
+              </div>
+              
+              <div className="challenge-item">
+                <div className="challenge-icon">💡</div>
+                <h3>Innovation Gap</h3>
+                <p>
+                  Innovation resources are concentrated in affluent areas and universities, leaving talented youth in underserved communities without platforms to develop and showcase their ideas.
+                </p>
+              </div>
+              
+              <div className="challenge-item">
+                <div className="challenge-icon">🌱</div>
+                <h3>Lack of Entrepreneurial Support</h3>
+                <p>
+                  While many have business ideas, they lack access to incubation programs, funding opportunities, and the ecosystem needed to transform ideas into sustainable ventures.
+                </p>
+              </div>
+              
+              <div className="challenge-item">
+                <div className="challenge-icon">🎯</div>
+                <h3>Skills-Opportunity Mismatch</h3>
+                <p>
+                  Training programs often don't align with real market needs or fail to provide pathways to actual employment and entrepreneurial opportunities.
+                </p>
+              </div>
+              
+              <div className="challenge-item">
+                <div className="challenge-icon">🚪</div>
+                <h3>Systemic Barriers</h3>
+                <p>
+                  Geographic isolation, limited infrastructure, and socioeconomic barriers create additional obstacles that prevent talented individuals from accessing opportunities.
+                </p>
+              </div>
             </div>
-            <div className="program-card">
-              <div className="program-icon">🌱</div>
-              <h3>Software Development</h3>
+            
+            <div className="shield-solution">
+              <h3>SHIELD's Approach</h3>
               <p>
-                We provide a community for learning and earning opportunities.
-                Our certifications prepare you for a career in software
-                development, equip you with business acumen to help take your
-                idea to the next level.
+                We don't just provide skills training - we create comprehensive ecosystems within underserved communities. Our programs combine design thinking, entrepreneurship development, technical training, and community-based innovation to ensure youth don't just learn skills, but create opportunities for themselves and others.
               </p>
-            </div>
-            <div className="program-card">
-              <div className="program-icon">💼</div>
-              <h3>SIDLabs (Research & Development)</h3>
-              <p>
-                SID is a hub for innovation, entrepreneurship, and research,
-                driving societal impact through collaborative spaces,
-                transformative programs, and cutting-edge development
-                initiatives.
-              </p>
+              <Link to="/programs" className="btn btn-primary">
+                Explore Our Programs
+              </Link>
             </div>
           </div>
         </div>
       </section>
-      {/* Events Section */}
+
+      {/* Events Section Only */}
       <section className="events-section">
         <div className="container">
           <div className="section-header">
             <h2>Upcoming Events</h2>
             <div className="nav-arrows">
-              <button className="nav-arrow">❮</button>
-              <button className="nav-arrow">❯</button>
+              <button 
+                className={`nav-arrow ${eventScrollIndex === 0 ? 'disabled' : ''}`}
+                onClick={() => scrollEvents('left')}
+                disabled={eventScrollIndex === 0}
+              >
+                ←
+              </button>
+              <button 
+                className={`nav-arrow ${eventScrollIndex === 3 ? 'disabled' : ''}`}
+                onClick={() => scrollEvents('right')}
+                disabled={eventScrollIndex === 3}
+              >
+                →
+              </button>
             </div>
           </div>
-          <div className="events-grid">
-            <div className="event-card">
-              <div className="event-image" style={{backgroundImage: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'}}>
-                <div className="event-date">
-                  <span className="day">15</span>
-                  <span className="month">OCT</span>
+          <div className="events-scroll-container">
+            <div className="events-grid" ref={eventsGridRef}>
+              <div className="event-card">
+                <div className="event-image" style={{backgroundImage: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'}}>
+                  <div className="event-date">
+                    <span className="day">15</span>
+                    <span className="month">OCT</span>
+                  </div>
+                </div>
+                <div className="event-content">
+                  <h3>Design Thinking Workshop</h3>
+                  <p className="event-meta">📍 SHIELD Hub • 🕐 9:00 AM</p>
+                  <p>Intensive workshop for young entrepreneurs learning human-centered design.</p>
+                  <Link to="/events" className="event-link">Learn More →</Link>
                 </div>
               </div>
-              <div className="event-content">
-                <h3>Design Thinking Workshop for Youth Entrepreneurs</h3>
-                <p className="event-meta">📍 SHIELD Hub, Nairobi • 🕒 9:00 AM - 4:00 PM</p>
-                <p>Join us for an intensive workshop where young entrepreneurs will learn human-centered design principles to solve community challenges.</p>
-                <Link to="/events" className="event-link">Learn More →</Link>
-              </div>
-            </div>
-            
-            <div className="event-card">
-              <div className="event-image" style={{backgroundImage: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)'}}>
-                <div className="event-date">
-                  <span className="day">22</span>
-                  <span className="month">OCT</span>
+              
+              <div className="event-card">
+                <div className="event-image" style={{backgroundImage: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)'}}>
+                  <div className="event-date">
+                    <span className="day">22</span>
+                    <span className="month">OCT</span>
+                  </div>
+                </div>
+                <div className="event-content">
+                  <h3>Innovation Showcase</h3>
+                  <p className="event-meta">📍 Virtual Event • 🕐 6:00 PM</p>
+                  <p>Program graduates present solutions to community problems.</p>
+                  <Link to="/events" className="event-link">Register →</Link>
                 </div>
               </div>
-              <div className="event-content">
-                <h3>Pitch Night: Community Innovation Showcase</h3>
-                <p className="event-meta">📍 Virtual Event • 🕒 6:00 PM - 8:30 PM</p>
-                <p>Watch as our program graduates present their innovative solutions to real community problems to a panel of expert judges.</p>
-                <Link to="/events" className="event-link">Register Now →</Link>
-              </div>
-            </div>
-            
-            <div className="event-card">
-              <div className="event-image" style={{backgroundImage: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)'}}>
-                <div className="event-date">
-                  <span className="day">05</span>
-                  <span className="month">NOV</span>
+              
+              <div className="event-card">
+                <div className="event-image" style={{backgroundImage: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)'}}>
+                  <div className="event-date">
+                    <span className="day">05</span>
+                    <span className="month">NOV</span>
+                  </div>
+                </div>
+                <div className="event-content">
+                  <h3>Bootcamp Launch</h3>
+                  <p className="event-meta">📍 SHIELD Lab • 🕐 8:00 AM</p>
+                  <p>12-week intensive software development program launch.</p>
+                  <Link to="/events" className="event-link">Apply →</Link>
                 </div>
               </div>
-              <div className="event-content">
-                <h3>Software Development Bootcamp Launch</h3>
-                <p className="event-meta">📍 SHIELD Lab • 🕒 8:00 AM - 5:00 PM</p>
-                <p>Kick-off event for our 12-week intensive software development program focusing on practical skills for immediate employment.</p>
-                <Link to="/events" className="event-link">Apply Today →</Link>
-              </div>
-            </div>
-            
-            <div className="event-card">
-              <div className="event-image" style={{backgroundImage: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)'}}>
-                <div className="event-date">
-                  <span className="day">12</span>
-                  <span className="month">NOV</span>
+              
+              <div className="event-card">
+                <div className="event-image" style={{backgroundImage: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)'}}>
+                  <div className="event-date">
+                    <span className="day">12</span>
+                    <span className="month">NOV</span>
+                  </div>
                 </div>
-              </div>
-              <div className="event-content">
-                <h3>Women in Tech Leadership Summit</h3>
-                <p className="event-meta">📍 Multi-venue Event • 🕒 Full Day</p>
-                <p>Empowering women entrepreneurs and tech professionals through networking, mentorship sessions, and inspiring keynote speeches.</p>
-                <Link to="/events" className="event-link">Join Us →</Link>
+                <div className="event-content">
+                  <h3>Women in Tech Summit</h3>
+                  <p className="event-meta">📍 Multi-venue • 🕐 Full Day</p>
+                  <p>Empowering women through networking and mentorship.</p>
+                  <Link to="/events" className="event-link">Join Us →</Link>
+                </div>
               </div>
             </div>
           </div>
@@ -212,65 +297,77 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Blog Section */}
+      {/* Blog Section - Now Below CTA */}
       <section className="blog-section">
         <div className="container">
           <div className="section-header">
-            <h2>Insights on Community Innovation</h2>
+            <h2>Latest News & Articles</h2>
             <div className="nav-arrows">
-              <button className="nav-arrow">❮</button>
-              <button className="nav-arrow">❯</button>
+              <button 
+                className={`nav-arrow ${blogScrollIndex === 0 ? 'disabled' : ''}`}
+                onClick={() => scrollBlogs('left')}
+                disabled={blogScrollIndex === 0}
+              >
+                ←
+              </button>
+              <button 
+                className={`nav-arrow ${blogScrollIndex === 3 ? 'disabled' : ''}`}
+                onClick={() => scrollBlogs('right')}
+                disabled={blogScrollIndex === 3}
+              >
+                →
+              </button>
             </div>
           </div>
-          <div className="blog-grid">
-            <div className="blog-card">
-              <div className="blog-image" style={{backgroundImage: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'}}>
-                <div className="blog-category">Innovation</div>
+          <div className="blog-scroll-container">
+            <div className="blog-grid" ref={blogGridRef}>
+              <div className="blog-card">
+                <div className="blog-image" style={{backgroundImage: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'}}>
+                  <div className="blog-category">Innovation</div>
+                </div>
+                <div className="blog-content">
+                  <h3>Design Thinking Transforming Youth Entrepreneurship</h3>
+                  <p>Impact of human-centered design on sustainable community solutions.</p>
+                  <Link to="/blog" className="blog-link">Read More →</Link>
+                </div>
               </div>
-              <div className="blog-content">
-                <h3>How Design Thinking is Transforming Youth Entrepreneurship in Kenya</h3>
-                <p>Exploring the impact of human-centered design on creating sustainable solutions for community challenges across Nairobi's underserved areas.</p>
-                <Link to="/blog" className="blog-link">Read More →</Link>
+              
+              <div className="blog-card">
+                <div className="blog-image" style={{backgroundImage: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)'}}>
+                  <div className="blog-category">Technology</div>
+                </div>
+                <div className="blog-content">
+                  <h3>Future of Digital Skills Training</h3>
+                  <p>How technology hubs bridge the digital divide for marginalized youth.</p>
+                  <Link to="/blog" className="blog-link">Read More →</Link>
+                </div>
               </div>
-            </div>
-            
-            <div className="blog-card">
-              <div className="blog-image" style={{backgroundImage: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)'}}>
-                <div className="blog-category">Technology</div>
+              
+              <div className="blog-card">
+                <div className="blog-image" style={{backgroundImage: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)'}}>
+                  <div className="blog-category">Impact Stories</div>
+                </div>
+                <div className="blog-content">
+                  <h3>From Idea to Implementation</h3>
+                  <p>Success stories from SHIELD graduates who created thriving enterprises.</p>
+                  <Link to="/blog" className="blog-link">Read More →</Link>
+                </div>
               </div>
-              <div className="blog-content">
-                <h3>The Future of Digital Skills Training in Underserved Communities</h3>
-                <p>How technology hubs are bridging the digital divide and creating pathways to economic empowerment for marginalized youth.</p>
-                <Link to="/blog" className="blog-link">Read More →</Link>
-              </div>
-            </div>
-            
-            <div className="blog-card">
-              <div className="blog-image" style={{backgroundImage: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)'}}>
-                <div className="blog-category">Impact Stories</div>
-              </div>
-              <div className="blog-content">
-                <h3>From Idea to Implementation: Success Stories from SHIELD Graduates</h3>
-                <p>Meet the inspiring entrepreneurs who turned their community challenges into thriving social enterprises through our programs.</p>
-                <Link to="/blog" className="blog-link">Read More →</Link>
-              </div>
-            </div>
-            
-            <div className="blog-card">
-              <div className="blog-image" style={{backgroundImage: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)'}}>
-                <div className="blog-category">Research</div>
-              </div>
-              <div className="blog-content">
-                <h3>5 Key Barriers to Innovation in Low-Income Communities</h3>
-                <p>Our latest research reveals the systemic challenges that prevent innovation ecosystems from thriving in underserved areas.</p>
-                <Link to="/blog" className="blog-link">Read More →</Link>
+              
+              <div className="blog-card">
+                <div className="blog-image" style={{backgroundImage: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)'}}>
+                  <div className="blog-category">Research</div>
+                </div>
+                <div className="blog-content">
+                  <h3>5 Barriers to Innovation in Low-Income Communities</h3>
+                  <p>Research reveals systemic challenges preventing innovation ecosystems.</p>
+                  <Link to="/blog" className="blog-link">Read More →</Link>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-
-    
     </div>
   );
 };
