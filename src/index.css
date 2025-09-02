@@ -7,6 +7,9 @@
 @import './components/SectionHeader.css';
 @import './components/ProcessStep.css';
 @import './components/ProcessList.css';
+@import './components/TeamCard.css';
+@import './components/TeamSection.css';
+@import './components/SocialLinks.css';
 
 :root {
   font-synthesis: none;

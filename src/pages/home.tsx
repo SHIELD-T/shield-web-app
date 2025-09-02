@@ -3,6 +3,7 @@ import React, { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import BlogSection from "../components/BlogSection";
 import ProcessList from "../components/ProcessList";
+import TeamSection from "../components/TeamSection";
 import "./home.css";
 
 const Home = () => {
@@ -120,7 +121,7 @@ const Home = () => {
         <div className="container">
           <div className="why-shield-content">
             <div className="why-shield-header">
-              <h2>Why SHIELD Makes a Difference</h2>
+              <h2>Why SHIELD is Essential</h2>
               <p className="section-subtitle">
                 Breaking the cycle of unemployment in underserved communities requires more than just skills training
               </p>
@@ -302,6 +303,9 @@ const Home = () => {
 
       {/* Blog Section - Now Below CTA */}
       <BlogSection />
+
+      {/* Team Section */}
+      <TeamSection />
     </div>
   );
 };
