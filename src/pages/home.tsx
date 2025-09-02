@@ -116,6 +116,79 @@ const Home = () => {
           </div>
         </div>
       </section>
+      {/* Events Section */}
+      <section className="events-section">
+        <div className="container">
+          <div className="section-header">
+            <h2>Upcoming Events</h2>
+            <div className="nav-arrows">
+              <button className="nav-arrow">❮</button>
+              <button className="nav-arrow">❯</button>
+            </div>
+          </div>
+          <div className="events-grid">
+            <div className="event-card">
+              <div className="event-image" style={{backgroundImage: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'}}>
+                <div className="event-date">
+                  <span className="day">15</span>
+                  <span className="month">OCT</span>
+                </div>
+              </div>
+              <div className="event-content">
+                <h3>Design Thinking Workshop for Youth Entrepreneurs</h3>
+                <p className="event-meta">📍 SHIELD Hub, Nairobi • 🕒 9:00 AM - 4:00 PM</p>
+                <p>Join us for an intensive workshop where young entrepreneurs will learn human-centered design principles to solve community challenges.</p>
+                <Link to="/events" className="event-link">Learn More →</Link>
+              </div>
+            </div>
+            
+            <div className="event-card">
+              <div className="event-image" style={{backgroundImage: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)'}}>
+                <div className="event-date">
+                  <span className="day">22</span>
+                  <span className="month">OCT</span>
+                </div>
+              </div>
+              <div className="event-content">
+                <h3>Pitch Night: Community Innovation Showcase</h3>
+                <p className="event-meta">📍 Virtual Event • 🕒 6:00 PM - 8:30 PM</p>
+                <p>Watch as our program graduates present their innovative solutions to real community problems to a panel of expert judges.</p>
+                <Link to="/events" className="event-link">Register Now →</Link>
+              </div>
+            </div>
+            
+            <div className="event-card">
+              <div className="event-image" style={{backgroundImage: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)'}}>
+                <div className="event-date">
+                  <span className="day">05</span>
+                  <span className="month">NOV</span>
+                </div>
+              </div>
+              <div className="event-content">
+                <h3>Software Development Bootcamp Launch</h3>
+                <p className="event-meta">📍 SHIELD Lab • 🕒 8:00 AM - 5:00 PM</p>
+                <p>Kick-off event for our 12-week intensive software development program focusing on practical skills for immediate employment.</p>
+                <Link to="/events" className="event-link">Apply Today →</Link>
+              </div>
+            </div>
+            
+            <div className="event-card">
+              <div className="event-image" style={{backgroundImage: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)'}}>
+                <div className="event-date">
+                  <span className="day">12</span>
+                  <span className="month">NOV</span>
+                </div>
+              </div>
+              <div className="event-content">
+                <h3>Women in Tech Leadership Summit</h3>
+                <p className="event-meta">📍 Multi-venue Event • 🕒 Full Day</p>
+                <p>Empowering women entrepreneurs and tech professionals through networking, mentorship sessions, and inspiring keynote speeches.</p>
+                <Link to="/events" className="event-link">Join Us →</Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Call to Action */}
       <section className="hcta-section">
@@ -138,6 +211,66 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* Blog Section */}
+      <section className="blog-section">
+        <div className="container">
+          <div className="section-header">
+            <h2>Insights on Community Innovation</h2>
+            <div className="nav-arrows">
+              <button className="nav-arrow">❮</button>
+              <button className="nav-arrow">❯</button>
+            </div>
+          </div>
+          <div className="blog-grid">
+            <div className="blog-card">
+              <div className="blog-image" style={{backgroundImage: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'}}>
+                <div className="blog-category">Innovation</div>
+              </div>
+              <div className="blog-content">
+                <h3>How Design Thinking is Transforming Youth Entrepreneurship in Kenya</h3>
+                <p>Exploring the impact of human-centered design on creating sustainable solutions for community challenges across Nairobi's underserved areas.</p>
+                <Link to="/blog" className="blog-link">Read More →</Link>
+              </div>
+            </div>
+            
+            <div className="blog-card">
+              <div className="blog-image" style={{backgroundImage: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)'}}>
+                <div className="blog-category">Technology</div>
+              </div>
+              <div className="blog-content">
+                <h3>The Future of Digital Skills Training in Underserved Communities</h3>
+                <p>How technology hubs are bridging the digital divide and creating pathways to economic empowerment for marginalized youth.</p>
+                <Link to="/blog" className="blog-link">Read More →</Link>
+              </div>
+            </div>
+            
+            <div className="blog-card">
+              <div className="blog-image" style={{backgroundImage: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)'}}>
+                <div className="blog-category">Impact Stories</div>
+              </div>
+              <div className="blog-content">
+                <h3>From Idea to Implementation: Success Stories from SHIELD Graduates</h3>
+                <p>Meet the inspiring entrepreneurs who turned their community challenges into thriving social enterprises through our programs.</p>
+                <Link to="/blog" className="blog-link">Read More →</Link>
+              </div>
+            </div>
+            
+            <div className="blog-card">
+              <div className="blog-image" style={{backgroundImage: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)'}}>
+                <div className="blog-category">Research</div>
+              </div>
+              <div className="blog-content">
+                <h3>5 Key Barriers to Innovation in Low-Income Communities</h3>
+                <p>Our latest research reveals the systemic challenges that prevent innovation ecosystems from thriving in underserved areas.</p>
+                <Link to="/blog" className="blog-link">Read More →</Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    
     </div>
   );
 };
