@@ -21,34 +21,38 @@ const About = () => {
       <section className="mission-vision">
         <div className="about-container">
           <div className="mission-vision-grid">
-            <div className="mission-vision-item">
-              <div className="image-placeholder large">
-                <span>🎯</span>
-                <p>Our Mission</p>
+            <div className="mission-vision-item fade-in">
+              <div className="image-placeholder large mission-bg">
+                <div className="image-overlay">
+                  <span>🎯</span>
+                  <p>Our Mission</p>
+                </div>
               </div>
               <div className="content">
-                <h2>Our Mission</h2>
+                <h2 className="gradient-text">Our Mission</h2>
                 <p>
-                  To foster innovation and sustainable development by providing comprehensive 
-                  capacity building services that empower individuals, organizations, and 
-                  communities to achieve their full potential through digital transformation 
+                  To foster innovation and sustainable development by providing comprehensive
+                  capacity building services that empower individuals, organizations, and
+                  communities to achieve their full potential through digital transformation
                   and evidence-based solutions.
                 </p>
               </div>
             </div>
-            
-            <div className="mission-vision-item reverse">
+
+            <div className="mission-vision-item reverse fade-in">
               <div className="content">
-                <h2>Our Vision</h2>
+                <h2 className="gradient-text">Our Vision</h2>
                 <p>
-                  A world where every community has access to innovative solutions and 
-                  the capacity to drive sustainable development, creating lasting positive 
+                  A world where every community has access to innovative solutions and
+                  the capacity to drive sustainable development, creating lasting positive
                   impact through technology, education, and collaborative partnerships.
                 </p>
               </div>
-              <div className="image-placeholder large">
-                <span>👁️</span>
-                <p>Our Vision</p>
+              <div className="image-placeholder large vision-bg">
+                <div className="image-overlay">
+                  <span>👁️</span>
+                  <p>Our Vision</p>
+                </div>
               </div>
             </div>
           </div>

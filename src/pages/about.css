@@ -140,21 +140,61 @@
 
 /* Mission & Vision */
 .mission-vision {
-  padding: 100px 0;
-  background-color: white;
+  padding: 120px 0;
+  background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.mission-vision::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('/assets/SDGs/SDG-4-Quality-Education.jpeg') no-repeat center center;
+  background-size: cover;
+  opacity: 0.05;
+  z-index: 0;
 }
 
 .mission-vision-grid {
   display: flex;
   flex-direction: column;
-  gap: 80px;
+  gap: 100px;
+  position: relative;
+  z-index: 1;
 }
 
 .mission-vision-item {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  gap: 80px;
   align-items: center;
+  background: white;
+  padding: 60px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.mission-vision-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+}
+
+.mission-vision-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(6, 55, 98, 0.05) 0%, rgba(135, 206, 235, 0.05) 100%);
+  z-index: 0;
 }
 
 .mission-vision-item.reverse {
@@ -165,17 +205,98 @@
   direction: ltr;
 }
 
+.mission-vision-item .content {
+  position: relative;
+  z-index: 1;
+}
+
 .mission-vision-item .content h2 {
-  font-size: 2.5rem;
-  color: #063762;
-  margin-bottom: 25px;
-  font-weight: 700;
+  font-size: 2.8rem;
+  margin-bottom: 30px;
+  font-weight: 800;
+  position: relative;
 }
 
 .mission-vision-item .content p {
-  font-size: 1.2rem;
-  line-height: 1.7;
+  font-size: 1.25rem;
+  line-height: 1.8;
   color: #4a5568;
+  position: relative;
+  z-index: 1;
+}
+
+/* Background Images */
+.mission-bg {
+  background: url('/assets/shield.jpg') no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+
+.vision-bg {
+  background: url('/assets/DT.jpg') no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(6, 55, 98, 0.8) 0%, rgba(135, 206, 235, 0.6) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.image-placeholder:hover .image-overlay {
+  background: linear-gradient(135deg, rgba(6, 55, 98, 0.9) 0%, rgba(135, 206, 235, 0.7) 100%);
+}
+
+.image-overlay span {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.image-overlay p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Gradient Text */
+.gradient-text {
+  background: linear-gradient(135deg, #063762 0%, #87CEEB 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Fade In Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.fade-in:nth-child(2) {
+  animation-delay: 0.2s;
 }
 
 /* Services Overview */
@@ -455,73 +576,100 @@
   .hero-content h1 {
     font-size: 2.5rem;
   }
-  
+
   .hero-subtitle {
     font-size: 1.1rem;
   }
-  
+
+  .mission-vision {
+    padding: 80px 0;
+  }
+
+  .mission-vision-grid {
+    gap: 60px;
+  }
+
   .mission-vision-item {
     grid-template-columns: 1fr;
     gap: 40px;
     text-align: center;
+    padding: 40px 30px;
+    border-radius: 15px;
   }
-  
+
   .mission-vision-item.reverse {
     direction: ltr;
   }
-  
+
+  .mission-vision-item .content h2 {
+    font-size: 2.2rem;
+  }
+
+  .mission-vision-item .content p {
+    font-size: 1.1rem;
+  }
+
+  .image-placeholder.large {
+    height: 250px;
+    margin-bottom: 30px;
+  }
+
+  .image-overlay span {
+    font-size: 3rem;
+  }
+
+  .image-overlay p {
+    font-size: 1.2rem;
+  }
+
   .services-intro {
     grid-template-columns: 1fr;
     gap: 30px;
     text-align: center;
   }
-  
+
   .process-content {
     grid-template-columns: 1fr;
     gap: 40px;
   }
-  
+
   .partners-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
-  
+
   .values-content {
     display: flex;
     flex-direction: column;
     gap: 40px;
   }
-  
+
   .step {
     flex-direction: column;
     text-align: center;
     gap: 15px;
   }
-  
+
   .step-number {
     margin: 0 auto;
   }
-  
+
   .cta-buttons {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .btn {
     width: 250px;
   }
-  
+
   .image-placeholder.small {
     height: 150px;
     width: 150px;
   }
-  
+
   .image-placeholder.medium {
     height: 250px;
-  }
-  
-  .image-placeholder.large {
-    height: 300px;
   }
 }
 
