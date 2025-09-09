@@ -40,40 +40,10 @@ const Home = () => {
       }
     });
 
-    // Footer curtain effect - content slides over fixed footer
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      const windowHeight = window.innerHeight;
-      const homeElement = document.querySelector('.home') as HTMLElement;
-      
-      if (!homeElement) return;
-      
-      // Calculate when we're near the bottom of the content
-      const homeHeight = homeElement.offsetHeight;
-      const footerElement = document.querySelector('.footer') as HTMLElement;
-      const footerHeight = footerElement ? footerElement.offsetHeight : (window.innerWidth <= 768 ? 400 : 500);
-      const triggerPoint = homeHeight - windowHeight;
-      
-      if (scrollPosition >= triggerPoint) {
-        const progress = (scrollPosition - triggerPoint) / footerHeight;
-        const clampedProgress = Math.min(Math.max(progress, 0), 1);
-        
-        // Apply curtain effect - slide content up to reveal fixed footer
-        document.body.style.setProperty('--footer-reveal-progress', clampedProgress.toString());
-        document.body.style.setProperty('--footer-height', `${footerHeight}px`);
-        document.body.classList.add('footer-revealing');
-      } else {
-        document.body.classList.remove('footer-revealing');
-        document.body.style.removeProperty('--footer-reveal-progress');
-        document.body.style.removeProperty('--footer-height');
-      }
-    };
 
-    window.addEventListener('scroll', handleScroll, { passive: true });
 
     return () => {
       observer.disconnect();
-      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 

@@ -49,25 +49,10 @@
   }
 }
 
-/* Footer Curtain Effect - Footer is fixed behind, content slides over it */
-body {
-  position: relative;
-  overflow-x: hidden;
-}
-
-/* Footer positioning is handled in footer.css */
-
-/* Main content always covers the footer */
+/* Main content styling */
 .home {
   position: relative;
-  z-index: 10;
   background: white;
-  transition: transform 0.1s ease-out;
-}
-
-/* When revealing footer, slide the content up */
-body.footer-revealing .home {
-  transform: translateY(calc(-1 * var(--footer-reveal-progress, 0) * var(--footer-height, 500px)));
 }
 
 /* Enhanced hero animations */
@@ -920,18 +905,7 @@ body.footer-revealing .home {
     opacity: 1 !important;
   }
   
-  body.footer-revealing .home,
-  .home {
-    transition: none !important;
-    transform: none !important;
-  }
-  
-  .footer {
-    position: relative !important;
-    bottom: auto !important;
-    left: auto !important;
-    right: auto !important;
-  }
+
 }
 
 @media (max-width: 768px) {
@@ -940,10 +914,7 @@ body.footer-revealing .home {
     transform: translateY(20px);
   }
   
-  /* Adjust footer curtain for mobile */
-  body.footer-revealing .home {
-    transform: translateY(calc(-1 * var(--footer-reveal-progress, 0) * var(--footer-height, 400px)));
-  }
+
 
   .hero-content h1 {
     font-size: 2.5rem;
