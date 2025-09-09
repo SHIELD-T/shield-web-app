@@ -21,34 +21,38 @@ const About = () => {
       <section className="mission-vision">
         <div className="about-container">
           <div className="mission-vision-grid">
-            <div className="mission-vision-item">
-              <div className="image-placeholder large">
-                <span>🎯</span>
-                <p>Our Mission</p>
+            <div className="mission-vision-item fade-in">
+              <div className="image-container">
+                <img src="/assets/SDGs/SDG-4-Quality-Education.jpeg" alt="Quality Education SDG" className="mission-image" />
+                <div className="image-overlay">
+                  <h3>Our Mission</h3>
+                </div>
               </div>
               <div className="content">
-                <h2>Our Mission</h2>
+                <h2 className="gradient-text">Our Mission</h2>
                 <p>
-                  To foster innovation and sustainable development by providing comprehensive 
-                  capacity building services that empower individuals, organizations, and 
-                  communities to achieve their full potential through digital transformation 
+                  To foster innovation and sustainable development by providing comprehensive
+                  capacity building services that empower individuals, organizations, and
+                  communities to achieve their full potential through digital transformation
                   and evidence-based solutions.
                 </p>
               </div>
             </div>
-            
-            <div className="mission-vision-item reverse">
+
+            <div className="mission-vision-item reverse fade-in">
               <div className="content">
-                <h2>Our Vision</h2>
+                <h2 className="gradient-text">Our Vision</h2>
                 <p>
-                  A world where every community has access to innovative solutions and 
-                  the capacity to drive sustainable development, creating lasting positive 
+                  A world where every community has access to innovative solutions and
+                  the capacity to drive sustainable development, creating lasting positive
                   impact through technology, education, and collaborative partnerships.
                 </p>
               </div>
-              <div className="image-placeholder large">
-                <span>👁️</span>
-                <p>Our Vision</p>
+              <div className="image-container">
+                <img src="/assets/SDGs/OUR-ALIGNMENT-WITH-SDG-11_-SUSTAINABLE-CITIES-AND-COMMUNITIES.jpeg" alt="Sustainable Cities SDG" className="vision-image" />
+                <div className="image-overlay">
+                  <h3>Our Vision</h3>
+                </div>
               </div>
             </div>
           </div>
@@ -60,15 +64,17 @@ const About = () => {
         <div className="about-container">
           <h2>Our Core Services</h2>
           <div className="services-intro">
-            <div className="about-image-placeholder medium">
-              <span>⚙️</span>
-              <p>Innovation Hub</p>
+            <div className="services-image-container">
+              <img src="/assets/images/DT.jpg" alt="Digital Transformation" className="services-main-image" />
+              <div className="image-overlay">
+                <h4>Innovation Hub</h4>
+              </div>
             </div>
             <div className="services-text">
               <p>
-                Shield Foundation specializes in delivering comprehensive innovation services 
-                that bridge the gap between traditional development approaches and modern 
-                digital solutions. Our multidisciplinary team works collaboratively to 
+                Shield Foundation specializes in delivering comprehensive innovation services
+                that bridge the gap between traditional development approaches and modern
+                digital solutions. Our multidisciplinary team works collaboratively to
                 design, implement, and evaluate programs that create measurable impact.
               </p>
             </div>
@@ -76,7 +82,9 @@ const About = () => {
 
           <div className="services-grid">
             <div className="about-service-card">
-              <div className="about-service-icon">🤝</div>
+              <div className="service-image-container">
+                <img src="/assets/SDGs/SDG9-Industry-Innovation-and-Infrastructure….jpeg" alt="Innovation Services" className="service-icon-image" />
+              </div>
               <h3>Innovation Services</h3>
               <ul>
                 <li>Co-creating & planning innovative solutions</li>
@@ -87,7 +95,9 @@ const About = () => {
             </div>
 
             <div className="about-service-card">
-              <div className="about-service-icon">✍️</div>
+              <div className="service-image-container">
+                <img src="/assets/SDGs/SDG-4-Quality-Education.jpeg" alt="Capacity Building" className="service-icon-image" />
+              </div>
               <h3>Capacity Building</h3>
               <ul>
                 <li>Strategic planning & writing workshops</li>
@@ -98,7 +108,9 @@ const About = () => {
             </div>
 
             <div className="about-service-card">
-              <div className="about-service-icon">🔍</div>
+              <div className="service-image-container">
+                <img src="/assets/images/DT-4.jpg" alt="Digital Transformation" className="service-icon-image" />
+              </div>
               <h3>Digital Transformation</h3>
               <ul>
                 <li>Data analysis & insights</li>
@@ -109,7 +121,9 @@ const About = () => {
             </div>
 
             <div className="about-service-card">
-              <div className="about-service-icon">👥</div>
+              <div className="service-image-container">
+                <img src="/assets/SDGs/Goal-17-Partnerships-for-the-Goals-_-The-Worlds-Largest-Lesson.jpeg" alt="Social Impact" className="service-icon-image" />
+              </div>
               <h3>Social Impact</h3>
               <ul>
                 <li>Community engagement strategies</li>
@@ -120,7 +134,9 @@ const About = () => {
             </div>
 
             <div className="about-service-card">
-              <div className="about-service-icon">🔬</div>
+              <div className="service-image-container">
+                <img src="/assets/SDGs/Sustainability.jpeg" alt="Research & Development" className="service-icon-image" />
+              </div>
               <h3>Research & Development</h3>
               <ul>
                 <li>Evidence-based research studies</li>
@@ -138,9 +154,11 @@ const About = () => {
         <div className="about-container">
           <h2>Our Approach</h2>
           <div className="process-content">
-            <div className="image-placeholder large">
-              <span>🔄</span>
-              <p>Our Process</p>
+            <div className="process-image-container">
+              <img src="/assets/images/project4.jpg" alt="Our Process" className="process-main-image" />
+              <div className="image-overlay">
+                <h4>Our Process</h4>
+              </div>
             </div>
             <div className="process-steps">
               <div className="step">
@@ -193,10 +211,10 @@ const About = () => {
           <div className="facility-section">
             <div className="facility-content">
               <div className="facility-card">
-                <h3>CO-WORKING SPACES</h3>
-                <div className="facility-icon">
-                  <span>💼</span>
+                <div className="facility-image-container">
+                  <img src="/assets/images/DT-5.jpg" alt="Co-working Spaces" className="facility-image" />
                 </div>
+                <h3>CO-WORKING SPACES</h3>
                 <ul>
                   <li>Desk and Chair</li>
                   <li>Access to Internet</li>
@@ -221,10 +239,10 @@ const About = () => {
                 </p>
               </div>
               <div className="facility-card">
-                <h3>CREATIVE STUDIOS</h3>
-                <div className="facility-icon">
-                  <span>📹</span>
+                <div className="facility-image-container">
+                  <img src="/assets/images/shield.jpg" alt="Creative Studios" className="facility-image" />
                 </div>
+                <h3>CREATIVE STUDIOS</h3>
                 <ul>
                   <li>Podcast Studios</li>
                   <li>Videography studios</li>
@@ -238,10 +256,10 @@ const About = () => {
           <div className="facility-section">
             <div className="facility-content">
               <div className="facility-card">
-                <h3>ROOMS</h3>
-                <div className="facility-icon">
-                  <span>🏢</span>
+                <div className="facility-image-container">
+                  <img src="/assets/SDGs/Objetivo-1_-Poner-fin-a-la-pobreza.jpeg" alt="Meeting Rooms" className="facility-image" />
                 </div>
+                <h3>ROOMS</h3>
                 <ul>
                   <li>Meeting Rooms</li>
                   <li>Board Rooms</li>
@@ -266,10 +284,10 @@ const About = () => {
                 </p>
               </div>
               <div className="facility-card">
-                <h3>COMMUNITY SPACES</h3>
-                <div className="facility-icon">
-                  <span>🏛️</span>
+                <div className="facility-image-container">
+                  <img src="/assets/SDGs/SDG-10_-Reduced-Inequalities.jpeg" alt="Community Spaces" className="facility-image" />
                 </div>
+                <h3>COMMUNITY SPACES</h3>
                 <ul>
                   <li>Conference facilities</li>
                   <li>Exhibition spaces</li>
@@ -295,32 +313,32 @@ const About = () => {
           
           <div className="team-grid">
             <div className="team-member">
-              <div className="image-placeholder small">
-                <span>👤</span>
+              <div className="team-image-container">
+                <img src="/assets/Founders/member1-e1736692990210.jpg" alt="Leadership Team" className="team-member-image" />
               </div>
               <h4>Leadership Team</h4>
               <p>Experienced leaders in nonprofit management and social innovation</p>
             </div>
-            
+
             <div className="team-member">
-              <div className="image-placeholder small">
-                <span>💻</span>
+              <div className="team-image-container">
+                <img src="/assets/Founders/member2-scaled-e1736693355648.jpg" alt="Technical Experts" className="team-member-image" />
               </div>
               <h4>Technical Experts</h4>
               <p>Digital transformation specialists and data analysts</p>
             </div>
-            
+
             <div className="team-member">
-              <div className="image-placeholder small">
-                <span>🎓</span>
+              <div className="team-image-container">
+                <img src="/assets/Founders/member3.jpg" alt="Capacity Builders" className="team-member-image" />
               </div>
               <h4>Capacity Builders</h4>
               <p>Training specialists and organizational development consultants</p>
             </div>
-            
+
             <div className="team-member">
-              <div className="image-placeholder small">
-                <span>🔬</span>
+              <div className="team-image-container">
+                <img src="/assets/images/wwa.JPG" alt="Research Team" className="team-member-image" />
               </div>
               <h4>Research Team</h4>
               <p>Social scientists and evaluation specialists</p>
@@ -403,9 +421,11 @@ const About = () => {
         <div className="container">
           <h2>Our Core Values</h2>
           <div className="values-content">
-            <div className="image-placeholder large">
-              <span>💎</span>
-              <p>Our Values</p>
+            <div className="values-image-container">
+              <img src="/assets/images/Untitled design.png" alt="Our Values" className="values-main-image" />
+              <div className="image-overlay">
+                <h4>Our Values</h4>
+              </div>
             </div>
             <div className="values-list">
               <div className="value-item">
