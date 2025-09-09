@@ -1,5 +1,5 @@
 // src/pages/Home.jsx
-import React, { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import BlogSection from "../components/BlogSection";
 import TeamSection from "../components/TeamSection";
@@ -8,9 +8,74 @@ import "./home.css";
 
 const Home = () => {
   const [eventScrollIndex, setEventScrollIndex] = useState(0);
-  const [blogScrollIndex, setBlogScrollIndex] = useState(0);
-  const eventsGridRef = useRef<HTMLDivElement>(null);
-  const blogGridRef = useRef<HTMLDivElement>(null);
+  
+  // Refs for scroll animations
+  const heroRef = useRef<HTMLElement>(null);
+  const aboutRef = useRef<HTMLDivElement>(null);
+  const whyShieldRef = useRef<HTMLElement>(null);
+  const eventsRef = useRef<HTMLElement>(null);
+  const coursesRef = useRef<HTMLElement>(null);
+  const ctaRef = useRef<HTMLElement>(null);
+
+  // Scroll animation effect
+  useEffect(() => {
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-in');
+        }
+      });
+    }, observerOptions);
+
+    // Observe all sections
+    const sections = [heroRef, aboutRef, whyShieldRef, eventsRef, coursesRef, ctaRef];
+    sections.forEach(ref => {
+      if (ref.current) {
+        observer.observe(ref.current);
+      }
+    });
+
+    // Footer curtain effect - content slides over fixed footer
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      const windowHeight = window.innerHeight;
+      const homeElement = document.querySelector('.home') as HTMLElement;
+      
+      if (!homeElement) return;
+      
+      // Calculate when we're near the bottom of the content
+      const homeHeight = homeElement.offsetHeight;
+      const footerElement = document.querySelector('.footer') as HTMLElement;
+      const footerHeight = footerElement ? footerElement.offsetHeight : (window.innerWidth <= 768 ? 400 : 500);
+      const triggerPoint = homeHeight - windowHeight;
+      
+      if (scrollPosition >= triggerPoint) {
+        const progress = (scrollPosition - triggerPoint) / footerHeight;
+        const clampedProgress = Math.min(Math.max(progress, 0), 1);
+        
+        // Apply curtain effect - slide content up to reveal fixed footer
+        document.body.style.setProperty('--footer-reveal-progress', clampedProgress.toString());
+        document.body.style.setProperty('--footer-height', `${footerHeight}px`);
+        document.body.classList.add('footer-revealing');
+      } else {
+        document.body.classList.remove('footer-revealing');
+        document.body.style.removeProperty('--footer-reveal-progress');
+        document.body.style.removeProperty('--footer-height');
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => {
+      observer.disconnect();
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   const scrollEvents = (direction: 'left' | 'right') => {
     const totalCards = 4;
@@ -22,32 +87,12 @@ const Home = () => {
     }
   };
 
-  const scrollBlogs = (direction: 'left' | 'right') => {
-    const container = blogGridRef.current;
-    if (!container) return;
-    
-    const cardWidth = 330; // card width + gap
-    const maxScroll = 4; // total cards
-    
-    if (direction === 'left' && blogScrollIndex > 0) {
-      setBlogScrollIndex(blogScrollIndex - 1);
-      container.scrollTo({
-        left: (blogScrollIndex - 1) * cardWidth,
-        behavior: 'smooth'
-      });
-    } else if (direction === 'right' && blogScrollIndex < maxScroll - 1) {
-      setBlogScrollIndex(blogScrollIndex + 1);
-      container.scrollTo({
-        left: (blogScrollIndex + 1) * cardWidth,
-        behavior: 'smooth'
-      });
-    }
-  };
+
 
   return (
     <div className="home">
       {/* Hero Section */}
-      <section className="hero">
+      <section className="hero scroll-animate" ref={heroRef}>
         <div className="hero-overlay">
           <div className="container">
             <div className="hero-content">
@@ -71,10 +116,12 @@ const Home = () => {
       </section>
 
       {/* About Section */}
-      <AboutSection />
+      <div className="scroll-animate" ref={aboutRef}>
+        <AboutSection />
+      </div>
 
       {/* Why SHIELD is Essential Section */}
-      <section className="why-shield-section">
+      <section className="why-shield-section scroll-animate" ref={whyShieldRef}>
         <div className="container">
           <div className="why-shield-content">
             <div className="why-shield-header">
@@ -136,7 +183,7 @@ const Home = () => {
       </section>
 
       {/* Events Section Only */}
-      <section className="events-section">
+      <section className="events-section scroll-animate" ref={eventsRef}>
         <div className="container">
           <div className="e-section-header">
             <h2>Upcoming Events</h2>
@@ -253,7 +300,7 @@ const Home = () => {
       </section>
 
       {/* Upcoming Courses Section */}
-      <section className="courses-section">
+      <section className="courses-section scroll-animate" ref={coursesRef}>
         <div className="container">
           <div className="courses-header">
             <h2>Upcoming Courses</h2>
@@ -325,7 +372,7 @@ const Home = () => {
       <TeamSection />
 
        {/* Call to Action */}
-      <section className="hcta-section">
+      <section className="hcta-section scroll-animate" ref={ctaRef}>
         <div className="container">
           <div className="hcta-content">
             <h2>Ready to Make a Difference?</h2>

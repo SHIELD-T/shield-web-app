@@ -5,6 +5,117 @@
   font-family: 'Inter', sans-serif;
 }
 
+/* Scroll Animations */
+.scroll-animate {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.scroll-animate.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered animations for child elements */
+.scroll-animate.animate-in .challenge-item {
+  animation: slideInUp 0.6s ease-out forwards;
+}
+
+.scroll-animate.animate-in .challenge-item:nth-child(1) { animation-delay: 0.1s; }
+.scroll-animate.animate-in .challenge-item:nth-child(2) { animation-delay: 0.2s; }
+.scroll-animate.animate-in .challenge-item:nth-child(3) { animation-delay: 0.3s; }
+.scroll-animate.animate-in .challenge-item:nth-child(4) { animation-delay: 0.4s; }
+.scroll-animate.animate-in .challenge-item:nth-child(5) { animation-delay: 0.5s; }
+.scroll-animate.animate-in .challenge-item:nth-child(6) { animation-delay: 0.6s; }
+
+.scroll-animate.animate-in .course-card {
+  animation: slideInUp 0.6s ease-out forwards;
+}
+
+.scroll-animate.animate-in .course-card:nth-child(1) { animation-delay: 0.1s; }
+.scroll-animate.animate-in .course-card:nth-child(2) { animation-delay: 0.2s; }
+.scroll-animate.animate-in .course-card:nth-child(3) { animation-delay: 0.3s; }
+.scroll-animate.animate-in .course-card:nth-child(4) { animation-delay: 0.4s; }
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Footer Curtain Effect - Footer is fixed behind, content slides over it */
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Footer positioning is handled in footer.css */
+
+/* Main content always covers the footer */
+.home {
+  position: relative;
+  z-index: 10;
+  background: white;
+  transition: transform 0.1s ease-out;
+}
+
+/* When revealing footer, slide the content up */
+body.footer-revealing .home {
+  transform: translateY(calc(-1 * var(--footer-reveal-progress, 0) * var(--footer-height, 500px)));
+}
+
+/* Enhanced hero animations */
+.hero.animate-in .hero-content h1 {
+  animation: heroTitleSlide 1s ease-out 0.3s both;
+}
+
+.hero.animate-in .hero-content p {
+  animation: heroTextSlide 1s ease-out 0.6s both;
+}
+
+.hero.animate-in .hero-buttons {
+  animation: heroButtonsSlide 1s ease-out 0.9s both;
+}
+
+@keyframes heroTitleSlide {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heroTextSlide {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heroButtonsSlide {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -360,6 +471,52 @@
   min-height: 600px;
 }
 
+/* Events section animations */
+.events-section.animate-in .e-section-header h2 {
+  animation: slideInLeft 0.8s ease-out 0.2s both;
+}
+
+.events-section.animate-in .nav-arrows {
+  animation: slideInRight 0.8s ease-out 0.4s both;
+}
+
+.events-section.animate-in .events-carousel {
+  animation: fadeInScale 1s ease-out 0.6s both;
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 /* Events Carousel Container */
 .events-carousel-container {
   overflow: hidden;
@@ -431,10 +588,7 @@
   pointer-events: none;
 }
 
-.event-card-carousel.center:hover {
-  transform: translateX(0) scale(1.15) translateY(-5px);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
-}
+/* Removed hover effect - cards maintain consistent size */
 
 .event-image {
   height: 240px;
@@ -698,7 +852,7 @@
 
 /* Call to Action Section */
 .hcta-section {
-  padding: 100px 0;
+  padding: 100px 0 150px 0; /* Extra bottom padding for curtain effect */
   background: #063762;
   /* color: white; */
   text-align: center;
@@ -755,7 +909,42 @@
   }
 }
 
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  .scroll-animate,
+  .scroll-animate.animate-in,
+  .scroll-animate.animate-in * {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+  
+  body.footer-revealing .home,
+  .home {
+    transition: none !important;
+    transform: none !important;
+  }
+  
+  .footer {
+    position: relative !important;
+    bottom: auto !important;
+    left: auto !important;
+    right: auto !important;
+  }
+}
+
 @media (max-width: 768px) {
+  /* Reduce animation intensity on mobile */
+  .scroll-animate {
+    transform: translateY(20px);
+  }
+  
+  /* Adjust footer curtain for mobile */
+  body.footer-revealing .home {
+    transform: translateY(calc(-1 * var(--footer-reveal-progress, 0) * var(--footer-height, 400px)));
+  }
+
   .hero-content h1 {
     font-size: 2.5rem;
   }
