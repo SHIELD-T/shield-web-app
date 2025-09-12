@@ -1,11 +1,40 @@
 // src/components/Header.jsx
-import React from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      const heroHeight = window.innerHeight * 0.7; // 70vh hero section
+      
+      setIsScrolled(scrollTop > 50);
+      
+      // Hide header when scrolling down past hero, show when scrolling up
+      if (scrollTop > heroHeight) {
+        if (scrollTop > lastScrollY) {
+          setIsVisible(false); // Scrolling down
+        } else {
+          setIsVisible(true); // Scrolling up
+        }
+      } else {
+        setIsVisible(true); // Always show in hero section
+      }
+      
+      setLastScrollY(scrollTop);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [lastScrollY]);
+
   return (
-    <header className="header">
+    <header className={`header ${isScrolled ? 'scrolled' : ''} ${!isVisible ? 'hidden' : ''}`}>
       {/* Upper Section - Contact */}
       <div className="header-top">
         <div className="container">
