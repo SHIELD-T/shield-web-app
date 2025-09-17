@@ -13,6 +13,14 @@ const About = () => {
             <p className="hero-subtitle">
               Empowering communities through innovation, capacity building, and sustainable development
             </p>
+            <div className="hero-actions">
+              <a href="#services" className="hero-btn primary">
+                <span>Explore Our Work</span>
+              </a>
+              <a href="#contact" className="hero-btn secondary">
+                <span>Get Involved</span>
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -21,15 +29,10 @@ const About = () => {
       <section className="mission-vision">
         <div className="about-container">
           <div className="mission-vision-grid">
-            <div className="mission-vision-item fade-in">
-              <div className="image-container">
-                <img src="/assets/SDGs/SDG-4-Quality-Education.jpeg" alt="Quality Education SDG" className="mission-image" />
-                <div className="image-overlay">
-                  <h3>Our Mission</h3>
-                </div>
-              </div>
+            <div className="mission-vision-item">
+              <img src="/assets/SDGs/Goal-17-Partnerships-for-the-Goals-_-The-Worlds-Largest-Lesson.jpeg" alt="Our Mission" className="image-placeholder large" />
               <div className="content">
-                <h2 className="gradient-text">Our Mission</h2>
+                <h2>Our Mission</h2>
                 <p>
                   To foster innovation and sustainable development by providing comprehensive
                   capacity building services that empower individuals, organizations, and
@@ -39,21 +42,16 @@ const About = () => {
               </div>
             </div>
 
-            <div className="mission-vision-item reverse fade-in">
+            <div className="mission-vision-item reverse">
               <div className="content">
-                <h2 className="gradient-text">Our Vision</h2>
+                <h2>Our Vision</h2>
                 <p>
                   A world where every community has access to innovative solutions and
                   the capacity to drive sustainable development, creating lasting positive
                   impact through technology, education, and collaborative partnerships.
                 </p>
               </div>
-              <div className="image-container">
-                <img src="/assets/SDGs/OUR-ALIGNMENT-WITH-SDG-11_-SUSTAINABLE-CITIES-AND-COMMUNITIES.jpeg" alt="Sustainable Cities SDG" className="vision-image" />
-                <div className="image-overlay">
-                  <h3>Our Vision</h3>
-                </div>
-              </div>
+              <img src="/assets/SDGs/SDG-4-Quality-Education.jpeg" alt="Our Vision" className="image-placeholder large" />
             </div>
           </div>
         </div>
@@ -64,12 +62,7 @@ const About = () => {
         <div className="about-container">
           <h2>Our Core Services</h2>
           <div className="services-intro">
-            <div className="services-image-container">
-              <img src="/assets/images/DT.jpg" alt="Digital Transformation" className="services-main-image" />
-              <div className="image-overlay">
-                <h4>Innovation Hub</h4>
-              </div>
-            </div>
+            <img src="/assets/images/DT.jpg" alt="Innovation Hub" className="about-image-placeholder medium" />
             <div className="services-text">
               <p>
                 Shield Foundation specializes in delivering comprehensive innovation services
@@ -82,9 +75,7 @@ const About = () => {
 
           <div className="services-grid">
             <div className="about-service-card">
-              <div className="service-image-container">
-                <img src="/assets/SDGs/SDG9-Industry-Innovation-and-Infrastructure….jpeg" alt="Innovation Services" className="service-icon-image" />
-              </div>
+              <div className="about-service-icon">🤝</div>
               <h3>Innovation Services</h3>
               <ul>
                 <li>Co-creating & planning innovative solutions</li>
@@ -95,9 +86,7 @@ const About = () => {
             </div>
 
             <div className="about-service-card">
-              <div className="service-image-container">
-                <img src="/assets/SDGs/SDG-4-Quality-Education.jpeg" alt="Capacity Building" className="service-icon-image" />
-              </div>
+              <div className="about-service-icon">✍️</div>
               <h3>Capacity Building</h3>
               <ul>
                 <li>Strategic planning & writing workshops</li>
@@ -108,9 +97,7 @@ const About = () => {
             </div>
 
             <div className="about-service-card">
-              <div className="service-image-container">
-                <img src="/assets/images/DT-4.jpg" alt="Digital Transformation" className="service-icon-image" />
-              </div>
+              <div className="about-service-icon">🔍</div>
               <h3>Digital Transformation</h3>
               <ul>
                 <li>Data analysis & insights</li>
@@ -121,9 +108,7 @@ const About = () => {
             </div>
 
             <div className="about-service-card">
-              <div className="service-image-container">
-                <img src="/assets/SDGs/Goal-17-Partnerships-for-the-Goals-_-The-Worlds-Largest-Lesson.jpeg" alt="Social Impact" className="service-icon-image" />
-              </div>
+              <div className="about-service-icon">👥</div>
               <h3>Social Impact</h3>
               <ul>
                 <li>Community engagement strategies</li>
@@ -134,9 +119,7 @@ const About = () => {
             </div>
 
             <div className="about-service-card">
-              <div className="service-image-container">
-                <img src="/assets/SDGs/Sustainability.jpeg" alt="Research & Development" className="service-icon-image" />
-              </div>
+              <div className="about-service-icon">🔬</div>
               <h3>Research & Development</h3>
               <ul>
                 <li>Evidence-based research studies</li>
@@ -154,12 +137,7 @@ const About = () => {
         <div className="about-container">
           <h2>Our Approach</h2>
           <div className="process-content">
-            <div className="process-image-container">
-              <img src="/assets/images/project4.jpg" alt="Our Process" className="process-main-image" />
-              <div className="image-overlay">
-                <h4>Our Process</h4>
-              </div>
-            </div>
+            <img src="/assets/images/project4.jpg" alt="Our Process" className="image-placeholder large" />
             <div className="process-steps">
               <div className="step">
                 <div className="step-number">1</div>
@@ -168,7 +146,7 @@ const About = () => {
                   <p>We begin by understanding your unique challenges and opportunities through comprehensive stakeholder consultation.</p>
                 </div>
               </div>
-              
+
               <div className="step">
                 <div className="step-number">2</div>
                 <div className="step-content">
@@ -176,7 +154,7 @@ const About = () => {
                   <p>Working collaboratively with communities and organizations to design tailored solutions that meet specific needs.</p>
                 </div>
               </div>
-              
+
               <div className="step">
                 <div className="step-number">3</div>
                 <div className="step-content">
@@ -184,7 +162,7 @@ const About = () => {
                   <p>Deploying evidence-based interventions with continuous monitoring and adaptive management approaches.</p>
                 </div>
               </div>
-              
+
               <div className="step">
                 <div className="step-number">4</div>
                 <div className="step-content">
@@ -199,7 +177,7 @@ const About = () => {
 
       {/* Facilities Overview */}
       <section className="facilities-overview">
-        <div className="container">
+        <div className="about-container">
           <h2>Our Facilities & Services</h2>
           <div className="facilities-intro">
             <p>
@@ -211,10 +189,10 @@ const About = () => {
           <div className="facility-section">
             <div className="facility-content">
               <div className="facility-card">
-                <div className="facility-image-container">
-                  <img src="/assets/images/DT-5.jpg" alt="Co-working Spaces" className="facility-image" />
-                </div>
                 <h3>CO-WORKING SPACES</h3>
+                <div className="facility-icon">
+                  <span>💼</span>
+                </div>
                 <ul>
                   <li>Desk and Chair</li>
                   <li>Access to Internet</li>
@@ -239,10 +217,10 @@ const About = () => {
                 </p>
               </div>
               <div className="facility-card">
-                <div className="facility-image-container">
-                  <img src="/assets/images/shield.jpg" alt="Creative Studios" className="facility-image" />
-                </div>
                 <h3>CREATIVE STUDIOS</h3>
+                <div className="facility-icon">
+                  <span>📹</span>
+                </div>
                 <ul>
                   <li>Podcast Studios</li>
                   <li>Videography studios</li>
@@ -256,10 +234,10 @@ const About = () => {
           <div className="facility-section">
             <div className="facility-content">
               <div className="facility-card">
-                <div className="facility-image-container">
-                  <img src="/assets/SDGs/Objetivo-1_-Poner-fin-a-la-pobreza.jpeg" alt="Meeting Rooms" className="facility-image" />
-                </div>
                 <h3>ROOMS</h3>
+                <div className="facility-icon">
+                  <span>🏢</span>
+                </div>
                 <ul>
                   <li>Meeting Rooms</li>
                   <li>Board Rooms</li>
@@ -284,10 +262,10 @@ const About = () => {
                 </p>
               </div>
               <div className="facility-card">
-                <div className="facility-image-container">
-                  <img src="/assets/SDGs/SDG-10_-Reduced-Inequalities.jpeg" alt="Community Spaces" className="facility-image" />
-                </div>
                 <h3>COMMUNITY SPACES</h3>
+                <div className="facility-icon">
+                  <span>🏛️</span>
+                </div>
                 <ul>
                   <li>Conference facilities</li>
                   <li>Exhibition spaces</li>
@@ -305,41 +283,33 @@ const About = () => {
           <h2>Our Team & Expertise</h2>
           <div className="team-intro">
             <p>
-              Our multidisciplinary team brings together expertise in innovation management, 
-              digital transformation, social development, and research. We are passionate 
+              Our multidisciplinary team brings together expertise in innovation management,
+              digital transformation, social development, and research. We are passionate
               about creating sustainable change through collaborative approaches.
             </p>
           </div>
-          
+
           <div className="team-grid">
             <div className="team-member">
-              <div className="team-image-container">
-                <img src="/assets/Founders/member1-e1736692990210.jpg" alt="Leadership Team" className="team-member-image" />
-              </div>
+              <img src="/assets/Founders/member1-e1736692990210.jpg" alt="Leadership Team" className="image-placeholder small" />
               <h4>Leadership Team</h4>
               <p>Experienced leaders in nonprofit management and social innovation</p>
             </div>
 
             <div className="team-member">
-              <div className="team-image-container">
-                <img src="/assets/Founders/member2-scaled-e1736693355648.jpg" alt="Technical Experts" className="team-member-image" />
-              </div>
+              <img src="/assets/Founders/member2-scaled-e1736693355648.jpg" alt="Technical Experts" className="image-placeholder small" />
               <h4>Technical Experts</h4>
               <p>Digital transformation specialists and data analysts</p>
             </div>
 
             <div className="team-member">
-              <div className="team-image-container">
-                <img src="/assets/Founders/member3.jpg" alt="Capacity Builders" className="team-member-image" />
-              </div>
+              <img src="/assets/Founders/member3.jpg" alt="Capacity Builders" className="image-placeholder small" />
               <h4>Capacity Builders</h4>
               <p>Training specialists and organizational development consultants</p>
             </div>
 
             <div className="team-member">
-              <div className="team-image-container">
-                <img src="/assets/images/wwa.JPG" alt="Research Team" className="team-member-image" />
-              </div>
+              <img src="/assets/Founders/member1-e1736692990210.jpg" alt="Research Team" className="image-placeholder small" />
               <h4>Research Team</h4>
               <p>Social scientists and evaluation specialists</p>
             </div>
@@ -352,65 +322,41 @@ const About = () => {
         <div className="container">
           <h2>Our Impact in Partnership</h2>
           <p className="partners-intro">
-            We collaborate with leading organizations to amplify our impact and 
+            We collaborate with leading organizations to amplify our impact and
             reach more communities with innovative solutions.
           </p>
-          
+
           <div className="partners-grid">
             <div className="partner-logo">
-              <div className="image-placeholder partner">
-                <span>🏛️</span>
-                <p>USAID</p>
-              </div>
+              <img src="/assets/Partners/digit.png" alt="Digit" className="image-placeholder partner" />
             </div>
-            
+
             <div className="partner-logo">
-              <div className="image-placeholder partner">
-                <span>🌍</span>
-                <p>Impact Week</p>
-              </div>
+              <img src="/assets/Partners/helpAlliance.png" alt="Help Alliance" className="image-placeholder partner" />
             </div>
-            
+
             <div className="partner-logo">
-              <div className="image-placeholder partner">
-                <span>💰</span>
-                <p>MercyCorp</p>
-              </div>
+              <img src="/assets/Partners/hurupay.png" alt="HuruPay" className="image-placeholder partner" />
             </div>
-            
+
             <div className="partner-logo">
-              <div className="image-placeholder partner">
-                <span>🇰🇪</span>
-                <p>KGSA</p>
-              </div>
+              <img src="/assets/Partners/KGSA.jpg" alt="KGSA" className="image-placeholder partner" />
             </div>
-            
+
             <div className="partner-logo">
-              <div className="image-placeholder partner">
-                <span>🤝</span>
-                <p>Alliance</p>
-              </div>
+              <img src="/assets/Partners/partner1.png" alt="Partner 1" className="image-placeholder partner" />
             </div>
-            
+
             <div className="partner-logo">
-              <div className="image-placeholder partner">
-                <span>🏥</span>
-                <p>Mawazo Africa</p>
-              </div>
+              <img src="/assets/Partners/partner2.png" alt="Partner 2" className="image-placeholder partner" />
             </div>
-            
+
             <div className="partner-logo">
-              <div className="image-placeholder partner">
-                <span>💳</span>
-                <p>HuraPay</p>
-              </div>
+              <img src="/assets/Partners/partner3.png" alt="Partner 3" className="image-placeholder partner" />
             </div>
-            
+
             <div className="partner-logo">
-              <div className="image-placeholder partner">
-                <span>⚡</span>
-                <p>SD-Tech</p>
-              </div>
+              <img src="/assets/Partners/partner5.png" alt="Partner 5" className="image-placeholder partner" />
             </div>
           </div>
         </div>
@@ -421,38 +367,33 @@ const About = () => {
         <div className="container">
           <h2>Our Core Values</h2>
           <div className="values-content">
-            <div className="values-image-container">
-              <img src="/assets/images/Untitled design.png" alt="Our Values" className="values-main-image" />
-              <div className="image-overlay">
-                <h4>Our Values</h4>
-              </div>
-            </div>
+            <img src="/assets/SDGs/Sustainability.jpeg" alt="Our Values" className="image-placeholder large" />
             <div className="values-list">
               <div className="value-item">
                 <h4>🤝 Collaboration</h4>
                 <p>We believe in the power of partnerships and co-creation to develop solutions that truly meet community needs.</p>
               </div>
-              
+
               <div className="value-item">
                 <h4>💡 Innovation</h4>
                 <p>We embrace creative approaches and emerging technologies to address complex social challenges.</p>
               </div>
-              
+
               <div className="value-item">
                 <h4>📊 Evidence-Based</h4>
                 <p>Our work is grounded in research, data analysis, and rigorous evaluation methodologies.</p>
               </div>
-              
+
               <div className="value-item">
                 <h4>🌱 Sustainability</h4>
                 <p>We design interventions that create lasting change and build local capacity for continued impact.</p>
               </div>
-              
+
               <div className="value-item">
                 <h4>🎯 Transparency</h4>
                 <p>We maintain open communication and accountability in all our partnerships and projects.</p>
               </div>
-              
+
               <div className="value-item">
                 <h4>🌍 Inclusivity</h4>
                 <p>We ensure that our programs are accessible and beneficial to diverse communities and stakeholders.</p>
@@ -468,7 +409,7 @@ const About = () => {
           <div className="cta-content">
             <h2>Work with Shield</h2>
             <p>
-              Ready to transform your organization's capacity and drive meaningful impact? 
+              Ready to transform your organization's capacity and drive meaningful impact?
               Let's collaborate to design innovative solutions tailored to your unique challenges.
             </p>
             <div className="cta-buttons">
