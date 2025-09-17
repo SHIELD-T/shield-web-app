@@ -83,10 +83,11 @@ export const validateImageUrl = (url: string): boolean => {
   // Check if it's a valid HTTP(S) URL
   if (url.startsWith('http://') || url.startsWith('https://')) return true;
   
-  // Check if it's a valid relative path with supported format
+  // Check if it's a valid path (relative or absolute) with supported format
   const supportedFormats = IMAGE_CONFIG.imageFormats;
   const fileExtension = url.split('.').pop()?.toLowerCase();
   
+  // Return true if the file extension is supported (covers both relative and absolute paths)
   return fileExtension ? supportedFormats.includes(fileExtension) : false;
 };
 

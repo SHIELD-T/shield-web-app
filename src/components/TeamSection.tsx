@@ -6,15 +6,17 @@ import './TeamSection.css';
 const TeamSection: React.FC = () => {
   // Memoize processed team data to prevent unnecessary recalculations
   const teamData = useMemo(() => {
-    return TEAM_MEMBERS.map(member => ({
-      ...member,
-      // Validate and ensure fallback for missing/invalid images
-      imageUrl: validateImageUrl(member.imageUrl)
-        ? member.imageUrl
-        : IMAGE_CONFIG.fallbackAvatar,
-      // Ensure meaningful alt text for accessibility
-      imageAlt: member.imageAlt || `${member.name} - ${member.position} at SHIELD`
-    }));
+    return TEAM_MEMBERS.map(member => {
+      const isValid = validateImageUrl(member.imageUrl);
+      
+      return {
+        ...member,
+        // Validate and ensure fallback for missing/invalid images
+        imageUrl: isValid ? member.imageUrl : IMAGE_CONFIG.fallbackAvatar,
+        // Ensure meaningful alt text for accessibility
+        imageAlt: member.imageAlt || `${member.name} - ${member.position} at SHIELD`
+      };
+    });
   }, []);
 
   return (

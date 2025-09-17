@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState } from 'react';
 import SocialLinks from './SocialLinks';
 import './TeamCard.css';
 
@@ -27,29 +27,25 @@ const TeamCard: React.FC<TeamCardProps> = ({
   socialLinks
 }) => {
   const [imageSrc, setImageSrc] = useState<string>(imageUrl || DEFAULT_AVATAR);
-  const [imageLoading, setImageLoading] = useState<boolean>(true);
+  const [imageLoading, setImageLoading] = useState<boolean>(Boolean(imageUrl));
 
-  // Handle image load errors with fallback
-  const handleImageError = useCallback(() => {
-    console.warn(`Failed to load image for ${name}, using fallback avatar`);
+  const handleImageLoad = () => {
+    setImageLoading(false);
+  };
+
+  const handleImageError = () => {
     setImageSrc(DEFAULT_AVATAR);
     setImageLoading(false);
-  }, [name]);
+  };
 
-  // Handle successful image load
-  const handleImageLoad = useCallback(() => {
-    setImageLoading(false);
-  }, []);
-
-  // Validate and sanitize alt text
-  const sanitizedAltText = imageAlt || `${name} - ${position} at SHIELD`;
+  const sanitizedAltText = imageAlt || `${name} - ${position}`;
 
   return (
     <article className="team-card" role="article" aria-label={`Team member: ${name}`}>
       <div className="team-card-image">
         {imageLoading && (
           <div className="team-card-image-skeleton" aria-hidden="true">
-            {/* Loading skeleton */}
+            Loading...
           </div>
         )}
         <img
@@ -57,7 +53,6 @@ const TeamCard: React.FC<TeamCardProps> = ({
           alt={sanitizedAltText}
           width="280"
           height="320"
-          loading="lazy"
           onError={handleImageError}
           onLoad={handleImageLoad}
           style={{ display: imageLoading ? 'none' : 'block' }}
@@ -67,11 +62,13 @@ const TeamCard: React.FC<TeamCardProps> = ({
         <h3 className="team-card-name">{name}</h3>
         <p className="team-card-position">{position}</p>
         <p className="team-card-description">{description}</p>
-        <SocialLinks
-          xUrl={socialLinks?.xUrl}
-          linkedInUrl={socialLinks?.linkedInUrl}
-          facebookUrl={socialLinks?.facebookUrl}
-        />
+        {socialLinks && (
+          <SocialLinks
+            xUrl={socialLinks.xUrl}
+            linkedInUrl={socialLinks.linkedInUrl}
+            facebookUrl={socialLinks.facebookUrl}
+          />
+        )}
       </div>
     </article>
   );
