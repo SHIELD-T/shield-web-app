@@ -335,6 +335,9 @@
   font-weight: 700;
   margin-bottom: 20px;
 }
+.why-shield-header h2 img {
+  width: 40px;
+}
 
 .section-subtitle {
   font-size: 1.6rem;

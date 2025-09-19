@@ -95,7 +95,8 @@ const Home = () => {
         <div className="container">
           <div className="why-shield-content">
             <div className="why-shield-header">
-              <h2>Why SHIELD Is Essential</h2>
+              
+              <h2><img src="public\favicon.png" alt="" />Why SHIELD Is Essential <img src="public\favicon.png" alt="" /></h2>
               <p className="section-subtitle">
                 Breaking the cycle of unemployment in underserved communities requires more than just skills training
               </p>
@@ -273,9 +274,9 @@ const Home = () => {
       <section className="courses-section scroll-animate" ref={coursesRef}>
         <div className="container">
           <div className="courses-header">
-            <h2>Upcoming Courses</h2>
+            <h2>Online Courses</h2>
             <p className="section-subtitle">
-              Transform your skills with our comprehensive training programs designed for real-world impact
+              Checkout our tutor LMS for both free and paid courses.
             </p>
           </div>
           
