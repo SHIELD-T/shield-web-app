@@ -209,13 +209,13 @@
 }
 
 .impact-area-card {
-  background: #f8fafc;
+  background: #fefefe;
   padding: 40px 30px;
   border-radius: 12px;
   text-align: center;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-  border: 1px solid #e2e8f0;
+  border: 0.1px solid #063762;
 }
 
 .impact-area-card:hover {
@@ -388,13 +388,13 @@
 /* Impact Stories Section */
 .impact-stories-section {
   padding: 100px 0;
-  background-color: #f8fafc;
+  background-color: #063762;
 }
 
 .impact-stories-section h2 {
   text-align: center;
   font-size: 2.5rem;
-  color: #063762;
+  color: #ffffff;
   margin-bottom: 60px;
   font-weight: 700;
 }
@@ -578,13 +578,13 @@
 /* Donation Impact Stats Section */
 .donation-impact-stats-section {
   padding: 80px 0;
-  background-color: white;
+  background-color: #063762;
 }
 
 .donation-impact-stats-section h2 {
   text-align: center;
   font-size: 2.5rem;
-  color: #063762;
+  color: #ffffff;
   margin-bottom: 50px;
   font-weight: 700;
 }
@@ -598,16 +598,16 @@
 .donation-impact-stat {
   text-align: center;
   padding: 30px 20px;
-  background: #f8fafc;
+  background: #fcfcfc;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
-  border: 1px solid #e2e8f0;
+  border: 0.1px solid #063762;
 }
 
 .donation-impact-stat:hover {
   transform: translateY(-5px);
-  border-color: #F4C430;
+  border-color: #32d3e5;
 }
 
 .impact-stat-number {
@@ -626,7 +626,7 @@
 
 .donation-impact-stat p {
   font-size: 0.9rem;
-  color: #64748b;
+  color: #143562;
   line-height: 1.5;
   margin: 0;
 }

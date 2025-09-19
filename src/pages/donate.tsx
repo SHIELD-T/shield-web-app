@@ -41,10 +41,72 @@ const Donate: React.FC = () => {
             </div>
             <div className="run-cause-image">
               <img 
-                src="https://images.unsplash.com/photo-1544717297-fa95b6ee9643?w=600&h=400&fit=crop&crop=center" 
+                src="public\assets\images\marathon\marathon.jpg" 
                 alt="Marathon runner supporting charity cause"
-                style={{width: '100%', height: '300px', objectFit: 'cover', borderRadius: '12px'}}
+                style={{width: '100%', height: '100%', objectFit: 'cover', borderRadius: '12px'}}
               />
+            </div>
+          </div>
+        </div>
+      </section>
+
+        {/* Impact Stories */}
+      <section className="impact-stories-section">
+        <div className="donate-container">
+          <h2>Your Impact in Action</h2>
+          <div className="impact-stories-grid">
+            <div className="impact-story-card">
+              <img 
+                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=250&fit=crop&crop=center" 
+                alt="Young female entrepreneur with laptop"
+                style={{width: '100%', height: '200px', objectFit: 'cover', borderRadius: '8px'}}
+              />
+              <h3>Sarah's Tech Startup</h3>
+              <p>
+                With support from our software development program, Sarah launched 
+                a mobile app that connects local farmers with urban markets, 
+                creating sustainable income for 200+ farming families.
+              </p>
+              <div className="story-stats">
+                <span className="story-stat">200+ families impacted</span>
+                <span className="story-stat">$50K revenue generated</span>
+              </div>
+            </div>
+
+            <div className="impact-story-card">
+              <img 
+                src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=400&h=250&fit=crop&crop=center" 
+                alt="Solar panel installation in rural community"
+                style={{width: '100%', height: '200px', objectFit: 'cover', borderRadius: '8px'}}
+              />
+              <h3>Community Solar Initiative</h3>
+              <p>
+                Through our entrepreneurship program, a group of young innovators 
+                created a community solar project that now provides clean energy 
+                to 500 households in rural areas.
+              </p>
+              <div className="story-stats">
+                <span className="story-stat">500 households powered</span>
+                <span className="story-stat">30% energy cost reduction</span>
+              </div>
+            </div>
+
+            <div className="impact-story-card">
+              <img 
+                src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&h=250&fit=crop&crop=center" 
+                alt="Students learning in digital classroom"
+                style={{width: '100%', height: '200px', objectFit: 'cover', borderRadius: '8px'}}
+              />
+              <h3>Digital Learning Centers</h3>
+              <p>
+                Our donations helped establish 5 digital learning centers, 
+                providing computer access and digital literacy training to 
+                over 1,000 youth in underserved communities.
+              </p>
+              <div className="story-stats">
+                <span className="story-stat">5 centers established</span>
+                <span className="story-stat">1,000+ youth trained</span>
+              </div>
             </div>
           </div>
         </div>
@@ -56,7 +118,7 @@ const Donate: React.FC = () => {
           <h2>What We Do With Donations</h2>
           <div className="donation-impact-grid">
             <div className="impact-area-card">
-              <div className="impact-icon">🏢</div>
+             
               <h3>Hub Operations</h3>
               <p>
                 Lease payments, utilities and maintenance of SHIELD's innovation hubs 
@@ -70,7 +132,6 @@ const Donate: React.FC = () => {
             </div>
 
             <div className="impact-area-card">
-              <div className="impact-icon">💻</div>
               <h3>Equipment & Infrastructure</h3>
               <p>
                 Purchase and maintenance of equipment, setting up of innovation hub 
@@ -84,7 +145,6 @@ const Donate: React.FC = () => {
             </div>
 
             <div className="impact-area-card">
-              <div className="impact-icon">🎓</div>
               <h3>Workshop Programs</h3>
               <p>
                 We implement design thinking workshops to help students launch their social ventures. 
@@ -99,7 +159,6 @@ const Donate: React.FC = () => {
             </div>
 
             <div className="impact-area-card">
-              <div className="impact-icon">📊</div>
               <h3>Platform & Assessment</h3>
               <p>
                 Main expenses include tutor stipends, LMS platform maintenance fees, 
@@ -185,67 +244,7 @@ const Donate: React.FC = () => {
         </div>
       </section>
 
-      {/* Impact Stories */}
-      <section className="impact-stories-section">
-        <div className="donate-container">
-          <h2>Your Impact in Action</h2>
-          <div className="impact-stories-grid">
-            <div className="impact-story-card">
-              <img 
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=250&fit=crop&crop=center" 
-                alt="Young female entrepreneur with laptop"
-                style={{width: '100%', height: '200px', objectFit: 'cover', borderRadius: '8px'}}
-              />
-              <h3>Sarah's Tech Startup</h3>
-              <p>
-                With support from our software development program, Sarah launched 
-                a mobile app that connects local farmers with urban markets, 
-                creating sustainable income for 200+ farming families.
-              </p>
-              <div className="story-stats">
-                <span className="story-stat">200+ families impacted</span>
-                <span className="story-stat">$50K revenue generated</span>
-              </div>
-            </div>
-
-            <div className="impact-story-card">
-              <img 
-                src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=400&h=250&fit=crop&crop=center" 
-                alt="Solar panel installation in rural community"
-                style={{width: '100%', height: '200px', objectFit: 'cover', borderRadius: '8px'}}
-              />
-              <h3>Community Solar Initiative</h3>
-              <p>
-                Through our entrepreneurship program, a group of young innovators 
-                created a community solar project that now provides clean energy 
-                to 500 households in rural areas.
-              </p>
-              <div className="story-stats">
-                <span className="story-stat">500 households powered</span>
-                <span className="story-stat">30% energy cost reduction</span>
-              </div>
-            </div>
-
-            <div className="impact-story-card">
-              <img 
-                src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&h=250&fit=crop&crop=center" 
-                alt="Students learning in digital classroom"
-                style={{width: '100%', height: '200px', objectFit: 'cover', borderRadius: '8px'}}
-              />
-              <h3>Digital Learning Centers</h3>
-              <p>
-                Our donations helped establish 5 digital learning centers, 
-                providing computer access and digital literacy training to 
-                over 1,000 youth in underserved communities.
-              </p>
-              <div className="story-stats">
-                <span className="story-stat">5 centers established</span>
-                <span className="story-stat">1,000+ youth trained</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    
 
       {/* Monthly Giving */}
       <section className="monthly-giving-section">
@@ -399,12 +398,10 @@ const Donate: React.FC = () => {
                 </div>
               </div>
               <div className="transparency-buttons">
-                <a href="/financial-reports" className="donate-btn donate-btn-outline">
-                  View Financial Reports
+                <a href="" className="donate-btn donate-btn-outline">
+                  Request Financial Report
                 </a>
-                <a href="/annual-report" className="donate-btn donate-btn-outline">
-                  Annual Report
-                </a>
+              
               </div>
             </div>
             <div className="transparency-image">
