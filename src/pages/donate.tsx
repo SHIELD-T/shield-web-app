@@ -40,10 +40,11 @@ const Donate: React.FC = () => {
               </a>
             </div>
             <div className="run-cause-image">
-              <div className="donate-image-placeholder">
-                <span>🏃‍♂️</span>
-                <p>Marathon for Change</p>
-              </div>
+              <img 
+                src="https://images.unsplash.com/photo-1544717297-fa95b6ee9643?w=600&h=400&fit=crop&crop=center" 
+                alt="Marathon runner supporting charity cause"
+                style={{width: '100%', height: '300px', objectFit: 'cover', borderRadius: '12px'}}
+              />
             </div>
           </div>
         </div>
@@ -61,10 +62,11 @@ const Donate: React.FC = () => {
                 Lease payments, utilities and maintenance of SHIELD's innovation hubs 
                 where young entrepreneurs develop their ideas and access resources.
               </p>
-              <div className="donate-image-placeholder small-placeholder">
-                <span>🏗️</span>
-                <p>Innovation Hub</p>
-              </div>
+              <img 
+                src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=400&h=200&fit=crop&crop=center" 
+                alt="Modern co-working innovation hub"
+                style={{width: '100%', height: '150px', objectFit: 'cover', borderRadius: '8px', marginTop: '15px'}}
+              />
             </div>
 
             <div className="impact-area-card">
@@ -74,10 +76,11 @@ const Donate: React.FC = () => {
                 Purchase and maintenance of equipment, setting up of innovation hub 
                 facilities and providing initial startup capital grants to support student ventures.
               </p>
-              <div className="donate-image-placeholder small-placeholder">
-                <span>⚙️</span>
-                <p>Tech Equipment</p>
-              </div>
+              <img 
+                src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&h=200&fit=crop&crop=center" 
+                alt="Modern tech equipment and computers"
+                style={{width: '100%', height: '150px', objectFit: 'cover', borderRadius: '8px', marginTop: '15px'}}
+              />
             </div>
 
             <div className="impact-area-card">
@@ -88,10 +91,11 @@ const Donate: React.FC = () => {
                 Main costs include hiring workshop facilitators, purchasing design thinking materials, 
                 and providing meals and refreshments.
               </p>
-              <div className="donate-image-placeholder small-placeholder">
-                <span>🛠️</span>
-                <p>Workshop Materials</p>
-              </div>
+              <img 
+                src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=400&h=200&fit=crop&crop=center" 
+                alt="Workshop training session with students"
+                style={{width: '100%', height: '150px', objectFit: 'cover', borderRadius: '8px', marginTop: '15px'}}
+              />
             </div>
 
             <div className="impact-area-card">
@@ -101,10 +105,11 @@ const Donate: React.FC = () => {
                 Main expenses include tutor stipends, LMS platform maintenance fees, 
                 server costs, and comprehensive student assessment programs.
               </p>
-              <div className="donate-image-placeholder small-placeholder">
-                <span>📈</span>
-                <p>Learning Platform</p>
-              </div>
+              <img 
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=200&fit=crop&crop=center" 
+                alt="Digital learning platform analytics"
+                style={{width: '100%', height: '150px', objectFit: 'cover', borderRadius: '8px', marginTop: '15px'}}
+              />
             </div>
           </div>
         </div>
@@ -165,7 +170,13 @@ const Donate: React.FC = () => {
             <h3>Make a Custom Donation</h3>
             <p>Choose your own amount to support our mission in the way that works best for you.</p>
             <div className="custom-donation-form">
-              <input type="number" placeholder="Enter amount" className="donation-input" />
+              <input 
+                type="number" 
+                id="custom-amount"
+                name="customAmount"
+                placeholder="Enter amount" 
+                className="donation-input" 
+              />
               <a href="#" className="donate-btn donate-btn-secondary">
                 Donate Custom Amount
               </a>
@@ -180,10 +191,11 @@ const Donate: React.FC = () => {
           <h2>Your Impact in Action</h2>
           <div className="impact-stories-grid">
             <div className="impact-story-card">
-              <div className="donate-image-placeholder">
-                <span>👩‍💼</span>
-                <p>Success Story</p>
-              </div>
+              <img 
+                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=250&fit=crop&crop=center" 
+                alt="Young female entrepreneur with laptop"
+                style={{width: '100%', height: '200px', objectFit: 'cover', borderRadius: '8px'}}
+              />
               <h3>Sarah's Tech Startup</h3>
               <p>
                 With support from our software development program, Sarah launched 
@@ -197,10 +209,11 @@ const Donate: React.FC = () => {
             </div>
 
             <div className="impact-story-card">
-              <div className="donate-image-placeholder">
-                <span>🏪</span>
-                <p>Community Enterprise</p>
-              </div>
+              <img 
+                src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=400&h=250&fit=crop&crop=center" 
+                alt="Solar panel installation in rural community"
+                style={{width: '100%', height: '200px', objectFit: 'cover', borderRadius: '8px'}}
+              />
               <h3>Community Solar Initiative</h3>
               <p>
                 Through our entrepreneurship program, a group of young innovators 
@@ -214,10 +227,11 @@ const Donate: React.FC = () => {
             </div>
 
             <div className="impact-story-card">
-              <div className="donate-image-placeholder">
-                <span>📚</span>
-                <p>Education Impact</p>
-              </div>
+              <img 
+                src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&h=250&fit=crop&crop=center" 
+                alt="Students learning in digital classroom"
+                style={{width: '100%', height: '200px', objectFit: 'cover', borderRadius: '8px'}}
+              />
               <h3>Digital Learning Centers</h3>
               <p>
                 Our donations helped establish 5 digital learning centers, 
@@ -264,10 +278,11 @@ const Donate: React.FC = () => {
               </div>
             </div>
             <div className="monthly-giving-image">
-              <div className="donate-image-placeholder">
-                <span>💝</span>
-                <p>Monthly Support Impact</p>
-              </div>
+              <img 
+                src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=600&h=400&fit=crop&crop=center" 
+                alt="Community members celebrating impact together"
+                style={{width: '100%', height: '300px', objectFit: 'cover', borderRadius: '12px'}}
+              />
             </div>
           </div>
         </div>
@@ -393,10 +408,11 @@ const Donate: React.FC = () => {
               </div>
             </div>
             <div className="transparency-image">
-              <div className="donate-image-placeholder">
-                <span>📊</span>
-                <p>Financial Transparency</p>
-              </div>
+              <img 
+                src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&h=400&fit=crop&crop=center" 
+                alt="Financial planning and transparency charts"
+                style={{width: '100%', height: '300px', objectFit: 'cover', borderRadius: '12px'}}
+              />
             </div>
           </div>
         </div>
