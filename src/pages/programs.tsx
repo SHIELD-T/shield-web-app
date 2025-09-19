@@ -158,65 +158,7 @@ const Programs = () => {
         </div>
       </section>
 
-      {/* Program Categories */}
-      <section className="program-categories-section">
-        <div className="programs-container">
-          <h2>Program Categories</h2>
-          <div className="program-categories-grid">
-            <div className="program-category-card">
-              <div className="program-icon">📚</div>
-              <h3>Educational Programs</h3>
-              <p>
-                Accelerated learning programs, incubation programs, and skill training
-                initiatives designed to build foundational knowledge and practical skills.
-              </p>
-              <div className="program-image-placeholder small-placeholder">
-                <span>📖</span>
-                <p>Education Hub</p>
-              </div>
-            </div>
-
-            <div className="program-category-card">
-              <div className="program-icon">🤝</div>
-              <h3>Community Outreach</h3>
-              <p>
-                Programs focused on community engagement, social impact initiatives,
-                and building sustainable partnerships within underserved areas.
-              </p>
-              <div className="program-image-placeholder small-placeholder">
-                <span>🏘️</span>
-                <p>Community Event</p>
-              </div>
-            </div>
-
-            <div className="program-category-card">
-              <div className="program-icon">🏢</div>
-              <h3>Enterprise Development</h3>
-              <p>
-                Supporting the creation and growth of social enterprises and
-                businesses that drive positive change in their communities.
-              </p>
-              <div className="program-image-placeholder small-placeholder">
-                <span>🚀</span>
-                <p>Business Incubator</p>
-              </div>
-            </div>
-
-            <div className="program-category-card">
-              <div className="program-icon">🔬</div>
-              <h3>Research & Innovation</h3>
-              <p>
-                Cutting-edge research initiatives and innovation labs that develop
-                solutions to local challenges while advancing knowledge in social impact.
-              </p>
-              <div className="program-image-placeholder small-placeholder">
-                <span>💡</span>
-                <p>Innovation Lab</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+     
 
       {/* Program Process Section */}
       <section className="program-process-section">

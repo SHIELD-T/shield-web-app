@@ -337,8 +337,8 @@
 }
 
 .section-subtitle {
-  font-size: 1.3rem;
-  color: #64748b;
+  font-size: 1.6rem;
+  color: #0a384b;
   max-width: 700px;
   margin: 0 auto;
   line-height: 1.6;
@@ -355,7 +355,7 @@
   background: white;
   padding: 35px 30px;
   border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); */
   transition: all 0.3s ease;
   border: 1px solid #f1f5f9;
   position: relative;
@@ -369,7 +369,7 @@
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(135deg, #063762 0%, #0a4a7a 100%);
+  /* background: linear-gradient(135deg, #063762 0%, #0a4a7a 100%); */
 }
 
 .challenge-item:hover {
@@ -389,7 +389,6 @@
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 20px;
-  box-shadow: 0 4px 12px rgba(6, 55, 98, 0.3);
   flex-shrink: 0;
 }
 
@@ -408,7 +407,7 @@
 }
 
 .shield-solution {
-  background: linear-gradient(135deg, #063762 0%, #0a4a7a 100%);
+  background: #063762;
   color: white;
   padding: 50px 40px;
   border-radius: 20px;
@@ -739,7 +738,7 @@
 }
 
 .course-card {
-  background: linear-gradient(135deg, #063762 0%, #0a4a7a 100%);
+  background: #063762;
   border-radius: 12px;
   overflow: hidden;
   transition: all 0.3s ease;
@@ -755,7 +754,6 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
   z-index: 1;
 }
 
@@ -816,24 +814,19 @@
 }
 
 .course-btn {
-  background: rgba(255, 255, 255, 0.15);
-  color: white;
+  background: rgb(255, 255, 255);
+  color: #063762;
   padding: 12px 24px;
   border-radius: 25px;
   text-decoration: none;
   font-weight: 600;
   text-align: center;
   transition: all 0.3s ease;
-  border: 1px solid rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
 
-.course-btn:hover {
-  background: rgba(255, 255, 255, 0.25);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.2);
-}
+
 
 /* Call to Action Section */
 .hcta-section {
@@ -983,9 +976,7 @@
     font-size: 2.2rem;
   }
 
-  .section-subtitle {
-    font-size: 1.1rem;
-  }
+ 
 
   .events-section {
     padding: 60px 0;

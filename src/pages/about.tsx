@@ -277,45 +277,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* Team Section */}
-      <section className="team-section">
-        <div className="container">
-          <h2>Our Team & Expertise</h2>
-          <div className="team-intro">
-            <p>
-              Our multidisciplinary team brings together expertise in innovation management,
-              digital transformation, social development, and research. We are passionate
-              about creating sustainable change through collaborative approaches.
-            </p>
-          </div>
-
-          <div className="team-grid">
-            <div className="team-member">
-              <img src="/assets/Founders/member1-e1736692990210.jpg" alt="Leadership Team" className="image-placeholder small" />
-              <h4>Leadership Team</h4>
-              <p>Experienced leaders in nonprofit management and social innovation</p>
-            </div>
-
-            <div className="team-member">
-              <img src="/assets/Founders/member2-scaled-e1736693355648.jpg" alt="Technical Experts" className="image-placeholder small" />
-              <h4>Technical Experts</h4>
-              <p>Digital transformation specialists and data analysts</p>
-            </div>
-
-            <div className="team-member">
-              <img src="/assets/Founders/member3.jpg" alt="Capacity Builders" className="image-placeholder small" />
-              <h4>Capacity Builders</h4>
-              <p>Training specialists and organizational development consultants</p>
-            </div>
-
-            <div className="team-member">
-              <img src="/assets/Founders/member1-e1736692990210.jpg" alt="Research Team" className="image-placeholder small" />
-              <h4>Research Team</h4>
-              <p>Social scientists and evaluation specialists</p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Partners Section */}
       <section className="partners-section">
