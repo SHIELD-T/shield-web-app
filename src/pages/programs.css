@@ -5,6 +5,71 @@
   font-family: 'Inter', sans-serif;
 }
 
+
+/* Hero Section */
+/* Hero Section */
+.programs-hero {
+  background: linear-gradient(135deg, #063762 0%, #0a4a7a 100%);
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.programs-hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 20% 30%, rgba(135, 206, 235, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(135, 206, 235, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 40% 80%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
+  animation: techFlow 15s ease-in-out infinite;
+  z-index: 1;
+}
+
+@keyframes techFlow {
+  0%, 100% { 
+    transform: translateX(0) scale(1);
+    opacity: 0.6;
+  }
+  33% { 
+    transform: translateX(-10px) scale(1.05);
+    opacity: 0.8;
+  }
+  66% { 
+    transform: translateX(10px) scale(0.95);
+    opacity: 0.7;
+  }
+}
+
+.programs-hero-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  object-fit: cover;
+}
+
+.programs-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(6, 55, 98, 0.7);
+  z-index: 2;
+}
 .programs-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -329,14 +394,13 @@
 }
 
 .program-process-step {
-  background: #f8fafc;
+  background: #ffffff;
   padding: 40px 30px;
   border-radius: 12px;
   text-align: center;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   position: relative;
-  border: 1px solid #e2e8f0;
+  border: 0.1px solid #063762;
 }
 
 .program-process-step:hover {
@@ -373,6 +437,29 @@
   line-height: 1.6;
   font-size: 1rem;
   margin-bottom: 20px;
+}
+
+/* Programs Grid */
+.programs-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .programs-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .programs-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
 }
 
 /* Impact Stats Section */

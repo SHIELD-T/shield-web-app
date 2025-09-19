@@ -6,14 +6,25 @@ const Programs = () => {
   return (
     <div className="programs-page">
       {/* Hero Section */}
+  
+     {/* Hero Section */}
+      {/* Hero Section */}
+     {/* Hero Section */}
       <section className="programs-hero">
+        <video className="programs-hero-video" autoPlay muted loop playsInline>
+          <source src="https://archive.org/download/learning-c-programming-viagrafix-1990/Learning%20C%20Programming%20%28ViaGrafix%2C%201990%29.mp4" type="video/mp4" />
+          <source src="https://archive.org/download/Java_Programming_Tutorial_By_Bucky_UploadedBy_Khal3d/Java_Programming_Tutorial_By_Bucky_%28UploadedBy_Khal3d%29.mp4" type="video/mp4" />
+          <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4" type="video/mp4" />
+        </video>
         <div className="programs-hero-overlay">
           <div className="programs-container">
             <div className="programs-hero-content">
-              <h1>Programs We Offer</h1>
+              <h1>Transformative Learning Programs</h1>
               <p>
-                Empowering underserved youth through innovative programs in entrepreneurship, 
-                design thinking, technology, and leadership development.
+                From entrepreneurship bootcamps to cutting-edge software development, 
+                design thinking workshops to business mentorship - we offer comprehensive 
+                programs that turn ambitious ideas into real-world impact. Join our community 
+                of innovators, creators, and change-makers building the future of Africa.
               </p>
             </div>
           </div>
@@ -21,144 +32,290 @@ const Programs = () => {
       </section>
 
       {/* Core Programs Section */}
-      <section className="main-programs-section">
+      <section className="main-programs-section" style={{backgroundColor: '#ffffff', padding: '100px 0'}}>
         <div className="programs-container">
-          <h2>Our Core Programs</h2>
-          <div className="main-programs-grid">
-            <div className="main-program-card">
-              <div className="program-icon">🎓</div>
-              <h3>Design Thinking School</h3>
-              <p>
-                Within the context of the design thinking process, we empower
-                youth in underprivileged communities with the skills to
-                collaborate and think of themselves as problem solvers and to
-                pioneer solutions to the problems they face within their
-                community.
-              </p>
-              <div className="program-image-placeholder">
-                <span>📐</span>
-                <p>Design Thinking Workshop</p>
+          <div style={{textAlign: 'center', marginBottom: '60px'}}>
+            <p style={{color: '#666666', fontSize: '0.9rem', fontWeight: '500', marginBottom: '10px', letterSpacing: '2px', textTransform: 'uppercase'}}>
+              Our Focus Areas
+            </p>
+            
+          </div>
+          <div className="programs-grid">
+            {/* Shorter Card - Design Thinking */}
+            <div style={{
+              backgroundColor: '#063762',
+              borderRadius: '10px',
+              overflow: 'hidden',
+              boxShadow: '0 8px 30px rgba(0, 0, 0, 0.1)',
+              transition: 'transform 0.3s ease',
+              height: 'fit-content'
+            }}>
+              <img 
+                src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=300&h=140&fit=crop&crop=center" 
+                alt="Design Thinking Workshop"
+                style={{width: '100%', height: '140px', objectFit: 'cover'}}
+              />
+              <div style={{padding: '20px', color: 'white'}}>
+                <h3 style={{fontSize: '1.1rem', fontWeight: '600', marginBottom: '10px', color: 'white'}}>
+                  Design Thinking Programs
+                </h3>
+                <p style={{fontSize: '0.85rem', lineHeight: '1.4', margin: '0', color: '#e2e8f0'}}>
+                  Empowering youth with collaborative problem-solving skills to pioneer community solutions.
+                </p>
               </div>
             </div>
             
-            <div className="main-program-card">
-              <div className="program-icon">🏥</div>
-              <h3>SHIELD Entrepreneurship</h3>
-              <p>
-                This program is tailored at supporting any business especially
-                those that are not venture backable. The SMEs will receive
-                personalized training and mentorship focused on building their
-                capacity to operate the business successfully, unlock financing
-                from financial institutions and scale to new levels.
-              </p>
-              <div className="program-image-placeholder">
-                <span>💼</span>
-                <p>Entrepreneurship Training</p>
+            {/* Taller Card - SHIELD Entrepreneurship */}
+            <div style={{
+              backgroundColor: '#063762',
+              borderRadius: '10px',
+              overflow: 'hidden',
+              boxShadow: '0 8px 30px rgba(0, 0, 0, 0.1)',
+              transition: 'transform 0.3s ease',
+              height: 'fit-content'
+            }}>
+              <img 
+                src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=300&h=200&fit=crop&crop=center" 
+                alt="Entrepreneurship Training"
+                style={{width: '100%', height: '200px', objectFit: 'cover'}}
+              />
+              <div style={{padding: '25px', color: 'white'}}>
+                <h3 style={{fontSize: '1.2rem', fontWeight: '600', marginBottom: '12px', color: 'white'}}>
+                  SHIELD Entrepreneurship Programs
+                </h3>
+                <p style={{fontSize: '0.9rem', lineHeight: '1.5', margin: '0', color: '#e2e8f0'}}>
+                  Supporting businesses with personalized training and mentorship. Building capacity to operate successfully, unlock financing, and scale to new levels.
+                </p>
               </div>
             </div>
             
-            <div className="main-program-card">
-              <div className="program-icon">🌱</div>
-              <h3>Software Development</h3>
-              <p>
-                We provide a community for learning and earning opportunities.
-                Our certifications prepare you for a career in software
-                development, equip you with business acumen to help take your
-                idea to the next level.
-              </p>
-              <div className="program-image-placeholder">
-                <span>💻</span>
-                <p>Coding Bootcamp Session</p>
+            {/* Shorter Card - Software Development */}
+            <div style={{
+              backgroundColor: '#063762',
+              borderRadius: '10px',
+              overflow: 'hidden',
+              boxShadow: '0 8px 30px rgba(0, 0, 0, 0.1)',
+              transition: 'transform 0.3s ease',
+              height: 'fit-content'
+            }}>
+              <img 
+                src="https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?w=300&h=140&fit=crop&crop=center" 
+                alt="Software Development Course"
+                style={{width: '100%', height: '140px', objectFit: 'cover'}}
+              />
+              <div style={{padding: '20px', color: 'white'}}>
+                <h3 style={{fontSize: '1.1rem', fontWeight: '600', marginBottom: '10px', color: 'white'}}>
+                  Software Development
+                </h3>
+                <p style={{fontSize: '0.85rem', lineHeight: '1.4', margin: '0', color: '#e2e8f0'}}>
+                  Career-focused certifications and business acumen to transform your ideas into reality.
+                </p>
               </div>
             </div>
             
-            <div className="main-program-card">
-              <div className="program-icon">💼</div>
-              <h3>SIDLabs (Research & Development)</h3>
-              <p>
-                SID is a hub for innovation, entrepreneurship, and research,
-                driving societal impact through collaborative spaces,
-                transformative programs, and cutting-edge development
-                initiatives.
-              </p>
-              <div className="program-image-placeholder">
-                <span>🔬</span>
-                <p>Research Laboratory</p>
+            {/* Taller Card - SIDLabs */}
+            <div style={{
+              backgroundColor: '#063762',
+              borderRadius: '10px',
+              overflow: 'hidden',
+              boxShadow: '0 8px 30px rgba(0, 0, 0, 0.1)',
+              transition: 'transform 0.3s ease',
+              height: 'fit-content'
+            }}>
+              <img 
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=200&fit=crop&crop=center" 
+                alt="Research Laboratory"
+                style={{width: '100%', height: '200px', objectFit: 'cover'}}
+              />
+              <div style={{padding: '25px', color: 'white'}}>
+                <h3 style={{fontSize: '1.2rem', fontWeight: '600', marginBottom: '12px', color: 'white'}}>
+                  SIDLabs Research & Development
+                </h3>
+                <p style={{fontSize: '0.9rem', lineHeight: '1.5', margin: '0', color: '#e2e8f0'}}>
+                  Innovation hub driving societal impact through collaborative spaces, transformative programs, and cutting-edge development initiatives.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Specialized Programs Section */}
+      {/* Ongoing Courses Section */}
       <section className="specialty-programs-section">
         <div className="programs-container">
-          <h2>Specialized Programs</h2>
+          <h2>Ongoing Courses</h2>
           
           <div className="specialty-program-feature">
             <div className="specialty-program-text">
-              <h3>Digital Learning</h3>
+              <h3>Digital Marketing & Social Media</h3>
               <p>
-                Comprehensive digital and AI-powered learning platforms designed to bridge
-                the digital divide. Our programs include coding bootcamps, digital literacy
-                training, and AI integration workshops that prepare participants for the
-                modern workforce.
+                Master the art of digital marketing with our comprehensive course covering
+                social media strategy, content creation, analytics, and digital advertising.
+                Perfect for entrepreneurs and small business owners looking to expand their
+                online presence and reach new customers.
               </p>
-              <a href="/programs/digital-learning" className="programs-btn programs-btn-outline">
-                Learn More
+              <p><strong>Duration:</strong> 8 weeks • <strong>Format:</strong> Hybrid (Online & In-person)</p>
+              <a href="/courses/digital-marketing" className="programs-btn programs-btn-outline">
+                Join Course
               </a>
             </div>
             <div className="specialty-program-image">
-              <div className="program-image-placeholder">
-                <span>📱</span>
-                <p>Digital Learning Platform</p>
-              </div>
+              <img 
+                src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop&crop=center" 
+                alt="Digital Marketing Workshop" 
+                style={{width: '100%', height: '300px', objectFit: 'cover', borderRadius: '12px'}}
+              />
             </div>
           </div>
 
           <div className="specialty-program-feature reverse-layout">
-            <div className="specialty-program-image">
-              <div className="program-image-placeholder">
-                <span>✅</span>
-                <p>Quality Assurance Process</p>
-              </div>
-            </div>
             <div className="specialty-program-text">
-              <h3>Quality Assurance</h3>
+              <h3>Web Development Bootcamp</h3>
               <p>
-                Ensuring excellence in all our programs through rigorous monitoring,
-                evaluation, and continuous improvement processes. We maintain high
-                standards while adapting to community needs and emerging challenges.
+                Learn modern web development from scratch. This intensive course covers
+                HTML, CSS, JavaScript, React, and backend development. Build real projects
+                and create a portfolio that will help you land your first tech job or
+                launch your own web development business.
               </p>
-              <a href="/programs/quality-assurance" className="programs-btn programs-btn-outline">
-                Learn More
+              <p><strong>Duration:</strong> 12 weeks • <strong>Format:</strong> Online with mentorship</p>
+              <a href="/courses/web-development" className="programs-btn programs-btn-outline">
+                Join Course
               </a>
+            </div>
+            <div className="specialty-program-image">
+              <img 
+                src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop&crop=center" 
+                alt="Web Development Session" 
+                style={{width: '100%', height: '300px', objectFit: 'cover', borderRadius: '12px'}}
+              />
             </div>
           </div>
 
           <div className="specialty-program-feature">
             <div className="specialty-program-text">
-              <h3>Skills Development & Mentoring</h3>
+              <h3>Business Development & Financial Literacy</h3>
               <p>
-                Comprehensive skills training combined with personalized mentorship
-                programs. We focus on both technical and soft skills development,
-                preparing participants for sustainable career growth and leadership roles.
+                Essential business skills for aspiring entrepreneurs. Learn business planning,
+                financial management, accounting basics, and funding strategies. Ideal for
+                those looking to start or grow their business with solid financial foundations.
               </p>
-              <a href="/programs/skills-mentoring" className="programs-btn programs-btn-outline">
-                Learn More
+              <p><strong>Duration:</strong> 6 weeks • <strong>Format:</strong> Weekend workshops</p>
+              <a href="/courses/business-development" className="programs-btn programs-btn-outline">
+                Join Course
               </a>
             </div>
             <div className="specialty-program-image">
-              <div className="program-image-placeholder">
-                <span>🤝</span>
-                <p>Mentorship Session</p>
-              </div>
+              <img 
+                src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=400&fit=crop&crop=center" 
+                alt="Business Training Session" 
+                style={{width: '100%', height: '300px', objectFit: 'cover', borderRadius: '12px'}}
+              />
+            </div>
+          </div>
+
+          <div className="specialty-program-feature reverse-layout">
+            <div className="specialty-program-text">
+              <h3>Design Thinking & Innovation</h3>
+              <p>
+                Develop problem-solving skills using design thinking methodology.
+                Learn to identify community challenges, ideate solutions, prototype,
+                and test your ideas. Perfect for social entrepreneurs and community leaders.
+              </p>
+              <p><strong>Duration:</strong> 4 weeks • <strong>Format:</strong> Interactive workshops</p>
+              <a href="/courses/design-thinking" className="programs-btn programs-btn-outline">
+                Join Course
+              </a>
+            </div>
+            <div className="specialty-program-image">
+              <img 
+                src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=600&h=400&fit=crop&crop=center" 
+                alt="Design Thinking Workshop" 
+                style={{width: '100%', height: '300px', objectFit: 'cover', borderRadius: '12px'}}
+              />
             </div>
           </div>
         </div>
       </section>
 
-     
+      {/* Online Courses Section */}
+      <section className="program-categories-section">
+        <div className="programs-container">
+          <h2>Online Courses</h2>
+          <div className="program-categories-grid">
+            <div className="program-category-card">
+              <img 
+                src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=250&fit=crop&crop=center" 
+                alt="Graphic Design Course" 
+                style={{width: '100%', height: '200px', objectFit: 'cover', borderRadius: '8px', marginBottom: '20px'}}
+              />
+              <h3>Graphic Design Fundamentals</h3>
+              <p>
+                Learn the basics of graphic design, including color theory, typography,
+                and layout principles. Create stunning visuals for your business or
+                personal projects using industry-standard tools.
+              </p>
+              <p><strong>Duration:</strong> 10 weeks • <strong>Self-paced</strong></p>
+              <a href="/courses/graphic-design" className="programs-btn programs-btn-primary">
+                Enroll Now
+              </a>
+            </div>
+
+            <div className="program-category-card">
+              <img 
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop&crop=center" 
+                alt="Data Analytics Course" 
+                style={{width: '100%', height: '200px', objectFit: 'cover', borderRadius: '8px', marginBottom: '20px'}}
+              />
+              <h3>Data Analytics & Visualization</h3>
+              <p>
+                Master data analysis techniques using Excel, Python, and visualization
+                tools. Learn to extract insights from data and make data-driven
+                decisions for business growth.
+              </p>
+              <p><strong>Duration:</strong> 14 weeks • <strong>Self-paced</strong></p>
+              <a href="/courses/data-analytics" className="programs-btn programs-btn-primary">
+                Enroll Now
+              </a>
+            </div>
+
+            <div className="program-category-card">
+              <img 
+                src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=400&h=250&fit=crop&crop=center" 
+                alt="Video Production Course" 
+                style={{width: '100%', height: '200px', objectFit: 'cover', borderRadius: '8px', marginBottom: '20px'}}
+              />
+              <h3>Video Production & Editing</h3>
+              <p>
+                Create professional videos from concept to completion. Learn filming
+                techniques, storytelling, and video editing using modern software.
+                Perfect for content creators and marketers.
+              </p>
+              <p><strong>Duration:</strong> 8 weeks • <strong>Self-paced</strong></p>
+              <a href="/courses/video-production" className="programs-btn programs-btn-primary">
+                Enroll Now
+              </a>
+            </div>
+
+            <div className="program-category-card">
+              <img 
+                src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=250&fit=crop&crop=center" 
+                alt="Personal Finance Course" 
+                style={{width: '100%', height: '200px', objectFit: 'cover', borderRadius: '8px', marginBottom: '20px'}}
+              />
+              <h3>Personal Finance Management</h3>
+              <p>
+                Take control of your finances with our comprehensive personal finance
+                course. Learn budgeting, saving, investing, and financial planning
+                strategies for long-term wealth building.
+              </p>
+              <p><strong>Duration:</strong> 6 weeks • <strong>Self-paced</strong></p>
+              <a href="/courses/personal-finance" className="programs-btn programs-btn-primary">
+                Enroll Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Program Process Section */}
       <section className="program-process-section">
@@ -173,10 +330,6 @@ const Programs = () => {
                 Comprehensive evaluation of participants' needs, skills, and goals
                 to ensure proper program placement and maximum impact.
               </p>
-              <div className="program-image-placeholder small-placeholder">
-                <span>📝</span>
-                <p>Assessment Process</p>
-              </div>
             </div>
 
             <div className="program-process-step">
@@ -187,10 +340,6 @@ const Programs = () => {
                 Hands-on workshops, practical sessions, and mentorship programs
                 delivered by industry experts and experienced practitioners.
               </p>
-              <div className="program-image-placeholder small-placeholder">
-                <span>👨‍🏫</span>
-                <p>Training Sessions</p>
-              </div>
             </div>
 
             <div className="program-process-step">
@@ -201,10 +350,6 @@ const Programs = () => {
                 Ongoing support for project implementation, business launch,
                 and continuous mentorship for sustainable growth.
               </p>
-              <div className="program-image-placeholder small-placeholder">
-                <span>🤝</span>
-                <p>Support Network</p>
-              </div>
             </div>
           </div>
         </div>
@@ -216,21 +361,18 @@ const Programs = () => {
           <h2>Program Impact</h2>
           <div className="program-impact-grid">
             <div className="program-impact-item">
-              <div className="impact-number">500+</div>
+              <div className="impact-number">250+</div>
               <div className="impact-label">Youth Trained</div>
             </div>
             <div className="program-impact-item">
-              <div className="impact-number">50+</div>
-              <div className="impact-label">Enterprises Launched</div>
+              <div className="impact-number">5+</div>
+              <div className="impact-label">Enterprises Created</div>
             </div>
             <div className="program-impact-item">
-              <div className="impact-number">15</div>
-              <div className="impact-label">Communities Reached</div>
+              <div className="impact-number">5</div>
+              <div className="impact-label">Events Hosted</div>
             </div>
-            <div className="program-impact-item">
-              <div className="impact-number">80%</div>
-              <div className="impact-label">Employment Rate</div>
-            </div>
+            
           </div>
         </div>
       </section>
@@ -241,7 +383,6 @@ const Programs = () => {
           <h2>What Makes Our Programs Unique</h2>
           <div className="program-features-grid">
             <div className="program-feature-card">
-              <div className="program-icon">🎯</div>
               <h3>Community-Centered Approach</h3>
               <p>
                 All programs are designed with deep community input and focus on
@@ -250,7 +391,6 @@ const Programs = () => {
             </div>
 
             <div className="program-feature-card">
-              <div className="program-icon">🔄</div>
               <h3>Iterative Learning</h3>
               <p>
                 Using design thinking principles, participants learn through
@@ -259,7 +399,6 @@ const Programs = () => {
             </div>
 
             <div className="program-feature-card">
-              <div className="program-icon">🤝</div>
               <h3>Peer-to-Peer Learning</h3>
               <p>
                 Collaborative learning environments where participants learn
@@ -268,7 +407,6 @@ const Programs = () => {
             </div>
 
             <div className="program-feature-card">
-              <div className="program-icon">📈</div>
               <h3>Measurable Impact</h3>
               <p>
                 All programs include clear metrics and evaluation frameworks
@@ -277,7 +415,6 @@ const Programs = () => {
             </div>
 
             <div className="program-feature-card">
-              <div className="program-icon">🌍</div>
               <h3>Sustainable Solutions</h3>
               <p>
                 Focus on creating long-term, sustainable solutions that continue
@@ -286,7 +423,6 @@ const Programs = () => {
             </div>
 
             <div className="program-feature-card">
-              <div className="program-icon">💡</div>
               <h3>Innovation-Driven</h3>
               <p>
                 Encouraging creative thinking and innovative approaches to
@@ -302,24 +438,32 @@ const Programs = () => {
         <div className="programs-container">
           <div className="program-application-content">
             <div className="program-application-text">
-              <h2>Ready to Join Our Programs?</h2>
+              <h2>How to Get Started</h2>
               <p>
-                Our application process is designed to be accessible and inclusive.
-                We welcome applications from motivated individuals who are committed
-                to creating positive change in their communities.
+                We offer flexible learning options to accommodate different schedules
+                and learning preferences. Choose the format that works best for you.
               </p>
               <div className="application-requirements">
-                <h4>Application Requirements:</h4>
+                <h4>Learning Options:</h4>
+                <ul>
+                  <li>Apply for comprehensive online courses with mentorship</li>
+                  <li>Join ongoing courses with flexible schedules</li>
+                  <li>Participate in weekend workshops and bootcamps</li>
+                  <li>Access hybrid programs combining online and in-person training</li>
+                </ul>
+              </div>
+              <div className="application-requirements">
+                <h4>Requirements:</h4>
                 <ul>
                   <li>Commitment to community development</li>
                   <li>Basic literacy and numeracy skills</li>
                   <li>Willingness to learn and collaborate</li>
-                  <li>Local community connection</li>
+                  <li>Access to internet for online components</li>
                 </ul>
               </div>
               <div className="program-application-buttons">
-                <a href="/apply" className="programs-btn programs-btn-primary">
-                  Apply Now
+                <a href="/courses" className="programs-btn programs-btn-primary">
+                  Browse Courses
                 </a>
                 <a href="/contact" className="programs-btn programs-btn-outline">
                   Contact Us
@@ -327,10 +471,11 @@ const Programs = () => {
               </div>
             </div>
             <div className="program-application-image">
-              <div className="program-image-placeholder">
-                <span>📝</span>
-                <p>Application Process</p>
-              </div>
+              <img 
+                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=500&fit=crop&crop=center" 
+                alt="Students learning together" 
+                style={{width: '100%', height: '100%', objectFit: 'cover', borderRadius: '12px', minHeight: '500px'}}
+              />
             </div>
           </div>
         </div>
@@ -347,7 +492,7 @@ const Programs = () => {
               create lasting positive change.
             </p>
             <div className="programs-cta-buttons">
-              <a href="/apply" className="programs-btn programs-btn-primary">
+              <a href="/courses" className="programs-btn programs-btn-primary">
                 Start Your Journey
               </a>
               <a href="/donate" className="programs-btn programs-btn-secondary">
