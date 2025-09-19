@@ -360,7 +360,7 @@
   border-radius: 16px;
   /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); */
   transition: all 0.3s ease;
-  border: 1px solid #f1f5f9;
+  border: 0.15px solid #063762;
   position: relative;
   overflow: hidden;
 }
@@ -1076,4 +1076,34 @@
   .events-grid {
     gap: 12px;
   }
+}
+
+/* Quote Section */
+.quote-section {
+  padding: 200px 0;
+  background: white;
+  text-align: center;
+}
+
+.quote-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.quote-text {
+  font-size: 3.0rem;
+  color: #063762;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0 0 10px 0;
+  font-style: italic;
+}
+
+.quote-author {
+  font-size: 1.3rem;
+  color: #4a5568;
+  font-weight: 600;
+  font-style: normal;
+  margin: 0;
 }

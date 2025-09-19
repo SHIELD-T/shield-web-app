@@ -16,6 +16,7 @@ const Home = () => {
   const eventsRef = useRef<HTMLElement>(null);
   const coursesRef = useRef<HTMLElement>(null);
   const ctaRef = useRef<HTMLElement>(null);
+  const quoteRef = useRef<HTMLElement>(null);
 
   // Scroll animation effect
   useEffect(() => {
@@ -33,7 +34,7 @@ const Home = () => {
     }, observerOptions);
 
     // Observe all sections
-    const sections = [heroRef, aboutRef, whyShieldRef, eventsRef, coursesRef, ctaRef];
+    const sections = [heroRef, quoteRef, aboutRef, whyShieldRef, eventsRef, coursesRef, ctaRef];
     sections.forEach(ref => {
       if (ref.current) {
         observer.observe(ref.current);
@@ -341,6 +342,18 @@ const Home = () => {
 
       {/* Team Section */}
       <TeamSection />
+
+     {/* Quote Section */}
+      <section className="quote-section scroll-animate" ref={quoteRef}>
+        <div className="container">
+          <div className="quote-content">
+            <p className="quote-text">
+              "None of us, including me, ever do great things. But we can all do small things, with great love, and together we can do something wonderful."
+            </p>
+            <p className="quote-author">– Mother Teresa</p>
+          </div>
+        </div>
+      </section>
 
        {/* Call to Action */}
       <section className="hcta-section scroll-animate" ref={ctaRef}>
