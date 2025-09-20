@@ -127,7 +127,7 @@
 
 /* Hero Section */
 .programs-hero {
-  background: linear-gradient(135deg, #063762 0%, #0a4a7a 100%);
+  background: linear-gradient(135deg, #063762 0%, #021524 100%);
   min-height: 50vh;
   display: flex;
   align-items: center;
@@ -140,10 +140,9 @@
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="programs-grain" patternUnits="userSpaceOnUse" width="100" height="100"><circle cx="50" cy="50" r="1" fill="%23ffffff" fill-opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23programs-grain)"/></svg>');
-  opacity: 0.3;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
 }
 
 .programs-hero-overlay {
@@ -167,10 +166,11 @@
 }
 
 .programs-hero-content p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin-bottom: 30px;
   line-height: 1.6;
-  color: #B8D4E3;
+  color: #ffffff;
+  font-weight: 100;
 }
 
 /* Core Programs Section */

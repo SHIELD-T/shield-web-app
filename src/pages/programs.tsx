@@ -6,20 +6,15 @@ const Programs = () => {
   return (
     <div className="programs-page">
       {/* Hero Section */}
-  
-     {/* Hero Section */}
-      {/* Hero Section */}
-     {/* Hero Section */}
-      <section className="programs-hero">
+
+       <section className="programs-hero">
         <video className="programs-hero-video" autoPlay muted loop playsInline>
-          <source src="https://archive.org/download/learning-c-programming-viagrafix-1990/Learning%20C%20Programming%20%28ViaGrafix%2C%201990%29.mp4" type="video/mp4" />
-          <source src="https://archive.org/download/Java_Programming_Tutorial_By_Bucky_UploadedBy_Khal3d/Java_Programming_Tutorial_By_Bucky_%28UploadedBy_Khal3d%29.mp4" type="video/mp4" />
-          <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4" type="video/mp4" />
+          <source src="/assets/videos/site1.mp4" type="video/mp4" />
         </video>
         <div className="programs-hero-overlay">
           <div className="programs-container">
             <div className="programs-hero-content">
-              <h1>Transformative Learning Programs</h1>
+              <h1>Learning Programs</h1>
               <p>
                 From entrepreneurship bootcamps to cutting-edge software development, 
                 design thinking workshops to business mentorship - we offer comprehensive 
