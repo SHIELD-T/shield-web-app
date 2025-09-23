@@ -3,6 +3,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/header";
 import Footer from "./components/footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 import Home from "./pages/home";
 import About from "./pages/about";
@@ -11,9 +12,11 @@ import Podcast from "./pages/podcast";
 import "./App.css";
 import Programs from "./pages/programs";
 import Donate from "./pages/donate";
+
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="App">
         <Header />
         <main className="main-content">
@@ -30,7 +33,6 @@ function App() {
               path="/report"
               element={<PlaceholderPage title="Reports" />}
             />
-            
           </Routes>
         </main>
         <Footer />

@@ -65,17 +65,16 @@
   color: #87CEEB;
 }
 
-.social-links {
+.social-links-f {
   display: flex;
   gap: 15px;
   margin-top: 20px;
 }
 
-.social-links a {
+.social-links-f a {
   display: inline-block;
   width: 40px;
   height: 40px;
-  background-color: rgba(135, 206, 235, 0.2);
   border-radius: 50%;
   text-align: center;
   line-height: 40px;
@@ -84,7 +83,7 @@
   transition: all 0.3s ease;
 }
 
-.social-links a:hover {
+.social-links-f a:hover {
   background-color: #87CEEB;
   transform: translateY(-2px);
 }
@@ -199,7 +198,7 @@
     justify-content: center;
   }
   
-  .social-links {
-    justify-content: center;
+  .social-links-f {
+    justify-content: flex-start;
   }
 }

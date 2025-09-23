@@ -32,8 +32,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     imageUrl: `${IMAGE_CONFIG.basePath}james.jpg`,
     imageAlt: "James Mugambi - CEO & Co-Founder of SHIELD, professional headshot",
     socialLinks: {
-      linkedInUrl: "https://linkedin.com/in/jamesmugambi", // Update with actual URL
-      xUrl: "https://x.com/jamesmugambi", // Update with actual URL
+      linkedInUrl: "https://www.linkedin.com/in/jamesmugambi/", 
     }
   },
   {
@@ -41,10 +40,10 @@ export const TEAM_MEMBERS: TeamMember[] = [
     name: "David Kiai",
     position: "CIO & Co-Founder",
     description: "Developing and implementing design thinking workshops and entrepreneurship training programs.",
-    imageUrl: `${IMAGE_CONFIG.basePath}kama.jpg`, // Using available image, update when David's image is available
+    imageUrl: `${IMAGE_CONFIG.basePath}kama.jpg`, 
     imageAlt: "David Kiai - CIO & Co-Founder of SHIELD, professional headshot",
     socialLinks: {
-      linkedInUrl: "https://linkedin.com/in/davidkiai", // Update with actual URL
+      linkedInUrl: "https://www.linkedin.com/in/david-kiai-4a76201a5",
     }
   },
   {
@@ -55,8 +54,7 @@ export const TEAM_MEMBERS: TeamMember[] = [
     imageUrl: `${IMAGE_CONFIG.basePath}eric.jpg`,
     imageAlt: "Eric Muriithi - CTO & Co-Founder of SHIELD, professional headshot",
     socialLinks: {
-      linkedInUrl: "https://linkedin.com/in/ericmuriithi", // Update with actual URL
-      xUrl: "https://x.com/ericmuriithi", // Update with actual URL
+      linkedInUrl: "https://www.linkedin.com/in/eric-muriithi-48346117b/", 
     }
   }
 ];
