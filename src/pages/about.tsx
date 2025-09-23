@@ -6,20 +6,20 @@ const About = () => {
   return (
     <div className="about">
       {/* Hero Section */}
-      <section className="about-hero">
-        <div className="about-container">
-          <div className="about-hero-content">
-            <h1>About Shield Foundation</h1>
-            <p className="hero-subtitle">
-              Empowering communities through innovation, capacity building, and sustainable development
-            </p>
-            <div className="hero-actions">
-              <a href="#services" className="hero-btn primary">
-                <span>Explore Our Work</span>
-              </a>
-              <a href="#contact" className="hero-btn secondary">
-                <span>Get Involved</span>
-              </a>
+      <section className="programs-hero">
+        <video className="programs-hero-video" autoPlay muted loop playsInline>
+          <source src="/assets/videos/site1.mp4" type="video/mp4" />
+        </video>
+        <div className="programs-hero-overlay">
+          <div className="programs-container">
+            <div className="programs-hero-content">
+              <h1>About Us</h1>
+              <p>
+              At SHIELD, we are dedicated to empowering individuals and communities
+              through innovative programs, cutting-edge training, and impactful
+              mentorship. Our mission is to create sustainable solutions that drive
+              positive change and build a brighter future for all.
+              </p>
             </div>
           </div>
         </div>
@@ -28,41 +28,39 @@ const About = () => {
       {/* Mission & Vision */}
       <section className="mission-vision">
         <div className="about-container">
-          <div className="mission-vision-grid">
-            <div className="mission-vision-item">
-              <img src="/assets/SDGs/Goal-17-Partnerships-for-the-Goals-_-The-Worlds-Largest-Lesson.jpeg" alt="Our Mission" className="image-placeholder large" />
-              <div className="content">
-                <h2>Our Mission</h2>
-                <p>
-                  To foster innovation and sustainable development by providing comprehensive
-                  capacity building services that empower individuals, organizations, and
-                  communities to achieve their full potential through digital transformation
-                  and evidence-based solutions.
-                </p>
-              </div>
+          <div className="mission-vision-cards">
+            <div className="mission-card">
+              <h2>OUR MISSION</h2>
+              <p>
+                To foster innovation and sustainable development by providing comprehensive
+                capacity building services that empower individuals, organizations, and
+                communities to achieve their full potential through digital transformation
+                and evidence-based solutions.
+              </p>
             </div>
+            
+            <div className="vision-card">
+              <h2>OUR VISION</h2>
+              <p>
+                "We envision thriving ecosystems where local knowledge meets global innovation, where youth are empowered as changemakers, and where every individual has the tools and opportunities to contribute meaningfully to their community's growth and resilience.
 
-            <div className="mission-vision-item reverse">
-              <div className="content">
-                <h2>Our Vision</h2>
-                <p>
-                  A world where every community has access to innovative solutions and
-                  the capacity to drive sustainable development, creating lasting positive
-                  impact through technology, education, and collaborative partnerships.
-                </p>
-              </div>
-              <img src="/assets/SDGs/SDG-4-Quality-Education.jpeg" alt="Our Vision" className="image-placeholder large" />
+              </p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Services Overview */}
-      <section className="services-overview">
+      <section className="services-overview" id="services">
         <div className="about-container">
           <h2>Our Core Services</h2>
+          
           <div className="services-intro">
-            <img src="/assets/images/DT.jpg" alt="Innovation Hub" className="about-image-placeholder medium" />
+            <img 
+              src="/assets/images/DT.jpg" 
+              alt="Innovation Hub" 
+              className="image-placeholder medium" 
+            />
             <div className="services-text">
               <p>
                 Shield Foundation specializes in delivering comprehensive innovation services
@@ -75,7 +73,7 @@ const About = () => {
 
           <div className="services-grid">
             <div className="about-service-card">
-              <div className="about-service-icon">🤝</div>
+              <div className="about-service-icon">🚀</div>
               <h3>Innovation Services</h3>
               <ul>
                 <li>Co-creating & planning innovative solutions</li>
@@ -86,7 +84,7 @@ const About = () => {
             </div>
 
             <div className="about-service-card">
-              <div className="about-service-icon">✍️</div>
+              <div className="about-service-icon">📈</div>
               <h3>Capacity Building</h3>
               <ul>
                 <li>Strategic planning & writing workshops</li>
@@ -97,7 +95,7 @@ const About = () => {
             </div>
 
             <div className="about-service-card">
-              <div className="about-service-icon">🔍</div>
+              <div className="about-service-icon">💻</div>
               <h3>Digital Transformation</h3>
               <ul>
                 <li>Data analysis & insights</li>
@@ -108,7 +106,7 @@ const About = () => {
             </div>
 
             <div className="about-service-card">
-              <div className="about-service-icon">👥</div>
+              <div className="about-service-icon">🌍</div>
               <h3>Social Impact</h3>
               <ul>
                 <li>Community engagement strategies</li>
@@ -137,7 +135,11 @@ const About = () => {
         <div className="about-container">
           <h2>Our Approach</h2>
           <div className="process-content">
-            <img src="/assets/images/project4.jpg" alt="Our Process" className="image-placeholder large" />
+            <img 
+              src="/assets/images/project4.jpg" 
+              alt="Our Process" 
+              className="image-placeholder large" 
+            />
             <div className="process-steps">
               <div className="step">
                 <div className="step-number">1</div>
@@ -181,102 +183,68 @@ const About = () => {
           <h2>Our Facilities & Services</h2>
           <div className="facilities-intro">
             <p>
-              To successfully deliver our programs, we are setting up innovative hubs that are accessible, inclusive, youth-focused to support youth and small entrepreneurs from underserved communities.
+              To successfully deliver our programs, we are setting up innovative hubs that are accessible, 
+              inclusive, and youth-focused to support entrepreneurs from underserved communities.
             </p>
           </div>
 
-          {/* Co-working Spaces */}
-          <div className="facility-section">
-            <div className="facility-content">
-              <div className="facility-card">
-                <h3>CO-WORKING SPACES</h3>
-                <div className="facility-icon">
-                  <span>💼</span>
-                </div>
-                <ul>
-                  <li>Desk and Chair</li>
-                  <li>Access to Internet</li>
-                  <li>Phone booths</li>
-                  <li>Complementary services</li>
-                </ul>
-              </div>
-              <div className="facility-description">
-                <p>
-                  Our co-working space is more than just an office—it's a vibrant community designed to inspire creativity, collaboration, and productivity. With state-of-the-art amenities, comfortable workstations, and flexible membership options in open and private rooms, we provide everything you need to succeed. Whether you're an entrepreneur, freelancer, or part of a growing team, our flexible membership plans allow you to choose what works best for your needs. Plus, our community events and networking opportunities connect you with like-minded professionals, helping you grow both personally and professionally. Join us today and experience a workplace that fuels your ambition!
-                </p>
-              </div>
+          <div className="facilities-grid">
+            <div className="facility-card">
+              <div className="facility-number">1</div>
+              <h3>Co-working Spaces</h3>
+              <p>
+                Vibrant community spaces with state-of-the-art amenities, comfortable workstations, 
+                and flexible membership options that connect entrepreneurs and professionals.
+              </p>
             </div>
-          </div>
 
-          {/* Creative Studios */}
-          <div className="facility-section reverse">
-            <div className="facility-content">
-              <div className="facility-description">
-                <p>
-                  Our creative studio is a one-stop destination for creators, offering top-tier podcast, photography, and videography facilities to bring your vision to life. Equipped with state-of-the-art technology, soundproofed rooms, professional-grade lighting, and cutting-edge editing tools, we cater to all your creative needs with unlimited possibilities for excellence. Our flexible booking options and supportive environment ensure you have the time and space to create without limits. Plus, being part of our creative community means access to networking opportunities and inspiration from fellow creators. Sign up today and turn your creative ideas into reality with ease and excellence!
-                </p>
-              </div>
-              <div className="facility-card">
-                <h3>CREATIVE STUDIOS</h3>
-                <div className="facility-icon">
-                  <span>📹</span>
-                </div>
-                <ul>
-                  <li>Podcast Studios</li>
-                  <li>Videography studios</li>
-                  <li>Music Studio</li>
-                </ul>
-              </div>
+            <div className="facility-card">
+              <div className="facility-number">2</div>
+              <h3>Creative Studios</h3>
+              <p>
+                Top-tier podcast, photography, and videography facilities equipped with professional-grade 
+                technology, soundproofed rooms, and cutting-edge editing tools.
+              </p>
             </div>
-          </div>
 
-          {/* Rooms */}
-          <div className="facility-section">
-            <div className="facility-content">
-              <div className="facility-card">
-                <h3>ROOMS</h3>
-                <div className="facility-icon">
-                  <span>🏢</span>
-                </div>
-                <ul>
-                  <li>Meeting Rooms</li>
-                  <li>Board Rooms</li>
-                  <li>Training rooms</li>
-                  <li>Brainstorming rooms</li>
-                </ul>
-              </div>
-              <div className="facility-description">
-                <p>
-                  Our diverse range of rooms—meeting rooms, boardrooms, training spaces, and brainstorming hubs—are thoughtfully designed to elevate every interaction and session. Equipped with modern technology, comfortable seating, and customizable layouts, these spaces create the perfect environment for productive meetings, dynamic training sessions and innovative brainstorming sessions. Whether you need a professional setting to impress clients or a creative space to spark new ideas, our rooms provide the perfect backdrop. With seamless booking and a supportive staff to ensure everything runs smoothly, your events will be memorable and more. Sign up today to take your meetings and events to the next level!
-                </p>
-              </div>
+            <div className="facility-card">
+              <div className="facility-number">3</div>
+              <h3>Meeting Spaces</h3>
+              <p>
+                Thoughtfully designed rooms with modern technology and customizable layouts for 
+                productive meetings, training sessions, and innovative brainstorming.
+              </p>
             </div>
-          </div>
 
-          {/* Community Spaces */}
-          <div className="facility-section reverse">
-            <div className="facility-content">
-              <div className="facility-description">
-                <p>
-                  Our community spaces—spanning conference halls, exhibition areas, and a welcoming restaurant—are at the heart of connection and collaboration. These versatile spaces are perfect for hosting conferences, exhibitions, cultural events, and enjoying meaningful conversations over a delicious meal. Designed to foster interaction and inspire innovation, they combine style and functionality to create memorable experiences. Whether you're organizing a large-scale conference, an intimate exhibition, or simply looking for a place to connect and share ideas, we have the perfect occasion. Sign up today and immerse yourself in a vibrant environment where ideas flourish, connections thrive, and opportunities abound!
-                </p>
-              </div>
-              <div className="facility-card">
-                <h3>COMMUNITY SPACES</h3>
-                <div className="facility-icon">
-                  <span>🏛️</span>
-                </div>
-                <ul>
-                  <li>Conference facilities</li>
-                  <li>Exhibition spaces</li>
-                  <li>Restaurant</li>
-                </ul>
-              </div>
+            <div className="facility-card">
+              <div className="facility-number">4</div>
+              <h3>Innovation Labs</h3>
+              <p>
+                Dedicated spaces for prototype development, testing, and innovation ecosystem 
+                mapping with access to cutting-edge tools and resources.
+              </p>
+            </div>
+
+            <div className="facility-card">
+              <div className="facility-number">5</div>
+              <h3>Training Centers</h3>
+              <p>
+                Modern educational facilities designed for capacity building workshops, 
+                leadership development programs, and digital literacy training.
+              </p>
+            </div>
+
+            <div className="facility-card">
+              <div className="facility-number">6</div>
+              <h3>Community Hubs</h3>
+              <p>
+                Conference halls, exhibition areas, and networking spaces that foster 
+                collaboration and create memorable experiences for events and gatherings.
+              </p>
             </div>
           </div>
         </div>
       </section>
-
 
       {/* Partners Section */}
       <section className="partners-section">
@@ -328,7 +296,11 @@ const About = () => {
         <div className="container">
           <h2>Our Core Values</h2>
           <div className="values-content">
-            <img src="/assets/SDGs/Sustainability.jpeg" alt="Our Values" className="image-placeholder large" />
+            <img 
+              src="/assets/SDGs/Sustainability.jpeg" 
+              alt="Our Values" 
+              className="image-placeholder large" 
+            />
             <div className="values-list">
               <div className="value-item">
                 <h4>🤝 Collaboration</h4>
@@ -365,7 +337,7 @@ const About = () => {
       </section>
 
       {/* Get Involved CTA */}
-      <section className="get-involved">
+      <section className="get-involved" id="contact">
         <div className="container">
           <div className="cta-content">
             <h2>Work with Shield</h2>
