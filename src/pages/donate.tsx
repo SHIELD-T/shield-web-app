@@ -473,9 +473,7 @@ const Donate: React.FC = () => {
               <a href="/donate/one-time" className="donate-btn donate-btn-primary">
                 Make a One-Time Donation
               </a>
-              <a href="/donate/monthly" className="donate-btn donate-btn-secondary">
-                Start Monthly Giving
-              </a>
+             
               <a href="/volunteer" className="donate-btn donate-btn-outline">
                 Volunteer Instead
               </a>
