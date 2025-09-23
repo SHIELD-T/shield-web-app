@@ -15,7 +15,7 @@ const AboutSection: React.FC = () => {
     <section className="about-section">
       <div className="about-hero">
         <div className="container">
-          <div className="about-hero-content">
+          <div className="about-hero-content-s">
             <div className="about-hero-text">
               <div className="about-badge">Who We Are</div>
               <h2>Empowering Communities Through Innovation</h2>
