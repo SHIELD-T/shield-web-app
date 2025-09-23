@@ -63,7 +63,7 @@ const Home = () => {
   return (
     <div className="home">
       {/* Hero Section */}
-      <section className="hero scroll-animate" ref={heroRef}>
+      <section className="hero" ref={heroRef}>
         <div className="hero-overlay">
           <div className="container">
             <div className="hero-content">
@@ -83,12 +83,12 @@ const Home = () => {
       </section>
 
       {/* About Section */}
-      <div className="scroll-animate" ref={aboutRef}>
+      <div className="" ref={aboutRef}>
         <AboutSection />
       </div>
 
       {/* Why SHIELD is Essential Section */}
-      <section className="why-shield-section scroll-animate" ref={whyShieldRef}>
+      <section className="why-shield-section" ref={whyShieldRef}>
         <div className="container">
           <div className="why-shield-content">
             <div className="why-shield-header">
@@ -151,7 +151,7 @@ const Home = () => {
       </section>
 
       {/* Events Section Only */}
-      <section className="events-section scroll-animate" ref={eventsRef}>
+      <section className="events-section " ref={eventsRef}>
         <div className="container">
           <div className="e-section-header">
             <h2>Upcoming Events</h2>
@@ -268,7 +268,7 @@ const Home = () => {
       </section>
 
       {/* Upcoming Courses Section */}
-      <section className="courses-section scroll-animate" ref={coursesRef}>
+      <section className="courses-section " ref={coursesRef}>
         <div className="container">
           <div className="courses-header">
             <h2>Online Courses</h2>
@@ -340,11 +340,11 @@ const Home = () => {
       <TeamSection />
 
      {/* Quote Section */}
-      <section className="quote-section scroll-animate" ref={quoteRef}>
+      <section className="quote-section " ref={quoteRef}>
         <div className="container">
           <div className="quote-content">
             <p className="quote-text">
-              "None of us, including me, ever do great things. But we can all do small things, with great love, and together we can do something wonderful."
+             <i> "None of us, including me, ever do great things. But we can all do small things, with great love, and together we can do something wonderful."</i>
             </p>
             <p className="quote-author">– Mother Teresa</p>
           </div>
@@ -352,7 +352,7 @@ const Home = () => {
       </section>
 
        {/* Call to Action */}
-      <section className="hcta-section scroll-animate" ref={ctaRef}>
+      <section className="hcta-section " ref={ctaRef}>
         <div className="container">
           <div className="hcta-content">
             <h2>Ready to Make a Difference?</h2>

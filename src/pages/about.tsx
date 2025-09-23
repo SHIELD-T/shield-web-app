@@ -157,7 +157,7 @@ const About = () => {
         />
         {/* New Image */}
         <img 
-          src="/assets/images/40.jpg" 
+          src="public\assets\images\DT.jpg" 
           alt="Additional Process" 
           className="image-placeholder large" 
         />
