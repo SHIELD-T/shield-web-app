@@ -450,3 +450,20 @@
     padding: 60px 0;
   }
 }
+
+.podcast-image {
+  width: 100%;
+  height: auto;
+  max-height: 400px; /* Set a maximum height to prevent overlapping */
+  object-fit: cover; /* Ensures the image scales properly */
+  display: block;
+  border-radius: 12px; /* Optional: Adds rounded corners */
+}
+
+.full-podcast-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px; /* Adjusted gap for better spacing */
+  align-items: center;
+  max-height: 500px; /* Prevents the section from becoming too tall */
+}
