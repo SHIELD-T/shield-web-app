@@ -67,11 +67,9 @@ const Home = () => {
         <div className="hero-overlay">
           <div className="container">
             <div className="hero-content">
-              <h1>Making a Difference in Our Community</h1>
+              <h1>Empowering Innovation, Driving Impact</h1>
               <p>
-                Be part of a movement empowering underserved youth to innovate,
-                build enterprises, and drive lasting change in their
-                communities.
+                We bridge the gap between communities, technology, and sustainable development to co-create solutions that transform lives and build inclusive futures.
               </p>
               <div className="hero-buttons">
                 <Link to="/donate" className="btn btn-primary">

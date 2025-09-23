@@ -51,131 +51,153 @@ const About = () => {
       </section>
 
       {/* Services Overview */}
-      <section className="services-overview" id="services">
-        <div className="about-container">
-          <h2>Our Core Services</h2>
-          
-          <div className="services-intro">
-            <img 
-              src="/assets/images/DT.jpg" 
-              alt="Innovation Hub" 
-              className="image-placeholder medium" 
-            />
-            <div className="services-text">
-              <p>
-                Shield Foundation specializes in delivering comprehensive innovation services
-                that bridge the gap between traditional development approaches and modern
-                digital solutions. Our multidisciplinary team works collaboratively to
-                design, implement, and evaluate programs that create measurable impact.
-              </p>
-            </div>
-          </div>
+<section className="services-overview" id="services">
+  <div className="about-container">
+    <h2>Our Core Services</h2>
 
-          <div className="services-grid">
-            <div className="about-service-card">
-              <div className="about-service-icon">🚀</div>
-              <h3>Innovation Services</h3>
-              <ul>
-                <li>Co-creating & planning innovative solutions</li>
-                <li>Design thinking workshops</li>
-                <li>Prototype development & testing</li>
-                <li>Innovation ecosystem mapping</li>
-              </ul>
-            </div>
-
-            <div className="about-service-card">
-              <div className="about-service-icon">📈</div>
-              <h3>Capacity Building</h3>
-              <ul>
-                <li>Strategic planning & writing workshops</li>
-                <li>Proposal development training</li>
-                <li>Organizational development support</li>
-                <li>Leadership development programs</li>
-              </ul>
-            </div>
-
-            <div className="about-service-card">
-              <div className="about-service-icon">💻</div>
-              <h3>Digital Transformation</h3>
-              <ul>
-                <li>Data analysis & insights</li>
-                <li>Digital strategy development</li>
-                <li>Technology integration support</li>
-                <li>Digital literacy training</li>
-              </ul>
-            </div>
-
-            <div className="about-service-card">
-              <div className="about-service-icon">🌍</div>
-              <h3>Social Impact</h3>
-              <ul>
-                <li>Community engagement strategies</li>
-                <li>Impact measurement & evaluation</li>
-                <li>Stakeholder relationship building</li>
-                <li>Sustainable development planning</li>
-              </ul>
-            </div>
-
-            <div className="about-service-card">
-              <div className="about-service-icon">🔬</div>
-              <h3>Research & Development</h3>
-              <ul>
-                <li>Evidence-based research studies</li>
-                <li>Policy analysis & recommendations</li>
-                <li>Best practices documentation</li>
-                <li>Knowledge management systems</li>
-              </ul>
-            </div>
-          </div>
+    <div className="services-grid">
+      {/* Card 1 */}
+      <div className="about-service-card">
+        <img src="/assets/images/Digitalinnovation.jpg" alt="Innovation Services" className="card-image" />
+        <div className="card-content">
+          <h3>Innovation Services</h3>
+          <ul>
+            <li>Co-creating & planning innovative solutions</li>
+            <li>Design thinking workshops</li>
+            <li>Prototype development & testing</li>
+            <li>Innovation ecosystem mapping</li>
+          </ul>
         </div>
-      </section>
+      </div>
+
+      {/* Card 2 */}
+      <div className="about-service-card">
+        <img src="/assets/images/image2.png" alt="Capacity Building" className="card-image" />
+        <div className="card-content">
+          <h3>Capacity Building</h3>
+          <ul>
+            <li>Strategic planning & writing workshops</li>
+            <li>Proposal development training</li>
+            <li>Organizational development support</li>
+            <li>Leadership development programs</li>
+          </ul>
+        </div>
+      </div>
+
+      {/* Card 3 */}
+      <div className="about-service-card">
+        <img src="/assets/images/Digitaltrans.jpg" alt="Digital Transformation" className="card-image" />
+        <div className="card-content">
+          <h3>Digital Transformation</h3>
+          <ul>
+            <li>Data analysis & insights</li>
+            <li>Digital strategy development</li>
+            <li>Technology integration support</li>
+            <li>Digital literacy training</li>
+          </ul>
+        </div>
+      </div>
+
+      {/* Card 4 */}
+      <div className="about-service-card">
+        <img src="/assets/images/social.png" alt="Social Impact" className="card-image" />
+        <div className="card-content">
+          <h3>Social Impact</h3>
+          <ul>
+            <li>Community engagement strategies</li>
+            <li>Impact measurement & evaluation</li>
+            <li>Stakeholder relationship building</li>
+            <li>Sustainable development planning</li>
+          </ul>
+        </div>
+      </div>
+
+      {/* Card 5 */}
+      <div className="about-service-card">
+        <img src="/assets/images/rnd.jpg" alt="Research & Development" className="card-image" />
+        <div className="card-content">
+          <h3>Research & Development</h3>
+          <ul>
+            <li>Evidence-based research studies</li>
+            <li>Policy analysis & recommendations</li>
+            <li>Best practices documentation</li>
+            <li>Knowledge management systems</li>
+          </ul>
+        </div>
+      </div>
+
+      {/* Card 6 - NEW */}
+      <div className="about-service-card">
+        <img src="/assets/images/sustainability.jpg" alt="Sustainability & Growth" className="card-image" />
+        <div className="card-content">
+          <h3>Sustainability & Growth</h3>
+          <ul>
+            <li>Green innovation strategies</li>
+            <li>Climate-smart development</li>
+            <li>Impact-driven partnerships</li>
+            <li>Future-ready capacity building</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Process Section */}
       <section className="process-section">
-        <div className="about-container">
-          <h2>Our Approach</h2>
-          <div className="process-content">
-            <img 
-              src="/assets/images/project4.jpg" 
-              alt="Our Process" 
-              className="image-placeholder large" 
-            />
-            <div className="process-steps">
-              <div className="step">
-                <div className="step-number">1</div>
-                <div className="step-content">
-                  <h4>Assessment</h4>
-                  <p>We begin by understanding your unique challenges and opportunities through comprehensive stakeholder consultation.</p>
-                </div>
-              </div>
-
-              <div className="step">
-                <div className="step-number">2</div>
-                <div className="step-content">
-                  <h4>Co-Design</h4>
-                  <p>Working collaboratively with communities and organizations to design tailored solutions that meet specific needs.</p>
-                </div>
-              </div>
-
-              <div className="step">
-                <div className="step-number">3</div>
-                <div className="step-content">
-                  <h4>Implementation</h4>
-                  <p>Deploying evidence-based interventions with continuous monitoring and adaptive management approaches.</p>
-                </div>
-              </div>
-
-              <div className="step">
-                <div className="step-number">4</div>
-                <div className="step-content">
-                  <h4>Evaluation</h4>
-                  <p>Measuring impact through rigorous evaluation frameworks and sharing learnings for broader application.</p>
-                </div>
-              </div>
-            </div>
+  <div className="about-container">
+    <h2>Our Approach</h2>
+    <div className="process-content">
+      <div>
+        <img 
+          src="/assets/images/42.jpg" 
+          alt="Our Process" 
+          className="image-placeholder large" 
+        />
+        {/* New Image */}
+        <img 
+          src="/assets/images/40.jpg" 
+          alt="Additional Process" 
+          className="image-placeholder large" 
+        />
+      </div>
+      <div className="process-steps">
+        <div className="step">
+          <div className="step-number">1</div>
+          <div className="step-content">
+            <h4>Assessment</h4>
+            <p>We begin by understanding your unique challenges and opportunities through comprehensive stakeholder consultation.</p>
           </div>
         </div>
-      </section>
+
+        <div className="step">
+          <div className="step-number">2</div>
+          <div className="step-content">
+            <h4>Co-Design</h4>
+            <p>Working collaboratively with communities and organizations to design tailored solutions that meet specific needs.</p>
+          </div>
+        </div>
+
+        <div className="step">
+          <div className="step-number">3</div>
+          <div className="step-content">
+            <h4>Implementation</h4>
+            <p>Deploying evidence-based interventions with continuous monitoring and adaptive management approaches.</p>
+          </div>
+        </div>
+
+        <div className="step">
+          <div className="step-number">4</div>
+          <div className="step-content">
+            <h4>Evaluation</h4>
+            <p>Measuring impact through rigorous evaluation frameworks and sharing learnings for broader application.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Facilities Overview */}
       <section className="facilities-overview">
@@ -292,45 +314,59 @@ const About = () => {
       </section>
 
       {/* Values Section */}
-      <section className="values-section">
-        <div className="container">
+      <section className="facilities-overview">
+        <div className="about-container">
           <h2>Our Core Values</h2>
-          <div className="values-content">
-            <img 
-              src="/assets/SDGs/Sustainability.jpeg" 
-              alt="Our Values" 
-              className="image-placeholder large" 
-            />
-            <div className="values-list">
-              <div className="value-item">
-                <h4>🤝 Collaboration</h4>
-                <p>We believe in the power of partnerships and co-creation to develop solutions that truly meet community needs.</p>
-              </div>
+          <div className="facilities-intro">
+          </div>
 
-              <div className="value-item">
-                <h4>💡 Innovation</h4>
-                <p>We embrace creative approaches and emerging technologies to address complex social challenges.</p>
-              </div>
+          <div className="facilities-grid">
+            <div className="facility-card">
+              <div className="facility-number">I</div>
+              <h3>🤝 Collaboration</h3>
+              <p>
+                We believe in the power of partnerships and co-creation to develop solutions that truly meet community needs.
+              </p>
+            </div>
 
-              <div className="value-item">
-                <h4>📊 Evidence-Based</h4>
-                <p>Our work is grounded in research, data analysis, and rigorous evaluation methodologies.</p>
-              </div>
+            <div className="facility-card">
+              <div className="facility-number">II</div>
+              <h3>💡 Innovation</h3>
+              <p>
+                We embrace creative approaches and emerging technologies to address complex social challenges.
+              </p>
+            </div>
 
-              <div className="value-item">
-                <h4>🌱 Sustainability</h4>
-                <p>We design interventions that create lasting change and build local capacity for continued impact.</p>
-              </div>
+            <div className="facility-card">
+              <div className="facility-number">III</div>
+              <h3>📊 Evidence-Based</h3>
+              <p>
+                Our work is grounded in research, data analysis, and rigorous evaluation methodologies.
+              </p>
+            </div>
 
-              <div className="value-item">
-                <h4>🎯 Transparency</h4>
-                <p>We maintain open communication and accountability in all our partnerships and projects.</p>
-              </div>
+            <div className="facility-card">
+              <div className="facility-number">IV</div>
+              <h3>🌱 Sustainability</h3>
+              <p>
+                We design interventions that create lasting change and build local capacity for continued impact.
+              </p>
+            </div>
 
-              <div className="value-item">
-                <h4>🌍 Inclusivity</h4>
-                <p>We ensure that our programs are accessible and beneficial to diverse communities and stakeholders.</p>
-              </div>
+            <div className="facility-card">
+              <div className="facility-number">V</div>
+              <h3>🎯 Transparency</h3>
+              <p>
+                We maintain open communication and accountability in all our partnerships and projects.
+              </p>
+            </div>
+
+            <div className="facility-card">
+              <div className="facility-number">VI</div>
+              <h3>🌍 Inclusivity</h3>
+              <p>
+                We ensure that our programs are accessible and beneficial to diverse communities and stakeholders.
+              </p>
             </div>
           </div>
         </div>

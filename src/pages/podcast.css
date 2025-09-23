@@ -8,9 +8,11 @@
 /* Hero Section */
 .podcast-hero {
   background: linear-gradient(135deg, #063762 0%, #0a4a7a 100%);
+  background-image: url('/assets/images/background2.jpg');
   padding: 80px 0 60px;
   text-align: center;
   color: white;
+  height: auto;
 }
 
 .podcast-hero h1 {

@@ -138,7 +138,7 @@ const Donate: React.FC = () => {
                 facilities and providing initial startup capital grants to support student ventures.
               </p>
               <img 
-                src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&h=200&fit=crop&crop=center" 
+                src="https://unsplash.com/photos/a-room-filled-with-lots-of-computer-monitors-Y6hwl3U1oiU?w=400&h=200&fit=crop&crop=center" 
                 alt="Modern tech equipment and computers"
                 style={{width: '100%', height: '150px', objectFit: 'cover', borderRadius: '8px', marginTop: '15px'}}
               />
