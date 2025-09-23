@@ -61,27 +61,32 @@ const Podcast = () => {
         </div>
       </section>
 
+
       {/* Full Podcast Section */}
       <section className="full-podcast-section">
         <div className="container">
           <div className="full-podcast-content">
             <div className="podcast-illustration">
-              <div className="illustration-placeholder">
-                <div className="desk-setup">
-                  <div className="person person-1"></div>
-                  <div className="person person-2"></div>
-                  <div className="desk"></div>
-                  <div className="equipment"></div>
-                </div>
-              </div>
+              <img src="/assets/images/68.jpg" alt="Podcast Illustration" className="podcast-image" />
             </div>
             <div className="podcast-info">
-              <div className="tag">LET'S TALK</div>
-              <h2>Full Podcast to Resonate our services</h2>
+              <div className="tag">Unleash Your Voice</div>
+              <h2>Full Podcast to Resonate Our Services</h2>
+              <p>
+                Dive into the world of professional podcasting with our comprehensive services. 
+                Whether you're a seasoned podcaster or just starting out, we provide everything you need to create a show that stands out. 
+                From state-of-the-art recording facilities to expert post-production, we ensure your voice is heard loud and clear.
+              </p>
+              <p>
+                Our team is dedicated to helping you craft a podcast that resonates with your audience and amplifies your message. 
+                Let us handle the technical details while you focus on sharing your story with the world.
+              </p>
             </div>
           </div>
         </div>
       </section>
+
+.
 
       {/* Why Choose Us Section */}
       <section className="why-choose-section">
