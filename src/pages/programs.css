@@ -536,6 +536,9 @@
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
+ .program-feature-card img{
+width: 30px;
+ }
 
 .program-feature-card:hover {
   transform: translateY(-5px);

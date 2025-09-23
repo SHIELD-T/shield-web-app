@@ -27,113 +27,93 @@ const Programs = () => {
       </section>
 
       {/* Core Programs Section */}
-      <section className="main-programs-section" style={{backgroundColor: '#ffffff', padding: '100px 0'}}>
-        <div className="programs-container">
-          <div style={{textAlign: 'center', marginBottom: '60px'}}>
-            <p style={{color: '#666666', fontSize: '0.9rem', fontWeight: '500', marginBottom: '10px', letterSpacing: '2px', textTransform: 'uppercase'}}>
-              Our Focus Areas
-            </p>
-            
-          </div>
-          <div className="programs-grid">
-            {/* Shorter Card - Design Thinking */}
-            <div style={{
-              backgroundColor: '#063762',
-              borderRadius: '10px',
-              overflow: 'hidden',
-              boxShadow: '0 8px 30px rgba(0, 0, 0, 0.1)',
-              transition: 'transform 0.3s ease',
-              height: 'fit-content'
-            }}>
-              <img 
-                src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=300&h=140&fit=crop&crop=center" 
-                alt="Design Thinking Workshop"
-                style={{width: '100%', height: '140px', objectFit: 'cover'}}
-              />
-              <div style={{padding: '20px', color: 'white'}}>
-                <h3 style={{fontSize: '1.1rem', fontWeight: '600', marginBottom: '10px', color: 'white'}}>
-                  Design Thinking Programs
-                </h3>
-                <p style={{fontSize: '0.85rem', lineHeight: '1.4', margin: '0', color: '#e2e8f0'}}>
-                  Empowering youth with collaborative problem-solving skills to pioneer community solutions.
-                </p>
-              </div>
-            </div>
-            
-            {/* Taller Card - SHIELD Entrepreneurship */}
-            <div style={{
-              backgroundColor: '#063762',
-              borderRadius: '10px',
-              overflow: 'hidden',
-              boxShadow: '0 8px 30px rgba(0, 0, 0, 0.1)',
-              transition: 'transform 0.3s ease',
-              height: 'fit-content'
-            }}>
-              <img 
-                src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=300&h=200&fit=crop&crop=center" 
-                alt="Entrepreneurship Training"
-                style={{width: '100%', height: '200px', objectFit: 'cover'}}
-              />
-              <div style={{padding: '25px', color: 'white'}}>
-                <h3 style={{fontSize: '1.2rem', fontWeight: '600', marginBottom: '12px', color: 'white'}}>
-                  SHIELD Entrepreneurship Programs
-                </h3>
-                <p style={{fontSize: '0.9rem', lineHeight: '1.5', margin: '0', color: '#e2e8f0'}}>
-                  Supporting businesses with personalized training and mentorship. Building capacity to operate successfully, unlock financing, and scale to new levels.
-                </p>
-              </div>
-            </div>
-            
-            {/* Shorter Card - Software Development */}
-            <div style={{
-              backgroundColor: '#063762',
-              borderRadius: '10px',
-              overflow: 'hidden',
-              boxShadow: '0 8px 30px rgba(0, 0, 0, 0.1)',
-              transition: 'transform 0.3s ease',
-              height: 'fit-content'
-            }}>
-              <img 
-                src="https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?w=300&h=140&fit=crop&crop=center" 
-                alt="Software Development Course"
-                style={{width: '100%', height: '140px', objectFit: 'cover'}}
-              />
-              <div style={{padding: '20px', color: 'white'}}>
-                <h3 style={{fontSize: '1.1rem', fontWeight: '600', marginBottom: '10px', color: 'white'}}>
-                  Software Development
-                </h3>
-                <p style={{fontSize: '0.85rem', lineHeight: '1.4', margin: '0', color: '#e2e8f0'}}>
-                  Career-focused certifications and business acumen to transform your ideas into reality.
-                </p>
-              </div>
-            </div>
-            
-            {/* Taller Card - SIDLabs */}
-            <div style={{
-              backgroundColor: '#063762',
-              borderRadius: '10px',
-              overflow: 'hidden',
-              boxShadow: '0 8px 30px rgba(0, 0, 0, 0.1)',
-              transition: 'transform 0.3s ease',
-              height: 'fit-content'
-            }}>
-              <img 
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=200&fit=crop&crop=center" 
-                alt="Research Laboratory"
-                style={{width: '100%', height: '200px', objectFit: 'cover'}}
-              />
-              <div style={{padding: '25px', color: 'white'}}>
-                <h3 style={{fontSize: '1.2rem', fontWeight: '600', marginBottom: '12px', color: 'white'}}>
-                  SIDLabs Research & Development
-                </h3>
-                <p style={{fontSize: '0.9rem', lineHeight: '1.5', margin: '0', color: '#e2e8f0'}}>
-                  Innovation hub driving societal impact through collaborative spaces, transformative programs, and cutting-edge development initiatives.
-                </p>
-              </div>
-            </div>
-          </div>
+     <section className="main-programs-section" style={{backgroundColor: '#ffffff', padding: '100px 0'}}>
+  <div className="programs-container">
+    <div style={{textAlign: 'center', marginBottom: '60px'}}>
+      <p style={{color: '#666666', fontSize: '0.9rem', fontWeight: '500', marginBottom: '10px', letterSpacing: '2px', textTransform: 'uppercase'}}>
+        Our Focus Areas
+      </p>
+    </div>
+    <div className="programs-grid">
+      {/* Card - Design Thinking */}
+      <div style={{
+        backgroundColor: '#063762',
+        borderRadius: '10px',
+        overflow: 'hidden',
+        boxShadow: '0 8px 30px rgba(0, 0, 0, 0.1)',
+        transition: 'transform 0.3s ease',
+        height: 'fit-content'
+      }}>
+        <div style={{padding: '20px', color: 'white'}}>
+          <h3 style={{fontSize: '1.1rem', fontWeight: '600', marginBottom: '10px', color: 'white'}}>
+            Design Thinking Programs
+          </h3>
+          <p style={{fontSize: '0.85rem', lineHeight: '1.4', margin: '0', color: '#e2e8f0'}}>
+            Empowering youth with collaborative problem-solving skills to pioneer community solutions.
+          </p>
         </div>
-      </section>
+      </div>
+      
+      {/* Card - SHIELD Entrepreneurship */}
+      <div style={{
+        backgroundColor: '#063762',
+        borderRadius: '10px',
+        overflow: 'hidden',
+        boxShadow: '0 8px 30px rgba(0, 0, 0, 0.1)',
+        transition: 'transform 0.3s ease',
+        height: 'fit-content'
+      }}>
+        <div style={{padding: '20px', color: 'white'}}>
+          <h3 style={{fontSize: '1.1rem', fontWeight: '600', marginBottom: '10px', color: 'white'}}>
+            SHIELD Entrepreneurship Programs
+          </h3>
+          <p style={{fontSize: '0.85rem', lineHeight: '1.4', margin: '0', color: '#e2e8f0'}}>
+            Supporting businesses with personalized training and mentorship. Building capacity to operate successfully, unlock financing, and scale to new levels.
+          </p>
+        </div>
+      </div>
+      
+     
+      
+      {/* Card - SIDLabs */}
+      <div style={{
+        backgroundColor: '#063762',
+        borderRadius: '10px',
+        overflow: 'hidden',
+        boxShadow: '0 8px 30px rgba(0, 0, 0, 0.1)',
+        transition: 'transform 0.3s ease',
+        height: 'fit-content'
+      }}>
+        <div style={{padding: '20px', color: 'white'}}>
+          <h3 style={{fontSize: '1.1rem', fontWeight: '600', marginBottom: '10px', color: 'white'}}>
+            SIDLabs Research & Development
+          </h3>
+          <p style={{fontSize: '0.85rem', lineHeight: '1.4', margin: '0', color: '#e2e8f0'}}>
+            Innovation hub driving societal impact through collaborative spaces, transformative programs, and cutting-edge development initiatives.
+          </p>
+        </div>
+      </div>
+       {/* Card - Software Development */}
+      <div style={{
+        backgroundColor: '#063762',
+        borderRadius: '10px',
+        overflow: 'hidden',
+        boxShadow: '0 8px 30px rgba(0, 0, 0, 0.1)',
+        transition: 'transform 0.3s ease',
+        height: 'fit-content'
+      }}>
+        <div style={{padding: '20px', color: 'white'}}>
+          <h3 style={{fontSize: '1.1rem', fontWeight: '600', marginBottom: '10px', color: 'white'}}>
+            Software Development
+          </h3>
+          <p style={{fontSize: '0.85rem', lineHeight: '1.4', margin: '0', color: '#e2e8f0'}}>
+            Career-focused certifications and business acumen to transform your ideas into reality.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Ongoing Courses Section */}
       <section className="specialty-programs-section">
@@ -378,6 +358,7 @@ const Programs = () => {
           <h2>What Makes Our Programs Unique</h2>
           <div className="program-features-grid">
             <div className="program-feature-card">
+              <img src="public\favicon.png" alt="" />
               <h3>Community-Centered Approach</h3>
               <p>
                 All programs are designed with deep community input and focus on
@@ -386,6 +367,7 @@ const Programs = () => {
             </div>
 
             <div className="program-feature-card">
+              <img src="public\favicon.png" alt="" />
               <h3>Iterative Learning</h3>
               <p>
                 Using design thinking principles, participants learn through
@@ -394,6 +376,7 @@ const Programs = () => {
             </div>
 
             <div className="program-feature-card">
+              <img src="public\favicon.png" alt="" />
               <h3>Peer-to-Peer Learning</h3>
               <p>
                 Collaborative learning environments where participants learn
@@ -402,6 +385,7 @@ const Programs = () => {
             </div>
 
             <div className="program-feature-card">
+              <img src="public\favicon.png" alt="" />
               <h3>Measurable Impact</h3>
               <p>
                 All programs include clear metrics and evaluation frameworks
@@ -410,6 +394,7 @@ const Programs = () => {
             </div>
 
             <div className="program-feature-card">
+              <img src="public\favicon.png" alt="" />
               <h3>Sustainable Solutions</h3>
               <p>
                 Focus on creating long-term, sustainable solutions that continue
@@ -418,6 +403,7 @@ const Programs = () => {
             </div>
 
             <div className="program-feature-card">
+              <img src="public\favicon.png" alt="" />
               <h3>Innovation-Driven</h3>
               <p>
                 Encouraging creative thinking and innovative approaches to

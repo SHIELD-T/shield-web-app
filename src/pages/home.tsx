@@ -72,9 +72,7 @@ const Home = () => {
                 We bridge the gap between communities, technology, and sustainable development to co-create solutions that transform lives and build inclusive futures.
               </p>
               <div className="hero-buttons">
-                <Link to="/donate" className="btn btn-primary">
-                  Donate Now
-                </Link>
+                
                 <Link to="/about" className="btn btn-secondary">
                   Learn More
                 </Link>
@@ -95,7 +93,7 @@ const Home = () => {
           <div className="why-shield-content">
             <div className="why-shield-header">
               
-              <h2><img src="public\favicon.png" alt="" />Why SHIELD Is Essential <img src="public\favicon.png" alt="" /></h2>
+              <h2><img src="public\favicon.png" alt="" /> Why SHIELD Is Essential <img src="public\favicon.png" alt="" /></h2>
               <p className="section-subtitle">
                 Breaking the cycle of unemployment in underserved communities requires more than just skills training
               </p>
