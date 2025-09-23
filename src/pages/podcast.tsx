@@ -70,7 +70,7 @@ const Podcast = () => {
               <img src="/assets/images/68.jpg" alt="Podcast Illustration" className="podcast-image" />
             </div>
             <div className="podcast-info">
-              <div className="tag">LET'S TALK</div>
+              <div className="tag">Unleash Your Voice</div>
               <h2>Full Podcast to Resonate Our Services</h2>
               <p>
                 Dive into the world of professional podcasting with our comprehensive services. 

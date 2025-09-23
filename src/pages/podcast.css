@@ -348,6 +348,7 @@
 .cta-section {
   padding: 100px 0;
   background: #063762;
+  background-image: url('/assets/images/background3.jpg');
   color: white;
   text-align: center;
 }
