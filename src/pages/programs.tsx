@@ -166,7 +166,7 @@ const Programs = () => {
             </div>
           </div>
 
-          <div className="specialty-program-feature">
+          {/* <div className="specialty-program-feature">
             <div className="specialty-program-text">
               <h3>Business Development & Financial Literacy</h3>
               <p>
@@ -208,7 +208,7 @@ const Programs = () => {
                 style={{width: '100%', height: '300px', objectFit: 'cover', borderRadius: '12px'}}
               />
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -219,72 +219,95 @@ const Programs = () => {
           <div className="program-categories-grid">
             <div className="program-category-card">
               <img 
-                src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=250&fit=crop&crop=center" 
-                alt="Graphic Design Course" 
+                src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=250&fit=crop&crop=center" 
+                alt="Canva Comprehensive Course" 
                 style={{width: '100%', height: '200px', objectFit: 'cover', borderRadius: '8px', marginBottom: '20px'}}
               />
-              <h3>Graphic Design Fundamentals</h3>
+              <h3>Canva Comprehensive Course</h3>
               <p>
-                Learn the basics of graphic design, including color theory, typography,
-                and layout principles. Create stunning visuals for your business or
-                personal projects using industry-standard tools.
-              </p>
-              <p><strong>Duration:</strong> 10 weeks • <strong>Self-paced</strong></p>
-              <a href="/courses/graphic-design" className="programs-btn programs-btn-primary">
-                Enroll Now
-              </a>
-            </div>
-
-            <div className="program-category-card">
-              <img 
-                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop&crop=center" 
-                alt="Data Analytics Course" 
-                style={{width: '100%', height: '200px', objectFit: 'cover', borderRadius: '8px', marginBottom: '20px'}}
-              />
-              <h3>Data Analytics & Visualization</h3>
-              <p>
-                Master data analysis techniques using Excel, Python, and visualization
-                tools. Learn to extract insights from data and make data-driven
-                decisions for business growth.
-              </p>
-              <p><strong>Duration:</strong> 14 weeks • <strong>Self-paced</strong></p>
-              <a href="/courses/data-analytics" className="programs-btn programs-btn-primary">
-                Enroll Now
-              </a>
-            </div>
-
-            <div className="program-category-card">
-              <img 
-                src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=400&h=250&fit=crop&crop=center" 
-                alt="Video Production Course" 
-                style={{width: '100%', height: '200px', objectFit: 'cover', borderRadius: '8px', marginBottom: '20px'}}
-              />
-              <h3>Video Production & Editing</h3>
-              <p>
-                Create professional videos from concept to completion. Learn filming
-                techniques, storytelling, and video editing using modern software.
-                Perfect for content creators and marketers.
-              </p>
-              <p><strong>Duration:</strong> 8 weeks • <strong>Self-paced</strong></p>
-              <a href="/courses/video-production" className="programs-btn programs-btn-primary">
-                Enroll Now
-              </a>
-            </div>
-
-            <div className="program-category-card">
-              <img 
-                src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=250&fit=crop&crop=center" 
-                alt="Personal Finance Course" 
-                style={{width: '100%', height: '200px', objectFit: 'cover', borderRadius: '8px', marginBottom: '20px'}}
-              />
-              <h3>Personal Finance Management</h3>
-              <p>
-                Take control of your finances with our comprehensive personal finance
-                course. Learn budgeting, saving, investing, and financial planning
-                strategies for long-term wealth building.
+                Master the art of visual design with Canva's powerful tools. Learn to create 
+                stunning graphics, social media posts, presentations, and marketing materials. 
+                Perfect for entrepreneurs, marketers, and content creators looking to enhance 
+                their visual communication skills.
               </p>
               <p><strong>Duration:</strong> 6 weeks • <strong>Self-paced</strong></p>
-              <a href="/courses/personal-finance" className="programs-btn programs-btn-primary">
+              <a href="https://shieldintl.org/academy/" className="programs-btn programs-btn-primary" target="_blank" rel="noopener noreferrer">
+                Enroll Now
+              </a>
+            </div>
+
+            <div className="program-category-card">
+              <img 
+                src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=400&h=250&fit=crop&crop=center" 
+                alt="Blockchain Development Course" 
+                style={{width: '100%', height: '200px', objectFit: 'cover', borderRadius: '8px', marginBottom: '20px'}}
+              />
+              <h3>Introduction to Blockchain with Celo and Solidity Development</h3>
+              <p>
+                Dive into the world of blockchain technology and smart contract development. 
+                Learn Solidity programming, understand the Celo blockchain ecosystem, and 
+                build decentralized applications. Ideal for developers looking to enter 
+                the Web3 space and create innovative blockchain solutions.
+              </p>
+              <p><strong>Duration:</strong> 12 weeks • <strong>Self-paced</strong></p>
+              <a href="https://shieldintl.org/academy/" className="programs-btn programs-btn-primary" target="_blank" rel="noopener noreferrer">
+                Enroll Now
+              </a>
+            </div>
+
+            <div className="program-category-card">
+              <img 
+                src="https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=400&h=250&fit=crop&crop=center" 
+                alt="Database Development Course" 
+                style={{width: '100%', height: '200px', objectFit: 'cover', borderRadius: '8px', marginBottom: '20px'}}
+              />
+              <h3>Database Design & Programming with SQL</h3>
+              <p>
+                Master database fundamentals and SQL programming. Learn to design efficient 
+                database schemas, write complex queries, and manage data effectively. 
+                Essential skills for backend developers, data analysts, and anyone working 
+                with data-driven applications.
+              </p>
+              <p><strong>Duration:</strong> 10 weeks • <strong>Self-paced</strong></p>
+              <a href="https://shieldintl.org/academy/" className="programs-btn programs-btn-primary" target="_blank" rel="noopener noreferrer">
+                Enroll Now
+              </a>
+            </div>
+
+            <div className="program-category-card">
+              <img 
+                src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=400&h=250&fit=crop&crop=center" 
+                alt="Python Programming Course" 
+                style={{width: '100%', height: '200px', objectFit: 'cover', borderRadius: '8px', marginBottom: '20px'}}
+              />
+              <h3>Python Programming</h3>
+              <p>
+                Learn Python from basics to advanced concepts. Cover data structures, 
+                algorithms, web development with Django/Flask, data analysis, and automation. 
+                Perfect for beginners starting their programming journey or professionals 
+                looking to add Python to their skill set.
+              </p>
+              <p><strong>Duration:</strong> 14 weeks • <strong>Self-paced</strong></p>
+              <a href="https://shieldintl.org/academy/" className="programs-btn programs-btn-primary" target="_blank" rel="noopener noreferrer">
+                Enroll Now
+              </a>
+            </div>
+
+            <div className="program-category-card">
+              <img 
+                src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=250&fit=crop&crop=center" 
+                alt="Web Development Course" 
+                style={{width: '100%', height: '200px', objectFit: 'cover', borderRadius: '8px', marginBottom: '20px'}}
+              />
+              <h3>Web Development</h3>
+              <p>
+                Build modern, responsive websites and web applications from scratch. 
+                Learn HTML, CSS, JavaScript, React, and backend technologies. 
+                Includes hands-on projects, portfolio development, and industry best practices 
+                to prepare you for a career in web development.
+              </p>
+              <p><strong>Duration:</strong> 16 weeks • <strong>Self-paced</strong></p>
+              <a href="https://shieldintl.org/academy/" className="programs-btn programs-btn-primary" target="_blank" rel="noopener noreferrer">
                 Enroll Now
               </a>
             </div>
@@ -331,7 +354,7 @@ const Programs = () => {
       </section>
 
       {/* Program Impact Stats */}
-      <section className="program-impact-section">
+      {/* <section className="program-impact-section">
         <div className="programs-container">
           <h2>Program Impact</h2>
           <div className="program-impact-grid">
@@ -350,7 +373,7 @@ const Programs = () => {
             
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Program Features */}
       <section className="program-features-section">
@@ -442,14 +465,14 @@ const Programs = () => {
                   <li>Access to internet for online components</li>
                 </ul>
               </div>
-              <div className="program-application-buttons">
+              {/* <div className="program-application-buttons">
                 <a href="/courses" className="programs-btn programs-btn-primary">
                   Browse Courses
                 </a>
                 <a href="/contact" className="programs-btn programs-btn-outline">
                   Contact Us
                 </a>
-              </div>
+              </div> */}
             </div>
             <div className="program-application-image">
               <img 
@@ -472,14 +495,14 @@ const Programs = () => {
               Our programs provide the tools, knowledge, and support you need to
               create lasting positive change.
             </p>
-            <div className="programs-cta-buttons">
+            {/* <div className="programs-cta-buttons">
               <a href="/courses" className="programs-btn programs-btn-primary">
                 Start Your Journey
               </a>
               <a href="/donate" className="programs-btn programs-btn-secondary">
                 Support Our Mission
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

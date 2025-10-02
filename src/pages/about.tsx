@@ -8,7 +8,7 @@ const About = () => {
       {/* Hero Section */}
       <section className="programs-hero">
         <video className="programs-hero-video" autoPlay muted loop playsInline>
-          <source src="/assets/videos/site1.mp4" type="video/mp4" />
+          <source src="/assets/videos/about1.mp4" type="video/mp4" />
         </video>
         <div className="programs-hero-overlay">
           <div className="programs-container">
@@ -323,7 +323,7 @@ const About = () => {
           <div className="facilities-grid">
             <div className="facility-card">
               <div className="facility-number">I</div>
-              <h3>🤝 Collaboration</h3>
+              <h3>Collaboration</h3>
               <p>
                 We believe in the power of partnerships and co-creation to develop solutions that truly meet community needs.
               </p>
@@ -331,7 +331,7 @@ const About = () => {
 
             <div className="facility-card">
               <div className="facility-number">II</div>
-              <h3>💡 Innovation</h3>
+              <h3>Innovation</h3>
               <p>
                 We embrace creative approaches and emerging technologies to address complex social challenges.
               </p>
@@ -339,7 +339,7 @@ const About = () => {
 
             <div className="facility-card">
               <div className="facility-number">III</div>
-              <h3>📊 Evidence-Based</h3>
+              <h3>Evidence-Based</h3>
               <p>
                 Our work is grounded in research, data analysis, and rigorous evaluation methodologies.
               </p>
@@ -347,7 +347,7 @@ const About = () => {
 
             <div className="facility-card">
               <div className="facility-number">IV</div>
-              <h3>🌱 Sustainability</h3>
+              <h3>Sustainability</h3>
               <p>
                 We design interventions that create lasting change and build local capacity for continued impact.
               </p>
@@ -355,7 +355,7 @@ const About = () => {
 
             <div className="facility-card">
               <div className="facility-number">V</div>
-              <h3>🎯 Transparency</h3>
+              <h3>Transparency</h3>
               <p>
                 We maintain open communication and accountability in all our partnerships and projects.
               </p>
@@ -363,7 +363,7 @@ const About = () => {
 
             <div className="facility-card">
               <div className="facility-number">VI</div>
-              <h3>🌍 Inclusivity</h3>
+              <h3> Inclusivity</h3>
               <p>
                 We ensure that our programs are accessible and beneficial to diverse communities and stakeholders.
               </p>
@@ -381,10 +381,9 @@ const About = () => {
               Ready to transform your organization's capacity and drive meaningful impact?
               Let's collaborate to design innovative solutions tailored to your unique challenges.
             </p>
-            <div className="cta-buttons">
-              <a href="/contact" className="btn btn-primary">Get in Touch</a>
+            {/* <div className="cta-buttons">
               <a href="/podcast" className="btn btn-secondary">Share Your Story</a>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

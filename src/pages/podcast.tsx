@@ -36,7 +36,6 @@ const Podcast = () => {
                 <div className="feature">Complimentary content reviews</div>
                 <div className="feature">1 free social media snippet to promote your episode</div>
               </div>
-              <button className="btn btn-outline plan-btn">GET IT</button>
             </div>
 
             {/* Story Flow Plan */}
@@ -55,7 +54,6 @@ const Podcast = () => {
                 <div className="feature">Comprehensive service, including recording, mixing, and mastering</div>
                 <div className="feature">Distribution to all major global platforms</div>
               </div>
-              <button className="btn btn-primary plan-btn">GET IT</button>
             </div>
           </div>
         </div>
@@ -122,14 +120,14 @@ const Podcast = () => {
               Let's bring your story to life with professional recording and production services. 
               Contact us today to book your session.
             </p>
-            <div className="cta-buttons">
+            {/* <div className="cta-buttons">
               <Link to="/about" className="btn btn-primary">
                 Contact Us
               </Link>
               <Link to="/" className="btn btn-secondary">
                 Learn More
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

@@ -707,7 +707,7 @@ section {
 
 /* Get Involved CTA */
 .get-involved {
-  background: linear-gradient(135deg, #063762 0%, #0a4a7a 100%);
+  background: #063762;
   color: white;
   text-align: center;
   position: relative;
@@ -722,8 +722,7 @@ section {
   right: 0;
   bottom: 0;
   background: 
-    radial-gradient(circle at 30% 30%, rgba(135, 206, 235, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 70% 70%, rgba(135, 206, 235, 0.05) 0%, transparent 50%);
+ #063762;
 }
 
 .cta-content {
@@ -739,11 +738,11 @@ section {
 
 .get-involved p {
   font-size: 1.25rem;
-  margin-bottom: 48px;
+  margin-bottom: 8px;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
-  line-height: 1.6;
+  line-height: 1.2;
   color: #cbd5e1;
 }
 

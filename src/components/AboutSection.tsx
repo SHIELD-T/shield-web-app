@@ -5,9 +5,9 @@ import './AboutSection.css';
 const AboutSection: React.FC = () => {
   const stats = [
     { number: '2023', label: 'Founded' },
-    { number: '500+', label: 'Youth Empowered' },
-    { number: '50+', label: 'Ventures Launched' },
-    { number: '10+', label: 'Communities Served' }
+    { number: '100+', label: 'Youth Empowered' },
+    { number: '5+', label: 'Ventures Launched' },
+    { number: '5+', label: 'Communities Served' }
   ];
 
 

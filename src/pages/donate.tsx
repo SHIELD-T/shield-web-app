@@ -35,7 +35,7 @@ const Donate: React.FC = () => {
                 underserved communities through education, innovation, and entrepreneurship. Every step you take 
                 brings us closer to building sustainable ventures and driving lasting social impact.
               </p>
-              <a href="/marathon-registration" className="donate-btn donate-btn-primary">
+              <a href="https://www.realbuzz.com/charities/shield-international" target="_blank"  className="donate-btn donate-btn-primary">
                 Find a Marathon
               </a>
             </div>
@@ -57,55 +57,58 @@ const Donate: React.FC = () => {
           <div className="impact-stories-grid">
             <div className="impact-story-card">
               <img 
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=250&fit=crop&crop=center" 
-                alt="Young female entrepreneur with laptop"
+                src="https://images.unsplash.com/photo-1544717297-fa95b6ee9643?w=400&h=250&fit=crop&crop=center" 
+                alt="Children participating in Waweza Foundation workshop"
                 style={{width: '100%', height: '200px', objectFit: 'cover', borderRadius: '8px'}}
               />
-              <h3>Sarah's Tech Startup</h3>
+              <h3>Waweza Foundation</h3>
               <p>
-                With support from our software development program, Sarah launched 
-                a mobile app that connects local farmers with urban markets, 
-                creating sustainable income for 200+ farming families.
+                Workshops aimed to inspire children through engaging activities that foster 
+                critical thinking and communication skills. We focus on hands-on projects 
+                that encourage teamwork and innovation, helping children to not only learn 
+                but also to apply their knowledge in real-world scenarios.
               </p>
               <div className="story-stats">
-                <span className="story-stat">200+ families impacted</span>
-                <span className="story-stat">$50K revenue generated</span>
+                <span className="story-stat">50+ children engaged</span>
+                <span className="story-stat">Critical thinking skills developed</span>
               </div>
             </div>
 
             <div className="impact-story-card">
               <img 
-                src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=400&h=250&fit=crop&crop=center" 
-                alt="Solar panel installation in rural community"
+                src="https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?w=400&h=250&fit=crop&crop=center" 
+                alt="TDP Fellowship Program software development session"
                 style={{width: '100%', height: '200px', objectFit: 'cover', borderRadius: '8px'}}
               />
-              <h3>Community Solar Initiative</h3>
+              <h3>TDP Fellowship Program</h3>
               <p>
-                Through our entrepreneurship program, a group of young innovators 
-                created a community solar project that now provides clean energy 
-                to 500 households in rural areas.
+                We began the foundational software development program on the 10th of June where 
+                our goal is to create at least 5 tech-enabled tourism ventures. The innovation 
+                hub is open from 8:00 AM EAT up until 7:00 PM EAT with instructor-based coding 
+                sessions from 9:00 AM EAT up until 2:00 PM EAT.
               </p>
               <div className="story-stats">
-                <span className="story-stat">500 households powered</span>
-                <span className="story-stat">30% energy cost reduction</span>
+                <span className="story-stat">5 tech ventures planned</span>
+                <span className="story-stat">Daily coding sessions</span>
               </div>
             </div>
 
             <div className="impact-story-card">
               <img 
-                src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&h=250&fit=crop&crop=center" 
-                alt="Students learning in digital classroom"
+                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=250&fit=crop&crop=center" 
+                alt="Digital transformation workshop with students"
                 style={{width: '100%', height: '200px', objectFit: 'cover', borderRadius: '8px'}}
               />
-              <h3>Digital Learning Centers</h3>
+              <h3>Digital Transformation</h3>
               <p>
-                Our donations helped establish 5 digital learning centers, 
-                providing computer access and digital literacy training to 
-                over 1,000 youth in underserved communities.
+                Through interactive sessions, learners develop innovative thinking and learn 
+                how to effectively present their ideas. Our curriculum includes exercises in 
+                design thinking, collaborative projects, and public speaking, ensuring that 
+                each participant gains a comprehensive skill set.
               </p>
               <div className="story-stats">
-                <span className="story-stat">5 centers established</span>
-                <span className="story-stat">1,000+ youth trained</span>
+                <span className="story-stat">Design thinking workshops</span>
+                <span className="story-stat">Public speaking skills</span>
               </div>
             </div>
           </div>
@@ -188,8 +191,8 @@ const Donate: React.FC = () => {
                 <li>Digital impact report</li>
                 <li>Monthly newsletter updates</li>
               </ul>
-              <a href="/donate/25" className="donate-btn donate-btn-primary">
-                Donate $25
+              <a href="https://www.paypal.com/donate/?hosted_button_id=YOUR_BUTTON_ID_25" target="_blank" rel="noopener noreferrer" className="donate-btn donate-btn-primary">
+                Donate $25 via PayPal
               </a>
             </div>
 
@@ -204,8 +207,8 @@ const Donate: React.FC = () => {
                 <li>Exclusive donor events access</li>
                 <li>Direct mentee updates</li>
               </ul>
-              <a href="/donate/100" className="donate-btn donate-btn-primary">
-                Donate $100
+              <a href="https://www.paypal.com/donate/?hosted_button_id=YOUR_BUTTON_ID_100" target="_blank" rel="noopener noreferrer" className="donate-btn donate-btn-primary">
+                Donate $100 via PayPal
               </a>
             </div>
 
@@ -219,8 +222,8 @@ const Donate: React.FC = () => {
                 <li>Hub naming recognition</li>
                 <li>Advisory board invitation</li>
               </ul>
-              <a href="/donate/500" className="donate-btn donate-btn-primary">
-                Donate $500
+              <a href="https://www.paypal.com/donate/?hosted_button_id=YOUR_BUTTON_ID_500" target="_blank" rel="noopener noreferrer" className="donate-btn donate-btn-primary">
+                Donate $500 via PayPal
               </a>
             </div>
           </div>
@@ -236,8 +239,20 @@ const Donate: React.FC = () => {
                 placeholder="Enter amount" 
                 className="donation-input" 
               />
-              <a href="#" className="donate-btn donate-btn-secondary">
-                Donate Custom Amount
+              <a href="https://www.paypal.com/donate/?hosted_button_id=YOUR_CUSTOM_BUTTON_ID" target="_blank" rel="noopener noreferrer" className="donate-btn donate-btn-secondary">
+                Donate via PayPal
+              </a>
+            </div>
+            <div style={{marginTop: '20px', textAlign: 'center'}}>
+              <p style={{fontSize: '0.9rem', color: '#666', marginBottom: '10px'}}>
+                Need other payment methods? We accept bank transfers, checks, and cryptocurrency.
+              </p>
+              <a 
+                href="mailto:info@shieldintl.org?subject=Alternative Payment Methods Inquiry&body=Hello SHIELD Team,%0D%0A%0D%0AI would like to inquire about alternative payment methods for making a donation. Please provide information about available options.%0D%0A%0D%0AThank you!" 
+                className="donate-btn donate-btn-outline"
+                style={{fontSize: '0.9rem', padding: '8px 16px'}}
+              >
+                Other Payment Methods
               </a>
             </div>
           </div>
@@ -268,11 +283,11 @@ const Donate: React.FC = () => {
                 </ul>
               </div>
               <div className="monthly-giving-buttons">
-                <a href="/monthly-giving" className="donate-btn donate-btn-primary">
-                  Start Monthly Giving
+                <a href="https://www.paypal.com/donate/?hosted_button_id=YOUR_MONTHLY_BUTTON_ID" target="_blank" rel="noopener noreferrer" className="donate-btn donate-btn-primary">
+                  Start Monthly Giving via PayPal
                 </a>
-                <a href="/impact-reports" className="donate-btn donate-btn-outline">
-                  View Impact Reports
+                <a href="mailto:info@shieldintl.org?subject=Impact Reports Request&body=Hello SHIELD Team,%0D%0A%0D%0AI would like to request access to your latest impact reports and program updates.%0D%0A%0D%0AThank you!" className="donate-btn donate-btn-outline">
+                  Request Impact Reports
                 </a>
               </div>
             </div>
@@ -299,9 +314,7 @@ const Donate: React.FC = () => {
                 Participate in marathons, charity runs, and community events 
                 that raise funds and awareness for our programs.
               </p>
-              <a href="/events" className="donate-btn donate-btn-outline">
-                View Events
-              </a>
+             
             </div>
 
             <div className="giving-option-card">
@@ -311,9 +324,7 @@ const Donate: React.FC = () => {
                 Partner with us to create employee engagement programs and 
                 corporate social responsibility initiatives.
               </p>
-              <a href="/partnerships" className="donate-btn donate-btn-outline">
-                Explore Partnerships
-              </a>
+              
             </div>
 
             <div className="giving-option-card">
@@ -323,9 +334,7 @@ const Donate: React.FC = () => {
                 Share your skills and expertise by volunteering as a mentor, 
                 workshop facilitator, or program supporter.
               </p>
-              <a href="/volunteer" className="donate-btn donate-btn-outline">
-                Become a Volunteer
-              </a>
+             
             </div>
 
             <div className="giving-option-card">
@@ -335,9 +344,7 @@ const Donate: React.FC = () => {
                 Donate equipment, materials, or services that directly support 
                 our programs and infrastructure needs.
               </p>
-              <a href="/in-kind" className="donate-btn donate-btn-outline">
-                Donate In-Kind
-              </a>
+            
             </div>
           </div>
         </div>
@@ -398,10 +405,12 @@ const Donate: React.FC = () => {
                 </div>
               </div>
               <div className="transparency-buttons">
-                <a href="" className="donate-btn donate-btn-outline">
+                <a href="https://shieldintl.org/wp-content/uploads/2025/04/SHIELD-2024-ANNUAL-REPORT-2.pdf" target="_blank" rel="noopener noreferrer" className="donate-btn donate-btn-primary">
+                  View 2024 Annual Report
+                </a>
+                <a href="mailto:info@shieldintl.org?subject=Financial Report Request&body=Hello SHIELD Team,%0D%0A%0D%0AI would like to request your latest financial report and transparency documentation.%0D%0A%0D%0AThank you!" className="donate-btn donate-btn-outline">
                   Request Financial Report
                 </a>
-              
               </div>
             </div>
             <div className="transparency-image">
@@ -416,7 +425,7 @@ const Donate: React.FC = () => {
       </section>
 
       {/* Donor Recognition */}
-      <section className="donor-recognition-section">
+      {/* <section className="donor-recognition-section">
         <div className="donate-container">
           <h2>Recognizing Our Champions</h2>
           <div className="donor-tiers-grid">
@@ -457,7 +466,7 @@ const Donate: React.FC = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Final CTA */}
       <section className="donate-cta-section">
@@ -470,11 +479,10 @@ const Donate: React.FC = () => {
               more equitable and innovative future.
             </p>
             <div className="donate-cta-buttons">
-              <a href="/donate/one-time" className="donate-btn donate-btn-primary">
-                Make a One-Time Donation
+              <a href="https://www.paypal.com/donate/?hosted_button_id=YOUR_GENERAL_BUTTON_ID" target="_blank" rel="noopener noreferrer" className="donate-btn donate-btn-primary">
+                Make a One-Time Donation via PayPal
               </a>
-             
-              <a href="/volunteer" className="donate-btn donate-btn-outline">
+              <a href="mailto:info@shieldintl.org?subject=Volunteer Inquiry&body=Hello SHIELD Team,%0D%0A%0D%0AI am interested in volunteering with SHIELD. Please provide information about available volunteer opportunities.%0D%0A%0D%0AThank you!" className="donate-btn donate-btn-outline">
                 Volunteer Instead
               </a>
             </div>

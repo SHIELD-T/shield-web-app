@@ -83,7 +83,7 @@ export const useBlogs = (limit: number = 4) => {
           const fields = item.fields;
           
           const bodyText = typeof fields.body === 'string' ? fields.body : '';
-          const excerpt = bodyText.length > 0 ? bodyText.substring(0, 150) + '...' : 'No description available.';
+          const excerpt = bodyText.length > 0 ? bodyText.substring(0, 30) + '...' : 'No description available.';
 
           let imageUrl = '';
           if (fields.image && Array.isArray(fields.image) && fields.image.length > 0) {
