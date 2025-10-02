@@ -36,7 +36,6 @@ const Podcast = () => {
                 <div className="feature">Complimentary content reviews</div>
                 <div className="feature">1 free social media snippet to promote your episode</div>
               </div>
-              <button className="btn btn-outline plan-btn">GET IT</button>
             </div>
 
             {/* Story Flow Plan */}
@@ -55,33 +54,37 @@ const Podcast = () => {
                 <div className="feature">Comprehensive service, including recording, mixing, and mastering</div>
                 <div className="feature">Distribution to all major global platforms</div>
               </div>
-              <button className="btn btn-primary plan-btn">GET IT</button>
             </div>
           </div>
         </div>
       </section>
+
 
       {/* Full Podcast Section */}
       <section className="full-podcast-section">
         <div className="container">
           <div className="full-podcast-content">
             <div className="podcast-illustration">
-              <div className="illustration-placeholder">
-                <div className="desk-setup">
-                  <div className="person person-1"></div>
-                  <div className="person person-2"></div>
-                  <div className="desk"></div>
-                  <div className="equipment"></div>
-                </div>
-              </div>
+              <img src="/assets/images/68.jpg" alt="Podcast Illustration" className="podcast-image" />
             </div>
             <div className="podcast-info">
-              <div className="tag">LET'S TALK</div>
-              <h2>Full Podcast to Resonate our services</h2>
+              <div className="tag">Unleash Your Voice</div>
+              <h2>Full Podcast to Resonate Our Services</h2>
+              <p>
+                Dive into the world of professional podcasting with our comprehensive services. 
+                Whether you're a seasoned podcaster or just starting out, we provide everything you need to create a show that stands out. 
+                From state-of-the-art recording facilities to expert post-production, we ensure your voice is heard loud and clear.
+              </p>
+              <p>
+                Our team is dedicated to helping you craft a podcast that resonates with your audience and amplifies your message. 
+                Let us handle the technical details while you focus on sharing your story with the world.
+              </p>
             </div>
           </div>
         </div>
       </section>
+
+.
 
       {/* Why Choose Us Section */}
       <section className="why-choose-section">
@@ -117,14 +120,14 @@ const Podcast = () => {
               Let's bring your story to life with professional recording and production services. 
               Contact us today to book your session.
             </p>
-            <div className="cta-buttons">
+            {/* <div className="cta-buttons">
               <Link to="/about" className="btn btn-primary">
                 Contact Us
               </Link>
               <Link to="/" className="btn btn-secondary">
                 Learn More
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

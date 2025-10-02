@@ -23,14 +23,16 @@ const BlogArticle: React.FC<BlogArticleProps> = ({
 }) => {
   return (
     <article className="blog-article">
-      <div className="blog-article-image">
-        <img 
-          src={imageUrl} 
-          alt={imageAlt}
-          width="120"
-          height="80"
-        />
-      </div>
+      {imageUrl ? (
+        <div className="blog-article-image">
+          <img 
+            src={imageUrl} 
+            alt={imageAlt}
+            width="120"
+            height="80"
+          />
+        </div>
+      ) : null}
       <div className="blog-article-content">
         <div className="blog-article-meta">
           <span className="blog-article-category">{category}</span>

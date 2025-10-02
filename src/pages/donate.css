@@ -62,7 +62,8 @@
 
 /* Hero Section */
 .donate-hero {
-  background: linear-gradient(135deg, #063762 0%, #0a4a7a 100%);
+  background: linear-gradient(135deg, #063762 0%, #0a4a7a 10%);
+  background-image: url('/assets/images/background3.jpg');
   min-height: 50vh;
   display: flex;
   align-items: center;
@@ -1042,3 +1043,4 @@
     gap: 10px;
   }
 }
+

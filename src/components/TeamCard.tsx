@@ -9,9 +9,7 @@ interface TeamCardProps {
   imageUrl: string;
   imageAlt: string;
   socialLinks?: {
-    xUrl?: string;
     linkedInUrl?: string;
-    facebookUrl?: string;
   };
 }
 
@@ -62,11 +60,9 @@ const TeamCard: React.FC<TeamCardProps> = ({
         <h3 className="team-card-name">{name}</h3>
         <p className="team-card-position">{position}</p>
         <p className="team-card-description">{description}</p>
-        {socialLinks && (
+        {socialLinks?.linkedInUrl && (
           <SocialLinks
-            xUrl={socialLinks.xUrl}
             linkedInUrl={socialLinks.linkedInUrl}
-            facebookUrl={socialLinks.facebookUrl}
           />
         )}
       </div>

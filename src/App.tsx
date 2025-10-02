@@ -3,17 +3,21 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/header";
 import Footer from "./components/footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 import Home from "./pages/home";
 import About from "./pages/about";
 import Podcast from "./pages/podcast";
-
-import "./App.css";
 import Programs from "./pages/programs";
 import Donate from "./pages/donate";
+import BlogPostPage from "./pages/blogpost"; // Import your BlogPost component
+
+import "./App.css";
+
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="App">
         <Header />
         <main className="main-content">
@@ -22,15 +26,16 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/podcast" element={<Podcast />} />
             <Route path="/programs" element={<Programs />} />
-
-            {/* <Route path="/" element={<Report />} /> */}
+            
+            {/* Blog post route - ADD THIS LINE */}
+            <Route path="/blog/:slug" element={<BlogPostPage />} />
+            
             <Route path="/donate" element={<Donate />} />
-
+            
             <Route
               path="/report"
               element={<PlaceholderPage title="Reports" />}
             />
-            
           </Routes>
         </main>
         <Footer />

@@ -27,113 +27,93 @@ const Programs = () => {
       </section>
 
       {/* Core Programs Section */}
-      <section className="main-programs-section" style={{backgroundColor: '#ffffff', padding: '100px 0'}}>
-        <div className="programs-container">
-          <div style={{textAlign: 'center', marginBottom: '60px'}}>
-            <p style={{color: '#666666', fontSize: '0.9rem', fontWeight: '500', marginBottom: '10px', letterSpacing: '2px', textTransform: 'uppercase'}}>
-              Our Focus Areas
-            </p>
-            
-          </div>
-          <div className="programs-grid">
-            {/* Shorter Card - Design Thinking */}
-            <div style={{
-              backgroundColor: '#063762',
-              borderRadius: '10px',
-              overflow: 'hidden',
-              boxShadow: '0 8px 30px rgba(0, 0, 0, 0.1)',
-              transition: 'transform 0.3s ease',
-              height: 'fit-content'
-            }}>
-              <img 
-                src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=300&h=140&fit=crop&crop=center" 
-                alt="Design Thinking Workshop"
-                style={{width: '100%', height: '140px', objectFit: 'cover'}}
-              />
-              <div style={{padding: '20px', color: 'white'}}>
-                <h3 style={{fontSize: '1.1rem', fontWeight: '600', marginBottom: '10px', color: 'white'}}>
-                  Design Thinking Programs
-                </h3>
-                <p style={{fontSize: '0.85rem', lineHeight: '1.4', margin: '0', color: '#e2e8f0'}}>
-                  Empowering youth with collaborative problem-solving skills to pioneer community solutions.
-                </p>
-              </div>
-            </div>
-            
-            {/* Taller Card - SHIELD Entrepreneurship */}
-            <div style={{
-              backgroundColor: '#063762',
-              borderRadius: '10px',
-              overflow: 'hidden',
-              boxShadow: '0 8px 30px rgba(0, 0, 0, 0.1)',
-              transition: 'transform 0.3s ease',
-              height: 'fit-content'
-            }}>
-              <img 
-                src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=300&h=200&fit=crop&crop=center" 
-                alt="Entrepreneurship Training"
-                style={{width: '100%', height: '200px', objectFit: 'cover'}}
-              />
-              <div style={{padding: '25px', color: 'white'}}>
-                <h3 style={{fontSize: '1.2rem', fontWeight: '600', marginBottom: '12px', color: 'white'}}>
-                  SHIELD Entrepreneurship Programs
-                </h3>
-                <p style={{fontSize: '0.9rem', lineHeight: '1.5', margin: '0', color: '#e2e8f0'}}>
-                  Supporting businesses with personalized training and mentorship. Building capacity to operate successfully, unlock financing, and scale to new levels.
-                </p>
-              </div>
-            </div>
-            
-            {/* Shorter Card - Software Development */}
-            <div style={{
-              backgroundColor: '#063762',
-              borderRadius: '10px',
-              overflow: 'hidden',
-              boxShadow: '0 8px 30px rgba(0, 0, 0, 0.1)',
-              transition: 'transform 0.3s ease',
-              height: 'fit-content'
-            }}>
-              <img 
-                src="https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?w=300&h=140&fit=crop&crop=center" 
-                alt="Software Development Course"
-                style={{width: '100%', height: '140px', objectFit: 'cover'}}
-              />
-              <div style={{padding: '20px', color: 'white'}}>
-                <h3 style={{fontSize: '1.1rem', fontWeight: '600', marginBottom: '10px', color: 'white'}}>
-                  Software Development
-                </h3>
-                <p style={{fontSize: '0.85rem', lineHeight: '1.4', margin: '0', color: '#e2e8f0'}}>
-                  Career-focused certifications and business acumen to transform your ideas into reality.
-                </p>
-              </div>
-            </div>
-            
-            {/* Taller Card - SIDLabs */}
-            <div style={{
-              backgroundColor: '#063762',
-              borderRadius: '10px',
-              overflow: 'hidden',
-              boxShadow: '0 8px 30px rgba(0, 0, 0, 0.1)',
-              transition: 'transform 0.3s ease',
-              height: 'fit-content'
-            }}>
-              <img 
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=200&fit=crop&crop=center" 
-                alt="Research Laboratory"
-                style={{width: '100%', height: '200px', objectFit: 'cover'}}
-              />
-              <div style={{padding: '25px', color: 'white'}}>
-                <h3 style={{fontSize: '1.2rem', fontWeight: '600', marginBottom: '12px', color: 'white'}}>
-                  SIDLabs Research & Development
-                </h3>
-                <p style={{fontSize: '0.9rem', lineHeight: '1.5', margin: '0', color: '#e2e8f0'}}>
-                  Innovation hub driving societal impact through collaborative spaces, transformative programs, and cutting-edge development initiatives.
-                </p>
-              </div>
-            </div>
-          </div>
+     <section className="main-programs-section" style={{backgroundColor: '#ffffff', padding: '100px 0'}}>
+  <div className="programs-container">
+    <div style={{textAlign: 'center', marginBottom: '60px'}}>
+      <p style={{color: '#666666', fontSize: '0.9rem', fontWeight: '500', marginBottom: '10px', letterSpacing: '2px', textTransform: 'uppercase'}}>
+        Our Focus Areas
+      </p>
+    </div>
+    <div className="programs-grid">
+      {/* Card - Design Thinking */}
+      <div style={{
+        backgroundColor: '#063762',
+        borderRadius: '10px',
+        overflow: 'hidden',
+        boxShadow: '0 8px 30px rgba(0, 0, 0, 0.1)',
+        transition: 'transform 0.3s ease',
+        height: 'fit-content'
+      }}>
+        <div style={{padding: '20px', color: 'white'}}>
+          <h3 style={{fontSize: '1.1rem', fontWeight: '600', marginBottom: '10px', color: 'white'}}>
+            Design Thinking Programs
+          </h3>
+          <p style={{fontSize: '0.85rem', lineHeight: '1.4', margin: '0', color: '#e2e8f0'}}>
+            Empowering youth with collaborative problem-solving skills to pioneer community solutions.
+          </p>
         </div>
-      </section>
+      </div>
+      
+      {/* Card - SHIELD Entrepreneurship */}
+      <div style={{
+        backgroundColor: '#063762',
+        borderRadius: '10px',
+        overflow: 'hidden',
+        boxShadow: '0 8px 30px rgba(0, 0, 0, 0.1)',
+        transition: 'transform 0.3s ease',
+        height: 'fit-content'
+      }}>
+        <div style={{padding: '20px', color: 'white'}}>
+          <h3 style={{fontSize: '1.1rem', fontWeight: '600', marginBottom: '10px', color: 'white'}}>
+            SHIELD Entrepreneurship Programs
+          </h3>
+          <p style={{fontSize: '0.85rem', lineHeight: '1.4', margin: '0', color: '#e2e8f0'}}>
+            Supporting businesses with personalized training and mentorship. Building capacity to operate successfully, unlock financing, and scale to new levels.
+          </p>
+        </div>
+      </div>
+      
+     
+      
+      {/* Card - SIDLabs */}
+      <div style={{
+        backgroundColor: '#063762',
+        borderRadius: '10px',
+        overflow: 'hidden',
+        boxShadow: '0 8px 30px rgba(0, 0, 0, 0.1)',
+        transition: 'transform 0.3s ease',
+        height: 'fit-content'
+      }}>
+        <div style={{padding: '20px', color: 'white'}}>
+          <h3 style={{fontSize: '1.1rem', fontWeight: '600', marginBottom: '10px', color: 'white'}}>
+            SIDLabs Research & Development
+          </h3>
+          <p style={{fontSize: '0.85rem', lineHeight: '1.4', margin: '0', color: '#e2e8f0'}}>
+            Innovation hub driving societal impact through collaborative spaces, transformative programs, and cutting-edge development initiatives.
+          </p>
+        </div>
+      </div>
+       {/* Card - Software Development */}
+      <div style={{
+        backgroundColor: '#063762',
+        borderRadius: '10px',
+        overflow: 'hidden',
+        boxShadow: '0 8px 30px rgba(0, 0, 0, 0.1)',
+        transition: 'transform 0.3s ease',
+        height: 'fit-content'
+      }}>
+        <div style={{padding: '20px', color: 'white'}}>
+          <h3 style={{fontSize: '1.1rem', fontWeight: '600', marginBottom: '10px', color: 'white'}}>
+            Software Development
+          </h3>
+          <p style={{fontSize: '0.85rem', lineHeight: '1.4', margin: '0', color: '#e2e8f0'}}>
+            Career-focused certifications and business acumen to transform your ideas into reality.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Ongoing Courses Section */}
       <section className="specialty-programs-section">
@@ -186,7 +166,7 @@ const Programs = () => {
             </div>
           </div>
 
-          <div className="specialty-program-feature">
+          {/* <div className="specialty-program-feature">
             <div className="specialty-program-text">
               <h3>Business Development & Financial Literacy</h3>
               <p>
@@ -228,7 +208,7 @@ const Programs = () => {
                 style={{width: '100%', height: '300px', objectFit: 'cover', borderRadius: '12px'}}
               />
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -239,72 +219,95 @@ const Programs = () => {
           <div className="program-categories-grid">
             <div className="program-category-card">
               <img 
-                src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=250&fit=crop&crop=center" 
-                alt="Graphic Design Course" 
+                src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=250&fit=crop&crop=center" 
+                alt="Canva Comprehensive Course" 
                 style={{width: '100%', height: '200px', objectFit: 'cover', borderRadius: '8px', marginBottom: '20px'}}
               />
-              <h3>Graphic Design Fundamentals</h3>
+              <h3>Canva Comprehensive Course</h3>
               <p>
-                Learn the basics of graphic design, including color theory, typography,
-                and layout principles. Create stunning visuals for your business or
-                personal projects using industry-standard tools.
-              </p>
-              <p><strong>Duration:</strong> 10 weeks • <strong>Self-paced</strong></p>
-              <a href="/courses/graphic-design" className="programs-btn programs-btn-primary">
-                Enroll Now
-              </a>
-            </div>
-
-            <div className="program-category-card">
-              <img 
-                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop&crop=center" 
-                alt="Data Analytics Course" 
-                style={{width: '100%', height: '200px', objectFit: 'cover', borderRadius: '8px', marginBottom: '20px'}}
-              />
-              <h3>Data Analytics & Visualization</h3>
-              <p>
-                Master data analysis techniques using Excel, Python, and visualization
-                tools. Learn to extract insights from data and make data-driven
-                decisions for business growth.
-              </p>
-              <p><strong>Duration:</strong> 14 weeks • <strong>Self-paced</strong></p>
-              <a href="/courses/data-analytics" className="programs-btn programs-btn-primary">
-                Enroll Now
-              </a>
-            </div>
-
-            <div className="program-category-card">
-              <img 
-                src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=400&h=250&fit=crop&crop=center" 
-                alt="Video Production Course" 
-                style={{width: '100%', height: '200px', objectFit: 'cover', borderRadius: '8px', marginBottom: '20px'}}
-              />
-              <h3>Video Production & Editing</h3>
-              <p>
-                Create professional videos from concept to completion. Learn filming
-                techniques, storytelling, and video editing using modern software.
-                Perfect for content creators and marketers.
-              </p>
-              <p><strong>Duration:</strong> 8 weeks • <strong>Self-paced</strong></p>
-              <a href="/courses/video-production" className="programs-btn programs-btn-primary">
-                Enroll Now
-              </a>
-            </div>
-
-            <div className="program-category-card">
-              <img 
-                src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=250&fit=crop&crop=center" 
-                alt="Personal Finance Course" 
-                style={{width: '100%', height: '200px', objectFit: 'cover', borderRadius: '8px', marginBottom: '20px'}}
-              />
-              <h3>Personal Finance Management</h3>
-              <p>
-                Take control of your finances with our comprehensive personal finance
-                course. Learn budgeting, saving, investing, and financial planning
-                strategies for long-term wealth building.
+                Master the art of visual design with Canva's powerful tools. Learn to create 
+                stunning graphics, social media posts, presentations, and marketing materials. 
+                Perfect for entrepreneurs, marketers, and content creators looking to enhance 
+                their visual communication skills.
               </p>
               <p><strong>Duration:</strong> 6 weeks • <strong>Self-paced</strong></p>
-              <a href="/courses/personal-finance" className="programs-btn programs-btn-primary">
+              <a href="https://shieldintl.org/academy/" className="programs-btn programs-btn-primary" target="_blank" rel="noopener noreferrer">
+                Enroll Now
+              </a>
+            </div>
+
+            <div className="program-category-card">
+              <img 
+                src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=400&h=250&fit=crop&crop=center" 
+                alt="Blockchain Development Course" 
+                style={{width: '100%', height: '200px', objectFit: 'cover', borderRadius: '8px', marginBottom: '20px'}}
+              />
+              <h3>Introduction to Blockchain with Celo and Solidity Development</h3>
+              <p>
+                Dive into the world of blockchain technology and smart contract development. 
+                Learn Solidity programming, understand the Celo blockchain ecosystem, and 
+                build decentralized applications. Ideal for developers looking to enter 
+                the Web3 space and create innovative blockchain solutions.
+              </p>
+              <p><strong>Duration:</strong> 12 weeks • <strong>Self-paced</strong></p>
+              <a href="https://shieldintl.org/academy/" className="programs-btn programs-btn-primary" target="_blank" rel="noopener noreferrer">
+                Enroll Now
+              </a>
+            </div>
+
+            <div className="program-category-card">
+              <img 
+                src="https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=400&h=250&fit=crop&crop=center" 
+                alt="Database Development Course" 
+                style={{width: '100%', height: '200px', objectFit: 'cover', borderRadius: '8px', marginBottom: '20px'}}
+              />
+              <h3>Database Design & Programming with SQL</h3>
+              <p>
+                Master database fundamentals and SQL programming. Learn to design efficient 
+                database schemas, write complex queries, and manage data effectively. 
+                Essential skills for backend developers, data analysts, and anyone working 
+                with data-driven applications.
+              </p>
+              <p><strong>Duration:</strong> 10 weeks • <strong>Self-paced</strong></p>
+              <a href="https://shieldintl.org/academy/" className="programs-btn programs-btn-primary" target="_blank" rel="noopener noreferrer">
+                Enroll Now
+              </a>
+            </div>
+
+            <div className="program-category-card">
+              <img 
+                src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=400&h=250&fit=crop&crop=center" 
+                alt="Python Programming Course" 
+                style={{width: '100%', height: '200px', objectFit: 'cover', borderRadius: '8px', marginBottom: '20px'}}
+              />
+              <h3>Python Programming</h3>
+              <p>
+                Learn Python from basics to advanced concepts. Cover data structures, 
+                algorithms, web development with Django/Flask, data analysis, and automation. 
+                Perfect for beginners starting their programming journey or professionals 
+                looking to add Python to their skill set.
+              </p>
+              <p><strong>Duration:</strong> 14 weeks • <strong>Self-paced</strong></p>
+              <a href="https://shieldintl.org/academy/" className="programs-btn programs-btn-primary" target="_blank" rel="noopener noreferrer">
+                Enroll Now
+              </a>
+            </div>
+
+            <div className="program-category-card">
+              <img 
+                src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=250&fit=crop&crop=center" 
+                alt="Web Development Course" 
+                style={{width: '100%', height: '200px', objectFit: 'cover', borderRadius: '8px', marginBottom: '20px'}}
+              />
+              <h3>Web Development</h3>
+              <p>
+                Build modern, responsive websites and web applications from scratch. 
+                Learn HTML, CSS, JavaScript, React, and backend technologies. 
+                Includes hands-on projects, portfolio development, and industry best practices 
+                to prepare you for a career in web development.
+              </p>
+              <p><strong>Duration:</strong> 16 weeks • <strong>Self-paced</strong></p>
+              <a href="https://shieldintl.org/academy/" className="programs-btn programs-btn-primary" target="_blank" rel="noopener noreferrer">
                 Enroll Now
               </a>
             </div>
@@ -351,7 +354,7 @@ const Programs = () => {
       </section>
 
       {/* Program Impact Stats */}
-      <section className="program-impact-section">
+      {/* <section className="program-impact-section">
         <div className="programs-container">
           <h2>Program Impact</h2>
           <div className="program-impact-grid">
@@ -370,7 +373,7 @@ const Programs = () => {
             
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Program Features */}
       <section className="program-features-section">
@@ -378,6 +381,7 @@ const Programs = () => {
           <h2>What Makes Our Programs Unique</h2>
           <div className="program-features-grid">
             <div className="program-feature-card">
+              <img src="public\favicon.png" alt="" />
               <h3>Community-Centered Approach</h3>
               <p>
                 All programs are designed with deep community input and focus on
@@ -386,6 +390,7 @@ const Programs = () => {
             </div>
 
             <div className="program-feature-card">
+              <img src="public\favicon.png" alt="" />
               <h3>Iterative Learning</h3>
               <p>
                 Using design thinking principles, participants learn through
@@ -394,6 +399,7 @@ const Programs = () => {
             </div>
 
             <div className="program-feature-card">
+              <img src="public\favicon.png" alt="" />
               <h3>Peer-to-Peer Learning</h3>
               <p>
                 Collaborative learning environments where participants learn
@@ -402,6 +408,7 @@ const Programs = () => {
             </div>
 
             <div className="program-feature-card">
+              <img src="public\favicon.png" alt="" />
               <h3>Measurable Impact</h3>
               <p>
                 All programs include clear metrics and evaluation frameworks
@@ -410,6 +417,7 @@ const Programs = () => {
             </div>
 
             <div className="program-feature-card">
+              <img src="public\favicon.png" alt="" />
               <h3>Sustainable Solutions</h3>
               <p>
                 Focus on creating long-term, sustainable solutions that continue
@@ -418,6 +426,7 @@ const Programs = () => {
             </div>
 
             <div className="program-feature-card">
+              <img src="public\favicon.png" alt="" />
               <h3>Innovation-Driven</h3>
               <p>
                 Encouraging creative thinking and innovative approaches to
@@ -456,14 +465,14 @@ const Programs = () => {
                   <li>Access to internet for online components</li>
                 </ul>
               </div>
-              <div className="program-application-buttons">
+              {/* <div className="program-application-buttons">
                 <a href="/courses" className="programs-btn programs-btn-primary">
                   Browse Courses
                 </a>
                 <a href="/contact" className="programs-btn programs-btn-outline">
                   Contact Us
                 </a>
-              </div>
+              </div> */}
             </div>
             <div className="program-application-image">
               <img 
@@ -486,14 +495,14 @@ const Programs = () => {
               Our programs provide the tools, knowledge, and support you need to
               create lasting positive change.
             </p>
-            <div className="programs-cta-buttons">
+            {/* <div className="programs-cta-buttons">
               <a href="/courses" className="programs-btn programs-btn-primary">
                 Start Your Journey
               </a>
               <a href="/donate" className="programs-btn programs-btn-secondary">
                 Support Our Mission
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

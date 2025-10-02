@@ -3,13 +3,15 @@
 
 .home {
   font-family: 'Inter', sans-serif;
+  background-color: #063762;
 }
 
 /* Scroll Animations */
 .scroll-animate {
   opacity: 0;
-  transform: translateY(50px);
-  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(70px);
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .scroll-animate.animate-in {
@@ -22,27 +24,56 @@
   animation: slideInUp 0.6s ease-out forwards;
 }
 
-.scroll-animate.animate-in .challenge-item:nth-child(1) { animation-delay: 0.1s; }
-.scroll-animate.animate-in .challenge-item:nth-child(2) { animation-delay: 0.2s; }
-.scroll-animate.animate-in .challenge-item:nth-child(3) { animation-delay: 0.3s; }
-.scroll-animate.animate-in .challenge-item:nth-child(4) { animation-delay: 0.4s; }
-.scroll-animate.animate-in .challenge-item:nth-child(5) { animation-delay: 0.5s; }
-.scroll-animate.animate-in .challenge-item:nth-child(6) { animation-delay: 0.6s; }
+.scroll-animate.animate-in .challenge-item:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.scroll-animate.animate-in .challenge-item:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.scroll-animate.animate-in .challenge-item:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.scroll-animate.animate-in .challenge-item:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.scroll-animate.animate-in .challenge-item:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.scroll-animate.animate-in .challenge-item:nth-child(6) {
+  animation-delay: 0.6s;
+}
 
 .scroll-animate.animate-in .course-card {
   animation: slideInUp 0.6s ease-out forwards;
 }
 
-.scroll-animate.animate-in .course-card:nth-child(1) { animation-delay: 0.1s; }
-.scroll-animate.animate-in .course-card:nth-child(2) { animation-delay: 0.2s; }
-.scroll-animate.animate-in .course-card:nth-child(3) { animation-delay: 0.3s; }
-.scroll-animate.animate-in .course-card:nth-child(4) { animation-delay: 0.4s; }
+.scroll-animate.animate-in .course-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.scroll-animate.animate-in .course-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.scroll-animate.animate-in .course-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.scroll-animate.animate-in .course-card:nth-child(4) {
+  animation-delay: 0.4s;
+}
 
 @keyframes slideInUp {
   from {
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -52,7 +83,6 @@
 /* Main content styling */
 .home {
   position: relative;
-  background: white;
 }
 
 /* Enhanced hero animations */
@@ -73,6 +103,7 @@
     opacity: 0;
     transform: translateY(40px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -84,6 +115,7 @@
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -95,6 +127,7 @@
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -157,7 +190,7 @@
 
 /* Hero Section */
 .hero {
-  background: url('/assets/images/DT-5.jpg') center/cover no-repeat;
+  background: url('/assets/images/background.jpg') center/cover no-repeat;
   min-height: 70vh;
   display: flex;
   align-items: center;
@@ -271,7 +304,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background:  #ffffff;
+  background: #ffffff;
   position: relative;
   order: 2;
 }
@@ -315,8 +348,8 @@
 
 /* Why SHIELD is Essential Section */
 .why-shield-section {
-  padding: 50px 0;
-  background:  #ffffff;
+  padding: 100px 0;
+  background: #ffffff;
 }
 
 .why-shield-content {
@@ -335,6 +368,7 @@
   font-weight: 700;
   margin-bottom: 20px;
 }
+
 .why-shield-header h2 img {
   width: 40px;
 }
@@ -476,6 +510,7 @@
     opacity: 0;
     transform: translateX(-50px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -487,6 +522,7 @@
     opacity: 0;
     transform: translateX(50px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -498,6 +534,7 @@
     opacity: 0;
     transform: scale(0.9);
   }
+
   to {
     opacity: 1;
     transform: scale(1);
@@ -833,9 +870,8 @@
 
 /* Call to Action Section */
 .hcta-section {
-  padding: 100px 0 150px 0; /* Extra bottom padding for curtain effect */
-  background: #063762;
-  /* color: white; */
+  padding: 100px 0 150px 0;
+background: url('/assets/images/8.jpeg') center/cover no-repeat;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -848,7 +884,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: #063762;
+   background-color: rgba(6, 55, 98, 0.7);
   z-index: 1;
 }
 
@@ -892,6 +928,7 @@
 
 /* Reduce motion for users who prefer it */
 @media (prefers-reduced-motion: reduce) {
+
   .scroll-animate,
   .scroll-animate.animate-in,
   .scroll-animate.animate-in * {
@@ -900,16 +937,17 @@
     transform: none !important;
     opacity: 1 !important;
   }
-  
+
 
 }
 
 @media (max-width: 768px) {
+
   /* Reduce animation intensity on mobile */
   .scroll-animate {
     transform: translateY(20px);
   }
-  
+
 
 
   .hero-content h1 {
@@ -979,20 +1017,20 @@
     font-size: 2.2rem;
   }
 
- 
+
 
   .events-section {
     padding: 60px 0;
     min-height: 500px;
   }
-  
+
   .events-carousel {
     flex-direction: column;
     gap: 20px;
     min-height: auto;
     position: static;
   }
-  
+
   .event-card-carousel.center,
   .event-card-carousel.left,
   .event-card-carousel.right,
@@ -1005,7 +1043,7 @@
     margin: 0 auto 20px auto !important;
     left: auto !important;
   }
-  
+
   .event-card-carousel.hidden {
     display: none;
   }
@@ -1013,17 +1051,17 @@
   .event-image {
     height: 160px;
   }
-  
+
   .courses-grid {
     grid-template-columns: 1fr;
     gap: 20px;
   }
-  
+
   .course-card {
     min-height: 180px;
     aspect-ratio: 16/8;
   }
-  
+
   .course-content {
     padding: 20px 25px;
   }
@@ -1093,16 +1131,15 @@
 
 .quote-text {
   font-size: 3.0rem;
-  color: #094477;
+  color: #000000;
   font-weight: 600;
   line-height: 1.4;
   margin: 0 0 10px 0;
-  font-style: italic;
 }
 
 .quote-author {
   font-size: 1.3rem;
-  color: #0e0e0e;
+  color: #063762;
   font-weight: 600;
   font-style: normal;
   margin: 0;

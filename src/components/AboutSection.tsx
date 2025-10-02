@@ -5,9 +5,9 @@ import './AboutSection.css';
 const AboutSection: React.FC = () => {
   const stats = [
     { number: '2023', label: 'Founded' },
-    { number: '500+', label: 'Youth Empowered' },
-    { number: '50+', label: 'Ventures Launched' },
-    { number: '10+', label: 'Communities Served' }
+    { number: '100+', label: 'Youth Empowered' },
+    { number: '5+', label: 'Ventures Launched' },
+    { number: '5+', label: 'Communities Served' }
   ];
 
 
@@ -15,7 +15,7 @@ const AboutSection: React.FC = () => {
     <section className="about-section">
       <div className="about-hero">
         <div className="container">
-          <div className="about-hero-content">
+          <div className="about-hero-content-s">
             <div className="about-hero-text">
               <div className="about-badge">Who We Are</div>
               <h2>Empowering Communities Through Innovation</h2>
@@ -26,7 +26,7 @@ const AboutSection: React.FC = () => {
             </div>
             <div className="about-hero-image">
               <img 
-                src="https://images.unsplash.com/photo-1695067058684-da5a90013c57?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTAwNDR8MHwxfHNlYXJjaHw1fHx3b3Jrc3BhY2UlMjBpbm5vdmF0aW9uJTIwY29sbGFib3JhdGlvbiUyMG1vZGVybiUyMG9mZmljZXxlbnwwfDB8fHwxNzU2ODExNDg4fDA&ixlib=rb-4.1.0&q=85"
+                src="public\assets\images\DT-5.jpg"
                 alt="Modern workspace, innovation hub, collaborative environment, diverse team working - algoleague on Unsplash"
                 width="600"
                 height="400"

@@ -1,31 +1,30 @@
 import React from 'react';
-import XIcon from './icons/XIcon';
 import LinkedInIcon from './icons/LinkedInIcon';
-import FacebookIcon from './icons/FacebookIcon';
+
 import './SocialLinks.css';
 
 interface SocialLinksProps {
-  xUrl?: string;
   linkedInUrl?: string;
-  facebookUrl?: string;
 }
 
 const SocialLinks: React.FC<SocialLinksProps> = ({
-  xUrl,
-  linkedInUrl,
-  facebookUrl
+  linkedInUrl
 }) => {
+  if (!linkedInUrl) {
+    return null;
+  }
+
   return (
     <div className="social-links">
-      <div className="social-link">
-        <XIcon width={20} height={20} color="#64748b" />
-      </div>
-      <div className="social-link">
+      <a
+        href={linkedInUrl}
+        className="social-link"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="LinkedIn Profile"
+      >
         <LinkedInIcon width={20} height={20} color="#64748b" />
-      </div>
-      <div className="social-link">
-        <FacebookIcon width={20} height={20} color="#64748b" />
-      </div>
+      </a>
     </div>
   );
 };
