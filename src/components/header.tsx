@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
+import { resolveUrl } from "../utils/assetUtils";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -55,7 +56,7 @@ const Header = () => {
           <div className="navbar">
             <div className="logo">
                 <Link to="/" className="logo-link">
-                <img src="/assets/Logos/shieldLogoblue.png" alt="Shield International Logo" className="logo-image" />
+<img src={resolveUrl("shieldLogoblue.png")} alt="Shield International Logo" className="logo-image" />
                 </Link>
             </div>
             
