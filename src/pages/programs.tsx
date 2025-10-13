@@ -1,5 +1,6 @@
 // src/pages/Programs.jsx
 import "./Programs.css";
+import { resolveUrl } from "../utils/assetUtils";
 
 const Programs = () => {
   return (
@@ -8,7 +9,7 @@ const Programs = () => {
 
        <section className="programs-hero">
         <video className="programs-hero-video" autoPlay muted loop playsInline>
-          <source src="/assets/videos/site1.mp4" type="video/mp4" />
+          <source src={resolveUrl("assets/videos/site1.mp4")} type="video/mp4" />
         </video>
         <div className="programs-hero-overlay">
           <div className="programs-container">
@@ -380,7 +381,7 @@ const Programs = () => {
           <h2>What Makes Our Programs Unique</h2>
           <div className="program-features-grid">
             <div className="program-feature-card">
-              <img src="public\favicon.png" alt="" />
+              <img src={resolveUrl("favicon.png")} alt="" />
               <h3>Community-Centered Approach</h3>
               <p>
                 All programs are designed with deep community input and focus on
@@ -389,7 +390,7 @@ const Programs = () => {
             </div>
 
             <div className="program-feature-card">
-              <img src="public\favicon.png" alt="" />
+              <img src={resolveUrl("favicon.png")} alt="" />
               <h3>Iterative Learning</h3>
               <p>
                 Using design thinking principles, participants learn through
@@ -398,7 +399,7 @@ const Programs = () => {
             </div>
 
             <div className="program-feature-card">
-              <img src="public\favicon.png" alt="" />
+              <img src={resolveUrl("favicon.png")} alt="" />
               <h3>Peer-to-Peer Learning</h3>
               <p>
                 Collaborative learning environments where participants learn
@@ -407,7 +408,7 @@ const Programs = () => {
             </div>
 
             <div className="program-feature-card">
-              <img src="public\favicon.png" alt="" />
+              <img src={resolveUrl("favicon.png")} alt="" />
               <h3>Measurable Impact</h3>
               <p>
                 All programs include clear metrics and evaluation frameworks
@@ -416,7 +417,7 @@ const Programs = () => {
             </div>
 
             <div className="program-feature-card">
-              <img src="public\favicon.png" alt="" />
+              <img src={resolveUrl("favicon.png")} alt="" />
               <h3>Sustainable Solutions</h3>
               <p>
                 Focus on creating long-term, sustainable solutions that continue
@@ -425,7 +426,7 @@ const Programs = () => {
             </div>
 
             <div className="program-feature-card">
-              <img src="public\favicon.png" alt="" />
+              <img src={resolveUrl("favicon.png")} alt="" />
               <h3>Innovation-Driven</h3>
               <p>
                 Encouraging creative thinking and innovative approaches to

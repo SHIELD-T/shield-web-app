@@ -4,6 +4,7 @@ import BlogSection from "../components/BlogSection";
 import TeamSection from "../components/TeamSection";
 import AboutSection from "../components/AboutSection";
 import EventsCarousel from "../components/EventsCarousel";
+import { resolveUrl } from "../utils/assetUtils";
 import "./home.css";
 
 const Home = () => {
@@ -88,8 +89,8 @@ const Home = () => {
           <div className="why-shield-content">
             <div className="why-shield-header">
               <h2>
-                <img src="public/favicon.png" alt="" /> Why SHIELD Is Essential{" "}
-                <img src="public/favicon.png" alt="" />
+                <img src={resolveUrl("favicon.png")} alt="" /> Why SHIELD Is Essential{" "}
+                <img src={resolveUrl("favicon.png")} alt="" />
               </h2>
               <p className="section-subtitle">
                 Breaking the cycle of unemployment in underserved communities requires more than just skills training

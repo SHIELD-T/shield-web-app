@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { resolveUrl } from '../utils/assetUtils';
 import './AboutSection.css';
 
 const AboutSection: React.FC = () => {
@@ -26,7 +27,7 @@ const AboutSection: React.FC = () => {
             </div>
             <div className="about-hero-image">
               <img 
-                src="public\assets\images\DT-5.jpg"
+                src={resolveUrl("assets/images/DT-5.jpg")}
                 alt="Modern workspace, innovation hub, collaborative environment, diverse team working - algoleague on Unsplash"
                 width="600"
                 height="400"
