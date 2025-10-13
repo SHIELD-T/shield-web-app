@@ -1,5 +1,6 @@
 // src/pages/About.jsx
 import './About.css';
+import { resolveUrl } from '../utils/assetUtils';
 
 const About = () => {
   return (
@@ -7,7 +8,7 @@ const About = () => {
       {/* Hero Section */}
       <section className="programs-hero">
         <video className="programs-hero-video" autoPlay muted loop playsInline>
-          <source src="/assets/videos/about1.mp4" type="video/mp4" />
+          <source src={resolveUrl("assets/videos/about1.mp4")} type="video/mp4" />
         </video>
         <div className="programs-hero-overlay">
           <div className="programs-container">
@@ -57,7 +58,7 @@ const About = () => {
     <div className="services-grid">
       {/* Card 1 */}
       <div className="about-service-card">
-        <img src="/assets/images/Digitalinnovation.jpg" alt="Innovation Services" className="card-image" />
+        <img src={resolveUrl("assets/images/Digitalinnovation.jpg")} alt="Innovation Services" className="card-image" />
         <div className="card-content">
           <h3>Innovation Services</h3>
           <ul>
@@ -71,7 +72,7 @@ const About = () => {
 
       {/* Card 2 */}
       <div className="about-service-card">
-        <img src="/assets/images/image2.png" alt="Capacity Building" className="card-image" />
+        <img src={resolveUrl("assets/images/image2.png")} alt="Capacity Building" className="card-image" />
         <div className="card-content">
           <h3>Capacity Building</h3>
           <ul>
@@ -85,7 +86,7 @@ const About = () => {
 
       {/* Card 3 */}
       <div className="about-service-card">
-        <img src="/assets/images/Digitaltrans.jpg" alt="Digital Transformation" className="card-image" />
+        <img src={resolveUrl("assets/images/Digitaltrans.jpg")} alt="Digital Transformation" className="card-image" />
         <div className="card-content">
           <h3>Digital Transformation</h3>
           <ul>
@@ -99,7 +100,7 @@ const About = () => {
 
       {/* Card 4 */}
       <div className="about-service-card">
-        <img src="/assets/images/social.png" alt="Social Impact" className="card-image" />
+        <img src={resolveUrl("assets/images/social.png")} alt="Social Impact" className="card-image" />
         <div className="card-content">
           <h3>Social Impact</h3>
           <ul>
@@ -113,7 +114,7 @@ const About = () => {
 
       {/* Card 5 */}
       <div className="about-service-card">
-        <img src="/assets/images/rnd.jpg" alt="Research & Development" className="card-image" />
+        <img src={resolveUrl("assets/images/rnd.jpg")} alt="Research & Development" className="card-image" />
         <div className="card-content">
           <h3>Research & Development</h3>
           <ul>
@@ -127,7 +128,7 @@ const About = () => {
 
       {/* Card 6 - NEW */}
       <div className="about-service-card">
-        <img src="/assets/images/sustainability.jpg" alt="Sustainability & Growth" className="card-image" />
+        <img src={resolveUrl("assets/images/sustainability.jpg")} alt="Sustainability & Growth" className="card-image" />
         <div className="card-content">
           <h3>Sustainability & Growth</h3>
           <ul>
@@ -150,13 +151,13 @@ const About = () => {
     <div className="process-content">
       <div>
         <img 
-          src="/assets/images/42.jpg" 
+          src={resolveUrl("assets/images/42.jpg")} 
           alt="Our Process" 
           className="image-placeholder large" 
         />
         {/* New Image */}
         <img 
-          src="public\assets\images\DT.jpg" 
+          src={resolveUrl("assets/images/DT.jpg")} 
           alt="Additional Process" 
           className="image-placeholder large" 
         />
@@ -278,35 +279,35 @@ const About = () => {
 
           <div className="partners-grid">
             <div className="partner-logo">
-              <img src="/assets/Partners/digit.png" alt="Digit" className="image-placeholder partner" />
+              <img src={resolveUrl("assets/Partners/digit.png")} alt="Digit" className="image-placeholder partner" />
             </div>
 
             <div className="partner-logo">
-              <img src="/assets/Partners/helpAlliance.png" alt="Help Alliance" className="image-placeholder partner" />
+              <img src={resolveUrl("assets/Partners/helpAlliance.png")} alt="Help Alliance" className="image-placeholder partner" />
             </div>
 
             <div className="partner-logo">
-              <img src="/assets/Partners/hurupay.png" alt="HuruPay" className="image-placeholder partner" />
+              <img src={resolveUrl("assets/Partners/hurupay.png")} alt="HuruPay" className="image-placeholder partner" />
             </div>
 
             <div className="partner-logo">
-              <img src="/assets/Partners/KGSA.jpg" alt="KGSA" className="image-placeholder partner" />
+              <img src={resolveUrl("assets/Partners/KGSA.jpg")} alt="KGSA" className="image-placeholder partner" />
             </div>
 
             <div className="partner-logo">
-              <img src="/assets/Partners/partner1.png" alt="Partner 1" className="image-placeholder partner" />
+              <img src={resolveUrl("assets/Partners/partner1.png")} alt="Partner 1" className="image-placeholder partner" />
             </div>
 
             <div className="partner-logo">
-              <img src="/assets/Partners/partner2.png" alt="Partner 2" className="image-placeholder partner" />
+              <img src={resolveUrl("assets/Partners/partner2.png")} alt="Partner 2" className="image-placeholder partner" />
             </div>
 
             <div className="partner-logo">
-              <img src="/assets/Partners/partner3.png" alt="Partner 3" className="image-placeholder partner" />
+              <img src={resolveUrl("assets/Partners/partner3.png")} alt="Partner 3" className="image-placeholder partner" />
             </div>
 
             <div className="partner-logo">
-              <img src="/assets/Partners/partner5.png" alt="Partner 5" className="image-placeholder partner" />
+              <img src={resolveUrl("assets/Partners/partner5.png")} alt="Partner 5" className="image-placeholder partner" />
             </div>
           </div>
         </div>

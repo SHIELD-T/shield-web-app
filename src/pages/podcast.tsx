@@ -1,5 +1,6 @@
 // src/pages/Podcast.jsx
 import "./Podcast.css";
+import { resolveUrl } from "../utils/assetUtils";
 
 const Podcast = () => {
   return (
@@ -63,7 +64,7 @@ const Podcast = () => {
         <div className="container">
           <div className="full-podcast-content">
             <div className="podcast-illustration">
-              <img src="/assets/images/68.jpg" alt="Podcast Illustration" className="podcast-image" />
+              <img src={resolveUrl("assets/images/68.jpg")} alt="Podcast Illustration" className="podcast-image" />
             </div>
             <div className="podcast-info">
               <div className="tag">Unleash Your Voice</div>
