@@ -90,7 +90,7 @@ export const validateImageUrl = (url: string): boolean => {
 };
 
 // Helper function to get fallback image
-export const getFallbackImage = (name: string, position: string): string => {
+export const getFallbackImage = (_name: string, _position: string): string => {
   // You could generate different fallback images based on initials or position
   return IMAGE_CONFIG.fallbackAvatar;
 };

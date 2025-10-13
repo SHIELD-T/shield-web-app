@@ -1,6 +1,4 @@
 // src/pages/Podcast.jsx
-import React from "react";
-import { Link } from "react-router-dom";
 import "./Podcast.css";
 
 const Podcast = () => {

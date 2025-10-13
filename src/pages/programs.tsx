@@ -1,5 +1,4 @@
 // src/pages/Programs.jsx
-import React from "react";
 import "./Programs.css";
 
 const Programs = () => {
