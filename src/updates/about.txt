@@ -1,0 +1,1839 @@
+/* Frame 1171276620 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 216px;
+
+position: absolute;
+width: 1292px;
+height: 50px;
+left: calc(50% - 1292px/2);
+top: 32px;
+
+
+
+/* Frame 1171276611 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+width: 122px;
+height: 29px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* image 1 */
+
+width: 28px;
+height: 27px;
+
+background: url(image.png);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* SHIELD */
+
+width: 86px;
+height: 29px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+
+color: #1A1A1B;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1171276613 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 32px;
+
+width: 635px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1171276612 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+width: 100px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* About Us */
+
+width: 72px;
+height: 19px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+
+/* Brand blue */
+color: #1370B7;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* arrow-down */
+
+width: 20px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* vuesax/outline/arrow-down */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* arrow-down */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 13.89%;
+right: 13.88%;
+top: 34.18%;
+bottom: 30%;
+
+/* Brand blue */
+background: #1370B7;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+
+
+/* Book a Podcast */
+
+width: 119px;
+height: 19px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+
+/* Nav bar */
+color: #38383A;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Publications */
+
+width: 94px;
+height: 19px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+
+/* Nav bar */
+color: #38383A;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* SHIELD Learn */
+
+width: 105px;
+height: 19px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+
+/* Nav bar */
+color: #38383A;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Run with us */
+
+width: 89px;
+height: 19px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+
+color: #38383A;
+
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+flex-grow: 0;
+
+
+/* Frame001 */
+
+box-sizing: border-box;
+
+width: 103px;
+height: 50px;
+
+/* Brand blue */
+background: #1370B7;
+border: 1px solid #5F6360;
+border-radius: 100px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Donate */
+
+position: absolute;
+width: 56px;
+height: 19px;
+left: calc(50% - 56px/2 + 0.5px);
+top: calc(50% - 19px/2 - 0.5px);
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+
+color: #FFFFFF;
+
+
+
+/* Rectangle 340 */
+
+position: absolute;
+width: 1320px;
+height: 587px;
+left: calc(50% - 1320px/2);
+top: 315px;
+
+background: url(image.png);
+
+
+/* SHIELD provides innovation spaces and combines digital transformation, Design-thinking, research, social venture building expertise to support youths from underserved communities to build social impact ventures that lead to a more inclusive, equitable, and resilient future for underserved people. These ventures have the potential to create employment opportunities and address critical socio-economic issues in their communities. */
+
+position: absolute;
+width: 577px;
+height: 144px;
+right: 120px;
+top: 139px;
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+
+/* Sub black */
+color: #373A3C;
+
+
+
+/* How we do It */
+
+position: absolute;
+width: 309px;
+height: 63px;
+left: calc(50% - 309px/2 + 0.5px);
+top: 984px;
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 52px;
+line-height: 63px;
+text-align: center;
+
+color: #000000;
+
+
+
+/* Sectors of Focus */
+
+position: absolute;
+width: 405px;
+height: 63px;
+left: calc(50% - 405px/2 + 0.5px);
+top: 2585px;
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 52px;
+line-height: 63px;
+text-align: center;
+
+color: #000000;
+
+
+
+/* Frame 2147207842 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+position: absolute;
+width: 1330px;
+height: 763px;
+left: 60px;
+top: 1087px;
+
+
+
+/* Frame 2147207839 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+width: 1330px;
+height: 241px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 2147207837 */
+
+width: 652px;
+height: 241px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* We help our beneficiaries in underserved communities adopt entrepreneurial mindsets and regenerative culture of money. This way they can abandon radicalized ideologies, over-reliance on handouts, donations and instead focus on income-generating activities for self-dependency and impact generation in their communities. */
+
+position: absolute;
+width: 568px;
+height: 140px;
+left: 90px;
+top: 86px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 28px;
+/* or 175% */
+
+/* Sub black */
+color: #373A3C;
+
+
+
+/* Frame 2147207836 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 20px;
+
+position: absolute;
+width: 583px;
+height: 70px;
+left: 0px;
+top: 0px;
+
+
+
+/* image 50 */
+
+width: 70px;
+height: 70px;
+
+background: url(image.png);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Mindset Change */
+
+width: 251px;
+height: 39px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 39px;
+/* identical to box height */
+
+/* Black */
+color: #03111D;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 2147207838 */
+
+width: 670px;
+height: 241px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* We help our beneficiaries in underserved communities adopt entrepreneurial mindsets and regenerative culture of money. This way they can abandon radicalized ideologies, over-reliance on handouts, donations and instead focus on income-generating activities for self-dependency and impact generation in their communities. */
+
+position: absolute;
+width: 568px;
+height: 140px;
+left: 90px;
+top: 86px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 28px;
+/* or 175% */
+
+/* Sub black */
+color: #373A3C;
+
+
+
+/* Frame 2147207836 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 20px;
+
+position: absolute;
+width: 583px;
+height: 70px;
+left: 0px;
+top: 0px;
+
+
+
+/* image 50 */
+
+width: 70px;
+height: 70px;
+
+background: url(image.png);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Skillset Development */
+
+width: 322px;
+height: 39px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 39px;
+/* identical to box height */
+
+/* Black */
+color: #03111D;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 2147207840 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+width: 1330px;
+height: 241px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 2147207837 */
+
+width: 652px;
+height: 241px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* We help our beneficiaries in underserved communities adopt entrepreneurial mindsets and regenerative culture of money. This way they can abandon radicalized ideologies, over-reliance on handouts, donations and instead focus on income-generating activities for self-dependency and impact generation in their communities. */
+
+position: absolute;
+width: 568px;
+height: 140px;
+left: 90px;
+top: 86px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 28px;
+/* or 175% */
+
+/* Sub black */
+color: #373A3C;
+
+
+
+/* Frame 2147207836 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 20px;
+
+position: absolute;
+width: 583px;
+height: 70px;
+left: 0px;
+top: 0px;
+
+
+
+/* image 50 */
+
+width: 70px;
+height: 70px;
+
+background: url(image.png);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* We build and scale Social ventures */
+
+width: 530px;
+height: 39px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 39px;
+/* identical to box height */
+
+/* Black */
+color: #03111D;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 2147207838 */
+
+width: 670px;
+height: 241px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* We help our beneficiaries in underserved communities adopt entrepreneurial mindsets and regenerative culture of money. This way they can abandon radicalized ideologies, over-reliance on handouts, donations and instead focus on income-generating activities for self-dependency and impact generation in their communities. */
+
+position: absolute;
+width: 568px;
+height: 140px;
+left: 90px;
+top: 86px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 28px;
+/* or 175% */
+
+/* Sub black */
+color: #373A3C;
+
+
+
+/* Frame 2147207836 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 20px;
+
+position: absolute;
+width: 583px;
+height: 78px;
+left: 0px;
+top: 0px;
+
+
+
+/* image 50 */
+
+width: 70px;
+height: 70px;
+
+background: url(image.png);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* We build innovation ecosystems in underserved communities */
+
+width: 702px;
+height: 78px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 39px;
+
+/* Black */
+color: #03111D;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 2147207841 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+width: 1330px;
+height: 241px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 2147207837 */
+
+width: 652px;
+height: 241px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* We help our beneficiaries in underserved communities adopt entrepreneurial mindsets and regenerative culture of money. This way they can abandon radicalized ideologies, over-reliance on handouts, donations and instead focus on income-generating activities for self-dependency and impact generation in their communities. */
+
+position: absolute;
+width: 568px;
+height: 140px;
+left: 90px;
+top: 86px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 28px;
+/* or 175% */
+
+/* Sub black */
+color: #373A3C;
+
+
+
+/* Frame 2147207836 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 20px;
+
+position: absolute;
+width: 583px;
+height: 70px;
+left: 0px;
+top: 0px;
+
+
+
+/* image 50 */
+
+width: 70px;
+height: 70px;
+
+background: url(image.png);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Employment Creation */
+
+width: 702px;
+height: 39px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 39px;
+/* identical to box height */
+
+/* Black */
+color: #03111D;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 2147207838 */
+
+width: 670px;
+height: 241px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* We help our beneficiaries in underserved communities adopt entrepreneurial mindsets and regenerative culture of money. This way they can abandon radicalized ideologies, over-reliance on handouts, donations and instead focus on income-generating activities for self-dependency and impact generation in their communities. */
+
+position: absolute;
+width: 568px;
+height: 140px;
+left: 90px;
+top: 86px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 28px;
+/* or 175% */
+
+/* Sub black */
+color: #373A3C;
+
+
+
+/* Frame 2147207836 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 20px;
+
+position: absolute;
+width: 583px;
+height: 70px;
+left: 0px;
+top: 0px;
+
+
+
+/* image 50 */
+
+width: 70px;
+height: 70px;
+
+background: url(image.png);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* We research and advise */
+
+width: 702px;
+height: 39px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 39px;
+/* identical to box height */
+
+/* Black */
+color: #03111D;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 2147207823 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 80px;
+
+position: absolute;
+width: 1320px;
+height: 555px;
+left: calc(50% - 1320px/2);
+top: 1940px;
+
+
+
+/* Frame 2147207819 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 30px;
+
+width: 689px;
+height: 487px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 2147207818 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+
+width: 689px;
+height: 487px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Our methodology */
+
+width: 689px;
+height: 63px;
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 52px;
+line-height: 63px;
+
+/* Black */
+color: #03111D;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Our holistic approach incorporates technical and entrepreneurial capacity building training programs combined with multi-stakeholder community engagement to bring in the right support for our beneficiaries to thrive and build solutions to solve social problems in underserved communities. Learners undergo three main programs aimed at upskilling them after which they join the SHIELD community to access the right network and additional resources to become capable social impact champions in their communities. */
+
+width: 689px;
+height: 400px;
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 40px;
+/* or 167% */
+
+/* Sub black */
+color: #373A3C;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Rectangle 760 */
+
+width: 551px;
+height: 555px;
+
+background: url(image.png);
+border-radius: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 2147207843 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 12px;
+
+position: absolute;
+width: 1668px;
+height: 450px;
+left: calc(50% - 1668px/2);
+top: 2692px;
+
+
+
+/* Frame */
+
+width: 324px;
+height: 450px;
+
+background: #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Rectangle 345 */
+
+position: absolute;
+width: 324px;
+height: 548px;
+left: calc(50% - 324px/2);
+top: 0px;
+
+background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(image.png);
+
+
+/* EDUCATION */
+
+position: absolute;
+width: 141px;
+height: 29px;
+left: calc(50% - 141px/2 + 0.5px);
+top: 60px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+
+
+/* Frame001 */
+
+position: absolute;
+width: 100px;
+height: 100px;
+left: 112px;
+top: calc(50% - 100px/2 - 13px);
+
+background: #FFFFFF;
+border-radius: 100px;
+
+
+/* arrow-left */
+
+position: absolute;
+width: 32px;
+height: 32px;
+left: calc(50% - 32px/2);
+top: calc(50% - 32px/2);
+
+
+
+/* vuesax/outline/arrow-left */
+
+position: absolute;
+width: 32px;
+height: 32px;
+left: 0px;
+top: 0px;
+
+
+
+/* arrow-left */
+
+position: absolute;
+width: 32px;
+height: 32px;
+left: 0px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 11.47%;
+right: 57.01%;
+top: 21.59%;
+bottom: 21.58%;
+
+background: #292D32;
+
+
+/* Vector */
+
+position: absolute;
+left: 12.17%;
+right: 11.46%;
+top: 46.88%;
+bottom: 46.88%;
+
+background: #292D32;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+
+
+/* Frame */
+
+width: 324px;
+height: 450px;
+
+background: #FFFFFF;
+box-shadow: -54px 178px 74px rgba(107, 107, 107, 0.01), -30px 100px 63px rgba(107, 107, 107, 0.05), -14px 44px 46px rgba(107, 107, 107, 0.09), -3px 11px 26px rgba(107, 107, 107, 0.1);
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* SMEs are the backbone of economic growth and job creation, especially in underserved communities. They drive innovation, create employment opportunities, and stimulate local economies by fostering entrepreneurship. However, many SMEs in these areas face challenges such as limited access to funding, training, and markets. */
+
+position: absolute;
+width: 284px;
+height: 240px;
+left: calc(50% - 284px/2);
+top: 98px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+text-align: center;
+
+/* Sub black */
+color: #373A3C;
+
+
+
+/* SMEs */
+
+position: absolute;
+width: 65px;
+height: 29px;
+left: calc(50% - 65px/2 + 0.5px);
+top: 40px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+text-align: center;
+
+/* Sub black */
+color: #373A3C;
+
+
+
+/* Frame */
+
+width: 324px;
+height: 450px;
+
+background: #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Rectangle 345 */
+
+position: absolute;
+width: 324px;
+height: 548px;
+left: calc(50% - 324px/2);
+top: 0px;
+
+background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(image.png);
+
+
+/* CIRCULAR ECONOMY */
+
+position: absolute;
+width: 253px;
+height: 29px;
+left: calc(50% - 253px/2 + 0.5px);
+top: 60px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+
+
+/* Frame */
+
+width: 324px;
+height: 450px;
+
+background: #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Rectangle 345 */
+
+position: absolute;
+width: 324px;
+height: 548px;
+left: calc(50% - 324px/2);
+top: 0px;
+
+background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(image.png);
+
+
+/* TOURISM */
+
+position: absolute;
+width: 110px;
+height: 29px;
+left: calc(50% - 110px/2);
+top: 60px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+
+
+/* Frame */
+
+width: 324px;
+height: 450px;
+
+background: #FFFFFF;
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+flex-grow: 0;
+
+
+/* Rectangle 345 */
+
+position: absolute;
+width: 324px;
+height: 548px;
+left: calc(50% - 324px/2);
+top: 0px;
+
+background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(image.png);
+
+
+/* Environment */
+
+position: absolute;
+width: 145px;
+height: 29px;
+left: calc(50% - 145px/2 + 17.5px);
+top: 60px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+
+
+/* Frame001 */
+
+position: absolute;
+width: 100px;
+height: 100px;
+left: calc(50% - 100px/2 - 1px);
+top: calc(50% - 100px/2);
+
+background: #FFFFFF;
+border-radius: 100px;
+
+
+/* arrow-right */
+
+position: absolute;
+width: 32px;
+height: 32px;
+left: calc(50% - 32px/2);
+top: calc(50% - 32px/2);
+
+
+
+/* vuesax/outline/arrow-right */
+
+position: absolute;
+width: 32px;
+height: 32px;
+left: 0px;
+top: 0px;
+
+
+
+/* arrow-right */
+
+position: absolute;
+width: 32px;
+height: 32px;
+left: 0px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 57.01%;
+right: 11.47%;
+top: 21.59%;
+bottom: 21.58%;
+
+background: #292D32;
+
+
+/* Vector */
+
+position: absolute;
+left: 11.46%;
+right: 12.17%;
+top: 46.88%;
+bottom: 46.88%;
+
+background: #292D32;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+
+
+/* Frame001 */
+
+position: absolute;
+width: 1440px;
+height: 710px;
+left: calc(50% - 1440px/2);
+bottom: 284px;
+
+background: #F2F4F6;
+
+
+/* Frame 2147207850 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 40px;
+
+position: absolute;
+width: 1320px;
+height: 366px;
+left: 60px;
+top: 65px;
+
+
+
+/* Our Impact */
+
+width: 1320px;
+height: 76px;
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 62px;
+line-height: 76px;
+/* identical to box height */
+text-align: center;
+
+/* Black */
+color: #03111D;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 2147207849 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 15px;
+
+width: 1320px;
+height: 250px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame001 */
+
+box-sizing: border-box;
+
+width: 430px;
+height: 250px;
+
+background: #F2F4F6;
+border: 1px solid #64BCFF;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1171276821 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+position: absolute;
+width: 214px;
+height: 128px;
+left: calc(50% - 214px/2);
+top: calc(50% - 128px/2);
+
+
+
+/* 200+ */
+
+width: 202px;
+height: 100px;
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 82px;
+line-height: 100px;
+/* identical to box height */
+text-align: center;
+
+color: #024A81;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Social leaders trained */
+
+width: 159px;
+height: 20px;
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+text-align: center;
+
+/* Sub black */
+color: #373A3C;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame001 */
+
+box-sizing: border-box;
+
+width: 430px;
+height: 250px;
+
+background: #F2F4F6;
+border: 1px solid #64BCFF;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1171276821 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+position: absolute;
+width: 214px;
+height: 128px;
+left: calc(50% - 214px/2);
+top: calc(50% - 128px/2);
+
+
+
+/* 5+ */
+
+width: 90px;
+height: 100px;
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 82px;
+line-height: 100px;
+/* identical to box height */
+text-align: center;
+
+color: #024A81;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Social ventures created */
+
+width: 174px;
+height: 20px;
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+text-align: center;
+
+/* Sub black */
+color: #373A3C;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame001 */
+
+box-sizing: border-box;
+
+width: 430px;
+height: 250px;
+
+background: #F2F4F6;
+border: 1px solid #64BCFF;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Frame 1171276821 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+position: absolute;
+width: 214px;
+height: 128px;
+left: calc(50% - 214px/2);
+top: calc(50% - 128px/2);
+
+
+
+/* 50+ */
+
+width: 147px;
+height: 100px;
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 82px;
+line-height: 100px;
+/* identical to box height */
+text-align: center;
+
+color: #024A81;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Jobs created */
+
+width: 95px;
+height: 20px;
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+text-align: center;
+
+/* Sub black */
+color: #373A3C;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 2147207848 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 20px;
+
+position: absolute;
+width: 623px;
+height: 136px;
+left: 409px;
+top: 481px;
+
+
+
+/* Help us support our community */
+
+width: 623px;
+height: 51px;
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 42px;
+line-height: 51px;
+text-align: center;
+
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame001 */
+
+width: 157px;
+height: 65px;
+
+/* Brand blue */
+background: #1370B7;
+border-radius: 100px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Donate */
+
+position: absolute;
+width: 69px;
+height: 24px;
+left: calc(50% - 69px/2 + 1px);
+top: calc(50% - 24px/2 + 0.5px);
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+
+color: #FFFFFF;
+

@@ -1,0 +1,4664 @@
+/* SHIELD Learn */
+
+position: relative;
+width: 1440px;
+height: 3926px;
+
+background: #FFFFFF;
+
+
+/* Frame 1171276620 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 216px;
+
+position: absolute;
+width: 1291px;
+height: 50px;
+left: calc(50% - 1291px/2);
+top: 32px;
+
+
+
+/* Frame 1171276611 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+width: 122px;
+height: 29px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* image 1 */
+
+width: 28px;
+height: 27px;
+
+background: url(image.png);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* SHIELD */
+
+width: 86px;
+height: 29px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+
+color: #1A1A1B;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1171276613 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 32px;
+
+width: 634px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1171276612 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+width: 99px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* About Us */
+
+width: 71px;
+height: 19px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+
+color: #38383A;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* arrow-down */
+
+width: 20px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* vuesax/outline/arrow-down */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* arrow-down */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 13.89%;
+right: 13.88%;
+top: 34.18%;
+bottom: 30%;
+
+background: #38383A;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+
+
+/* Book a Podcast */
+
+width: 119px;
+height: 19px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+
+/* Nav bar */
+color: #38383A;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Publications */
+
+width: 94px;
+height: 19px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+
+/* Nav bar */
+color: #38383A;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* SHIELD Learn */
+
+width: 105px;
+height: 19px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+
+/* Brand blue */
+color: #1370B7;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Run with us */
+
+width: 89px;
+height: 19px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+
+color: #38383A;
+
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+flex-grow: 0;
+
+
+/* Frame001 */
+
+box-sizing: border-box;
+
+width: 103px;
+height: 50px;
+
+/* Brand blue */
+background: #1370B7;
+border: 1px solid #5F6360;
+border-radius: 100px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Donate */
+
+position: absolute;
+width: 56px;
+height: 19px;
+left: calc(50% - 56px/2 + 0.5px);
+top: calc(50% - 19px/2 - 0.5px);
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+
+color: #FFFFFF;
+
+
+
+/* Frame 2147207804 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 76px;
+
+position: absolute;
+width: 1338px;
+height: 798px;
+left: 60px;
+top: 181px;
+
+
+
+/* Frame 1171276616 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 30px;
+
+width: 574px;
+height: 423px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 1171276615 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+
+width: 574px;
+height: 328px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Learn Today, Be a Champion Tomorrow. */
+
+width: 618px;
+height: 160px;
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 60px;
+line-height: 80px;
+/* or 133% */
+
+color: #052F52;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Welcome to SHIELD LMS – the future of secure, efficient, and impactful learning. Exclusive online course Best instructor on live course Get certificate */
+
+width: 458px;
+height: 144px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+
+/* Sub black */
+color: #373A3C;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame001 */
+
+width: 192px;
+height: 65px;
+
+/* Brand blue */
+background: #1370B7;
+border-radius: 100px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Get started */
+
+position: absolute;
+width: 109px;
+height: 24px;
+left: calc(50% - 109px/2 + 0.5px);
+top: calc(50% - 24px/2);
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+
+color: #FFFFFF;
+
+
+
+/* Rectangle 339 */
+
+width: 688px;
+height: 798px;
+
+background: url(image.png);
+border-radius: 32px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 2147207822 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 14px;
+
+position: absolute;
+width: 387px;
+height: 66px;
+left: calc(50% - 387px/2 + 0.5px);
+top: 3798px;
+
+
+
+/* Frame001 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 21px 41px;
+gap: 10px;
+
+width: 135px;
+height: 66px;
+
+/* Brand blue */
+background: #1370B7;
+border-radius: 100px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Login */
+
+width: 53px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame001 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 21px 41px;
+gap: 10px;
+
+width: 238px;
+height: 66px;
+
+background: #FFFFFF;
+/* Brand blue */
+border: 1px solid #1370B7;
+border-radius: 100px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Apply to SHIELD */
+
+width: 156px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+
+/* Brand blue */
+color: #1370B7;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 2147207814 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 32px;
+
+position: absolute;
+width: 1320px;
+height: 1137px;
+left: 60px;
+top: 1059px;
+
+
+
+/* Featured Courses */
+
+width: 1320px;
+height: 63px;
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 52px;
+line-height: 63px;
+text-align: center;
+
+/* Black */
+color: #03111D;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 2147207813 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 32px;
+
+width: 1320px;
+height: 1042px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 2147207811 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 15px;
+
+width: 1320px;
+height: 505px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame001 */
+
+box-sizing: border-box;
+
+width: 430px;
+height: 505px;
+
+background: #FFFFFF;
+/* Stroke */
+border: 1px solid #D9DFE3;
+border-radius: 20px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* image 48 */
+
+position: absolute;
+width: 430px;
+height: 250px;
+left: calc(50% - 430px/2);
+top: 0px;
+
+background: url(image.png);
+
+
+/* Frame 2147207806 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 99px;
+height: 36px;
+left: 20px;
+top: 16px;
+
+/* Brand blue */
+background: #1370B7;
+border-radius: 100px;
+
+
+/* Intermediate */
+
+width: 79px;
+height: 16px;
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 16px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame001 */
+
+position: absolute;
+width: 38px;
+height: 38px;
+left: 378px;
+top: 16px;
+
+background: #FFFFFF;
+border-radius: 100px;
+
+
+/* archive-tick */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: calc(50% - 20px/2);
+top: calc(50% - 20px/2);
+
+
+
+/* vuesax/outline/archive-tick */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* archive-tick */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 10.67%;
+right: 10.71%;
+top: 5.21%;
+bottom: 5.21%;
+
+background: #292D32;
+
+
+/* Vector */
+
+position: absolute;
+left: 36.85%;
+right: 34.01%;
+top: 32.3%;
+bottom: 44.79%;
+
+background: #292D32;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+
+
+/* Frame 2147207807 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+position: absolute;
+width: 132px;
+height: 20px;
+left: 20px;
+top: 267px;
+
+
+
+/* star */
+
+width: 20px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* vuesax/outline/star */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* star */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 5.21%;
+right: 5.24%;
+top: 5.5%;
+bottom: 5.54%;
+
+background: #E48218;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+
+
+/* star */
+
+width: 20px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* vuesax/outline/star */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* star */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 5.21%;
+right: 5.24%;
+top: 5.5%;
+bottom: 5.54%;
+
+background: #E48218;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+
+
+/* star */
+
+width: 20px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* vuesax/outline/star */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* star */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 5.21%;
+right: 5.24%;
+top: 5.5%;
+bottom: 5.54%;
+
+background: #E48218;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+
+
+/* star */
+
+width: 20px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* vuesax/outline/star */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* star */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 5.21%;
+right: 5.23%;
+top: 5.5%;
+bottom: 5.54%;
+
+background: #E48218;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+
+
+/* star */
+
+width: 20px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+flex-grow: 0;
+
+
+/* vuesax/outline/star */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* star */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 5.21%;
+right: 5.23%;
+top: 5.5%;
+bottom: 5.54%;
+
+background: #E48218;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+
+
+/* Frame 2147207810 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+position: absolute;
+width: 338px;
+height: 127px;
+left: 20px;
+top: 315px;
+
+
+
+/* Frame 2147207809 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 338px;
+height: 85px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Canva Comprehensive Course */
+
+width: 338px;
+height: 29px;
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 29px;
+
+/* Black */
+color: #03111D;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* This course covers the whole of how the canva tool can help you become a better designer or help with your entrepreneurship */
+
+width: 310px;
+height: 48px;
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 16px;
+
+color: #787979;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 2147207808 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+width: 109px;
+height: 32px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Ellipse 1606 */
+
+width: 32px;
+height: 32px;
+
+background: url(image.png);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* By admin */
+
+width: 69px;
+height: 20px;
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+
+/* Sub black */
+color: #373A3C;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame001 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 390px;
+height: 32px;
+left: calc(50% - 390px/2);
+top: 457px;
+
+background: #FFFFFF;
+/* Brand blue */
+border: 1px solid #1370B7;
+border-radius: 100px;
+
+
+/* Enroll Course */
+
+position: absolute;
+width: 82px;
+height: 16px;
+left: calc(50% - 82px/2);
+top: calc(50% - 16px/2);
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 16px;
+/* identical to box height */
+
+/* Brand blue */
+color: #1370B7;
+
+
+
+/* Frame001 */
+
+box-sizing: border-box;
+
+width: 430px;
+height: 505px;
+
+background: #FFFFFF;
+/* Stroke */
+border: 1px solid #D9DFE3;
+border-radius: 20px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* image 48 */
+
+position: absolute;
+width: 430px;
+height: 250px;
+left: calc(50% - 430px/2);
+top: 0px;
+
+background: url(image.png);
+
+
+/* Frame 2147207806 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 99px;
+height: 36px;
+left: 20px;
+top: 16px;
+
+/* Brand blue */
+background: #1370B7;
+border-radius: 100px;
+
+
+/* Intermediate */
+
+width: 79px;
+height: 16px;
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 16px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame001 */
+
+position: absolute;
+width: 38px;
+height: 38px;
+left: 378px;
+top: 16px;
+
+background: #FFFFFF;
+border-radius: 100px;
+
+
+/* archive-tick */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: calc(50% - 20px/2);
+top: calc(50% - 20px/2);
+
+
+
+/* vuesax/outline/archive-tick */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* archive-tick */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 10.67%;
+right: 10.71%;
+top: 5.21%;
+bottom: 5.21%;
+
+background: #292D32;
+
+
+/* Vector */
+
+position: absolute;
+left: 36.85%;
+right: 34.01%;
+top: 32.3%;
+bottom: 44.79%;
+
+background: #292D32;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+
+
+/* Frame 2147207807 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+position: absolute;
+width: 132px;
+height: 20px;
+left: 20px;
+top: 267px;
+
+
+
+/* star */
+
+width: 20px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* vuesax/outline/star */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* star */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 5.21%;
+right: 5.23%;
+top: 5.5%;
+bottom: 5.54%;
+
+background: #E48218;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+
+
+/* star */
+
+width: 20px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* vuesax/outline/star */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* star */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 5.21%;
+right: 5.23%;
+top: 5.5%;
+bottom: 5.54%;
+
+background: #E48218;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+
+
+/* star */
+
+width: 20px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* vuesax/outline/star */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* star */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 5.21%;
+right: 5.23%;
+top: 5.5%;
+bottom: 5.54%;
+
+background: #E48218;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+
+
+/* star */
+
+width: 20px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* vuesax/outline/star */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* star */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 5.21%;
+right: 5.23%;
+top: 5.5%;
+bottom: 5.54%;
+
+background: #E48218;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+
+
+/* star */
+
+width: 20px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+flex-grow: 0;
+
+
+/* vuesax/outline/star */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* star */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 5.21%;
+right: 5.23%;
+top: 5.5%;
+bottom: 5.54%;
+
+background: #E48218;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+
+
+/* Frame 2147207810 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+position: absolute;
+width: 338px;
+height: 127px;
+left: 20px;
+top: 315px;
+
+
+
+/* Frame 2147207809 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 338px;
+height: 85px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Canva Comprehensive Course */
+
+width: 338px;
+height: 29px;
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 29px;
+
+/* Black */
+color: #03111D;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* This course covers the whole of how the canva tool can help you become a better designer or help with your entrepreneurship */
+
+width: 310px;
+height: 48px;
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 16px;
+
+color: #787979;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 2147207808 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+width: 109px;
+height: 32px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Ellipse 1606 */
+
+width: 32px;
+height: 32px;
+
+background: url(image.png);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* By admin */
+
+width: 69px;
+height: 20px;
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+
+/* Sub black */
+color: #373A3C;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame001 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 390px;
+height: 32px;
+left: calc(50% - 390px/2);
+top: 457px;
+
+background: #FFFFFF;
+/* Brand blue */
+border: 1px solid #1370B7;
+border-radius: 100px;
+
+
+/* Enroll Course */
+
+position: absolute;
+width: 82px;
+height: 16px;
+left: calc(50% - 82px/2);
+top: calc(50% - 16px/2);
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 16px;
+/* identical to box height */
+
+/* Brand blue */
+color: #1370B7;
+
+
+
+/* Frame001 */
+
+box-sizing: border-box;
+
+width: 430px;
+height: 505px;
+
+background: #FFFFFF;
+/* Stroke */
+border: 1px solid #D9DFE3;
+border-radius: 20px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* image 48 */
+
+position: absolute;
+width: 430px;
+height: 250px;
+left: calc(50% - 430px/2);
+top: 0px;
+
+background: url(image.png);
+
+
+/* Frame 2147207806 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 99px;
+height: 36px;
+left: 20px;
+top: 16px;
+
+/* Brand blue */
+background: #1370B7;
+border-radius: 100px;
+
+
+/* Intermediate */
+
+width: 79px;
+height: 16px;
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 16px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame001 */
+
+position: absolute;
+width: 38px;
+height: 38px;
+left: 378px;
+top: 16px;
+
+background: #0E212B;
+border-radius: 100px;
+
+
+/* archive-tick */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: calc(50% - 20px/2);
+top: calc(50% - 20px/2);
+
+
+
+/* vuesax/outline/archive-tick */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* archive-tick */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 10.67%;
+right: 10.71%;
+top: 5.21%;
+bottom: 5.21%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 36.85%;
+right: 34.01%;
+top: 32.3%;
+bottom: 44.79%;
+
+background: #FFFFFF;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+
+
+/* Frame 2147207807 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+position: absolute;
+width: 132px;
+height: 20px;
+left: 20px;
+top: 267px;
+
+
+
+/* star */
+
+width: 20px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* vuesax/outline/star */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* star */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 5.21%;
+right: 5.23%;
+top: 5.5%;
+bottom: 5.54%;
+
+background: #E48218;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+
+
+/* star */
+
+width: 20px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* vuesax/outline/star */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* star */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 5.21%;
+right: 5.23%;
+top: 5.5%;
+bottom: 5.54%;
+
+background: #E48218;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+
+
+/* star */
+
+width: 20px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* vuesax/outline/star */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* star */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 5.21%;
+right: 5.23%;
+top: 5.5%;
+bottom: 5.54%;
+
+background: #E48218;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+
+
+/* star */
+
+width: 20px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* vuesax/outline/star */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* star */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 5.21%;
+right: 5.23%;
+top: 5.5%;
+bottom: 5.54%;
+
+background: #E48218;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+
+
+/* star */
+
+width: 20px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+flex-grow: 0;
+
+
+/* vuesax/outline/star */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* star */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 5.21%;
+right: 5.23%;
+top: 5.5%;
+bottom: 5.54%;
+
+background: #E48218;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+
+
+/* Frame 2147207810 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+position: absolute;
+width: 338px;
+height: 127px;
+left: 20px;
+top: 315px;
+
+
+
+/* Frame 2147207809 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 338px;
+height: 85px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Canva Comprehensive Course */
+
+width: 338px;
+height: 29px;
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 29px;
+
+/* Black */
+color: #03111D;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* This course covers the whole of how the canva tool can help you become a better designer or help with your entrepreneurship */
+
+width: 310px;
+height: 48px;
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 16px;
+
+color: #787979;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 2147207808 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+width: 109px;
+height: 32px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Ellipse 1606 */
+
+width: 32px;
+height: 32px;
+
+background: url(image.png);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* By admin */
+
+width: 69px;
+height: 20px;
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+
+/* Sub black */
+color: #373A3C;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame001 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 390px;
+height: 32px;
+left: calc(50% - 390px/2);
+top: 457px;
+
+background: #FFFFFF;
+/* Brand blue */
+border: 1px solid #1370B7;
+border-radius: 100px;
+
+
+/* Enroll Course */
+
+position: absolute;
+width: 82px;
+height: 16px;
+left: calc(50% - 82px/2);
+top: calc(50% - 16px/2);
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 16px;
+/* identical to box height */
+
+/* Brand blue */
+color: #1370B7;
+
+
+
+/* Frame 2147207812 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 15px;
+
+width: 875px;
+height: 505px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame001 */
+
+box-sizing: border-box;
+
+width: 430px;
+height: 505px;
+
+background: #FFFFFF;
+/* Stroke */
+border: 1px solid #D9DFE3;
+border-radius: 20px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* image 48 */
+
+position: absolute;
+width: 430px;
+height: 250px;
+left: calc(50% - 430px/2);
+top: 0px;
+
+background: url(image.png);
+
+
+/* Frame 2147207806 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 99px;
+height: 36px;
+left: 20px;
+top: 16px;
+
+/* Brand blue */
+background: #1370B7;
+border-radius: 100px;
+
+
+/* Intermediate */
+
+width: 79px;
+height: 16px;
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 16px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame001 */
+
+position: absolute;
+width: 38px;
+height: 38px;
+left: 378px;
+top: 16px;
+
+background: #FFFFFF;
+border-radius: 100px;
+
+
+/* archive-tick */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: calc(50% - 20px/2);
+top: calc(50% - 20px/2);
+
+
+
+/* vuesax/outline/archive-tick */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* archive-tick */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 10.67%;
+right: 10.71%;
+top: 5.21%;
+bottom: 5.21%;
+
+background: #292D32;
+
+
+/* Vector */
+
+position: absolute;
+left: 36.85%;
+right: 34.01%;
+top: 32.3%;
+bottom: 44.79%;
+
+background: #292D32;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+
+
+/* Frame 2147207807 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+position: absolute;
+width: 132px;
+height: 20px;
+left: 20px;
+top: 267px;
+
+
+
+/* star */
+
+width: 20px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* vuesax/outline/star */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* star */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 5.21%;
+right: 5.24%;
+top: 5.5%;
+bottom: 5.54%;
+
+background: #E48218;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+
+
+/* star */
+
+width: 20px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* vuesax/outline/star */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* star */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 5.21%;
+right: 5.24%;
+top: 5.5%;
+bottom: 5.54%;
+
+background: #E48218;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+
+
+/* star */
+
+width: 20px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* vuesax/outline/star */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* star */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 5.21%;
+right: 5.24%;
+top: 5.5%;
+bottom: 5.54%;
+
+background: #E48218;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+
+
+/* star */
+
+width: 20px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* vuesax/outline/star */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* star */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 5.21%;
+right: 5.23%;
+top: 5.5%;
+bottom: 5.54%;
+
+background: #E48218;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+
+
+/* star */
+
+width: 20px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+flex-grow: 0;
+
+
+/* vuesax/outline/star */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* star */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 5.21%;
+right: 5.23%;
+top: 5.5%;
+bottom: 5.54%;
+
+background: #E48218;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+
+
+/* Frame 2147207810 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+position: absolute;
+width: 338px;
+height: 127px;
+left: 20px;
+top: 315px;
+
+
+
+/* Frame 2147207809 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 338px;
+height: 85px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Canva Comprehensive Course */
+
+width: 338px;
+height: 29px;
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 29px;
+
+/* Black */
+color: #03111D;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* This course covers the whole of how the canva tool can help you become a better designer or help with your entrepreneurship */
+
+width: 310px;
+height: 48px;
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 16px;
+
+color: #787979;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 2147207808 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+width: 109px;
+height: 32px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Ellipse 1606 */
+
+width: 32px;
+height: 32px;
+
+background: url(image.png);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* By admin */
+
+width: 69px;
+height: 20px;
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+
+/* Sub black */
+color: #373A3C;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame001 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 390px;
+height: 32px;
+left: calc(50% - 390px/2);
+top: 457px;
+
+background: #FFFFFF;
+/* Brand blue */
+border: 1px solid #1370B7;
+border-radius: 100px;
+
+
+/* Enroll Course */
+
+position: absolute;
+width: 82px;
+height: 16px;
+left: calc(50% - 82px/2);
+top: calc(50% - 16px/2);
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 16px;
+/* identical to box height */
+
+/* Brand blue */
+color: #1370B7;
+
+
+
+/* Frame001 */
+
+box-sizing: border-box;
+
+width: 430px;
+height: 505px;
+
+background: #FFFFFF;
+/* Stroke */
+border: 1px solid #D9DFE3;
+border-radius: 20px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* image 48 */
+
+position: absolute;
+width: 430px;
+height: 250px;
+left: calc(50% - 430px/2);
+top: 0px;
+
+background: url(image.png);
+
+
+/* Frame 2147207806 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 10px;
+gap: 10px;
+
+position: absolute;
+width: 99px;
+height: 36px;
+left: 20px;
+top: 16px;
+
+/* Brand blue */
+background: #1370B7;
+border-radius: 100px;
+
+
+/* Intermediate */
+
+width: 79px;
+height: 16px;
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 16px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame001 */
+
+position: absolute;
+width: 38px;
+height: 38px;
+left: 378px;
+top: 16px;
+
+background: #FFFFFF;
+border-radius: 100px;
+
+
+/* archive-tick */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: calc(50% - 20px/2);
+top: calc(50% - 20px/2);
+
+
+
+/* vuesax/outline/archive-tick */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* archive-tick */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 10.67%;
+right: 10.71%;
+top: 5.21%;
+bottom: 5.21%;
+
+background: #292D32;
+
+
+/* Vector */
+
+position: absolute;
+left: 36.85%;
+right: 34.01%;
+top: 32.3%;
+bottom: 44.79%;
+
+background: #292D32;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+
+
+/* Frame 2147207807 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+position: absolute;
+width: 132px;
+height: 20px;
+left: 20px;
+top: 267px;
+
+
+
+/* star */
+
+width: 20px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* vuesax/outline/star */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* star */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 5.21%;
+right: 5.23%;
+top: 5.5%;
+bottom: 5.54%;
+
+background: #E48218;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+
+
+/* star */
+
+width: 20px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* vuesax/outline/star */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* star */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 5.21%;
+right: 5.23%;
+top: 5.5%;
+bottom: 5.54%;
+
+background: #E48218;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+
+
+/* star */
+
+width: 20px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* vuesax/outline/star */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* star */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 5.21%;
+right: 5.23%;
+top: 5.5%;
+bottom: 5.54%;
+
+background: #E48218;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+
+
+/* star */
+
+width: 20px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* vuesax/outline/star */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* star */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 5.21%;
+right: 5.23%;
+top: 5.5%;
+bottom: 5.54%;
+
+background: #E48218;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+
+
+/* star */
+
+width: 20px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+flex-grow: 0;
+
+
+/* vuesax/outline/star */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* star */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 5.21%;
+right: 5.23%;
+top: 5.5%;
+bottom: 5.54%;
+
+background: #E48218;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+
+
+/* Frame 2147207810 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+position: absolute;
+width: 338px;
+height: 127px;
+left: 20px;
+top: 315px;
+
+
+
+/* Frame 2147207809 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 338px;
+height: 85px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Canva Comprehensive Course */
+
+width: 338px;
+height: 29px;
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 29px;
+
+/* Black */
+color: #03111D;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* This course covers the whole of how the canva tool can help you become a better designer or help with your entrepreneurship */
+
+width: 310px;
+height: 48px;
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 16px;
+
+color: #787979;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 2147207808 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+width: 109px;
+height: 32px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Ellipse 1606 */
+
+width: 32px;
+height: 32px;
+
+background: url(image.png);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* By admin */
+
+width: 69px;
+height: 20px;
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+
+/* Sub black */
+color: #373A3C;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame001 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 390px;
+height: 32px;
+left: calc(50% - 390px/2);
+top: 457px;
+
+background: #FFFFFF;
+/* Brand blue */
+border: 1px solid #1370B7;
+border-radius: 100px;
+
+
+/* Enroll Course */
+
+position: absolute;
+width: 82px;
+height: 16px;
+left: calc(50% - 82px/2);
+top: calc(50% - 16px/2);
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 16px;
+/* identical to box height */
+
+/* Brand blue */
+color: #1370B7;
+
+
+
+/* Frame 2147207820 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 80px;
+
+position: absolute;
+width: 1320px;
+height: 555px;
+left: 60px;
+top: 2253px;
+
+
+
+/* Frame 2147207819 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 30px;
+
+width: 689px;
+height: 421px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 2147207818 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+
+width: 689px;
+height: 287px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Learn From anywhere */
+
+width: 689px;
+height: 63px;
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 52px;
+line-height: 63px;
+
+/* Black */
+color: #03111D;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* With SHIELD LMS, your learning journey knows no limits. Access courses, connect with instructors, and engage with peers from any device, anywhere in the world. Whether you're at home, at work, or on the go, your classroom is wherever you need it to be flexible, secure, and always accessible. */
+
+width: 689px;
+height: 200px;
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 40px;
+/* or 167% */
+
+/* Black */
+color: #03111D;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 2147207817 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 45px;
+
+width: 275px;
+height: 104px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 2147207815 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 12px;
+
+width: 115px;
+height: 104px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* 10+ */
+
+width: 115px;
+height: 63px;
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 52px;
+line-height: 63px;
+text-align: center;
+
+/* Brand blue */
+color: #1370B7;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Tutors */
+
+width: 115px;
+height: 29px;
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 29px;
+text-align: center;
+
+/* Black */
+color: #03111D;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 2147207816 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 12px;
+
+width: 115px;
+height: 104px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* 20+ */
+
+width: 92px;
+height: 63px;
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 52px;
+line-height: 63px;
+text-align: center;
+
+/* Brand blue */
+color: #1370B7;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Enrolled */
+
+width: 115px;
+height: 29px;
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 29px;
+text-align: center;
+
+/* Black */
+color: #03111D;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Rectangle 760 */
+
+width: 551px;
+height: 555px;
+
+background: url(image.png);
+border-radius: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 2147207821 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 16px;
+
+position: absolute;
+width: 842px;
+height: 119px;
+left: 299px;
+top: 2908px;
+
+
+
+/* Don’t Just take our word for it */
+
+width: 842px;
+height: 40px;
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 40px;
+/* identical to box height, or 167% */
+text-align: center;
+
+/* Sub black */
+color: #373A3C;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Hear what people have to say */
+
+width: 842px;
+height: 63px;
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 52px;
+line-height: 63px;
+
+/* Black */
+color: #03111D;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1171276929 */
+
+position: absolute;
+width: 1400px;
+height: 646px;
+left: calc(50% - 1400px/2);
+top: 3063px;
+
+background: #070618;
+border-radius: 32px;
+
+
+/* Vector */
+
+position: absolute;
+left: -9.57%;
+right: -3.11%;
+top: -104.08%;
+bottom: -91.3%;
+
+background: #151339;
+
+
+/* Frame 1171276930 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 22px;
+
+position: absolute;
+width: 1742px;
+height: 382px;
+left: -134px;
+top: 91px;
+
+
+
+/* Frame 1171276929 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 32px;
+gap: 48px;
+
+width: 419px;
+height: 382px;
+
+background: #FFFFFF;
+border-radius: 20px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Ellipse 1612 */
+
+width: 82px;
+height: 82px;
+
+background: url(.jpg), #D9D9D9;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* SHIELD LMS makes learning so easy! I can access my courses anywhere, and everything is super secure and user-friendly */
+
+width: 355px;
+height: 100px;
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 154%;
+/* or 25px */
+
+color: rgba(34, 22, 6, 0.75);
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1171276926 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 355px;
+height: 40px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* SHIELD */
+
+width: 355px;
+height: 18px;
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 100%;
+/* identical to box height, or 18px */
+
+color: #060D22;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Student */
+
+width: 355px;
+height: 14px;
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 100%;
+/* identical to box height, or 14px */
+
+color: rgba(34, 22, 6, 0.59);
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1171276925 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 32px;
+gap: 48px;
+
+width: 419px;
+height: 382px;
+
+background: #FFFFFF;
+border-radius: 20px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Ellipse 1612 */
+
+width: 82px;
+height: 82px;
+
+background: url(.jpg), #D9D9D9;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* SHIELD LMS makes learning so easy! I can access my courses anywhere, and everything is super secure and user-friendly */
+
+width: 355px;
+height: 100px;
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 154%;
+/* or 25px */
+
+color: rgba(34, 22, 6, 0.75);
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1171276926 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 355px;
+height: 40px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* SHIELD */
+
+width: 355px;
+height: 18px;
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 100%;
+/* identical to box height, or 18px */
+
+color: #060D22;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Student */
+
+width: 355px;
+height: 14px;
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 100%;
+/* identical to box height, or 14px */
+
+color: rgba(34, 22, 6, 0.59);
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1171276930 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 32px;
+gap: 48px;
+
+width: 419px;
+height: 382px;
+
+background: #FFFFFF;
+border-radius: 20px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Ellipse 1612 */
+
+width: 82px;
+height: 82px;
+
+background: url(.jpg), #D9D9D9;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* SHIELD LMS makes learning so easy! I can access my courses anywhere, and everything is super secure and user-friendly */
+
+width: 355px;
+height: 100px;
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 154%;
+/* or 25px */
+
+color: rgba(34, 22, 6, 0.75);
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1171276926 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 355px;
+height: 40px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* SHIELD */
+
+width: 355px;
+height: 18px;
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 100%;
+/* identical to box height, or 18px */
+
+color: #060D22;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Student */
+
+width: 355px;
+height: 14px;
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 100%;
+/* identical to box height, or 14px */
+
+color: rgba(34, 22, 6, 0.59);
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1171276931 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 32px;
+gap: 48px;
+
+width: 419px;
+height: 382px;
+
+background: #FFFFFF;
+border-radius: 20px;
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Ellipse 1612 */
+
+width: 82px;
+height: 82px;
+
+background: url(.jpg), #D9D9D9;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* SHIELD LMS makes learning so easy! I can access my courses anywhere, and everything is super secure and user-friendly */
+
+width: 355px;
+height: 100px;
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 154%;
+/* or 25px */
+
+color: rgba(34, 22, 6, 0.75);
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1171276926 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 355px;
+height: 40px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* SHIELD */
+
+width: 355px;
+height: 18px;
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 100%;
+/* identical to box height, or 18px */
+
+color: #060D22;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Student */
+
+width: 355px;
+height: 14px;
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 100%;
+/* identical to box height, or 14px */
+
+color: rgba(34, 22, 6, 0.59);
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1171276933 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 18px;
+
+position: absolute;
+width: 162px;
+height: 72px;
+left: 1205px;
+top: 529px;
+
+
+
+/* Frame 1171276932 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 24px;
+gap: 10px;
+
+width: 72px;
+height: 72px;
+
+background: #FFFFFF;
+opacity: 0.52;
+border: 1px solid #060D22;
+border-radius: 999px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* formkit:arrowright */
+
+width: 32px;
+height: 18px;
+
+transform: rotate(-180deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 18.75%;
+right: 18.75%;
+top: 44.44%;
+bottom: 44.44%;
+
+background: #060D22;
+transform: rotate(-180deg);
+
+
+/* Vector */
+
+position: absolute;
+left: 12.44%;
+right: 59.38%;
+top: 5.56%;
+bottom: 5.33%;
+
+background: #060D22;
+transform: rotate(-180deg);
+
+
+/* Frame 1171276931 */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 24px;
+gap: 10px;
+
+width: 72px;
+height: 72px;
+
+background: #FFFFFF;
+border: 1px solid #060D22;
+border-radius: 999px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* formkit:arrowright */
+
+width: 32px;
+height: 18px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 18.75%;
+right: 18.75%;
+top: 44.44%;
+bottom: 44.44%;
+
+background: #060D22;
+
+
+/* Vector */
+
+position: absolute;
+left: 59.38%;
+right: 12.44%;
+top: 5.33%;
+bottom: 5.56%;
+
+background: #060D22;
+
+
+/* Frame001 */
+
+position: relative;
+width: 290px;
+height: 64px;
+
+background: #FFFFFF;

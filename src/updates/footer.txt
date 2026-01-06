@@ -1,0 +1,779 @@
+/* Footer */
+
+position: relative;
+width: 1440px;
+height: 788px;
+
+background: #FFFFFF;
+
+
+/* Frame 1171277098 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 276px;
+
+position: absolute;
+width: 1302px;
+height: 268px;
+left: 80px;
+top: 70px;
+
+
+
+/* image 18 */
+
+width: 237px;
+height: 56px;
+
+background: url(image.png);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 14759 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 175px;
+
+width: 789px;
+height: 268px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 14752 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 32px;
+
+width: 113px;
+height: 268px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Pages */
+
+width: 43px;
+height: 18px;
+
+font-family: 'Satoshi';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 110%;
+/* identical to box height, or 18px */
+
+color: #808380;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* About Us */
+
+width: 67px;
+height: 18px;
+
+font-family: 'Satoshi';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 110%;
+/* identical to box height, or 18px */
+
+color: #111111;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Book a podcast */
+
+width: 113px;
+height: 18px;
+
+font-family: 'Satoshi';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 110%;
+/* identical to box height, or 18px */
+
+color: #111111;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Publications */
+
+width: 88px;
+height: 18px;
+
+font-family: 'Satoshi';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 110%;
+/* identical to box height, or 18px */
+
+color: #111111;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* SHIELD Learn */
+
+width: 100px;
+height: 18px;
+
+font-family: 'Satoshi';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 110%;
+/* identical to box height, or 18px */
+
+color: #111111;
+
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+flex-grow: 0;
+
+
+/* Run with us */
+
+width: 84px;
+height: 18px;
+
+font-family: 'Satoshi';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 110%;
+/* identical to box height, or 18px */
+
+color: #111111;
+
+
+/* Inside auto layout */
+flex: none;
+order: 5;
+flex-grow: 0;
+
+
+/* Frame 14757 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+gap: 32px;
+
+width: 146px;
+height: 169px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Address */
+
+width: 57px;
+height: 18px;
+
+font-family: 'Satoshi';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 110%;
+/* identical to box height, or 18px */
+
+color: #808380;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 14756 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 29px;
+
+width: 146px;
+height: 119px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* 55 Kole Road */
+
+width: 97px;
+height: 18px;
+
+font-family: 'Satoshi';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 110%;
+/* identical to box height, or 18px */
+
+color: #111111;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 14755 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 32px;
+
+width: 146px;
+height: 72px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 14753 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 14px;
+
+width: 146px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* call-calling */
+
+width: 20px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* vuesax/outline/call-calling */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* call-calling */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 5.21%;
+right: 5.37%;
+top: 5.21%;
+bottom: 5.21%;
+
+background: #111111;
+
+
+/* Vector */
+
+position: absolute;
+left: 59.38%;
+right: 19.79%;
+top: 19.79%;
+bottom: 59.38%;
+
+background: #111111;
+
+
+/* Vector */
+
+position: absolute;
+left: 59.38%;
+right: 5.21%;
+top: 5.21%;
+bottom: 59.37%;
+
+background: #111111;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+
+
+/* +245 93893093 */
+
+width: 112px;
+height: 18px;
+
+font-family: 'Helvetica Neue';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 110%;
+/* identical to box height, or 18px */
+
+color: #111111;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 14754 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 14px;
+
+width: 124px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* sms */
+
+width: 20px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* vuesax/outline/sms */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* sms */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 5.21%;
+right: 5.21%;
+top: 11.46%;
+bottom: 11.46%;
+
+background: #111111;
+
+
+/* Vector */
+
+position: absolute;
+left: 26.03%;
+right: 26.06%;
+top: 34.35%;
+bottom: 46.38%;
+
+background: #111111;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+
+
+/* SHIELD.com */
+
+width: 90px;
+height: 18px;
+
+font-family: 'Satoshi';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 110%;
+/* identical to box height, or 18px */
+
+color: #111111;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 9918 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 38px;
+
+width: 180px;
+height: 96px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Social Links */
+
+width: 85px;
+height: 22px;
+
+font-family: 'Satoshi';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 22px;
+/* identical to box height */
+
+color: #808380;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Group 2013 */
+
+width: 180px;
+height: 36px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Group 88 */
+
+position: absolute;
+width: 36px;
+height: 36px;
+left: 144px;
+top: 60px;
+
+
+
+/* Rectangle 16 */
+
+position: absolute;
+width: 36px;
+height: 36px;
+left: 144px;
+top: 60px;
+
+
+
+/* instagram logo */
+
+position: absolute;
+width: 24px;
+height: 27px;
+left: 150px;
+top: 64.5px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: -0.02%;
+right: -0.04%;
+top: 6.22%;
+bottom: 6.25%;
+
+background: #111111;
+
+
+/* Group 87 */
+
+position: absolute;
+width: 36px;
+height: 36px;
+left: 96px;
+top: 60px;
+
+
+
+/* Rectangle 15 */
+
+position: absolute;
+width: 36px;
+height: 36px;
+left: 96px;
+top: 60px;
+
+
+
+/* linkedin logo */
+
+position: absolute;
+width: 24px;
+height: 22.5px;
+left: 102px;
+top: 66px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: -0.02%;
+top: 0%;
+bottom: 0%;
+
+background: #111111;
+
+
+/* Group 86 */
+
+position: absolute;
+width: 36px;
+height: 36px;
+left: 48px;
+top: 60px;
+
+
+
+/* Rectangle 14 */
+
+position: absolute;
+width: 36px;
+height: 36px;
+left: 48px;
+top: 60px;
+
+
+
+/* Twitter logo */
+
+position: absolute;
+width: 27px;
+height: 21px;
+left: 52.5px;
+top: 67.5px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0.4%;
+bottom: 0.06%;
+
+background: #111111;
+
+
+/* Group 85 */
+
+position: absolute;
+width: 36px;
+height: 36px;
+left: 0px;
+top: 60px;
+
+
+
+/* Rectangle 13 */
+
+position: absolute;
+width: 36px;
+height: 36px;
+left: 0px;
+top: 60px;
+
+
+
+/* facebook logo */
+
+position: absolute;
+width: 10.5px;
+height: 21px;
+left: 12px;
+top: 67.5px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #111111;
+
+
+/* SHIELD */
+
+position: absolute;
+width: 1399px;
+height: 440px;
+left: calc(50% - 1399px/2 + 0.5px);
+top: 328px;
+
+font-family: 'Satoshi';
+font-style: normal;
+font-weight: 700;
+font-size: 400px;
+line-height: 110%;
+/* identical to box height, or 440px */
+
+color: #E4E4E4;
+
+
+
+/* Copyright © 2025 Openlabs Africa. All rights reserved. */
+
+position: absolute;
+width: 388px;
+height: 24px;
+left: 80px;
+bottom: 40px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+display: flex;
+align-items: center;
+letter-spacing: -0.48px;
+
+color: #8E8E8E;
+

@@ -1,0 +1,1165 @@
+/* Frame 1171276620 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 216px;
+
+position: absolute;
+width: 1332px;
+height: 50px;
+left: calc(50% - 1332px/2);
+top: 32px;
+
+
+
+/* Frame 1171276611 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+width: 122px;
+height: 29px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* image 1 */
+
+width: 28px;
+height: 27px;
+
+background: url(image.png);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* SHIELD */
+
+width: 86px;
+height: 29px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+
+color: #1A1A1B;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1171276613 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 32px;
+
+width: 675px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1171276612 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+width: 99px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* About Us */
+
+width: 71px;
+height: 19px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+
+color: #38383A;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* arrow-down */
+
+width: 20px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* vuesax/outline/arrow-down */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* arrow-down */
+
+position: absolute;
+width: 20px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 13.88%;
+right: 13.89%;
+top: 34.18%;
+bottom: 30%;
+
+background: #38383A;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+opacity: 0;
+
+
+/* Book a Podcast */
+
+width: 119px;
+height: 19px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+
+/* Nav bar */
+color: #38383A;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Publications */
+
+width: 96px;
+height: 19px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 19px;
+
+/* Brand blue */
+color: #1370B7;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* SHIELD Learn */
+
+width: 105px;
+height: 19px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+
+color: #38383A;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Run with SHIELD */
+
+width: 128px;
+height: 19px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+
+color: #38383A;
+
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+flex-grow: 0;
+
+
+/* Frame001 */
+
+box-sizing: border-box;
+
+width: 103px;
+height: 50px;
+
+/* Brand blue */
+background: #1370B7;
+border: 1px solid #5F6360;
+border-radius: 100px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* Donate */
+
+position: absolute;
+width: 56px;
+height: 19px;
+left: calc(50% - 56px/2 + 0.5px);
+top: calc(50% - 19px/2 - 0.5px);
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+
+color: #FFFFFF;
+
+
+
+/* Frame 2147207805 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 32px;
+
+position: absolute;
+width: 568px;
+height: 257px;
+left: 60px;
+top: 416.5px;
+
+
+
+/* View Our 2024 Impact Report Now */
+
+width: 568px;
+height: 160px;
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 62px;
+line-height: 80px;
+/* or 129% */
+
+color: #052F52;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame001 */
+
+width: 192px;
+height: 65px;
+
+/* Brand blue */
+background: #1370B7;
+border-radius: 100px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Download Report */
+
+position: absolute;
+width: 133px;
+height: 19px;
+left: calc(50% - 133px/2 + 0.5px);
+top: calc(50% - 19px/2 + 0.5px);
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+
+color: #FFFFFF;
+
+
+
+/* Rectangle 339 */
+
+position: absolute;
+width: 688px;
+height: 798px;
+left: 692px;
+top: 181px;
+
+background: url(image);
+border-radius: 32px;
+
+
+/* See What Our Students at SHIELD are building */
+
+position: absolute;
+width: 646px;
+height: 126px;
+left: calc(50% - 646px/2);
+top: 1089px;
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 52px;
+line-height: 63px;
+text-align: center;
+
+/* Black */
+color: #03111D;
+
+
+
+/* Frame 1171276831 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 40px;
+
+position: absolute;
+width: 1280px;
+height: 3059px;
+left: calc(50% - 1280px/2);
+top: 1275px;
+
+
+
+/* Frame 1171276821 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 29px;
+
+width: 1280px;
+height: 3059px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* SHIELD Portfolio */
+
+width: 1280px;
+height: 63px;
+
+font-family: 'Instrument Sans';
+font-style: normal;
+font-weight: 600;
+font-size: 52px;
+line-height: 63px;
+display: flex;
+align-items: center;
+
+color: #000000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1171276820 */
+
+width: 1280px;
+height: 1469px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1171276811 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 30px;
+
+position: absolute;
+width: 760px;
+height: 623px;
+left: 520px;
+top: 0px;
+
+
+
+/* Frame 1171276799 */
+
+width: 760px;
+height: 550px;
+
+background: #F1F3F6;
+border-radius: 12px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* image 46 */
+
+position: absolute;
+width: 592px;
+height: 421px;
+left: calc(50% - 592px/2);
+top: calc(50% - 421px/2 + 0.5px);
+
+background: url(image);
+
+
+/* Frame 1171276810 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 473px;
+
+width: 760px;
+height: 43px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* AVACADO */
+
+width: 152px;
+height: 43px;
+
+font-family: 'Satoshi Variable';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 43px;
+display: flex;
+align-items: center;
+
+/* Black */
+color: #0F1015;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Web Design */
+
+width: 135px;
+height: 32px;
+
+font-family: 'Satoshi Variable';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 32px;
+display: flex;
+align-items: center;
+
+color: #84858B;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1171276813 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+position: absolute;
+width: 490px;
+height: 724px;
+left: 0px;
+top: 71px;
+
+
+
+/* Frame 1171276799 */
+
+width: 490px;
+height: 672px;
+
+background: linear-gradient(180deg, #AACAFF 0%, #B1A0F2 100%);
+border-radius: 12px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* image 47 */
+
+position: absolute;
+width: 842.67px;
+height: 632px;
+left: calc(50% - 842.67px/2 + 0.5px);
+top: 86px;
+
+background: url(image);
+
+
+/* Frame 1171276812 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 254px;
+
+width: 490px;
+height: 32px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Calender.io */
+
+width: 128px;
+height: 32px;
+
+font-family: 'Satoshi Variable';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 32px;
+display: flex;
+align-items: center;
+
+/* Black */
+color: #0F1015;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* App Design */
+
+width: 108px;
+height: 27px;
+
+font-family: 'Satoshi Variable';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 27px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+color: #84858B;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1171276815 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 31px;
+
+position: absolute;
+width: 1280px;
+height: 624px;
+left: 0px;
+top: 845px;
+
+
+
+/* Frame 1171276799 */
+
+width: 1280px;
+height: 550px;
+
+background: #F1F3F6;
+border-radius: 12px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* image */
+
+position: absolute;
+width: 1280px;
+height: 550px;
+left: calc(50% - 1280px/2);
+top: 0px;
+
+background: url(image);
+
+
+/* image 46 */
+
+position: absolute;
+width: 592px;
+height: 421px;
+left: calc(50% - 592px/2);
+top: calc(50% - 421px/2 + 0.5px);
+
+background: url(image);
+
+
+/* Frame 1171276814 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 993px;
+
+width: 1280px;
+height: 43px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* AVACADO */
+
+width: 152px;
+height: 43px;
+
+font-family: 'Satoshi Variable';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 43px;
+display: flex;
+align-items: center;
+
+/* Black */
+color: #0F1015;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Web Design */
+
+width: 135px;
+height: 32px;
+
+font-family: 'Satoshi Variable';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 32px;
+display: flex;
+align-items: center;
+
+color: #84858B;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1171276821 */
+
+width: 1280px;
+height: 1469px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 1171276811 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 30px;
+
+position: absolute;
+width: 760px;
+height: 623px;
+left: 520px;
+top: 0px;
+
+
+
+/* Frame 1171276799 */
+
+width: 760px;
+height: 550px;
+
+background: #F1F3F6;
+border-radius: 12px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* image 46 */
+
+position: absolute;
+width: 770px;
+height: 633px;
+left: calc(50% - 770px/2 - 5px);
+top: 0px;
+
+background: url(image.png);
+
+
+/* Frame 1171276810 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 473px;
+
+width: 760px;
+height: 43px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* AVACADO */
+
+width: 152px;
+height: 43px;
+
+font-family: 'Satoshi Variable';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 43px;
+display: flex;
+align-items: center;
+
+/* Black */
+color: #0F1015;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Web Design */
+
+width: 135px;
+height: 32px;
+
+font-family: 'Satoshi Variable';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 32px;
+display: flex;
+align-items: center;
+
+color: #84858B;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1171276813 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+position: absolute;
+width: 490px;
+height: 724px;
+left: 0px;
+top: 71px;
+
+
+
+/* Frame 1171276799 */
+
+width: 490px;
+height: 672px;
+
+background: linear-gradient(180deg, #AACAFF 0%, #B1A0F2 100%);
+border-radius: 12px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* image 47 */
+
+position: absolute;
+width: 568px;
+height: 688px;
+left: calc(50% - 568px/2);
+top: 0px;
+
+background: url(image);
+
+
+/* Frame 1171276812 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 254px;
+
+width: 490px;
+height: 32px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Calender.io */
+
+width: 128px;
+height: 32px;
+
+font-family: 'Satoshi Variable';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 32px;
+display: flex;
+align-items: center;
+
+/* Black */
+color: #0F1015;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* App Design */
+
+width: 108px;
+height: 27px;
+
+font-family: 'Satoshi Variable';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 27px;
+/* identical to box height */
+display: flex;
+align-items: center;
+
+color: #84858B;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Frame 1171276815 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 31px;
+
+position: absolute;
+width: 1280px;
+height: 624px;
+left: 0px;
+top: 845px;
+
+
+
+/* Frame 1171276799 */
+
+width: 1280px;
+height: 550px;
+
+background: #76A65D;
+border-radius: 12px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* image */
+
+position: absolute;
+width: 1280px;
+height: 550px;
+left: calc(50% - 1280px/2);
+top: 0px;
+
+
+
+/* image */
+
+position: absolute;
+width: 513px;
+height: 584px;
+left: calc(50% - 513px/2 + 0.5px);
+top: calc(50% - 584px/2 - 17px);
+
+background: url(image);
+
+
+/* Frame 1171276814 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 993px;
+
+width: 1280px;
+height: 43px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* AVACADO */
+
+width: 152px;
+height: 43px;
+
+font-family: 'Satoshi Variable';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 43px;
+display: flex;
+align-items: center;
+
+/* Black */
+color: #0F1015;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Web Design */
+
+width: 135px;
+height: 32px;
+
+font-family: 'Satoshi Variable';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 32px;
+display: flex;
+align-items: center;
+
+color: #84858B;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
