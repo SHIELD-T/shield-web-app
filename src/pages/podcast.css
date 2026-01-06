@@ -1,9 +1,510 @@
-/* src/pages/Podcast.css */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
 
 .podcast {
   font-family: 'Inter', sans-serif;
+  background: #FFFFFF;
 }
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+/* Hero Section */
+.podcast-hero {
+  padding: 60px 0 80px;
+}
+
+.podcast-hero h1 {
+  font-family: 'Instrument Sans', sans-serif;
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 63px;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.hero-subtitle {
+  font-family: 'Instrument Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #666666;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.hero-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.podcast-card {
+  border-radius: 24px;
+  overflow: hidden;
+  position: relative;
+  min-height: 380px;
+  padding: 48px 40px;
+}
+
+.blue-card {
+  background: #003087;
+  position: relative;
+}
+
+.black-card {
+  background: #0A0A0A;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.card-pattern {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 30px,
+    rgba(255, 255, 255, 0.05) 30px,
+    rgba(255, 255, 255, 0.05) 32px
+  );
+  pointer-events: none;
+}
+
+.card-pattern-dark {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent,
+    transparent 30px,
+    rgba(255, 255, 255, 0.03) 30px,
+    rgba(255, 255, 255, 0.03) 32px
+  );
+  pointer-events: none;
+}
+
+.card-content {
+  position: relative;
+  z-index: 2;
+}
+
+.card-label {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8);
+  display: block;
+  margin-bottom: 12px;
+}
+
+.podcast-card h2 {
+  font-family: 'Instrument Sans', sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+
+.podcast-card p {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 24px;
+  max-width: 400px;
+}
+
+.book-btn {
+  background: #FFFFFF;
+  color: #003087;
+  border: none;
+  border-radius: 100px;
+  padding: 12px 32px;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 24px;
+}
+
+.book-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
+}
+
+.host-avatars {
+  display: flex;
+  gap: -8px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  border: 2px solid #003087;
+  margin-left: -8px;
+}
+
+.avatar:first-child {
+  margin-left: 0;
+}
+
+.podcast-image {
+  width: 280px;
+  height: 200px;
+  margin: 0 auto 24px;
+  border-radius: 16px;
+  overflow: hidden;
+  transform: rotate(-5deg);
+  border: 4px solid rgba(255, 255, 255, 0.1);
+}
+
+.podcast-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.player-card {
+  background: #FFFFFF;
+  border-radius: 16px;
+  padding: 20px 24px;
+  position: relative;
+  z-index: 2;
+}
+
+.player-info {
+  margin-bottom: 16px;
+}
+
+.player-info h4 {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 4px;
+}
+
+.player-info p {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: #666666;
+  margin: 0;
+}
+
+.player-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding-top: 12px;
+  border-top: 1px solid #E5E5E5;
+}
+
+.control-btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: #000000;
+  cursor: pointer;
+  padding: 8px;
+  transition: all 0.3s ease;
+}
+
+.play-btn {
+  color: #FF0000;
+  font-size: 20px;
+}
+
+.control-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Why Choose Us */
+.why-choose {
+  padding: 80px 0;
+  background: #FFFFFF;
+}
+
+.why-choose h2 {
+  font-family: 'Instrument Sans', sans-serif;
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.why-content {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.why-text {
+  flex: 1;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  color: #374151;
+}
+
+.why-text strong {
+  color: #000000;
+}
+
+.why-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 16px;
+  overflow: hidden;
+  transform: rotate(8deg);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.why-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Plans Section */
+.plans-section {
+  padding: 80px 0;
+  background: #F9FAFB;
+}
+
+.plans-layout {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.plans-heading h2 {
+  font-family: 'Instrument Sans', sans-serif;
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #000000;
+}
+
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.plan-card {
+  background: #FFFFFF;
+  border-radius: 20px;
+  padding: 32px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.plan-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.plan-image {
+  width: 100%;
+  height: 180px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.plan-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.plan-card h3 {
+  font-family: 'Instrument Sans', sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 16px;
+}
+
+.plan-price {
+  margin-bottom: 24px;
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.currency {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #666666;
+}
+
+.amount {
+  font-family: 'Instrument Sans', sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.period {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #666666;
+}
+
+.plan-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 32px 0;
+}
+
+.plan-features li {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  color: #374151;
+  margin-bottom: 12px;
+  padding-left: 0;
+}
+
+.plan-btn {
+  width: 100%;
+  padding: 14px;
+  background: #FFFFFF;
+  border: 2px solid #000000;
+  border-radius: 100px;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.plan-btn:hover {
+  background: #000000;
+  color: #FFFFFF;
+}
+
+/* Trusted By */
+.trusted-by {
+  padding: 80px 0;
+  background: #F9FAFB;
+}
+
+.trusted-by h2 {
+  font-family: 'Instrument Sans', sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.logos-scroll {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-icon {
+  width: 40px;
+  height: 40px;
+  background: #FFA500;
+  border-radius: 8px;
+}
+
+.logo-item span {
+  font-family: 'Inter', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #000000;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 40px;
+  }
+
+  .plans-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .podcast-hero h1 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .hero-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .podcast-card h2 {
+    font-size: 32px;
+  }
+
+  .why-content {
+    flex-direction: column;
+  }
+
+  .why-image {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .plans-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .plans-heading h2 {
+    font-size: 36px;
+  }
+
+  .logos-scroll {
+    flex-direction: column;
+    gap: 32px;
+  }
+}
+
 
 /* Hero Section */
 .podcast-hero {

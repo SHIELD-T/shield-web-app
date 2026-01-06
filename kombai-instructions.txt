@@ -1,0 +1,2 @@
+# Custom Component Library
+Vanilla React components with custom CSS styling

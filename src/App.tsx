@@ -8,6 +8,7 @@ import Home from "./pages/home";
 import About from "./pages/about";
 import Podcast from "./pages/podcast";
 import Programs from "./pages/programs";
+import Publications from "./pages/publications";
 import Donate from "./pages/donate";
 import BlogPostPage from "./pages/blogpost";
 
@@ -26,6 +27,7 @@ const App: React.FC = () => {
             <Route path="/about" element={<About />} />
             <Route path="/podcast" element={<Podcast />} />
             <Route path="/programs" element={<Programs />} />
+            <Route path="/publications" element={<Publications />} />
             <Route path="/blog/:slug" element={<BlogPostPage />} />
             <Route path="/donate" element={<Donate />} />
             <Route path="/report" element={<PlaceholderPage title="Reports" />} />

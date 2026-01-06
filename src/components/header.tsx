@@ -1,101 +1,68 @@
-// src/components/Header.jsx
-import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import "./Header.css";
-import { resolveUrl } from "../utils/assetUtils";
+import { Link, useLocation } from 'react-router-dom';
+import { CaretDownIcon } from '@phosphor-icons/react';
+import './Header.css';
 
 const Header = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [isVisible, setIsVisible] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      const heroHeight = window.innerHeight * 0.7; // 70vh hero section
-
-      setIsScrolled(scrollTop > 50);
-
-      // Hide header when scrolling down past hero, show when scrolling up
-      if (scrollTop > heroHeight) {
-        if (scrollTop > lastScrollY) {
-          setIsVisible(false); // Scrolling down
-        } else {
-          setIsVisible(true); // Scrolling up
-        }
-      } else {
-        setIsVisible(true); // Always show in hero section
-      }
-
-      setLastScrollY(scrollTop);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [lastScrollY]);
+  const location = useLocation();
+  
+  const isActive = (path: string) => {
+    return location.pathname === path;
+  };
 
   return (
-    <header
-      className={`header ${isScrolled ? "scrolled" : ""} ${
-        !isVisible ? "hidden" : ""
-      }`}
-    >
-      {/* Upper Section - Contact */}
-      <div className="header-top">
-        <div className="container">
-          <div className="contact-info">
-            <span className="phone">📞 Call Us: +254 700 366 137</span>
-            <span className="email">✉️ info@shieldintl.org</span>
-          </div>
+    <header className="header">
+      <div className="header-container">
+        <div className="header-logo">
+          <Link to="/" className="logo-link">
+            <img 
+              src="/assets/Logos/shieldLogoblue.png" 
+              alt="SHIELD Logo" 
+              className="logo-icon"
+            />
+            <span className="logo-text">SHIELD</span>
+          </Link>
         </div>
-      </div>
 
-      {/* Lower Section - Navigation */}
-      <div className="header-bottom">
-        <div className="container">
-          <div className="navbar">
-            <div className="logo">
-              <Link to="/" className="logo-link">
-                <img
-                  src={resolveUrl("/assets/Logos/shieldLogoblue.png")}
-                  alt="Shield International Logo"
-                  className="logo-image"
-                />
-              </Link>
-            </div>
-
-            <nav className="nav-menu">
-              <ul>
-                <li>
-                  <Link to="/" className="nav-link">
-                    Home
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/about" className="nav-link">
-                    About
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/podcast" className="nav-link">
-                    Book a Podcast
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/programs" className="nav-link">
-                    Programs
-                  </Link>
-                </li>
-
-                <li>
-                  <Link to="/donate" className="nav-link donate-btn">
-                    Donate
-                  </Link>
-                </li>
-              </ul>
-            </nav>
+        <nav className="nav-menu">
+          <div className={`nav-item ${isActive('/about') ? 'active' : ''}`}>
+            <Link to="/about" className="nav-link">
+              About Us
+            </Link>
+            <CaretDownIcon size={20} weight="regular" className="dropdown-icon" />
           </div>
-        </div>
+          
+          <Link 
+            to="/podcast" 
+            className={`nav-link ${isActive('/podcast') ? 'active' : ''}`}
+          >
+            Book a Podcast
+          </Link>
+          
+          <Link 
+            to="/publications" 
+            className={`nav-link ${isActive('/publications') ? 'active' : ''}`}
+          >
+            Publications
+          </Link>
+          
+          <Link 
+            to="/programs" 
+            className={`nav-link ${isActive('/programs') ? 'active' : ''}`}
+          >
+            SHIELD Learn
+          </Link>
+          
+          <Link 
+            to="/donate" 
+            className={`nav-link ${isActive('/donate') ? 'active' : ''}`}
+          >
+            Run with us
+          </Link>
+        </nav>
+
+        <Link to="/donate" className="btn-donate">
+          Donate
+        </Link>
       </div>
     </header>
   );

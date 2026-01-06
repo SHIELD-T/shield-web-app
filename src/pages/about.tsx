@@ -1,478 +1,229 @@
-// src/pages/About.jsx
-import "./About.css";
-import { resolveUrl } from "../utils/assetUtils";
+import { useState } from "react";
+import "./about.css";
 
 const About = () => {
+  const [sectorIndex, setSectorIndex] = useState(0);
+
+  const sectors = [
+    {
+      title: "EDUCATION",
+      description: "Education is the foundation for building skills, knowledge, and opportunities. It empowers individuals to break the cycle of poverty and create better futures for themselves and their communities.",
+      image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&auto=format&fit=crop"
+    },
+    {
+      title: "SMEs",
+      description: "SMEs are the backbone of economic growth and job creation, especially in underserved communities. They drive innovation, create employment opportunities, and stimulate local economies by fostering entrepreneurship. However, many SMEs in these areas face challenges such as limited access to funding, training, and markets.",
+      image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800&auto=format&fit=crop"
+    },
+    {
+      title: "CIRCULAR ECONOMY",
+      description: "A circular economy focuses on reducing waste and maximizing resource efficiency. It promotes sustainable production and consumption patterns that benefit both communities and the environment.",
+      image: "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?w=800&auto=format&fit=crop"
+    },
+    {
+      title: "TOURISM",
+      description: "Tourism creates economic opportunities while preserving cultural heritage. It provides employment, promotes local businesses, and showcases the unique traditions and landscapes of communities.",
+      image: "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=800&auto=format&fit=crop"
+    },
+    {
+      title: "ENVIRONMENT",
+      description: "Environmental sustainability ensures the health and wellbeing of communities. It focuses on conservation, climate action, and responsible resource management for future generations.",
+      image: "https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=800&auto=format&fit=crop"
+    }
+  ];
+
+  const nextSector = () => {
+    setSectorIndex((prev) => (prev + 1) % sectors.length);
+  };
+
+  const prevSector = () => {
+    setSectorIndex((prev) => (prev - 1 + sectors.length) % sectors.length);
+  };
+
   return (
     <div className="about">
       {/* Hero Section */}
-      <section className="programs-hero">
-        <video className="programs-hero-video" autoPlay muted loop playsInline>
-          <source
-            src={resolveUrl("assets/videos/about1.mp4")}
-            type="video/mp4"
-          />
-        </video>
-        <div className="programs-hero-overlay">
-          <div className="programs-container">
-            <div className="programs-hero-content">
-              <h1>About Us</h1>
-              <p>
-                At SHIELD, we are dedicated to empowering individuals and
-                communities through innovative programs, cutting-edge training,
-                and impactful mentorship. Our mission is to create sustainable
-                solutions that drive positive change and build a brighter future
-                for all.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Mission & Vision */}
-      <section className="mission-vision">
-        <div className="about-container">
-          <div className="mission-vision-cards">
-            <div className="mission-card">
-              <h2>OUR MISSION</h2>
-              <p>
-                To foster innovation and sustainable development by providing
-                comprehensive capacity building services that empower
-                individuals, organizations, and communities to achieve their
-                full potential through digital transformation and evidence-based
-                solutions.
-              </p>
-            </div>
-
-            <div className="vision-card">
-              <h2>OUR VISION</h2>
-              <p>
-                "We envision thriving ecosystems where local knowledge meets
-                global innovation, where youth are empowered as changemakers,
-                and where every individual has the tools and opportunities to
-                contribute meaningfully to their community's growth and
-                resilience.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Services Overview */}
-      <section className="services-overview" id="services">
-        <div className="about-container">
-          <h2>Our Core Services</h2>
-
-          <div className="services-grid">
-            {/* Card 1 */}
-            <div className="about-service-card">
-              <img
-                src={resolveUrl("assets/images/Digitalinnovation.jpg")}
-                alt="Innovation Services"
-                className="card-image"
-              />
-              <div className="card-content">
-                <h3>Innovation Services</h3>
-                <ul>
-                  <li>Co-creating & planning innovative solutions</li>
-                  <li>Design thinking workshops</li>
-                  <li>Prototype development & testing</li>
-                  <li>Innovation ecosystem mapping</li>
-                </ul>
-              </div>
-            </div>
-
-            {/* Card 2 */}
-            <div className="about-service-card">
-              <img
-                src={resolveUrl("assets/images/image2.png")}
-                alt="Capacity Building"
-                className="card-image"
-              />
-              <div className="card-content">
-                <h3>Capacity Building</h3>
-                <ul>
-                  <li>Strategic planning & writing workshops</li>
-                  <li>Proposal development training</li>
-                  <li>Organizational development support</li>
-                  <li>Leadership development programs</li>
-                </ul>
-              </div>
-            </div>
-
-            {/* Card 3 */}
-            <div className="about-service-card">
-              <img
-                src={resolveUrl("assets/images/Digitaltrans.jpg")}
-                alt="Digital Transformation"
-                className="card-image"
-              />
-              <div className="card-content">
-                <h3>Digital Transformation</h3>
-                <ul>
-                  <li>Data analysis & insights</li>
-                  <li>Digital strategy development</li>
-                  <li>Technology integration support</li>
-                  <li>Digital literacy training</li>
-                </ul>
-              </div>
-            </div>
-
-            {/* Card 4 */}
-            <div className="about-service-card">
-              <img
-                src={resolveUrl("assets/images/social.png")}
-                alt="Social Impact"
-                className="card-image"
-              />
-              <div className="card-content">
-                <h3>Social Impact</h3>
-                <ul>
-                  <li>Community engagement strategies</li>
-                  <li>Impact measurement & evaluation</li>
-                  <li>Stakeholder relationship building</li>
-                  <li>Sustainable development planning</li>
-                </ul>
-              </div>
-            </div>
-
-            {/* Card 5 */}
-            <div className="about-service-card">
-              <img
-                src={resolveUrl("assets/images/rnd.jpg")}
-                alt="Research & Development"
-                className="card-image"
-              />
-              <div className="card-content">
-                <h3>Research & Development</h3>
-                <ul>
-                  <li>Evidence-based research studies</li>
-                  <li>Policy analysis & recommendations</li>
-                  <li>Best practices documentation</li>
-                  <li>Knowledge management systems</li>
-                </ul>
-              </div>
-            </div>
-
-            {/* Card 6 - NEW */}
-            <div className="about-service-card">
-              <img
-                src={resolveUrl("assets/images/sustainability.jpg")}
-                alt="Sustainability & Growth"
-                className="card-image"
-              />
-              <div className="card-content">
-                <h3>Sustainability & Growth</h3>
-                <ul>
-                  <li>Green innovation strategies</li>
-                  <li>Climate-smart development</li>
-                  <li>Impact-driven partnerships</li>
-                  <li>Future-ready capacity building</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Process Section */}
-      <section className="process-section">
-        <div className="about-container">
-          <h2>Our Approach</h2>
-          <div className="process-content">
-            <div>
-              <img
-                src={resolveUrl("assets/images/42.jpg")}
-                alt="Our Process"
-                className="image-placeholder large"
-              />
-              {/* New Image */}
-              <img
-                src={resolveUrl("assets/images/DT.jpg")}
-                alt="Additional Process"
-                className="image-placeholder large"
-              />
-            </div>
-            <div className="process-steps">
-              <div className="step">
-                <div className="step-number">1</div>
-                <div className="step-content">
-                  <h4>Assessment</h4>
-                  <p>
-                    We begin by understanding your unique challenges and
-                    opportunities through comprehensive stakeholder
-                    consultation.
-                  </p>
-                </div>
-              </div>
-
-              <div className="step">
-                <div className="step-number">2</div>
-                <div className="step-content">
-                  <h4>Co-Design</h4>
-                  <p>
-                    Working collaboratively with communities and organizations
-                    to design tailored solutions that meet specific needs.
-                  </p>
-                </div>
-              </div>
-
-              <div className="step">
-                <div className="step-number">3</div>
-                <div className="step-content">
-                  <h4>Implementation</h4>
-                  <p>
-                    Deploying evidence-based interventions with continuous
-                    monitoring and adaptive management approaches.
-                  </p>
-                </div>
-              </div>
-
-              <div className="step">
-                <div className="step-number">4</div>
-                <div className="step-content">
-                  <h4>Evaluation</h4>
-                  <p>
-                    Measuring impact through rigorous evaluation frameworks and
-                    sharing learnings for broader application.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Facilities Overview */}
-      <section className="facilities-overview">
-        <div className="about-container">
-          <h2>Our Facilities & Services</h2>
-          <div className="facilities-intro">
+      <section className="about-hero">
+        <div className="container">
+          <div className="about-hero-content">
+            <h1>What we do</h1>
             <p>
-              To successfully deliver our programs, we are setting up innovative
-              hubs that are accessible, inclusive, and youth-focused to support
-              entrepreneurs from underserved communities.
+              SHIELD provides innovation spaces and combines digital transformation, Design-thinking, research, social venture building expertise to support youths from underserved communities to build social impact ventures that lead to a more inclusive, equitable, and resilient future for underserved people. These ventures have the potential to create employment opportunities and address critical socio-economic issues in their communities.
             </p>
           </div>
-
-          <div className="facilities-grid">
-            <div className="facility-card">
-              <div className="facility-number">1</div>
-              <h3>Co-working Spaces</h3>
-              <p>
-                Vibrant community spaces with state-of-the-art amenities,
-                comfortable workstations, and flexible membership options that
-                connect entrepreneurs and professionals.
-              </p>
-            </div>
-
-            <div className="facility-card">
-              <div className="facility-number">2</div>
-              <h3>Creative Studios</h3>
-              <p>
-                Top-tier podcast, photography, and videography facilities
-                equipped with professional-grade technology, soundproofed rooms,
-                and cutting-edge editing tools.
-              </p>
-            </div>
-
-            <div className="facility-card">
-              <div className="facility-number">3</div>
-              <h3>Meeting Spaces</h3>
-              <p>
-                Thoughtfully designed rooms with modern technology and
-                customizable layouts for productive meetings, training sessions,
-                and innovative brainstorming.
-              </p>
-            </div>
-
-            <div className="facility-card">
-              <div className="facility-number">4</div>
-              <h3>Innovation Labs</h3>
-              <p>
-                Dedicated spaces for prototype development, testing, and
-                innovation ecosystem mapping with access to cutting-edge tools
-                and resources.
-              </p>
-            </div>
-
-            <div className="facility-card">
-              <div className="facility-number">5</div>
-              <h3>Training Centers</h3>
-              <p>
-                Modern educational facilities designed for capacity building
-                workshops, leadership development programs, and digital literacy
-                training.
-              </p>
-            </div>
-
-            <div className="facility-card">
-              <div className="facility-number">6</div>
-              <h3>Community Hubs</h3>
-              <p>
-                Conference halls, exhibition areas, and networking spaces that
-                foster collaboration and create memorable experiences for events
-                and gatherings.
-              </p>
-            </div>
+          <div className="about-hero-image">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&auto=format&fit=crop" alt="SHIELD Team" />
           </div>
         </div>
       </section>
 
-      {/* Partners Section */}
-      <section className="partners-section">
+      {/* How We Do It Section */}
+      <section className="how-we-do">
         <div className="container">
-          <h2>Our Impact in Partnership</h2>
-          <p className="partners-intro">
-            We collaborate with leading organizations to amplify our impact and
-            reach more communities with innovative solutions.
-          </p>
-
-          <div className="partners-grid">
-            <div className="partner-logo">
-              <img
-                src={resolveUrl("assets/Partners/digit.png")}
-                alt="Digit"
-                className="image-placeholder partner"
-              />
-            </div>
-
-            <div className="partner-logo">
-              <img
-                src={resolveUrl("assets/Partners/helpAlliance.png")}
-                alt="Help Alliance"
-                className="image-placeholder partner"
-              />
-            </div>
-
-            <div className="partner-logo">
-              <img
-                src={resolveUrl("assets/Partners/hurupay.png")}
-                alt="HuruPay"
-                className="image-placeholder partner"
-              />
-            </div>
-
-            <div className="partner-logo">
-              <img
-                src={resolveUrl("assets/Partners/KGSA.jpg")}
-                alt="KGSA"
-                className="image-placeholder partner"
-              />
-            </div>
-
-            <div className="partner-logo">
-              <img
-                src={resolveUrl("assets/Partners/partner1.png")}
-                alt="Partner 1"
-                className="image-placeholder partner"
-              />
-            </div>
-
-            <div className="partner-logo">
-              <img
-                src={resolveUrl("assets/Partners/partner2.png")}
-                alt="Partner 2"
-                className="image-placeholder partner"
-              />
-            </div>
-
-            <div className="partner-logo">
-              <img
-                src={resolveUrl("assets/Partners/partner3.png")}
-                alt="Partner 3"
-                className="image-placeholder partner"
-              />
-            </div>
-
-            <div className="partner-logo">
-              <img
-                src={resolveUrl("assets/Partners/partner5.png")}
-                alt="Partner 5"
-                className="image-placeholder partner"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Values Section */}
-      <section className="facilities-overview">
-        <div className="about-container">
-          <h2>Our Core Values</h2>
-          <div className="facilities-intro"></div>
-
-          <div className="facilities-grid">
-            <div className="facility-card">
-              <div className="facility-number">I</div>
-              <h3>Collaboration</h3>
+          <h2>How we do It</h2>
+          
+          <div className="how-grid">
+            <div className="how-item">
+              <div className="how-icon">
+                <svg width="70" height="70" viewBox="0 0 70 70" fill="none">
+                  <circle cx="35" cy="35" r="30" fill="currentColor" opacity="0.1"/>
+                  <path d="M35 20 L45 30 L35 40 L25 30 Z" fill="currentColor"/>
+                </svg>
+              </div>
+              <h3>Mindset Change</h3>
               <p>
-                We believe in the power of partnerships and co-creation to
-                develop solutions that truly meet community needs.
+                We help our beneficiaries in underserved communities adopt entrepreneurial mindsets and regenerative culture of money. This way they can abandon radicalized ideologies, over-reliance on handouts, donations and instead focus on income-generating activities for self-dependency and impact generation in their communities.
               </p>
             </div>
 
-            <div className="facility-card">
-              <div className="facility-number">II</div>
-              <h3>Innovation</h3>
+            <div className="how-item">
+              <div className="how-icon">
+                <svg width="70" height="70" viewBox="0 0 70 70" fill="none">
+                  <rect x="15" y="20" width="40" height="35" rx="4" fill="currentColor" opacity="0.1"/>
+                  <path d="M25 30 L45 30 M25 40 L45 40 M25 50 L40 50" stroke="currentColor" strokeWidth="2"/>
+                </svg>
+              </div>
+              <h3>Skillset Development</h3>
               <p>
-                We embrace creative approaches and emerging technologies to
-                address complex social challenges.
+                We help our beneficiaries in underserved communities adopt entrepreneurial mindsets and regenerative culture of money. This way they can abandon radicalized ideologies, over-reliance on handouts, donations and instead focus on income-generating activities for self-dependency and impact generation in their communities.
               </p>
             </div>
 
-            <div className="facility-card">
-              <div className="facility-number">III</div>
-              <h3>Evidence-Based</h3>
+            <div className="how-item">
+              <div className="how-icon">
+                <svg width="70" height="70" viewBox="0 0 70 70" fill="none">
+                  <circle cx="35" cy="30" r="12" fill="currentColor" opacity="0.1"/>
+                  <rect x="20" y="45" width="30" height="15" rx="3" fill="currentColor" opacity="0.1"/>
+                </svg>
+              </div>
+              <h3>We build and scale Social ventures</h3>
               <p>
-                Our work is grounded in research, data analysis, and rigorous
-                evaluation methodologies.
+                We help our beneficiaries in underserved communities adopt entrepreneurial mindsets and regenerative culture of money. This way they can abandon radicalized ideologies, over-reliance on handouts, donations and instead focus on income-generating activities for self-dependency and impact generation in their communities.
               </p>
             </div>
 
-            <div className="facility-card">
-              <div className="facility-number">IV</div>
-              <h3>Sustainability</h3>
+            <div className="how-item">
+              <div className="how-icon">
+                <svg width="70" height="70" viewBox="0 0 70 70" fill="none">
+                  <circle cx="25" cy="35" r="8" fill="currentColor" opacity="0.1"/>
+                  <circle cx="45" cy="35" r="8" fill="currentColor" opacity="0.1"/>
+                  <circle cx="35" cy="50" r="8" fill="currentColor" opacity="0.1"/>
+                  <path d="M25 35 L45 35 M30 42 L40 42" stroke="currentColor" strokeWidth="2"/>
+                </svg>
+              </div>
+              <h3>We build innovation ecosystems in underserved communities</h3>
               <p>
-                We design interventions that create lasting change and build
-                local capacity for continued impact.
+                We help our beneficiaries in underserved communities adopt entrepreneurial mindsets and regenerative culture of money. This way they can abandon radicalized ideologies, over-reliance on handouts, donations and instead focus on income-generating activities for self-dependency and impact generation in their communities.
               </p>
             </div>
 
-            <div className="facility-card">
-              <div className="facility-number">V</div>
-              <h3>Transparency</h3>
+            <div className="how-item">
+              <div className="how-icon">
+                <svg width="70" height="70" viewBox="0 0 70 70" fill="none">
+                  <rect x="15" y="25" width="15" height="30" rx="2" fill="currentColor" opacity="0.1"/>
+                  <rect x="35" y="20" width="15" height="35" rx="2" fill="currentColor" opacity="0.2"/>
+                  <rect x="55" y="30" width="15" height="25" rx="2" fill="currentColor" opacity="0.1"/>
+                </svg>
+              </div>
+              <h3>Employment Creation</h3>
               <p>
-                We maintain open communication and accountability in all our
-                partnerships and projects.
+                We help our beneficiaries in underserved communities adopt entrepreneurial mindsets and regenerative culture of money. This way they can abandon radicalized ideologies, over-reliance on handouts, donations and instead focus on income-generating activities for self-dependency and impact generation in their communities.
               </p>
             </div>
 
-            <div className="facility-card">
-              <div className="facility-number">VI</div>
-              <h3> Inclusivity</h3>
+            <div className="how-item">
+              <div className="how-icon">
+                <svg width="70" height="70" viewBox="0 0 70 70" fill="none">
+                  <circle cx="35" cy="35" r="25" fill="currentColor" opacity="0.1"/>
+                  <path d="M28 35 L33 40 L42 30" stroke="currentColor" strokeWidth="2.5" fill="none"/>
+                </svg>
+              </div>
+              <h3>We research and advise</h3>
               <p>
-                We ensure that our programs are accessible and beneficial to
-                diverse communities and stakeholders.
+                We help our beneficiaries in underserved communities adopt entrepreneurial mindsets and regenerative culture of money. This way they can abandon radicalized ideologies, over-reliance on handouts, donations and instead focus on income-generating activities for self-dependency and impact generation in their communities.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Get Involved CTA */}
-      <section className="get-involved" id="contact">
+      {/* Methodology Section */}
+      <section className="methodology">
         <div className="container">
-          <div className="cta-content">
-            <h2>Work with Shield</h2>
-            <p>
-              Ready to transform your organization's capacity and drive
-              meaningful impact? Let's collaborate to design innovative
-              solutions tailored to your unique challenges.
-            </p>
-            {/* <div className="cta-buttons">
-              <a href="/podcast" className="btn btn-secondary">Share Your Story</a>
-            </div> */}
+          <div className="methodology-content">
+            <div className="methodology-text">
+              <h2>Our methodology</h2>
+              <p>
+                Our holistic approach incorporates technical and entrepreneurial capacity building training programs combined with multi-stakeholder community engagement to bring in the right support for our beneficiaries to thrive and build solutions to solve social problems in underserved communities. Learners undergo three main programs aimed at upskilling them after which they join the SHIELD community to access the right network and additional resources to become capable social impact champions in their communities.
+              </p>
+            </div>
+            <div className="methodology-image">
+              <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800&auto=format&fit=crop" alt="Methodology" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Sectors of Focus */}
+      <section className="sectors">
+        <div className="container">
+          <h2>Sectors of Focus</h2>
+          
+          <div className="sectors-carousel">
+            <button className="sector-nav prev" onClick={prevSector}>
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <path d="M20 8 L12 16 L20 24" stroke="currentColor" strokeWidth="2" fill="none"/>
+              </svg>
+            </button>
+
+            <div className="sectors-display">
+              <div className="sector-card active">
+                <img src={sectors[sectorIndex].image} alt={sectors[sectorIndex].title} />
+                <div className="sector-overlay">
+                  <h3>{sectors[sectorIndex].title}</h3>
+                </div>
+              </div>
+
+              <div className="sector-info">
+                <h3>{sectors[sectorIndex === 0 ? sectors.length - 1 : sectorIndex - 1].title}</h3>
+                <p>{sectors[sectorIndex].description}</p>
+              </div>
+            </div>
+
+            <button className="sector-nav next" onClick={nextSector}>
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <path d="M12 8 L20 16 L12 24" stroke="currentColor" strokeWidth="2" fill="none"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Impact */}
+      <section className="our-impact">
+        <div className="container">
+          <h2>Our Impact</h2>
+          
+          <div className="impact-stats">
+            <div className="impact-stat">
+              <div className="stat-number">200+</div>
+              <div className="stat-label">Social leaders trained</div>
+            </div>
+            <div className="impact-stat">
+              <div className="stat-number">5+</div>
+              <div className="stat-label">Social ventures created</div>
+            </div>
+            <div className="impact-stat">
+              <div className="stat-number">50+</div>
+              <div className="stat-label">Jobs created</div>
+            </div>
+          </div>
+
+          <div className="impact-cta">
+            <h3>Help us support our community</h3>
+            <a href="/donate" className="btn btn-primary">
+              Donate
+            </a>
           </div>
         </div>
       </section>

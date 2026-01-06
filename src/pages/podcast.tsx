@@ -1,6 +1,4 @@
-// src/pages/Podcast.jsx
-import "./Podcast.css";
-import { resolveUrl } from "../utils/assetUtils";
+import "./podcast.css";
 
 const Podcast = () => {
   return (
@@ -8,125 +6,141 @@ const Podcast = () => {
       {/* Hero Section */}
       <section className="podcast-hero">
         <div className="container">
-          <div className="hero-content">
-            <h1>Choose Your Plan</h1>
-            <p className="hero-subtitle">Elevate Your Voice, Empower Your Brand</p>
-          </div>
-        </div>
-      </section>
-
-      {/* Pricing Plans */}
-      <section className="pricing-section">
-        <div className="container">
-          <div className="pricing-grid">
-            {/* Story Chap Chap Plan */}
-            <div className="pricing-card">
-              <div className="plan-header">
-                <h3>Story chap chap</h3>
-                <div className="price">
-                  <span className="currency">KSH</span>
-                  <span className="amount">5000</span>
-                  <span className="period">/Episode</span>
-                </div>
-              </div>
-              <div className="plan-features">
-                <div className="feature">1hr session</div>
-                <div className="feature">Standard 2-day post-production and delivery</div>
-                <div className="feature">Complimentary content reviews</div>
-                <div className="feature">1 free social media snippet to promote your episode</div>
-              </div>
-            </div>
-
-            {/* Story Flow Plan */}
-            <div className="pricing-card featured">
-              <div className="plan-header">
-                <h3>Story flow</h3>
-                <div className="price">
-                  <span className="currency">KSH</span>
-                  <span className="amount">10000</span>
-                  <span className="period">/Episode</span>
-                </div>
-              </div>
-              <div className="plan-features">
-                <div className="feature">1-hour recording session</div>
-                <div className="feature">Host up to 3 guests</div>
-                <div className="feature">Comprehensive service, including recording, mixing, and mastering</div>
-                <div className="feature">Distribution to all major global platforms</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-      {/* Full Podcast Section */}
-      <section className="full-podcast-section">
-        <div className="container">
-          <div className="full-podcast-content">
-            <div className="podcast-illustration">
-              <img src={resolveUrl("assets/images/68.jpg")} alt="Podcast Illustration" className="podcast-image" />
-            </div>
-            <div className="podcast-info">
-              <div className="tag">Unleash Your Voice</div>
-              <h2>Full Podcast to Resonate Our Services</h2>
-              <p>
-                Dive into the world of professional podcasting with our comprehensive services. 
-                Whether you're a seasoned podcaster or just starting out, we provide everything you need to create a show that stands out. 
-                From state-of-the-art recording facilities to expert post-production, we ensure your voice is heard loud and clear.
-              </p>
-              <p>
-                Our team is dedicated to helping you craft a podcast that resonates with your audience and amplifies your message. 
-                Let us handle the technical details while you focus on sharing your story with the world.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-.
-
-      {/* Why Choose Us Section */}
-      <section className="why-choose-section">
-        <div className="container">
-          <div className="why-choose-content">
-            <div className="why-choose-text">
-              <h2>Why choose us?</h2>
-            </div>
-            <div className="features-list">
-              <div className="feature-item">
-                <h4>State-of-the-Art Facilities</h4>
+          <h1>Full Podcast to Resonate our services</h1>
+          <p className="hero-subtitle">Let us Talk</p>
+          
+          <div className="hero-cards">
+            {/* Left Card - Book a Podcast */}
+            <div className="podcast-card blue-card">
+              <div className="card-pattern"></div>
+              <div className="card-content">
+                <span className="card-label">SHIELD Podcast</span>
+                <h2>Book a Podcast</h2>
                 <p>Our world-class studio is equipped with cutting-edge technology to ensure pristine sound quality.</p>
+                <button className="book-btn">Book a podcast</button>
+                <div className="host-avatars">
+                  <div className="avatar"></div>
+                  <div className="avatar"></div>
+                  <div className="avatar"></div>
+                </div>
               </div>
-              <div className="feature-item">
-                <h4>Expert Sound Engineering</h4>
-                <p>Our skilled engineers will guide you through every step of the recording process, from setup to post-production.</p>
+            </div>
+
+            {/* Right Card - Podcast Player */}
+            <div className="podcast-card black-card">
+              <div className="card-pattern-dark"></div>
+              <div className="podcast-image">
+                <img src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?w=400&auto=format&fit=crop" alt="Podcast Hosts" />
               </div>
-              <div className="feature-item">
-                <h4>Creative Consultation</h4>
-                <p>Need help crafting your podcast concept or refining your storytelling? Our experienced team can provide valuable insights and strategies.</p>
+              <div className="player-card">
+                <div className="player-info">
+                  <h4>The Thought of me</h4>
+                  <p>32 episodes · 5148 points</p>
+                </div>
+                <div className="player-controls">
+                  <button className="control-btn">◀</button>
+                  <button className="control-btn play-btn">●</button>
+                  <button className="control-btn">▶</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="cta-section">
+      {/* Why Choose Us */}
+      <section className="why-choose">
         <div className="container">
-          <div className="cta-content">
-            <h2>Ready to Start Your Podcast Journey?</h2>
-            <p>
-              Let's bring your story to life with professional recording and production services. 
-              Contact us today to book your session.
+          <h2>Why Choose us</h2>
+          <div className="why-content">
+            <p className="why-text">
+              <strong>Our world-class studio is equipped with cutting-edge technology to ensure pristine sound quality.</strong> Our skilled engineers will guide you through every step of the recording process, from setup to post-production. Need help crafting your podcast concept or refining your storytelling? Our experienced team can provide valuable insights and strategies.
             </p>
-            {/* <div className="cta-buttons">
-              <Link to="/about" className="btn btn-primary">
-                Contact Us
-              </Link>
-              <Link to="/" className="btn btn-secondary">
-                Learn More
-              </Link>
-            </div> */}
+            <div className="why-image">
+              <img src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?w=300&auto=format&fit=crop" alt="Recording session" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Choose Your Plans */}
+      <section className="plans-section">
+        <div className="container">
+          <div className="plans-layout">
+            <div className="plans-heading">
+              <h2>Choose Your Plans</h2>
+            </div>
+            
+            <div className="plans-grid">
+              {/* Story Chap Chap Plan */}
+              <div className="plan-card">
+                <div className="plan-image">
+                  <img src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=400&auto=format&fit=crop" alt="Story Chap Chap" />
+                </div>
+                <h3>Story Chap Chap</h3>
+                <div className="plan-price">
+                  <span className="currency">KSH</span>
+                  <span className="amount">5,000</span>
+                  <span className="period">/Episode</span>
+                </div>
+                <ul className="plan-features">
+                  <li>✓ 1hr session</li>
+                  <li>✓ Standard 2-day post-production and delivery</li>
+                  <li>✓ Complimentary content reviews</li>
+                  <li>✓ 1 free social media snippet to promote your episode</li>
+                </ul>
+                <button className="plan-btn">Get It</button>
+              </div>
+
+              {/* Story Flow Plan */}
+              <div className="plan-card">
+                <div className="plan-image">
+                  <img src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?w=400&auto=format&fit=crop" alt="Story Flow" />
+                </div>
+                <h3>Story Flow</h3>
+                <div className="plan-price">
+                  <span className="currency">KSH</span>
+                  <span className="amount">10,000</span>
+                  <span className="period">/Episode</span>
+                </div>
+                <ul className="plan-features">
+                  <li>✓ 1hr session</li>
+                  <li>✓ Standard 2-day post-production and delivery</li>
+                  <li>✓ Complimentary content reviews</li>
+                  <li>✓ 1 free social media snippet to promote your episode</li>
+                </ul>
+                <button className="plan-btn">Get It</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Trusted By */}
+      <section className="trusted-by">
+        <div className="container">
+          <h2>Trusted by Many</h2>
+          <div className="logos-scroll">
+            <div className="logo-item">
+              <div className="logo-icon"></div>
+              <span>Hurupay</span>
+            </div>
+            <div className="logo-item">
+              <div className="logo-icon"></div>
+              <span>Hurupay</span>
+            </div>
+            <div className="logo-item">
+              <div className="logo-icon"></div>
+              <span>Hurupay</span>
+            </div>
+            <div className="logo-item">
+              <div className="logo-icon"></div>
+              <span>Hurupay</span>
+            </div>
+            <div className="logo-item">
+              <div className="logo-icon"></div>
+              <span>Hurupay</span>
+            </div>
           </div>
         </div>
       </section>

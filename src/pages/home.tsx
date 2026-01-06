@@ -1,310 +1,251 @@
-import { useState, useRef, useEffect } from "react";
-import { Link } from "react-router-dom";
-import BlogSection from "../components/BlogSection";
-import TeamSection from "../components/TeamSection";
-import AboutSection from "../components/AboutSection";
-import EventsCarousel from "../components/EventsCarousel";
-import { resolveUrl } from "../utils/assetUtils";
+import { useState } from "react";
 import "./home.css";
 
 const Home = () => {
-  const [eventScrollIndex, setEventScrollIndex] = useState(0);
+  const [activeTab, setActiveTab] = useState("design-thinking");
 
-  // Refs for scroll animations
-  const heroRef = useRef(null);
-  const aboutRef = useRef(null);
-  const whyShieldRef = useRef(null);
-  const eventsRef = useRef(null);
-  const coursesRef = useRef(null);
-  const ctaRef = useRef(null);
-  const quoteRef = useRef(null);
-
-  // Scroll animation effect
-  useEffect(() => {
-    const observerOptions = {
-      threshold: 0.1,
-      rootMargin: "0px 0px -50px 0px",
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("animate-in");
-        }
-      });
-    }, observerOptions);
-
-    // Observe all sections
-    const sections = [heroRef, quoteRef, aboutRef, whyShieldRef, eventsRef, coursesRef, ctaRef];
-    sections.forEach((ref) => {
-      if (ref.current) {
-        observer.observe(ref.current);
-      }
-    });
-
-    return () => {
-      observer.disconnect();
-    };
-  }, []);
-
-  // Event scroll handler with typed parameter
-  const scrollEvents = (direction: "left" | "right") => {
-    const totalCards = 4; // Adjust based on fetched events length if dynamic
-    if (direction === "left") {
-      setEventScrollIndex(eventScrollIndex === 0 ? totalCards - 1 : eventScrollIndex - 1);
-    } else if (direction === "right") {
-      setEventScrollIndex(eventScrollIndex === totalCards - 1 ? 0 : eventScrollIndex + 1);
+  const programs = {
+    "design-thinking": {
+      title: "Design Thinking School",
+      description: "Within the context of the design thinking process, we empower youth in underprivileged communities with the skills to collaborate and think of themselves as problem solvers and to pioneer solutions to the problems they face within their community.",
+      image: "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=800&auto=format&fit=crop"
+    },
+    "entrepreneurship": {
+      title: "SHIELD Entrepreneurship", 
+      description: "We provide comprehensive entrepreneurship training and mentorship to help young innovators transform their ideas into sustainable businesses.",
+      image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&auto=format&fit=crop"
+    },
+    "software": {
+      title: "Software Development",
+      description: "Our software development program equips youth with modern coding skills and technical expertise to build digital solutions.",
+      image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800&auto=format&fit=crop"
+    },
+    "research": {
+      title: "SIDLabs (Research & Development)",
+      description: "Through our research and development lab, we create innovative solutions that address real community challenges.",
+      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&auto=format&fit=crop"
     }
   };
 
   return (
     <div className="home">
       {/* Hero Section */}
-      <section className="hero" ref={heroRef}>
-        <div className="hero-overlay">
-          <div className="container">
-            <div className="hero-content">
-              <h1>Empowering Innovation, Driving Impact</h1>
+      <section className="hero">
+        <div className="container">
+          <div className="hero-content">
+            <h1>Inspiring Growth, Shaping Tomorrow</h1>
+            <p>The Social Hub for Innovation Entrepreneurship Leadership and Design Thinking</p>
+            <a href="/donate" className="btn btn-primary">
+              Donate
+            </a>
+          </div>
+          <div className="hero-image">
+            <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800&auto=format&fit=crop" alt="Africa Map with Community" />
+          </div>
+        </div>
+      </section>
+
+      {/* Story Section */}
+      <section className="about-preview">
+        <div className="container">
+          <div className="about-content">
+            <div className="about-text">
+              <h2>There's More to Our Story</h2>
               <p>
-                We bridge the gap between communities, technology, and sustainable development to co-create solutions that transform lives and build inclusive futures.
-              </p>
-              <div className="hero-buttons">
-                <Link to="/about" className="btn btn-secondary">
-                  Learn More
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* About Section */}
-      <div className="" ref={aboutRef}>
-        <AboutSection />
-      </div>
-
-      {/* Why SHIELD is Essential Section */}
-      <section className="why-shield-section" ref={whyShieldRef}>
-        <div className="container">
-          <div className="why-shield-content">
-            <div className="why-shield-header">
-              <h2>
-                <img src={resolveUrl("favicon.png")} alt="" /> Why SHIELD Is Essential{" "}
-                <img src={resolveUrl("favicon.png")} alt="" />
-              </h2>
-              <p className="section-subtitle">
-                Breaking the cycle of unemployment in underserved communities requires more than just skills training
+                The Social Hub for Innovation, Entrepreneurship, Leadership and Design-Thinking(SHIELD) is a non-profit social innovation and technology hub that promotes sustainable socio-economic development by empowering youth from underserved communities to leverage their talents and skills to tackle social problems in their communities and transform their ideas into impactful social enterprises.
               </p>
             </div>
-
-            <div className="challenges-grid">
-              <div className="challenge-item">
-                <div className="challenge-icon">1</div>
-                <h3>Saturated Job Market</h3>
-                <p>
-                  Even with digital skills, youth face a competitive job market where traditional employment opportunities are limited. Many skilled individuals remain unemployed due to lack of connections and opportunities.
-                </p>
+            <div className="about-images">
+              <div className="about-image">
+                <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=400&auto=format&fit=crop" alt="Community" />
               </div>
-
-              <div className="challenge-item">
-                <div className="challenge-icon">2</div>
-                <h3>Missing Networks</h3>
-                <p>
-                  Underserved communities lack access to professional networks, mentorship, and industry connections that are crucial for career advancement and entrepreneurial success.
-                </p>
+              <div className="about-image">
+                <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=400&auto=format&fit=crop" alt="Youth" />
               </div>
-
-              <div className="challenge-item">
-                <div className="challenge-icon">3</div>
-                <h3>Innovation Gap</h3>
-                <p>
-                  Innovation resources are concentrated in affluent areas and universities, leaving talented youth in underserved communities without platforms to develop and showcase their ideas.
-                </p>
-              </div>
-
-              <div className="challenge-item">
-                <div className="challenge-icon">4</div>
-                <h3>Lack of Entrepreneurial Support</h3>
-                <p>
-                  While many have business ideas, they lack access to incubation programs, funding opportunities, and the ecosystem needed to transform ideas into sustainable ventures.
-                </p>
-              </div>
-
-              <div className="challenge-item">
-                <div className="challenge-icon">5</div>
-                <h3>Skills-Opportunity Mismatch</h3>
-                <p>
-                  Training programs often don't align with real market needs or fail to provide pathways to actual employment and entrepreneurial opportunities.
-                </p>
-              </div>
-
-              <div className="challenge-item">
-                <div className="challenge-icon">6</div>
-                <h3>Systemic Barriers</h3>
-                <p>
-                  Geographic isolation, limited infrastructure, and socioeconomic barriers create additional obstacles that prevent talented individuals from accessing opportunities.
-                </p>
-              </div>
-            </div>
-
-            <div className="shield-solution">
-              <h3>SHIELD's Approach</h3>
-              <p>
-                We don't just provide skills training - we create comprehensive ecosystems within underserved communities. Our programs combine design thinking, entrepreneurship development, technical training, and community-based innovation to ensure youth don't just learn skills, but create opportunities for themselves and others.
-              </p>
-              <Link to="/programs" className="btn btn-primary">
-                Explore Our Programs
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Events Section with Dynamic Carousel */}
-      <section className="events-section" ref={eventsRef}>
-        <div className="container">
-          <div className="e-section-header">
-            <h2>Upcoming Events</h2>
-            <div className="nav-arrows">
-              <button
-                className="nav-arrow"
-                onClick={() => scrollEvents("left")}
-              >
-                ←
-              </button>
-              <button
-                className="nav-arrow"
-                onClick={() => scrollEvents("right")}
-              >
-                →
-              </button>
-            </div>
-          </div>
-          <EventsCarousel eventScrollIndex={eventScrollIndex} setEventScrollIndex={setEventScrollIndex} />
-        </div>
-      </section>
-
-      {/* Upcoming Courses Section */}
-      <section className="courses-section" ref={coursesRef}>
-        <div className="container">
-          <div className="courses-header">
-            <h2>Online Courses</h2>
-            <p className="section-subtitle">
-              Checkout our tutor LMS for both free and paid courses.
-            </p>
-          </div>
-
-          <div className="courses-grid">
-            <div className="course-card">
-              <div className="course-content">
-                <div className="course-category">Web Development</div>
-                <h3>Full-Stack Development Bootcamp</h3>
-                <p>
-                  Master modern web technologies including React, Node.js, and database management in this intensive 12-week program.
-                </p>
-                <div className="course-details">
-                  <span className="course-duration">📅 12 Weeks</span>
-                  <span className="course-level">🎯 Beginner to Advanced</span>
-                </div>
-                <Link to="/programs" className="course-btn">
-                  Enroll Now
-                </Link>
-              </div>
-            </div>
-
-            <div className="course-card">
-              <div className="course-content">
-                <div className="course-category">Design Thinking</div>
-                <h3>Human-Centered Design Workshop</h3>
-                <p>
-                  Learn to solve complex problems through empathy, ideation, and prototyping using design thinking methodologies.
-                </p>
-                <div className="course-details">
-                  <span className="course-duration">📅 6 Weeks</span>
-                  <span className="course-level">🎯 All Levels</span>
-                </div>
-                <Link to="/programs" className="course-btn">
-                  Enroll Now
-                </Link>
-              </div>
-            </div>
-
-            <div className="course-card">
-              <div className="course-content">
-                <div className="course-category">Entrepreneurship</div>
-                <h3>Social Enterprise Development</h3>
-                <p>
-                  Build sustainable businesses that create positive social impact while generating revenue and growth.
-                </p>
-                <div className="course-details">
-                  <span className="course-duration">📅 8 Weeks</span>
-                  <span className="course-level">🎯 Intermediate</span>
-                </div>
-                <Link to="/programs" className="course-btn">
-                  Enroll Now
-                </Link>
-              </div>
-            </div>
-
-            <div className="course-card">
-              <div className="course-content">
-                <div className="course-category">Data Science</div>
-                <h3>Data Analytics for Social Good</h3>
-                <p>
-                  Harness the power of data to drive social change and make informed decisions for community development.
-                </p>
-                <div className="course-details">
-                  <span className="course-duration">📅 10 Weeks</span>
-                  <span className="course-level">🎯 Intermediate</span>
-                </div>
-                <Link to="/programs" className="course-btn">
-                  Enroll Now
-                </Link>
+              <div className="about-image">
+                <img src="https://images.unsplash.com/photo-1516450137517-162bfbeb8dba?w=400&auto=format&fit=crop" alt="Culture" />
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Blog Section - Now Below CTA */}
-      <BlogSection />
-
-      {/* Team Section */}
-      <TeamSection />
-
-      {/* Quote Section */}
-      <section className="quote-section" ref={quoteRef}>
+      {/* Programs Section */}
+      <section className="events-section">
         <div className="container">
-          <div className="quote-content">
-            <p className="quote-text">
-              <i>
-                "None of us, including me, ever do great things. But we can all do small things, with great love, and together we can do something wonderful."
-              </i>
-            </p>
-            <p className="quote-author">– Mother Teresa</p>
+          <h2>Let's Change Stories Together</h2>
+          <p className="section-subtitle">
+            There are 1M new 18 year-olds in Kenya each year. These young men and women needs empowerment
+          </p>
+          
+          <div className="programs-tabs">
+            <button 
+              className={`tab-btn ${activeTab === "design-thinking" ? "active" : ""}`}
+              onClick={() => setActiveTab("design-thinking")}
+            >
+              Design Thinking School
+            </button>
+            <button 
+              className={`tab-btn ${activeTab === "entrepreneurship" ? "active" : ""}`}
+              onClick={() => setActiveTab("entrepreneurship")}
+            >
+              SHIELD Entrepreneurship
+            </button>
+            <button 
+              className={`tab-btn ${activeTab === "software" ? "active" : ""}`}
+              onClick={() => setActiveTab("software")}
+            >
+              Software Development
+            </button>
+            <button 
+              className={`tab-btn ${activeTab === "research" ? "active" : ""}`}
+              onClick={() => setActiveTab("research")}
+            >
+              SIDLabs (Research & Development)
+            </button>
+          </div>
+
+          <div className="program-card">
+            <div className="program-image">
+              <img src={programs[activeTab as keyof typeof programs].image} alt={programs[activeTab as keyof typeof programs].title} />
+            </div>
+            <div className="program-content">
+              <h3>{programs[activeTab as keyof typeof programs].title}</h3>
+              <p>{programs[activeTab as keyof typeof programs].description}</p>
+              <a href="/programs" className="btn btn-primary">
+                Donate to this cause
+              </a>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Call to Action */}
-      <section className="hcta-section" ref={ctaRef}>
+      {/* Distinguishes Section */}
+      <section className="why-shield-section">
         <div className="container">
-          <div className="hcta-content">
-            <h2>Ready to Make a Difference?</h2>
+          <h2>What distinguishes us?</h2>
+          
+          <div className="challenges-grid">
+            <div className="challenge-item">
+              <div className="challenge-icon-img">
+                <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                  <circle cx="40" cy="40" r="15" fill="currentColor" opacity="0.2"/>
+                  <circle cx="25" cy="50" r="10" fill="currentColor" opacity="0.4"/>
+                  <circle cx="55" cy="50" r="10" fill="currentColor" opacity="0.4"/>
+                </svg>
+              </div>
+              <h3>Human Centeredness</h3>
+              <p>we make sure putting people at the heart of every experience comes first.</p>
+            </div>
+
+            <div className="challenge-item">
+              <div className="challenge-icon-img">
+                <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                  <path d="M40 20 L50 35 L40 30 L30 35 Z" fill="currentColor"/>
+                  <circle cx="40" cy="45" r="8" fill="currentColor" opacity="0.3"/>
+                </svg>
+              </div>
+              <h3>Innovation</h3>
+              <p>we make sure putting people at the heart of every experience comes first.</p>
+            </div>
+
+            <div className="challenge-item">
+              <div className="challenge-icon-img">
+                <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                  <path d="M40 25 L50 35 L48 50 L40 55 L32 50 L30 35 Z" fill="currentColor" opacity="0.3"/>
+                  <path d="M35 40 L38 43 L45 35" stroke="currentColor" strokeWidth="2" fill="none"/>
+                </svg>
+              </div>
+              <h3>Integrity</h3>
+              <p>we make sure putting people at the heart of every experience comes first.</p>
+            </div>
+
+            <div className="challenge-item challenge-with-image">
+              <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=500&auto=format&fit=crop" alt="Impact" />
+              <div className="challenge-overlay">
+                <h3>Impact</h3>
+                <p>we make sure putting people at the heart of every experience comes first.</p>
+              </div>
+            </div>
+
+            <div className="challenge-item challenge-with-image">
+              <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=500&auto=format&fit=crop" alt="Team Work" />
+              <div className="challenge-overlay">
+                <h3>Team Work</h3>
+                <p>we make sure putting people at the heart of every experience comes first.</p>
+              </div>
+            </div>
+
+            <div className="challenge-item">
+              <div className="challenge-icon-img">
+                <svg width="120" height="120" viewBox="0 0 120 120" fill="none">
+                  <circle cx="45" cy="40" r="12" fill="currentColor" opacity="0.4"/>
+                  <circle cx="75" cy="40" r="12" fill="currentColor" opacity="0.4"/>
+                  <circle cx="60" cy="65" r="12" fill="currentColor" opacity="0.4"/>
+                  <circle cx="35" cy="75" r="10" fill="currentColor" opacity="0.3"/>
+                  <circle cx="85" cy="75" r="10" fill="currentColor" opacity="0.3"/>
+                </svg>
+              </div>
+              <h3>Diversity</h3>
+              <p>we make sure putting people at the heart of every experience comes first.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Progress Section */}
+      <section className="courses-section progress-section-white">
+        <div className="container progress-layout">
+          <div className="progress-text">
+            <h2>Check Our Progress Lately</h2>
             <p>
-              Your support can help us continue our mission of creating positive change in communities. Every contribution, no matter the size, makes a difference.
+              Our key goal is to touch the lives of people in underserved communities by removing barriers to access of socio-economic opportunities and enable them contribute to community development.
             </p>
-            <div className="hcta-buttons">
-              <Link to="/donate" className="btn btn-primary">
-                Make a Donation
-              </Link>
-              <Link to="/podcast" className="btn btn-secondary">
-                Share Your Story
-              </Link>
+          </div>
+          <div className="progress-video">
+            <div className="video-wrapper">
+              <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=800&auto=format&fit=crop" alt="Students in classroom" />
+              <div className="play-button">
+                <svg width="116" height="116" viewBox="0 0 116 116" fill="none">
+                  <circle cx="58" cy="58" r="58" fill="white" fillOpacity="0.4"/>
+                  <path d="M48 40L76 58L48 76V40Z" fill="white"/>
+                </svg>
+              </div>
             </div>
           </div>
         </div>
       </section>
+
+      {/* Impact Stats Section */}
+      <section className="hcta-section impact-stats">
+        <div className="container">
+          <p className="impact-question">Have you made a donation or fundraised for us?</p>
+          <h2>Where your money goes</h2>
+          
+          <div className="stats-grid">
+            <div className="stat-card">
+              <div className="stat-number">120+</div>
+              <div className="stat-label">Students</div>
+            </div>
+            <div className="stat-card">
+              <div className="stat-number">72%</div>
+              <div className="stat-label">Research & Support</div>
+            </div>
+            <div className="stat-card">
+              <div className="stat-number">28%</div>
+              <div className="stat-label">Fundraising</div>
+            </div>
+          </div>
+
+          <div className="impact-cta">
+            <h3>Help us support our community</h3>
+            <a href="/donate" className="btn btn-primary impact-btn">
+              Donate
+            </a>
+          </div>
+        </div>
+      </section>
+
     </div>
   );
 };
