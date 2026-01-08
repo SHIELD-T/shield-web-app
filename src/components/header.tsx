@@ -19,7 +19,6 @@ const Header = () => {
               alt="SHIELD Logo" 
               className="logo-icon"
             />
-            <span className="logo-text">SHIELD</span>
           </Link>
         </div>
 
