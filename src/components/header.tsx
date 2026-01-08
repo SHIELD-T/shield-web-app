@@ -1,9 +1,12 @@
+import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { CaretDownIcon } from '@phosphor-icons/react';
+import DonateModal from '../pages/donatemodal';
 import './Header.css';
 
 const Header = () => {
   const location = useLocation();
+  const [isModalOpen, setIsModalOpen] = useState(false);
   
   const isActive = (path: string) => {
     return location.pathname === path;
@@ -14,9 +17,9 @@ const Header = () => {
       <div className="header-container">
         <div className="header-logo">
           <Link to="/" className="logo-link">
-            <img 
-              src="/assets/Logos/shieldLogoblue.png" 
-              alt="SHIELD Logo" 
+            <img
+              src={new URL('/assets/Logos/shieldLogoblue.png', import.meta.url).href}
+              alt="SHIELD Logo"
               className="logo-icon"
             />
           </Link>
@@ -27,7 +30,7 @@ const Header = () => {
             <Link to="/about" className="nav-link">
               About Us
             </Link>
-            <CaretDownIcon size={20} weight="regular" className="dropdown-icon" />
+            {/* <CaretDownIcon size={20} weight="regular" className="dropdown-icon" /> */}
           </div>
           
           <Link 
@@ -51,18 +54,19 @@ const Header = () => {
             SHIELD Learn
           </Link>
           
-          <Link 
-            to="/donate" 
-            className={`nav-link ${isActive('/donate') ? 'active' : ''}`}
+          <Link
+            to="/run"
+            className={`nav-link ${isActive('/run') ? 'active' : ''}`}
           >
             Run with us
           </Link>
         </nav>
 
-        <Link to="/donate" className="btn-donate">
+        <button className="btn-donate" onClick={() => setIsModalOpen(true)}>
           Donate
-        </Link>
+        </button>
       </div>
+      <DonateModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </header>
   );
 };

@@ -9,7 +9,7 @@
 /* Hero Section */
 .hero {
   background: #FFFFFF;
-  padding: 80px 0 0;
+  padding: 60px 0 0;
   min-height: 600px;
   position: relative;
 }
@@ -23,7 +23,7 @@
   height: 247px;
   background: #E8E8F3;
   z-index: 0;
-  border-radius: 0 0 50% 50%;
+  border-radius: 0;
 }
 
 .container {
@@ -90,7 +90,7 @@
   transform: translateY(-2px);
 }
 
-.hero-image {
+.hero-img-home {
   flex: 1;
   max-width: 607px;
   display: flex;
@@ -98,10 +98,11 @@
   justify-content: center;
 }
 
-.hero-image img {
+.hero-img-home img {
   width: 100%;
   height: auto;
   object-fit: contain;
+  border-radius: 0 !important;
 }
 
 /* Story Section */
@@ -590,3 +591,4 @@
     line-height: 44px;
   }
 }
+

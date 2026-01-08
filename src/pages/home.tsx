@@ -39,8 +39,8 @@ const Home = () => {
               Donate
             </a>
           </div>
-          <div className="hero-image">
-            <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800&auto=format&fit=crop" alt="Africa Map with Community" />
+          <div className="hero-img-home">
+            <img src={new URL('/assets/images/homepage.jpeg', import.meta.url).href} alt="Africa Map with Community" />
           </div>
         </div>
       </section>

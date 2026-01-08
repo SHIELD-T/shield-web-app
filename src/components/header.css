@@ -14,12 +14,10 @@
   right: 0;
   z-index: 1000;
   background: var(--color-white);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
 }
 
 .header.scrolled {
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .header-container {
@@ -61,7 +59,7 @@
 }
 
 .header-logo .logo-icon {
-  height: 65px;
+  height: 45px;
   width: auto;
   display: block;
   object-fit: contain;

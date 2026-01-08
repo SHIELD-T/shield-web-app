@@ -7,8 +7,8 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-main">
         <div className="footer-logo">
-          <img 
-            src="/assets/Logos/shieldLogoblue.png" 
+          <img
+            src={new URL('/assets/Logos/shieldLogoblue.png', import.meta.url).href}
             alt="SHIELD Logo"
             className="footer-logo-img"
           />

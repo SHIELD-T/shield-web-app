@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import type { ChangeEvent, FormEvent } from 'react';
+import './donatemodal.css';
 
 interface DonateModalProps {
   isOpen: boolean;
