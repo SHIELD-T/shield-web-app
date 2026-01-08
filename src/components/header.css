@@ -1,20 +1,39 @@
+:root {
+  --color-white: #FFFFFF;
+  --color-primary: #1370B7;
+  --color-primary-dark: #0f5a94;
+  --color-text: #1A1A1B;
+  --color-text-secondary: #38383A;
+  --font-family-inter: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
 .header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 1000;
   background: var(--color-white);
-  width: 100%;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.header.scrolled {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 60px;
-  height: 82px;
+  padding: 20px 60px;
   max-width: 1440px;
   margin: 0 auto;
+  transition: padding 0.3s ease;
+}
+
+.header.scrolled .header-container {
+  padding: 16px 60px;
 }
 
 .header-logo {
@@ -24,24 +43,29 @@
 }
 
 .header-logo .logo-link {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+  display: block;
   text-decoration: none;
+  transition: transform 0.3s ease;
+  background: transparent;
+}
+
+.header-logo .logo-link:hover {
+  transform: scale(1.02);
+  background: transparent;
+}
+
+.header-logo .logo-link:focus,
+.header-logo .logo-link:active {
+  outline: none;
+  background: transparent;
 }
 
 .header-logo .logo-icon {
-  width: 28px;
-  height: 27px;
+  height: 65px;
+  width: auto;
+  display: block;
   object-fit: contain;
-}
-
-.header-logo .logo-text {
-  font-family: var(--font-family-inter);
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 29px;
-  color: #1A1A1B;
+  background: transparent;
 }
 
 .nav-menu {
@@ -57,57 +81,61 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  height: 20px;
 }
 
 .nav-link {
   font-family: var(--font-family-inter);
   font-size: 16px;
   font-weight: 500;
-  line-height: 19px;
-  color: #38383A;
+  line-height: 1.2;
+  color: var(--color-text-secondary);
   text-decoration: none;
-  transition: color 0.3s ease, font-weight 0.3s ease;
+  transition: color 0.3s ease;
   white-space: nowrap;
 }
 
 .nav-link:hover {
-  color: #1370B7;
+  color: var(--color-primary);
+}
+
+.nav-link:focus,
+.nav-link:active {
+  outline: none;
 }
 
 .nav-item.active .nav-link,
 .nav-link.active {
-  color: #1370B7;
+  color: var(--color-primary);
   font-weight: 600;
 }
 
 .dropdown-icon {
-  color: #38383A;
+  color: var(--color-text-secondary);
   flex-shrink: 0;
   transition: color 0.3s ease;
+  font-size: 14px;
 }
 
 .nav-item:hover .dropdown-icon,
 .nav-item.active .dropdown-icon {
-  color: #1370B7;
+  color: var(--color-primary);
 }
 
 .btn-donate {
-  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
   min-width: 103px;
   height: 50px;
   padding: 0 24px;
-  background: #1370B7;
-  border: 1px solid #5F6360;
+  background: var(--color-primary);
+  border: 1px solid var(--color-primary);
   border-radius: 100px;
   font-family: var(--font-family-inter);
   font-size: 16px;
   font-weight: 500;
-  line-height: 19px;
-  color: #FFFFFF;
+  line-height: 1.2;
+  color: var(--color-white);
   text-decoration: none;
   transition: all 0.3s ease;
   cursor: pointer;
@@ -115,32 +143,43 @@
 }
 
 .btn-donate:hover {
-  background: #0f5a94;
-  transform: translateY(-1px);
-  box-shadow: 0 4px 8px rgba(19, 112, 183, 0.2);
+  background: var(--color-primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(19, 112, 183, 0.3);
 }
 
-/* Mobile Menu Toggle (hidden by default) */
+.btn-donate:focus,
+.btn-donate:active {
+  outline: none;
+}
+
 .mobile-menu-toggle {
   display: none;
   background: none;
   border: none;
-  color: #1A1A1B;
+  color: var(--color-text);
   cursor: pointer;
   padding: 8px;
+  font-size: 24px;
 }
 
-/* Responsive */
-@media (max-width: 1400px) {
-  .header-container {
-    max-width: 100%;
-    padding: 0 40px;
-  }
+.mobile-menu-toggle:focus,
+.mobile-menu-toggle:active {
+  outline: none;
 }
 
+/* Responsive Breakpoints */
 @media (max-width: 1200px) {
   .header-container {
-    padding: 0 40px;
+    padding: 18px 40px;
+  }
+  
+  .header.scrolled .header-container {
+    padding: 14px 40px;
+  }
+  
+  .header-logo .logo-icon {
+    height: 58px;
   }
   
   .nav-menu {
@@ -154,7 +193,15 @@
 
 @media (max-width: 1024px) {
   .header-container {
-    padding: 0 30px;
+    padding: 16px 30px;
+  }
+  
+  .header.scrolled .header-container {
+    padding: 12px 30px;
+  }
+  
+  .header-logo .logo-icon {
+    height: 55px;
   }
   
   .nav-menu {
@@ -164,12 +211,26 @@
   .nav-link {
     font-size: 14px;
   }
+  
+  .btn-donate {
+    min-width: 95px;
+    height: 46px;
+    font-size: 15px;
+    padding: 0 20px;
+  }
 }
 
 @media (max-width: 900px) {
   .header-container {
-    padding: 0 20px;
-    height: 70px;
+    padding: 14px 24px;
+  }
+  
+  .header.scrolled .header-container {
+    padding: 12px 24px;
+  }
+  
+  .header-logo .logo-icon {
+    height: 52px;
   }
   
   .nav-menu {
@@ -184,38 +245,53 @@
     min-width: 90px;
     height: 44px;
     font-size: 15px;
-    padding: 0 20px;
+    padding: 0 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-container {
+    padding: 12px 20px;
   }
   
-  .header-logo .logo-text {
-    font-size: 22px;
+  .header.scrolled .header-container {
+    padding: 10px 20px;
   }
   
   .header-logo .logo-icon {
-    width: 26px;
-    height: 25px;
+    height: 47px;
+  }
+  
+  .btn-donate {
+    min-width: 85px;
+    height: 42px;
+    font-size: 14px;
+    padding: 0 16px;
   }
 }
 
 @media (max-width: 480px) {
   .header-container {
-    padding: 0 16px;
-    height: 64px;
+    padding: 12px 16px;
+  }
+  
+  .header.scrolled .header-container {
+    padding: 10px 16px;
+  }
+  
+  .header-logo .logo-icon {
+    height: 42px;
   }
   
   .btn-donate {
     min-width: 80px;
     height: 40px;
     font-size: 14px;
-    padding: 0 16px;
+    padding: 0 14px;
   }
   
-  .header-logo .logo-text {
-    font-size: 20px;
-  }
-  
-  .header-logo .logo-icon {
-    width: 24px;
-    height: 23px;
+  .mobile-menu-toggle {
+    font-size: 22px;
+    padding: 6px;
   }
 }
