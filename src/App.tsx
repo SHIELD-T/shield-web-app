@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import Header from "./components/header";
 import Footer from "./components/footer";
 import ScrollToTop from "./components/ScrollToTop";
@@ -15,28 +15,38 @@ import BlogPostPage from "./pages/blogpost";
 
 import "./App.css";
 
+const AppContent: React.FC = () => {
+  const location = useLocation();
+  const showFooter = location.pathname !== '/run';
+  const isRunPage = location.pathname === '/run';
+
+  return (
+    <div className="App">
+      <Header />
+      <main className={`main-content ${isRunPage ? 'no-padding' : ''}`}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/podcast" element={<Podcast />} />
+          <Route path="/programs" element={<Programs />} />
+          <Route path="/publications" element={<Publications />} />
+          <Route path="/blog/:slug" element={<BlogPostPage />} />
+          <Route path="/donate" element={<Donate />} />
+          <Route path="/run" element={<Run />} />
+          <Route path="/report" element={<PlaceholderPage title="Reports" />} />
+        </Routes>
+      </main>
+      {showFooter && <Footer />}
+    </div>
+  );
+};
+
 const App: React.FC = () => {
   return (
     // ✅ Add basename for GitHub Pages
     <Router basename="/shield-web-app">
       <ScrollToTop />
-      <div className="App">
-        <Header />
-        <main className="main-content">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/podcast" element={<Podcast />} />
-            <Route path="/programs" element={<Programs />} />
-            <Route path="/publications" element={<Publications />} />
-            <Route path="/blog/:slug" element={<BlogPostPage />} />
-            <Route path="/donate" element={<Donate />} />
-            <Route path="/run" element={<Run />} />
-            <Route path="/report" element={<PlaceholderPage title="Reports" />} />
-          </Routes>
-        </main>
-        <Footer />
-      </div>
+      <AppContent />
     </Router>
   );
 };

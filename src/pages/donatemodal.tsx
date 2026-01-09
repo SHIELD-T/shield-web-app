@@ -83,7 +83,7 @@ const DonateModal = ({ isOpen, onClose }: DonateModalProps) => {
                 checked={formData.stayAnonymous}
                 onChange={handleChange}
               />
-              <span>Stay Annoymous</span>
+              <span>Stay Anonymous</span>
             </label>
           </section>
 

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./about.css";
+import { resolveUrl } from "../utils/assetUtils";
 
 const About = () => {
   const [sectorIndex, setSectorIndex] = useState(0);
@@ -52,7 +53,7 @@ const About = () => {
             </p>
           </div>
           <div className="about-hero-image">
-            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&auto=format&fit=crop" alt="SHIELD Team" />
+            <img src={resolveUrl("assets/images/stud.JPG")} alt="SHIELD Team" />
           </div>
         </div>
       </section>

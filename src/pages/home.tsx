@@ -40,7 +40,7 @@ const Home = () => {
             </a>
           </div>
           <div className="hero-img-home">
-            <img src={new URL('/assets/images/homepage.jpeg', import.meta.url).href} alt="Africa Map with Community" />
+            <img src={new URL('/assets/images/homepage.png', import.meta.url).href} alt="Africa Map with Community" />
           </div>
         </div>
       </section>
@@ -48,9 +48,10 @@ const Home = () => {
       {/* Story Section */}
       <section className="about-preview">
         <div className="container">
+          <h2 className="about-section-title">There's More to Our Story</h2>
+          
           <div className="about-content">
             <div className="about-text">
-              <h2>There's More to Our Story</h2>
               <p>
                 The Social Hub for Innovation, Entrepreneurship, Leadership and Design-Thinking(SHIELD) is a non-profit social innovation and technology hub that promotes sustainable socio-economic development by empowering youth from underserved communities to leverage their talents and skills to tackle social problems in their communities and transform their ideas into impactful social enterprises.
               </p>
@@ -215,10 +216,9 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-      {/* Impact Stats Section */}
-      <section className="hcta-section impact-stats">
-        <div className="container">
+   {/* Impact Stats Section */}
+   <section className="home-impact-stats">
+        <div className="home-impact-container">
           <p className="impact-question">Have you made a donation or fundraised for us?</p>
           <h2>Where your money goes</h2>
           

@@ -13,7 +13,7 @@ const Publications = () => {
             </a>
           </div>
           <div className="hero-image">
-            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&auto=format&fit=crop" alt="SHIELD Team 2024" />
+            <img src={new URL('/assets/images/pub.png', import.meta.url).href} alt="SHIELD Team 2024" />
           </div>
         </div>
       </section>

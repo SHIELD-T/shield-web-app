@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./programs.css";
+import { resolveUrl } from "../utils/assetUtils";
 
 const Programs = () => {
   const [testimonialIndex, setTestimonialIndex] = useState(0);
@@ -133,7 +134,7 @@ const Programs = () => {
               </a>
             </div>
             <div className="hero-image">
-              <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&auto=format&fit=crop" alt="Students Learning" />
+              <img src={resolveUrl("assets/images/wwa.JPG")} alt="Students Learning" />
             </div>
           </div>
         </div>

@@ -14,7 +14,7 @@ const RunWithShield: React.FC = () => {
                 We're excited to partner with Realbuzz, giving you the chance to support SHIELD while taking part in some of the world's most exciting marathons and running events. By registering for marathons through our partner link, your participation helps SHIELD empower underserved communities through education, innovation, and entrepreneurship. Every step you take brings us closer to building sustainable ventures and driving lasting social impact.
               </p>
             </div>
-            <button className="cta-button-r">Find a Marathon</button>
+            <a href="https://www.realbuzz.com/charities/shield-international" target="_blank" rel="noopener noreferrer" className="cta-button-r">Find a Marathon</a>
           </div>
         </div>
       </section>

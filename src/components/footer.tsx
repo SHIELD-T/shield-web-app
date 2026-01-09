@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { PhoneIcon, EnvelopeSimpleIcon, FacebookLogoIcon, XLogoIcon, LinkedinLogoIcon, InstagramLogoIcon } from '@phosphor-icons/react';
+import { PhoneIcon, EnvelopeSimpleIcon, LinkedinLogoIcon, InstagramLogoIcon } from '@phosphor-icons/react';
 import './Footer.css';
 
 const Footer = () => {
@@ -29,11 +29,11 @@ const Footer = () => {
           <div className="footer-column address-column">
             <h4 className="column-title">Address</h4>
             <div className="address-content">
-              <p className="address-text">55 Kole Road</p>
+              <p className="address-text">Olympic Estate, Hse no 1</p>
               <div className="contact-items">
                 <div className="contact-item">
                   <PhoneIcon size={20} weight="regular" className="contact-icon" />
-                  <span>+245 93893093</span>
+                  <span>0700366137</span>
                 </div>
                 <div className="contact-item">
                   <EnvelopeSimpleIcon size={20} weight="regular" className="contact-icon" />
@@ -46,24 +46,14 @@ const Footer = () => {
           <div className="footer-column social-column">
             <h4 className="column-title">Social Links</h4>
             <div className="social-links">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-                <div className="social-icon-box">
-                  <FacebookLogoIcon size={21} weight="fill" />
-                </div>
-              </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-                <div className="social-icon-box">
-                  <XLogoIcon size={21} weight="fill" />
-                </div>
-              </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                <div className="social-icon-box">
-                  <LinkedinLogoIcon size={22} weight="fill" />
-                </div>
-              </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <a href="https://www.instagram.com/shield_intl?igsh=MWNqaWtkYWNta2s0aw==" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                 <div className="social-icon-box">
                   <InstagramLogoIcon size={24} weight="fill" />
+                </div>
+              </a>
+              <a href="https://www.linkedin.com/company/shieldintlorg/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <div className="social-icon-box">
+                  <LinkedinLogoIcon size={22} weight="fill" />
                 </div>
               </a>
             </div>

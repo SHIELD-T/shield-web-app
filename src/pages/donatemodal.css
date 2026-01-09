@@ -4,45 +4,52 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.6);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 9999;
-  padding: 20px;
+  padding: 16px;
+  backdrop-filter: blur(4px);
 }
 
 .donate-modal {
   position: relative;
   width: 100%;
-  max-width: 913px;
+  max-width: 520px;
   max-height: 90vh;
   background: #FFFFFF;
-  border-radius: 42px;
-  padding: 60px 80px;
+  border-radius: 20px;
+  padding: 48px 32px;
   overflow-y: auto;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
 }
 
 .close-btn {
   position: absolute;
-  top: 40px;
-  right: 40px;
-  width: 50px;
-  height: 50px;
+  top: 24px;
+  right: 24px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   border: none;
-  background: #FFFFFF;
-  font-size: 24px;
+  background: #F8FAFC;
+  color: #64748B;
+  font-size: 20px;
+  font-weight: 500;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
   outline: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .close-btn:hover {
-  background: #F3F4F6;
+  background: #E2E8F0;
+  color: #334155;
+  transform: scale(1.05);
 }
 
 .close-btn:active {
@@ -51,46 +58,55 @@
 
 .donate-modal h1 {
   font-family: 'Instrument Sans', sans-serif;
-  font-size: 52px;
-  font-weight: 600;
-  color: #000000;
+  font-size: 32px;
+  font-weight: 700;
+  color: #0F172A;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 32px;
+  line-height: 1.2;
 }
 
 .form-section {
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 }
 
 .form-section h2 {
   font-family: 'Instrument Sans', sans-serif;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 600;
-  color: #000000;
-  margin-bottom: 20px;
+  color: #1E293B;
+  margin-bottom: 16px;
+  letter-spacing: -0.025em;
 }
 
 .form-input {
   width: 100%;
-  padding: 20px 24px;
-  border: 1px solid #E5E7EB;
+  padding: 16px 20px;
+  border: 2px solid #E2E8F0;
   border-radius: 12px;
   font-family: 'Inter', sans-serif;
   font-size: 16px;
-  color: #000000;
+  color: #1E293B;
   margin-bottom: 16px;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
   box-sizing: border-box;
+  background: #FFFFFF;
 }
 
 .form-input::placeholder {
-  color: #9CA3AF;
+  color: #94A3B8;
+  font-weight: 400;
 }
 
 .form-input:focus {
   outline: none;
-  border-color: #1370B7;
-  box-shadow: 0 0 0 3px rgba(19, 112, 183, 0.1);
+  border-color: #3B82F6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  background: #FFFFFF;
+}
+
+.form-input:hover {
+  border-color: #CBD5E1;
 }
 
 .checkbox-label {
@@ -99,16 +115,21 @@
   gap: 12px;
   cursor: pointer;
   font-family: 'Inter', sans-serif;
-  font-size: 16px;
-  color: #000000;
+  font-size: 14px;
+  color: #475569;
+  font-weight: 500;
+  margin-top: 8px;
 }
 
 .checkbox-label input[type="checkbox"] {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   cursor: pointer;
   outline: none;
-  border: none;
+  border: 2px solid #CBD5E1;
+  border-radius: 4px;
+  background: #FFFFFF;
+  accent-color: #3B82F6;
 }
 
 .checkbox-label input[type="checkbox"]:focus {
@@ -118,33 +139,40 @@
 .amount-input {
   position: relative;
   width: 100%;
-  padding: 30px 40px;
-  border: 1px solid #E5E7EB;
+  padding: 20px 24px;
+  border: 2px solid #E2E8F0;
   border-radius: 12px;
-  background: #F9FAFB;
+  background: #F8FAFC;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.amount-input:focus-within {
+  border-color: #3B82F6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  background: #FFFFFF;
 }
 
 .currency {
-  font-family: 'Instrument Sans', sans-serif;
-  font-size: 72px;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
   font-weight: 600;
-  color: #000000;
-  position: absolute;
-  left: 40px;
-  top: 50%;
-  transform: translateY(-50%);
+  color: #64748B;
+  flex-shrink: 0;
 }
 
 .amount-input input {
   width: 100%;
-  padding-left: 80px;
   border: none;
   background: transparent;
   font-family: 'Instrument Sans', sans-serif;
-  font-size: 72px;
-  font-weight: 600;
-  color: #000000;
+  font-size: 28px;
+  font-weight: 700;
+  color: #0F172A;
   outline: none;
+  min-width: 0;
 }
 
 .amount-input input:focus {
@@ -152,9 +180,9 @@
 }
 
 .payment-methods {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .radio-label {
@@ -163,16 +191,36 @@
   gap: 12px;
   cursor: pointer;
   font-family: 'Inter', sans-serif;
-  font-size: 18px;
-  color: #000000;
+  font-size: 16px;
+  color: #374151;
+  font-weight: 500;
+  padding: 16px 20px;
+  border: 2px solid #E2E8F0;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+  background: #FFFFFF;
+}
+
+.radio-label:hover {
+  border-color: #CBD5E1;
+  background: #F8FAFC;
+}
+
+.radio-label:has(input:checked) {
+  border-color: #3B82F6;
+  background: #EFF6FF;
+  color: #1E40AF;
 }
 
 .radio-label input[type="radio"] {
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   cursor: pointer;
   outline: none;
-  border: none;
+  border: 2px solid #CBD5E1;
+  border-radius: 50%;
+  background: #FFFFFF;
+  accent-color: #3B82F6;
 }
 
 .radio-label input[type="radio"]:focus {
@@ -181,44 +229,53 @@
 
 .donation-total {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 16px;
-  margin: 60px 0 40px;
+  margin: 32px 0 24px;
+  padding: 20px 24px;
+  background: #F8FAFC;
+  border-radius: 12px;
+  border: 2px solid #E2E8F0;
   font-family: 'Instrument Sans', sans-serif;
 }
 
 .total-label {
-  font-size: 36px;
+  font-size: 18px;
   font-weight: 600;
-  color: #000000;
+  color: #475569;
 }
 
 .total-amount {
-  font-size: 48px;
+  font-size: 24px;
   font-weight: 700;
-  color: #000000;
+  color: #0F172A;
 }
 
 .donate-btn {
   width: 100%;
-  padding: 24px;
-  background: #1370B7;
+  padding: 18px 24px;
+  background: #3B82F6;
   border: none;
-  border-radius: 100px;
+  border-radius: 12px;
   font-family: 'Inter', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   color: #FFFFFF;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
   outline: none;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
 }
 
 .donate-btn:hover {
-  background: #0f5a94;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(19, 112, 183, 0.3);
+  background: #2563EB;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(59, 130, 246, 0.4);
+}
+
+.donate-btn:active {
+  transform: translateY(0);
 }
 
 .donate-btn:focus {
@@ -230,52 +287,77 @@
 }
 
 @media (max-width: 768px) {
+  .modal-overlay {
+    padding: 12px;
+  }
+
   .donate-modal {
-    padding: 40px 30px;
-    border-radius: 24px;
+    padding: 32px 24px;
+    border-radius: 16px;
+    max-width: 100%;
   }
 
   .donate-modal h1 {
-    font-size: 36px;
-    margin-bottom: 40px;
+    font-size: 28px;
+    margin-bottom: 24px;
   }
 
   .close-btn {
-    top: 20px;
-    right: 20px;
-    width: 40px;
-    height: 40px;
-    font-size: 20px;
+    top: 16px;
+    right: 16px;
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+  }
+
+  .form-section {
+    margin-bottom: 24px;
+  }
+
+  .form-section h2 {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  .form-input {
+    padding: 14px 16px;
+    font-size: 16px;
   }
 
   .amount-input {
-    padding: 20px 24px;
+    padding: 16px 20px;
   }
 
   .currency {
-    font-size: 48px;
-    left: 24px;
+    font-size: 18px;
   }
 
   .amount-input input {
-    font-size: 48px;
-    padding-left: 60px;
-  }
-
-  .payment-methods {
-    grid-template-columns: 1fr;
-  }
-
-  .donation-total {
-    flex-direction: column;
-    gap: 8px;
-  }
-
-  .total-label {
     font-size: 24px;
   }
 
+  .radio-label {
+    padding: 14px 16px;
+    font-size: 15px;
+  }
+
+  .donation-total {
+    margin: 24px 0 20px;
+    padding: 16px 20px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .total-label {
+    font-size: 16px;
+  }
+
   .total-amount {
-    font-size: 36px;
+    font-size: 20px;
+  }
+
+  .donate-btn {
+    padding: 16px 20px;
+    font-size: 16px;
   }
 }

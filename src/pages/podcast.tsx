@@ -79,9 +79,8 @@ const Podcast = () => {
                 </div>
                 <h3>Story Chap Chap</h3>
                 <div className="plan-price">
-                  <span className="currency">KSH</span>
                   <span className="amount">5,000</span>
-                  <span className="period">/Episode</span>
+                  <span className="period">KSh/Episode</span>
                 </div>
                 <ul className="plan-features">
                   <li>✓ 1hr session</li>
@@ -99,9 +98,8 @@ const Podcast = () => {
                 </div>
                 <h3>Story Flow</h3>
                 <div className="plan-price">
-                  <span className="currency">KSH</span>
                   <span className="amount">10,000</span>
-                  <span className="period">/Episode</span>
+                  <span className="period">KSh/Episode</span>
                 </div>
                 <ul className="plan-features">
                   <li>✓ 1hr session</li>
