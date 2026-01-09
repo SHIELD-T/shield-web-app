@@ -5,4 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   base: '/shield-web-app/',
+  build: {
+    outDir: 'docs',     // <-- build goes directly to docs/
+  },
 })
