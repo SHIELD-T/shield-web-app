@@ -1,9 +1,7 @@
-import { useState } from "react";
 import "./programs.css";
 import { resolveUrl } from "../utils/assetUtils";
 
 const Programs = () => {
-  const [testimonialIndex, setTestimonialIndex] = useState(0);
 
   const courses = [
     {
@@ -89,13 +87,6 @@ const Programs = () => {
     }
   ];
 
-  const nextTestimonial = () => {
-    setTestimonialIndex((prev) => (prev + 1) % testimonials.length);
-  };
-
-  const prevTestimonial = () => {
-    setTestimonialIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
-  };
 
   const renderStars = (rating: number) => {
     return [...Array(rating)].map((_, index) => (
