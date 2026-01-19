@@ -118,26 +118,26 @@ const Podcast = () => {
       <section className="trusted-by">
         <div className="container">
           <h2>Trusted by Many</h2>
-          <div className="logos-scroll">
-            <div className="logo-item">
-              <div className="logo-icon"></div>
-              <span>Hurupay</span>
-            </div>
-            <div className="logo-item">
-              <div className="logo-icon"></div>
-              <span>Hurupay</span>
-            </div>
-            <div className="logo-item">
-              <div className="logo-icon"></div>
-              <span>Hurupay</span>
-            </div>
-            <div className="logo-item">
-              <div className="logo-icon"></div>
-              <span>Hurupay</span>
-            </div>
-            <div className="logo-item">
-              <div className="logo-icon"></div>
-              <span>Hurupay</span>
+          <div className="logos-wrapper">
+            <div className="logos-scroll">
+              <img src="./assets/images/Partners/p1.jpg" alt="Partner 1" className="partner-logo" />
+              <img src="./assets/images/Partners/p10.png" alt="Partner 2" className="partner-logo" />
+              <img src="./assets/images/Partners/p11.png" alt="Partner 3" className="partner-logo" />
+              <img src="./assets/images/Partners/p1hp.png" alt="Partner 4" className="partner-logo" />
+              <img src="./assets/images/Partners/p2.png" alt="Partner 5" className="partner-logo" />
+              <img src="./assets/images/Partners/p4.jpg" alt="Partner 6" className="partner-logo" />
+              <img src="./assets/images/Partners/p44.png" alt="Partner 7" className="partner-logo" />
+              <img src="./assets/images/Partners/p9.png" alt="Partner 8" className="partner-logo" />
+              <img src="./assets/images/Partners/partner3.png" alt="Partner 9" className="partner-logo" />
+              <img src="./assets/images/Partners/p1.jpg" alt="Partner 1" className="partner-logo" />
+              <img src="./assets/images/Partners/p10.png" alt="Partner 2" className="partner-logo" />
+              <img src="./assets/images/Partners/p11.png" alt="Partner 3" className="partner-logo" />
+              <img src="./assets/images/Partners/p1hp.png" alt="Partner 4" className="partner-logo" />
+              <img src="./assets/images/Partners/p2.png" alt="Partner 5" className="partner-logo" />
+              <img src="./assets/images/Partners/p4.jpg" alt="Partner 6" className="partner-logo" />
+              <img src="./assets/images/Partners/p44.png" alt="Partner 7" className="partner-logo" />
+              <img src="./assets/images/Partners/p9.png" alt="Partner 8" className="partner-logo" />
+              <img src="./assets/images/Partners/partner3.png" alt="Partner 9" className="partner-logo" />
             </div>
           </div>
         </div>
