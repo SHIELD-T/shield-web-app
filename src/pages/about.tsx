@@ -41,6 +41,19 @@ const About = () => {
     setSectorIndex((prev) => (prev - 1 + sectors.length) % sectors.length);
   };
 
+  // Get 3 visible sectors
+  const getVisibleSectors = () => {
+    const visible = [];
+    for (let i = 0; i < 3; i++) {
+      const index = (sectorIndex + i) % sectors.length;
+      visible.push(sectors[index]);
+    }
+    return visible;
+  };
+
+  const visibleSectors = getVisibleSectors();
+  const currentSector = sectors[sectorIndex];
+
   return (
     <div className="about">
       {/* Hero Section */}
@@ -164,36 +177,37 @@ const About = () => {
           </div>
         </div>
       </section>
-
-      {/* Sectors of Focus */}
+      
       <section className="sectors">
         <div className="container">
           <h2>Sectors of Focus</h2>
           
           <div className="sectors-carousel">
-            <button className="sector-nav prev" onClick={prevSector}>
+            <button className="sector-nav prev" onClick={prevSector} aria-label="Previous sector">
               <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-                <path d="M20 8 L12 16 L20 24" stroke="currentColor" strokeWidth="2" fill="none"/>
+                <path d="M20 8 L12 16 L20 24" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
               </svg>
             </button>
 
             <div className="sectors-display">
-              <div className="sector-card active">
-                <img src={sectors[sectorIndex].image} alt={sectors[sectorIndex].title} />
-                <div className="sector-overlay">
-                  <h3>{sectors[sectorIndex].title}</h3>
+              {visibleSectors.map((sector, idx) => (
+                <div key={idx} className="sector-card">
+                  <img src={sector.image} alt={sector.title} />
+                  <div className="sector-overlay">
+                    <h3>{sector.title}</h3>
+                  </div>
                 </div>
-              </div>
+              ))}
 
               <div className="sector-info">
-                <h3>{sectors[sectorIndex === 0 ? sectors.length - 1 : sectorIndex - 1].title}</h3>
-                <p>{sectors[sectorIndex].description}</p>
+                <h3>{currentSector.title}</h3>
+                <p>{currentSector.description}</p>
               </div>
             </div>
 
-            <button className="sector-nav next" onClick={nextSector}>
+            <button className="sector-nav next" onClick={nextSector} aria-label="Next sector">
               <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-                <path d="M12 8 L20 16 L12 24" stroke="currentColor" strokeWidth="2" fill="none"/>
+                <path d="M12 8 L20 16 L12 24" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
               </svg>
             </button>
           </div>

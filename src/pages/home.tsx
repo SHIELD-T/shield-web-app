@@ -1,31 +1,32 @@
 import { useState } from "react";
+import { resolveUrl } from "../utils/assetUtils";
 import "./home.css";
 
 const Home = () => {
   const [activeTab, setActiveTab] = useState("design-thinking");
 
   const programs = {
-    "design-thinking": {
-      title: "Design Thinking School",
-      description: "Within the context of the design thinking process, we empower youth in underprivileged communities with the skills to collaborate and think of themselves as problem solvers and to pioneer solutions to the problems they face within their community.",
-      image: "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=800&auto=format&fit=crop"
-    },
-    "entrepreneurship": {
-      title: "SHIELD Entrepreneurship", 
-      description: "We provide comprehensive entrepreneurship training and mentorship to help young innovators transform their ideas into sustainable businesses.",
-      image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&auto=format&fit=crop"
-    },
-    "software": {
-      title: "Software Development",
-      description: "Our software development program equips youth with modern coding skills and technical expertise to build digital solutions.",
-      image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800&auto=format&fit=crop"
-    },
-    "research": {
-      title: "SIDLabs (Research & Development)",
-      description: "Through our research and development lab, we create innovative solutions that address real community challenges.",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&auto=format&fit=crop"
-    }
-  };
+   "design-thinking": {
+     title: "Design Thinking School",
+     description: "Within the context of the design thinking process, we empower youth in underprivileged communities with the skills to collaborate and think of themselves as problem solvers and to pioneer solutions to the problems they face within their community.",
+     image: resolveUrl("assets/images/DT.jpg")
+   },
+   "entrepreneurship": {
+     title: "SHIELD Entrepreneurship",
+     description: "We provide comprehensive entrepreneurship training and mentorship to help young innovators transform their ideas into sustainable businesses.",
+     image: resolveUrl("assets/images/ent.jpeg")
+   },
+   "software": {
+     title: "Software Development",
+     description: "Our software development program equips youth with modern coding skills and technical expertise to build digital solutions.",
+     image: resolveUrl("assets/images/74.jpg")
+   },
+   "research": {
+     title: "SIDLabs (Research & Development)",
+     description: "Through our research and development lab, we create innovative solutions that address real community challenges.",
+     image: resolveUrl("assets/images/DT-5.jpg")
+   }
+ };
 
   return (
     <div className="home">
@@ -58,13 +59,13 @@ const Home = () => {
             </div>
             <div className="about-images">
               <div className="about-image">
-                <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=400&auto=format&fit=crop" alt="Community" />
+                <img src={resolveUrl("assets/images/stories/4a870f56c198050135cdbb0e8145265d494c9fed.png")} alt="Community" />
               </div>
               <div className="about-image">
-                <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=400&auto=format&fit=crop" alt="Youth" />
+                <img src={resolveUrl("assets/images/stories/9086f7bcc0ceddcfa44b17e7d96b9ab5ad47f397.png")} alt="Youth" />
               </div>
               <div className="about-image">
-                <img src="https://images.unsplash.com/photo-1516450137517-162bfbeb8dba?w=400&auto=format&fit=crop" alt="Culture" />
+                <img src={resolveUrl("assets/images/stories/c4272bf646f5c1f9b3b54aecb9a18fde15e76c0f.png")} alt="Culture" />
               </div>
             </div>
           </div>
@@ -127,42 +128,32 @@ const Home = () => {
           <h2>What distinguishes us?</h2>
           
           <div className="challenges-grid">
-            <div className="challenge-item">
-              <div className="challenge-icon-img">
-                <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
-                  <circle cx="40" cy="40" r="15" fill="currentColor" opacity="0.2"/>
-                  <circle cx="25" cy="50" r="10" fill="currentColor" opacity="0.4"/>
-                  <circle cx="55" cy="50" r="10" fill="currentColor" opacity="0.4"/>
-                </svg>
+            <div className="challenge-item challenge-with-image">
+              <img src={resolveUrl("assets/images/D_humancenterdness.jpg")} alt="Human Centeredness" />
+              <div className="challenge-overlay">
+                <h3>Human Centeredness</h3>
+                <p>we make sure putting people at the heart of every experience comes first.</p>
               </div>
-              <h3>Human Centeredness</h3>
-              <p>we make sure putting people at the heart of every experience comes first.</p>
-            </div>
-
-            <div className="challenge-item">
-              <div className="challenge-icon-img">
-                <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
-                  <path d="M40 20 L50 35 L40 30 L30 35 Z" fill="currentColor"/>
-                  <circle cx="40" cy="45" r="8" fill="currentColor" opacity="0.3"/>
-                </svg>
-              </div>
-              <h3>Innovation</h3>
-              <p>we make sure putting people at the heart of every experience comes first.</p>
-            </div>
-
-            <div className="challenge-item">
-              <div className="challenge-icon-img">
-                <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
-                  <path d="M40 25 L50 35 L48 50 L40 55 L32 50 L30 35 Z" fill="currentColor" opacity="0.3"/>
-                  <path d="M35 40 L38 43 L45 35" stroke="currentColor" strokeWidth="2" fill="none"/>
-                </svg>
-              </div>
-              <h3>Integrity</h3>
-              <p>we make sure putting people at the heart of every experience comes first.</p>
             </div>
 
             <div className="challenge-item challenge-with-image">
-              <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=500&auto=format&fit=crop" alt="Impact" />
+              <img src={resolveUrl("assets/images/D_innovation.jpg")} alt="Innovation" />
+              <div className="challenge-overlay">
+                <h3>Innovation</h3>
+                <p>we make sure putting people at the heart of every experience comes first.</p>
+              </div>
+            </div>
+
+            <div className="challenge-item challenge-with-image">
+              <img src={resolveUrl("assets/images/D_integrity.jpeg")} alt="Integrity" />
+              <div className="challenge-overlay">
+                <h3>Integrity</h3>
+                <p>we make sure putting people at the heart of every experience comes first.</p>
+              </div>
+            </div>
+
+            <div className="challenge-item challenge-with-image">
+              <img src={resolveUrl("assets/images/D_impact.jpg")} alt="Impact" />
               <div className="challenge-overlay">
                 <h3>Impact</h3>
                 <p>we make sure putting people at the heart of every experience comes first.</p>
@@ -170,25 +161,19 @@ const Home = () => {
             </div>
 
             <div className="challenge-item challenge-with-image">
-              <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=500&auto=format&fit=crop" alt="Team Work" />
+              <img src={resolveUrl("assets/images/D_Teamwork.jpeg")} alt="Team Work" />
               <div className="challenge-overlay">
                 <h3>Team Work</h3>
                 <p>we make sure putting people at the heart of every experience comes first.</p>
               </div>
             </div>
 
-            <div className="challenge-item">
-              <div className="challenge-icon-img">
-                <svg width="120" height="120" viewBox="0 0 120 120" fill="none">
-                  <circle cx="45" cy="40" r="12" fill="currentColor" opacity="0.4"/>
-                  <circle cx="75" cy="40" r="12" fill="currentColor" opacity="0.4"/>
-                  <circle cx="60" cy="65" r="12" fill="currentColor" opacity="0.4"/>
-                  <circle cx="35" cy="75" r="10" fill="currentColor" opacity="0.3"/>
-                  <circle cx="85" cy="75" r="10" fill="currentColor" opacity="0.3"/>
-                </svg>
+            <div className="challenge-item challenge-with-image">
+              <img src={resolveUrl("assets/images/D_diversity.jpeg")} alt="Diversity" />
+              <div className="challenge-overlay">
+                <h3>Diversity</h3>
+                <p>we make sure putting people at the heart of every experience comes first.</p>
               </div>
-              <h3>Diversity</h3>
-              <p>we make sure putting people at the heart of every experience comes first.</p>
             </div>
           </div>
         </div>

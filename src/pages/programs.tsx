@@ -13,57 +13,47 @@ const Programs = () => {
       level: "Intermediate",
       rating: 5,
       instructor: "admin",
-      image: "https://images.unsplash.com/photo-1626785774573-4b799315345d?w=800&auto=format&fit=crop",
+      image: resolveUrl("assets/images/Courses/canva.jpeg"),
       saved: false
     },
     {
       id: 2,
-      title: "Canva Comprehensive Course",
-      description: "This course covers the whole of how the canva tool can help you become a better designer or help with your entrepreneurship",
+      title: "Introduction to Blockchain with Celo and Solidity Development",
+      description: "Learn the fundamentals of blockchain technology, smart contracts, and development using Celo and Solidity",
       level: "Intermediate",
       rating: 5,
       instructor: "admin",
-      image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&auto=format&fit=crop",
+      image: resolveUrl("assets/images/Courses/block.jpg"),
       saved: false
     },
     {
       id: 3,
-      title: "Canva Comprehensive Course",
-      description: "This course covers the whole of how the canva tool can help you become a better designer or help with your entrepreneurship",
+      title: "Database Design and Programming (SQL)",
+      description: "Master database design principles and SQL programming for efficient data management",
       level: "Intermediate",
       rating: 5,
       instructor: "admin",
-      image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&auto=format&fit=crop",
+      image: resolveUrl("assets/images/Courses/db.png"),
       saved: true
     },
     {
       id: 4,
-      title: "Canva Comprehensive Course",
-      description: "This course covers the whole of how the canva tool can help you become a better designer or help with your entrepreneurship",
+      title: "Python Programming",
+      description: "Comprehensive Python programming course covering basics to advanced concepts",
       level: "Intermediate",
       rating: 5,
       instructor: "admin",
-      image: "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=800&auto=format&fit=crop",
+      image: resolveUrl("assets/images/Courses/python.jpg"),
       saved: false
     },
     {
       id: 5,
-      title: "Canva Comprehensive Course",
-      description: "This course covers the whole of how the canva tool can help you become a better designer or help with your entrepreneurship",
+      title: "Web Development",
+      description: "Full-stack web development course covering frontend and backend technologies",
       level: "Intermediate",
       rating: 5,
       instructor: "admin",
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&auto=format&fit=crop",
-      saved: false
-    },
-    {
-      id: 6,
-      title: "Canva Comprehensive Course",
-      description: "This course covers the whole of how the canva tool can help you become a better designer or help with your entrepreneurship",
-      level: "Intermediate",
-      rating: 5,
-      instructor: "admin",
-      image: "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?w=800&auto=format&fit=crop",
+      image: resolveUrl("assets/images/Courses/web.jpg"),
       saved: false
     }
   ];
@@ -129,12 +119,12 @@ const Programs = () => {
                 <li>Best instructor on live course</li>
                 <li>Get certificate</li>
               </ul>
-              <a href="#" className="btn btn-primary">
+              <a href="https://shieldintl.org/academy/" className="btn btn-primary">
                 Get started
               </a>
             </div>
             <div className="hero-image">
-              <img src={resolveUrl("assets/images/wwa.JPG")} alt="Students Learning" />
+              <img src={resolveUrl("assets/images/Courses/img1.png")} alt="Students Learning" />
             </div>
           </div>
         </div>
@@ -174,7 +164,7 @@ const Programs = () => {
                     <span>By {course.instructor}</span>
                   </div>
                   
-                  <button className="enroll-btn">Enroll Course</button>
+                  <a href="https://shieldintl.org/academy/" className="enroll-btn">Enroll Course</a>
                 </div>
               </div>
             ))}
@@ -204,7 +194,7 @@ const Programs = () => {
               </div>
             </div>
             <div className="learn-image">
-              <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&auto=format&fit=crop" alt="Learning Environment" />
+              <img src={resolveUrl("assets/images/Courses/lms.png")} alt="Learning Environment" />
             </div>
           </div>
         </div>
@@ -218,41 +208,22 @@ const Programs = () => {
             <h2>Hear what people have to say</h2>
           </div>
           
-          <div className="testimonials-carousel">
-            <div className="testimonials-track">
-              {testimonials.map((testimonial) => (
-                <div 
-                  key={testimonial.id} 
-                  className="testimonial-card"
-                  style={{
-                    transform: `translateX(-${testimonialIndex * 100}%)`,
-                    transition: 'transform 0.5s ease'
-                  }}
-                >
-                  <div className="testimonial-avatar">
-                    <img src={testimonial.avatar} alt={testimonial.name} />
-                  </div>
-                  <p className="testimonial-text">{testimonial.text}</p>
-                  <div className="testimonial-author">
-                    <h4>{testimonial.name}</h4>
-                    <span>{testimonial.role}</span>
-                  </div>
+          <div className="testimonials-scrollable">
+            {testimonials.map((testimonial) => (
+              <div
+                key={testimonial.id}
+                className="testimonial-card"
+              >
+                <div className="testimonial-avatar">
+                  <img src={testimonial.avatar} alt={testimonial.name} />
                 </div>
-              ))}
-            </div>
-            
-            <div className="testimonials-nav">
-              <button className="nav-btn prev" onClick={prevTestimonial}>
-                <svg width="32" height="18" viewBox="0 0 32 18" fill="none">
-                  <path d="M6 9L26 9M6 9L11 4M6 9L11 14" stroke="currentColor" strokeWidth="2"/>
-                </svg>
-              </button>
-              <button className="nav-btn next" onClick={nextTestimonial}>
-                <svg width="32" height="18" viewBox="0 0 32 18" fill="none">
-                  <path d="M26 9L6 9M26 9L21 4M26 9L21 14" stroke="currentColor" strokeWidth="2"/>
-                </svg>
-              </button>
-            </div>
+                <p className="testimonial-text">{testimonial.text}</p>
+                <div className="testimonial-author">
+                  <h4>{testimonial.name}</h4>
+                  <span>{testimonial.role}</span>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -261,8 +232,8 @@ const Programs = () => {
       <section className="programs-cta">
         <div className="container">
           <div className="cta-buttons">
-            <a href="#" className="btn btn-primary">Login</a>
-            <a href="#" className="btn btn-outline">Apply to SHIELD</a>
+            <a href="https://shieldintl.org/academy/" className="btn btn-primary">Login</a>
+            <a href="https://shieldintl.org/academy/" className="btn btn-outline">Apply to SHIELD</a>
           </div>
         </div>
       </section>

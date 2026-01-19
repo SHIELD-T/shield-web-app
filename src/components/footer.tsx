@@ -63,9 +63,6 @@ const Footer = () => {
 
       <div className="footer-watermark">SHIELD</div>
 
-      <div className="footer-copyright">
-        <p>Copyright © 2025 Openlabs Africa. All rights reserved.</p>
-      </div>
     </footer>
   );
 };
