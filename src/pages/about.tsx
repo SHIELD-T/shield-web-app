@@ -1,9 +1,11 @@
 import { useState } from "react";
 import "./about.css";
 import { resolveUrl } from "../utils/assetUtils";
+import DonateModal from "./donatemodal";
 
 const About = () => {
   const [sectorIndex, setSectorIndex] = useState(0);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const sectors = [
     {
@@ -236,12 +238,14 @@ const About = () => {
 
           <div className="impact-cta">
             <h3>Help us support our community</h3>
-            <a href="/donate" className="btn btn-primary">
+            <button onClick={() => setIsModalOpen(true)} className="btn btn-primary">
               Donate
-            </a>
+            </button>
           </div>
         </div>
       </section>
+
+      <DonateModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </div>
   );
 };

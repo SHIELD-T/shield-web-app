@@ -33,11 +33,11 @@ const Footer = () => {
               <div className="contact-items">
                 <div className="contact-item">
                   <PhoneIcon size={20} weight="regular" className="contact-icon" />
-                  <span>0700366137</span>
+                  <span>+254700366137</span>
                 </div>
                 <div className="contact-item">
                   <EnvelopeSimpleIcon size={20} weight="regular" className="contact-icon" />
-                  <span>SHIELD.com</span>
+                  <span>admin@shieldintl.org</span>
                 </div>
               </div>
             </div>
