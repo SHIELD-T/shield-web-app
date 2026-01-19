@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { resolveUrl } from "../utils/assetUtils";
+import DonateModal from "./donatemodal";
 import "./home.css";
 
 const Home = () => {
   const [activeTab, setActiveTab] = useState("design-thinking");
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const programs = {
    "design-thinking": {
@@ -36,9 +38,9 @@ const Home = () => {
           <div className="hero-content">
             <h1>Inspiring Growth, Shaping Tomorrow</h1>
             <p>The Social Hub for Innovation Entrepreneurship Leadership and Design Thinking</p>
-            <a href="/donate" className="btn btn-primary">
+            <button onClick={() => setIsModalOpen(true)} className="btn btn-primary">
               Donate
-            </a>
+            </button>
           </div>
           <div className="hero-img-home">
             <img src={new URL('/assets/images/homepage.png', import.meta.url).href} alt="Africa Map with Community" />
@@ -114,9 +116,9 @@ const Home = () => {
             <div className="program-content">
               <h3>{programs[activeTab as keyof typeof programs].title}</h3>
               <p>{programs[activeTab as keyof typeof programs].description}</p>
-              <a href="/programs" className="btn btn-primary">
+              <button onClick={() => setIsModalOpen(true)} className="btn btn-primary">
                 Donate to this cause
-              </a>
+              </button>
             </div>
           </div>
         </div>
@@ -129,7 +131,7 @@ const Home = () => {
           
           <div className="challenges-grid">
             <div className="challenge-item challenge-with-image">
-              <img src={resolveUrl("assets/images/D_humancenterdness.jpg")} alt="Human Centeredness" />
+              <img src={resolveUrl("assets/images/distinguishers/humancenterdness.jpg")} alt="Human Centeredness" />
               <div className="challenge-overlay">
                 <h3>Human Centeredness</h3>
                 <p>we make sure putting people at the heart of every experience comes first.</p>
@@ -137,7 +139,7 @@ const Home = () => {
             </div>
 
             <div className="challenge-item challenge-with-image">
-              <img src={resolveUrl("assets/images/D_innovation.jpg")} alt="Innovation" />
+              <img src={resolveUrl("assets/images/distinguishers/innovation.jpg")} alt="Innovation" />
               <div className="challenge-overlay">
                 <h3>Innovation</h3>
                 <p>we make sure putting people at the heart of every experience comes first.</p>
@@ -145,7 +147,7 @@ const Home = () => {
             </div>
 
             <div className="challenge-item challenge-with-image">
-              <img src={resolveUrl("assets/images/D_integrity.jpeg")} alt="Integrity" />
+              <img src={resolveUrl("assets/images/distinguishers/integrity.jpg")} alt="Integrity" />
               <div className="challenge-overlay">
                 <h3>Integrity</h3>
                 <p>we make sure putting people at the heart of every experience comes first.</p>
@@ -153,7 +155,7 @@ const Home = () => {
             </div>
 
             <div className="challenge-item challenge-with-image">
-              <img src={resolveUrl("assets/images/D_impact.jpg")} alt="Impact" />
+              <img src={resolveUrl("assets/images/distinguishers/impact.jpg")} alt="Impact" />
               <div className="challenge-overlay">
                 <h3>Impact</h3>
                 <p>we make sure putting people at the heart of every experience comes first.</p>
@@ -161,7 +163,7 @@ const Home = () => {
             </div>
 
             <div className="challenge-item challenge-with-image">
-              <img src={resolveUrl("assets/images/D_Teamwork.jpeg")} alt="Team Work" />
+              <img src={resolveUrl("assets/images/distinguishers/teamwork.jpg")} alt="Team Work" />
               <div className="challenge-overlay">
                 <h3>Team Work</h3>
                 <p>we make sure putting people at the heart of every experience comes first.</p>
@@ -169,7 +171,7 @@ const Home = () => {
             </div>
 
             <div className="challenge-item challenge-with-image">
-              <img src={resolveUrl("assets/images/D_diversity.jpeg")} alt="Diversity" />
+              <img src={resolveUrl("assets/images/distinguishers/diversity.jpg")} alt="Diversity" />
               <div className="challenge-overlay">
                 <h3>Diversity</h3>
                 <p>we make sure putting people at the heart of every experience comes first.</p>
@@ -224,13 +226,14 @@ const Home = () => {
 
           <div className="impact-cta">
             <h3>Help us support our community</h3>
-            <a href="/donate" className="btn btn-primary impact-btn">
+            <button onClick={() => setIsModalOpen(true)} className="btn btn-primary impact-btn">
               Donate
-            </a>
+            </button>
           </div>
         </div>
       </section>
 
+      <DonateModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </div>
   );
 };

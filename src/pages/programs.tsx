@@ -141,14 +141,7 @@ const Programs = () => {
                 <div className="course-image">
                   <img src={course.image} alt={course.title} />
                   <span className="course-level">{course.level}</span>
-                  <button className={`save-btn ${course.saved ? 'saved' : ''}`}>
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                      <path d="M4 5C4 3.89543 4.89543 3 6 3H14C15.1046 3 16 3.89543 16 5V17L10 13L4 17V5Z" 
-                        fill={course.saved ? "#292D32" : "#FFFFFF"} 
-                        stroke="#292D32" 
-                        strokeWidth="1.5"/>
-                    </svg>
-                  </button>
+               
                 </div>
                 
                 <div className="course-content">

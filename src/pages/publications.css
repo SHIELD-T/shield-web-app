@@ -13,12 +13,12 @@
 
 /* Hero Section */
 .publications-hero {
-  padding: 80px 0 60px;
+  padding: 40px 0 60px;
 }
 
 .publications-hero .container {
   display: grid;
-  grid-template-columns: 568px 688px;
+  grid-template-columns: 568px 588px;
   gap: 136px;
   align-items: center;
 }
@@ -62,8 +62,8 @@
 }
 
 .hero-image {
-  width: 688px;
-  height: 798px;
+  width: 588px;
+  height: 650px;
   border-radius: 32px;
   overflow: hidden;
 }
@@ -202,8 +202,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 0 20px 0;
-  margin-top: 30px;
+  padding: 24px 30px 24px 30px;
+  margin-top: 0;
 }
 
 .calendar-item .portfolio-info {

@@ -8,7 +8,7 @@ const Publications = () => {
         <div className="container">
           <div className="hero-text">
             <h1>View Our 2024 Impact Report Now</h1>
-            <a href="#" className="btn btn-primary">
+            <a href="https://shieldintl.org/wp-content/uploads/2025/04/SHIELD-2024-ANNUAL-REPORT-2.pdf" className="btn btn-primary" target="_blank" rel="noopener noreferrer">
               Download Report
             </a>
           </div>

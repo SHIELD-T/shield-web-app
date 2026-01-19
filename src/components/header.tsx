@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { List, X } from '@phosphor-icons/react';
 import DonateModal from '../pages/donatemodal';
@@ -8,6 +8,8 @@ const Header = () => {
   const location = useLocation();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
   
   const isActive = (path: string) => {
     return location.pathname === path;
@@ -19,8 +21,28 @@ const Header = () => {
 
   const isRunPage = location.pathname === '/run';
 
+  useEffect(() => {
+    if (isRunPage) return;
+
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        setIsVisible(false);
+      } else {
+        setIsVisible(true);
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [lastScrollY, isRunPage]);
+
   return (
-    <header className={`header ${isRunPage ? 'transparent' : ''}`}>
+    <header className={`header ${isRunPage ? 'transparent' : ''} ${!isVisible ? 'hidden' : ''}`}>
       <div className="header-container">
         <div className="header-logo">
           <Link to="/" className="logo-link">

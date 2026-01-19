@@ -14,12 +14,18 @@
   right: 0;
   z-index: 1000;
   background: var(--color-white);
+  box-shadow: none;
+  border: none;
   transition: all 0.3s ease;
 }
 
 .header.transparent {
   background: transparent;
   box-shadow: none;
+}
+
+.header.hidden {
+  transform: translateY(-100%);
 }
 
 .header.transparent .header-container {
