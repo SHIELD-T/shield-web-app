@@ -250,6 +250,7 @@
   display: flex;
   max-width: 1231px;
   margin: 0 auto;
+  height: 600px;
 }
 
 .program-image {
@@ -271,7 +272,7 @@
 
 .program-content {
   flex: 1;
-  padding: 174.5px 60px;
+  padding: 40px 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -622,6 +623,7 @@
   
   .program-card {
     flex-direction: column;
+    height: auto;
   }
   
   .program-image {
