@@ -9,7 +9,6 @@ interface DonateModalProps {
 
 const DonateModal = ({ isOpen, onClose }: DonateModalProps) => {
   const [formData, setFormData] = useState({
-    email: '',
     amount: '',
     paymentMethod: 'paypal'
   });
@@ -29,7 +28,6 @@ const DonateModal = ({ isOpen, onClose }: DonateModalProps) => {
       // PayPal payment integration - uses standard checkout flow
       const paypalEmail = 'james.mugambi@shieldintl.org';
       const amount = formData.amount;
-      const donorEmail = formData.email;
       
       // Standard PayPal donation link (works for logged in and guest users)
       const paypalUrl = `https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=${encodeURIComponent(paypalEmail)}&amount=${amount}&currency_code=USD&item_name=${encodeURIComponent('Anonymous Donation')}&return=${encodeURIComponent(window.location.href)}&cancel_return=${encodeURIComponent(window.location.href)}`;
@@ -56,23 +54,6 @@ const DonateModal = ({ isOpen, onClose }: DonateModalProps) => {
         <h1>Donate</h1>
         
         <form onSubmit={handleSubmit}>
-          {/* Email Only */}
-          <section className="form-section">
-            <h2>Contact Info</h2>
-            
-            <input
-              type="email"
-              name="email"
-              placeholder="Email Address"
-              value={formData.email}
-              onChange={handleChange}
-              required
-              className="form-input"
-            />
-            
-            <p className="anonymous-note">All donations are anonymous</p>
-          </section>
-
           {/* Input Amount */}
           <section className="form-section">
             <h2>Input Amount</h2>

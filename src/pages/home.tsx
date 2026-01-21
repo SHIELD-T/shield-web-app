@@ -192,13 +192,13 @@ const Home = () => {
           </div>
           <div className="progress-video">
             <div className="video-wrapper">
-              <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=800&auto=format&fit=crop" alt="Students in classroom" />
-              <div className="play-button">
+             <img src={resolveUrl("assets/images/homepage/programs.jpg")} alt="Team Work" />
+              {/* <div className="play-button">
                 <svg width="116" height="116" viewBox="0 0 116 116" fill="none">
                   <circle cx="58" cy="58" r="58" fill="white" fillOpacity="0.4"/>
                   <path d="M48 40L76 58L48 76V40Z" fill="white"/>
                 </svg>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

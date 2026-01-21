@@ -1,6 +1,18 @@
 import "./podcast.css";
 
 const Podcast = () => {
+  // Email configuration for booking
+  const bookingEmail = "admin@shieldintl.org";
+  
+  // Create email link for "Book a Podcast" button
+  const bookPodcastLink = `mailto:${bookingEmail}?subject=${encodeURIComponent("Podcast Booking Request")}&body=${encodeURIComponent("Hello SHIELD Team,\n\nI would like to book a podcast session.\n\nPlease provide me with more information about availability and next steps.\n\nThank you!")}`;
+  
+  // Create email link for "Story Chap Chap" plan
+  const storyChapChapLink = `mailto:${bookingEmail}?subject=${encodeURIComponent("Story Chap Chap Plan - Booking Request")}&body=${encodeURIComponent("Hello SHIELD Team,\n\nI would like to book the Story Chap Chap plan (5,000 KSh/Episode).\n\nPlan includes:\n- 1hr session\n- Standard 2-day post-production and delivery\n- Complimentary content reviews\n- 1 free social media snippet\n\nPlease let me know the next steps.\n\nThank you!")}`;
+  
+  // Create email link for "Story Flow" plan
+  const storyFlowLink = `mailto:${bookingEmail}?subject=${encodeURIComponent("Story Flow Plan - Booking Request")}&body=${encodeURIComponent("Hello SHIELD Team,\n\nI would like to book the Story Flow plan (10,000 KSh/Episode).\n\nPlan includes:\n- 1hr session\n- Standard 2-day post-production and delivery\n- Complimentary content reviews\n- 1 free social media snippet\n\nPlease let me know the next steps.\n\nThank you!")}`;
+
   return (
     <div className="podcast">
       {/* Hero Section */}
@@ -17,7 +29,7 @@ const Podcast = () => {
                 <span className="card-label">SHIELD Podcast</span>
                 <h2>Book a Podcast</h2>
                 <p>Our world-class studio is equipped with cutting-edge technology to ensure pristine sound quality.</p>
-                <button className="book-btn">Book a podcast</button>
+                <a href={bookPodcastLink} className="book-btn">Book a podcast</a>
                 <div className="host-avatars">
                   <div className="avatar"></div>
                   <div className="avatar"></div>
@@ -39,7 +51,7 @@ const Podcast = () => {
                 </div>
                 <div className="player-controls">
                   <button className="control-btn">◀</button>
-                  <button className="control-btn play-btn">●</button>
+                  <button className="control-btn play-btn">▶</button>
                   <button className="control-btn">▶</button>
                 </div>
               </div>
@@ -75,7 +87,7 @@ const Podcast = () => {
               {/* Story Chap Chap Plan */}
               <div className="plan-card">
                 <div className="plan-image">
-                  <img src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=400&auto=format&fit=crop" alt="Story Chap Chap" />
+                  <img src={new URL('/assets/images/podcast/pd2.jpg', import.meta.url).href} alt="Story Chap Chap" />
                 </div>
                 <h3>Story Chap Chap</h3>
                 <div className="plan-price">
@@ -88,13 +100,13 @@ const Podcast = () => {
                   <li>✓ Complimentary content reviews</li>
                   <li>✓ 1 free social media snippet to promote your episode</li>
                 </ul>
-                <button className="plan-btn">Get It</button>
+                <a href={storyChapChapLink} className="plan-btn">Get It</a>
               </div>
 
               {/* Story Flow Plan */}
               <div className="plan-card">
                 <div className="plan-image">
-                  <img src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?w=400&auto=format&fit=crop" alt="Story Flow" />
+                  <img src={new URL('/assets/images/podcast/pd4.jpg', import.meta.url).href} alt="Story Flow" />
                 </div>
                 <h3>Story Flow</h3>
                 <div className="plan-price">
@@ -107,7 +119,7 @@ const Podcast = () => {
                   <li>✓ Complimentary content reviews</li>
                   <li>✓ 1 free social media snippet to promote your episode</li>
                 </ul>
-                <button className="plan-btn">Get It</button>
+                <a href={storyFlowLink} className="plan-btn">Get It</a>
               </div>
             </div>
           </div>
