@@ -37,12 +37,12 @@ const AppContent: React.FC = () => {
 
 const App: React.FC = () => {
   return (
-    // ✅ Add basename for GitHub Pages
-    <Router basename="/shield-web-app">
+    <Router>
       <ScrollToTop />
       <AppContent />
     </Router>
   );
 };
+
 
 export default App;
