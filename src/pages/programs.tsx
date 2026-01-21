@@ -60,30 +60,30 @@ const Programs = () => {
     {
       id: 1,
       text: "SHIELD LMS makes learning so easy! I can access my courses anywhere, and everything is super secure and user-friendly",
-      name: "SHIELD",
+      name: "Christine Kimani",
       role: "Student",
-      avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&auto=format&fit=crop"
+      avatar: resolveUrl("assets/images/Testimonials/Christine Kimani.JPG")
     },
     {
       id: 2,
-      text: "SHIELD LMS makes learning so easy! I can access my courses anywhere, and everything is super secure and user-friendly",
-      name: "SHIELD",
+      text: "The instructors at SHIELD are amazing! They're always available to help, and the course content is well-structured and engaging",
+      name: "Felix Otieno",
       role: "Student",
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&auto=format&fit=crop"
+      avatar: resolveUrl("assets/images/Testimonials/Felix Otieno.JPG")
     },
     {
       id: 3,
-      text: "SHIELD LMS makes learning so easy! I can access my courses anywhere, and everything is super secure and user-friendly",
-      name: "SHIELD",
+      text: "I've gained so many valuable skills through SHIELD. The hands-on projects really helped me understand concepts better and build my confidence",
+      name: "Malcom Otieno",
       role: "Student",
-      avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&auto=format&fit=crop"
+      avatar: resolveUrl("assets/images/Testimonials/Malcom Otieno.JPG")
     },
     {
       id: 4,
-      text: "SHIELD LMS makes learning so easy! I can access my courses anywhere, and everything is super secure and user-friendly",
-      name: "SHIELD",
+      text: "Learning with SHIELD has been a game-changer for me. The platform is intuitive, and I love how I can learn at my own pace while still feeling connected to the community",
+      name: "Tony",
       role: "Student",
-      avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&auto=format&fit=crop"
+      avatar: resolveUrl("assets/images/Testimonials/Tony.JPG")
     }
   ];
 

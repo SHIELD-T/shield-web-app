@@ -31,73 +31,51 @@ const Publications = () => {
           <h2>SHIELD Portfolio</h2>
           
           <div className="portfolio-layout">
-            {/* Row 1 - Calendar.io (left) + AVACADO (right) */}
+            {/* Row 1 - Tyde (left) + Kibra Connect (right) */}
             <div className="portfolio-row row-1">
               <div className="portfolio-item calendar-item">
                 <div className="portfolio-image">
-                  <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&auto=format&fit=crop" alt="Calendar App" />
+                  <img src={new URL('/assets/images/projects/Tyde_appdesign.jpeg', import.meta.url).href} alt="Tyde App Design" />
                 </div>
                 <div className="portfolio-info">
-                  <h3>Calender.io</h3>
+                  <h3>Tyde</h3>
                   <span className="portfolio-category">App Design</span>
                 </div>
               </div>
               
               <div className="portfolio-item avacado-item">
                 <div className="portfolio-image">
-                  <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1000&auto=format&fit=crop" alt="AVACADO Web" />
+                  <img src={new URL('/assets/images/projects/Visit Uganda.png', import.meta.url).href} alt="Visit Uganda Web Design" />
                 </div>
                 <div className="portfolio-info">
-                  <h3>AVACADO</h3>
+                  <h3>Visit Uganda</h3>
                   <span className="portfolio-category">Web Design</span>
                 </div>
               </div>
             </div>
 
-            {/* Row 2 - Full Width AVACADO */}
+            {/* Row 2 - Full Width Nyota Treasures */}
             <div className="portfolio-row row-2">
               <div className="portfolio-item full-width">
                 <div className="portfolio-image">
-                  <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=1400&auto=format&fit=crop" alt="AVACADO App Screens" />
+                  <img src={new URL('/assets/images/projects/Nyota Treasures.png', import.meta.url).href} alt="Nyota Treasures Web Design" />
                 </div>
                 <div className="portfolio-info">
-                  <h3>AVACADO</h3>
+                  <h3>Nyota Treasures</h3>
                   <span className="portfolio-category">Web Design</span>
                 </div>
               </div>
             </div>
 
-            {/* Row 3 - Calendar.io (left) + AVACADO (right) */}
-            <div className="portfolio-row row-3">
-              <div className="portfolio-item calendar-item">
-                <div className="portfolio-image">
-                  <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?w=800&auto=format&fit=crop" alt="Calendar Dashboard" />
-                </div>
-                <div className="portfolio-info">
-                  <h3>Calender.io</h3>
-                  <span className="portfolio-category">App Design</span>
-                </div>
-              </div>
-              
-              <div className="portfolio-item avacado-item">
-                <div className="portfolio-image">
-                  <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1000&auto=format&fit=crop" alt="AVACADO Platform" />
-                </div>
-                <div className="portfolio-info">
-                  <h3>AVACADO</h3>
-                  <span className="portfolio-category">Web Design</span>
-                </div>
-              </div>
-            </div>
 
-            {/* Row 4 - Full Width AVACADO */}
+            {/* Row 4 - Full Width Slum Treasures */}
             <div className="portfolio-row row-4">
               <div className="portfolio-item full-width green-bg">
                 <div className="portfolio-image">
-                  <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=1400&auto=format&fit=crop" alt="AVACADO Mobile" />
+                  <img src={new URL('/assets/images/projects/Slum Treasures.png', import.meta.url).href} alt="Slum Treasures Web Design" />
                 </div>
                 <div className="portfolio-info">
-                  <h3>AVACADO</h3>
+                  <h3>Slum Treasures</h3>
                   <span className="portfolio-category">Web Design</span>
                 </div>
               </div>
