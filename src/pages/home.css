@@ -4,6 +4,7 @@
   font-family: 'Inter', sans-serif;
   background: #FFFFFF;
   width: 100%;
+  overflow-x: hidden;
 }
 
 /* Hero Section */
@@ -32,6 +33,7 @@
 
 .container {
   width: 100%;
+  max-width: 1320px;
   margin: 0 auto;
   padding: 0 60px;
   position: relative;
@@ -232,6 +234,7 @@
   color: #FFFFFF;
   cursor: pointer;
   transition: all 0.3s ease;
+  white-space: nowrap;
 }
 
 .tab-btn:hover {
@@ -327,7 +330,7 @@
   padding: 52px 26px 26px;
   text-align: center;
   transition: all 0.3s ease;
-  min-height: 416.5px;
+  min-height: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -528,6 +531,7 @@
   min-height: 200px;
   width: 100%;
 }
+
 .stat-number {
   font-family: 'Instrument Sans', sans-serif;
   font-size: 96px;
@@ -565,7 +569,8 @@
 
 /* Responsive */
 @media (max-width: 1200px) {
-  .container {
+  .container,
+  .home-impact-container {
     padding: 0 40px;
   }
   
@@ -576,83 +581,400 @@
   .challenges-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .progress-layout {
+    gap: 80px;
+  }
 }
 
 @media (max-width: 768px) {
-  .hero::before {
-    top: auto;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    max-width: 500px;
-    height: 400px;
-    z-index: 1;
+  .container,
+  .home-impact-container {
+    padding: 0 20px;
   }
 
-  .hero-img-home {
-    position: relative;
-    z-index: 2;
+  /* Hero Section Mobile */
+  .hero {
+    min-height: auto;
+    padding: 40px 0 60px;
+  }
+
+  .hero::before {
+    display: none;
   }
 
   .hero .container {
     flex-direction: column;
     text-align: center;
-    padding-top: 100px;
+    gap: 40px;
+    padding-top: 20px;
   }
   
+  .hero-content {
+    max-width: 100%;
+  }
+
   .hero-content h1 {
     font-size: 40px;
     line-height: 50px;
+    margin-bottom: 20px;
+  }
+
+  .hero-content p {
+    font-size: 18px;
+    line-height: 26px;
+    max-width: 100%;
+    margin-bottom: 24px;
+  }
+
+  .hero-img-home {
+    max-width: 100%;
+  }
+
+  /* About Preview Mobile */
+  .about-preview {
+    padding: 60px 0;
+  }
+
+  .about-section-title {
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 40px;
   }
   
   .about-content {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 20px;
   }
-  
-  .about-images {
-    grid-template-columns: 1fr;
+
+  .about-text {
+    padding: 30px 20px;
+  }
+
+  .about-text p {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  /* Events Section Mobile */
+  .events-section {
+    padding: 60px 0;
+  }
+
+  .events-section h2 {
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 16px;
+  }
+
+  .section-subtitle {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 32px;
+    padding: 0 10px;
   }
 
   .programs-tabs {
     flex-direction: column;
     align-items: stretch;
-    padding: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    gap: 8px;
+  }
+
+  .tab-btn {
+    padding: 16px 20px;
+    font-size: 13px;
+    text-align: center;
   }
   
   .program-card {
     flex-direction: column;
     height: auto;
+    border-radius: 24px;
   }
   
   .program-image {
     max-width: 100%;
+    height: 300px;
+    margin: 16px;
+    border-radius: 24px;
   }
   
   .program-content {
-    padding: 40px 30px;
+    padding: 30px 20px;
+  }
+
+  .program-content h3 {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+
+  .program-content p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 24px;
+  }
+
+  /* Why Shield Section Mobile */
+  .why-shield-section {
+    padding: 60px 0;
+  }
+
+  .why-shield-section h2 {
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 40px;
   }
   
   .challenges-grid {
     grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .challenge-item {
+    min-height: 280px;
+    padding: 30px 20px 20px;
+  }
+
+  .challenge-item h3 {
+    font-size: 16px;
+  }
+
+  .challenge-item p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .challenge-overlay {
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+  }
+
+  /* Progress Section Mobile */
+  .progress-section-white {
+    padding: 60px 0;
   }
   
   .progress-layout {
     grid-template-columns: 1fr;
     gap: 40px;
   }
-  
-  .stats-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
+
+  .progress-text h2 {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 24px;
   }
-  
-  .events-section h2,
-  .why-shield-section h2,
-  .progress-text h2,
+
+  .progress-text p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  /* Impact Stats Mobile */
+  .home-impact-stats {
+    padding: 60px 0;
+  }
+
+  .home-impact-stats .impact-question {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 12px;
+  }
+
   .home-impact-stats h2 {
     font-size: 36px;
     line-height: 44px;
+    margin-bottom: 40px;
+  }
+  
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+
+  .stat-card {
+    padding: 30px 20px;
+    min-height: 150px;
+  }
+
+  .stat-number {
+    font-size: 64px;
+  }
+
+  .stat-label {
+    font-size: 16px;
+  }
+
+  .impact-cta {
+    margin-top: 40px;
+  }
+
+  .impact-cta h3 {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 24px;
+  }
+
+  .btn-primary {
+    padding: 16px 40px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container,
+  .home-impact-container {
+    padding: 0 16px;
+  }
+
+  /* Hero Extra Small */
+  .hero {
+    padding: 30px 0 40px;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  /* About Preview Extra Small */
+  .about-preview {
+    padding: 40px 0;
+  }
+
+  .about-section-title {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 30px;
+  }
+
+  .about-text {
+    padding: 24px 16px;
+  }
+
+  .about-text p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  /* Events Section Extra Small */
+  .events-section {
+    padding: 40px 0;
+  }
+
+  .events-section h2 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .section-subtitle {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .tab-btn {
+    padding: 14px 16px;
+    font-size: 12px;
+  }
+
+  .program-image {
+    height: 250px;
+    margin: 12px;
+  }
+
+  .program-content {
+    padding: 24px 16px;
+  }
+
+  .program-content h3 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .program-content p {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  /* Why Shield Extra Small */
+  .why-shield-section {
+    padding: 40px 0;
+  }
+
+  .why-shield-section h2 {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 30px;
+  }
+
+  .challenge-item {
+    min-height: 250px;
+    border-radius: 24px;
+  }
+
+  /* Progress Section Extra Small */
+  .progress-section-white {
+    padding: 40px 0;
+  }
+
+  .progress-text h2 {
+    font-size: 26px;
+    line-height: 34px;
+  }
+
+  .progress-text p {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  /* Impact Stats Extra Small */
+  .home-impact-stats {
+    padding: 40px 0;
+  }
+
+  .home-impact-stats .impact-question {
+    font-size: 14px;
+  }
+
+  .home-impact-stats h2 {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 30px;
+  }
+
+  .stat-card {
+    padding: 24px 16px;
+  }
+
+  .stat-number {
+    font-size: 52px;
+  }
+
+  .stat-label {
+    font-size: 14px;
+  }
+
+  .impact-cta h3 {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 20px;
+  }
+
+  .btn-primary,
+  .impact-btn {
+    padding: 14px 32px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 280px;
   }
 }

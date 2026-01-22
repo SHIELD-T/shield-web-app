@@ -61,13 +61,13 @@ const Home = () => {
             </div>
             <div className="about-images">
               <div className="about-image">
-                <img src={resolveUrl("assets/images/stories/4a870f56c198050135cdbb0e8145265d494c9fed.png")} alt="Community" />
+                <img src={resolveUrl("assets/images/stories/story.jpeg")} alt="Community" />
               </div>
               <div className="about-image">
-                <img src={resolveUrl("assets/images/stories/9086f7bcc0ceddcfa44b17e7d96b9ab5ad47f397.png")} alt="Youth" />
+                <img src={resolveUrl("assets/images/stories/story1.jpeg")} alt="Youth" />
               </div>
               <div className="about-image">
-                <img src={resolveUrl("assets/images/stories/c4272bf646f5c1f9b3b54aecb9a18fde15e76c0f.png")} alt="Culture" />
+                <img src={resolveUrl("assets/images/stories/story3.jpeg")} alt="Culture" />
               </div>
             </div>
           </div>

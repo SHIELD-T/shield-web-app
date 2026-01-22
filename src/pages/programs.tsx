@@ -115,7 +115,7 @@ const Programs = () => {
               </a>
             </div>
             <div className="hero-image">
-              <img src={resolveUrl("assets/images/Courses/img1.png")} alt="Students Learning" />
+              <img src={resolveUrl("assets/images/Courses/img1.jpg")} alt="Students Learning" />
             </div>
           </div>
         </div>
@@ -178,7 +178,7 @@ const Programs = () => {
               </div>
             </div>
             <div className="learn-image">
-              <img src={resolveUrl("assets/images/Courses/lms.png")} alt="Learning Environment" />
+              <img src={resolveUrl("assets/images/Courses/lms.JPG")} alt="Learning Environment" />
             </div>
           </div>
         </div>
