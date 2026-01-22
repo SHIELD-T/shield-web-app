@@ -4,19 +4,18 @@
   min-height: 788px;
   background: var(--color-white);
   overflow: hidden;
+  padding: 70px 80px 100px;
 }
 
 .footer-main {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 0;
   gap: 276px;
-  position: absolute;
-  width: 1302px;
-  height: 268px;
-  left: 80px;
-  top: 70px;
+  width: 100%;
+  max-width: 1302px;
+  position: relative;
+  z-index: 2;
 }
 
 .footer-logo {
@@ -52,20 +51,20 @@
 .pages-column {
   gap: 32px;
   width: 113px;
-  height: 268px;
+  min-height: 268px;
 }
 
 .address-column {
   gap: 32px;
   width: 146px;
-  height: 169px;
+  min-height: 169px;
   justify-content: center;
 }
 
 .social-column {
   gap: 38px;
   width: 180px;
-  height: 96px;
+  min-height: 96px;
 }
 
 .column-title {
@@ -150,7 +149,7 @@
   align-items: flex-start;
   padding: 0;
   gap: 14px;
-  height: 20px;
+  min-height: 20px;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -163,6 +162,7 @@
   flex: none;
   order: 0;
   flex-grow: 0;
+  flex-shrink: 0;
 }
 
 .contact-item span {
@@ -175,6 +175,7 @@
   flex: none;
   order: 1;
   flex-grow: 0;
+  word-break: break-word;
 }
 
 .social-links {
@@ -214,9 +215,11 @@
 
 .footer-watermark {
   position: absolute;
-  width: 1399px;
+  width: 100%;
+  max-width: 1399px;
   height: 440px;
-  left: calc(50% - 1399px/2 + 0.5px);
+  left: 50%;
+  transform: translateX(-50%);
   top: 328px;
   font-family: var(--font-family-satoshi);
   font-style: normal;
@@ -227,14 +230,15 @@
   text-align: center;
   pointer-events: none;
   user-select: none;
+  z-index: 1;
 }
 
 .footer-copyright {
-  position: absolute;
-  width: 388px;
-  height: 24px;
-  left: 80px;
-  bottom: 40px;
+  position: relative;
+  width: 100%;
+  max-width: 388px;
+  margin-top: 60px;
+  z-index: 2;
 }
 
 .footer-copyright p {
@@ -250,49 +254,77 @@
 
 /* Responsive */
 @media (max-width: 1440px) {
-  .footer-main {
-    left: 60px;
-    width: calc(100% - 120px);
-    max-width: 1302px;
+  .footer {
+    padding: 70px 60px 100px;
   }
   
-  .footer-copyright {
-    left: 60px;
+  .footer-main {
+    max-width: 100%;
   }
 }
 
 @media (max-width: 1200px) {
+  .footer {
+    padding: 60px 40px 80px;
+    min-height: auto;
+  }
+
   .footer-main {
-    gap: 150px;
+    gap: 100px;
     flex-wrap: wrap;
-    height: auto;
   }
   
   .footer-columns {
-    gap: 100px;
+    gap: 80px;
+    flex-wrap: wrap;
   }
   
   .footer-watermark {
-    font-size: 200px;
-    top: 400px;
-  }
-  
-  .footer {
-    min-height: 900px;
+    font-size: 250px;
+    top: 350px;
+    height: 300px;
   }
 }
 
 @media (max-width: 768px) {
+  .footer {
+    padding: 50px 20px 60px;
+    min-height: auto;
+  }
+
   .footer-main {
     flex-direction: column;
     gap: 40px;
-    left: 20px;
-    width: calc(100% - 40px);
+    width: 100%;
   }
   
   .footer-columns {
     flex-direction: column;
     gap: 40px;
+    width: 100%;
+  }
+
+  .footer-column {
+    width: 100%;
+  }
+
+  .pages-column,
+  .address-column,
+  .social-column {
+    width: 100%;
+    min-height: auto;
+  }
+
+  .address-content {
+    width: 100%;
+  }
+
+  .contact-items {
+    width: 100%;
+  }
+
+  .social-links {
+    width: auto;
   }
   
   .footer-logo-img {
@@ -301,17 +333,80 @@
   }
   
   .footer-watermark {
-    font-size: 100px;
-    top: 500px;
+    font-size: 80px;
+    top: auto;
+    bottom: 120px;
+    height: auto;
+    line-height: 1;
   }
   
   .footer-copyright {
-    left: 20px;
-    width: calc(100% - 40px);
+    margin-top: 40px;
+    max-width: 100%;
     text-align: center;
   }
-  
+
+  .footer-copyright p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 480px) {
   .footer {
-    min-height: 1000px;
+    padding: 40px 16px 50px;
+  }
+
+  .footer-main {
+    gap: 32px;
+  }
+
+  .footer-columns {
+    gap: 32px;
+  }
+
+  .footer-logo-img {
+    width: 150px;
+  }
+
+  .column-title {
+    font-size: 14px;
+  }
+
+  .footer-links a,
+  .address-text,
+  .contact-item span {
+    font-size: 14px;
+  }
+
+  .footer-links {
+    gap: 24px;
+  }
+
+  .contact-items {
+    gap: 24px;
+  }
+
+  .footer-watermark {
+    font-size: 60px;
+    bottom: 100px;
+  }
+
+  .social-links {
+    gap: 32px;
+  }
+
+  .social-icon-box {
+    width: 32px;
+    height: 32px;
+  }
+
+  .footer-copyright {
+    margin-top: 32px;
+  }
+
+  .footer-copyright p {
+    font-size: 13px;
+    line-height: 18px;
   }
 }
