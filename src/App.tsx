@@ -37,7 +37,7 @@ const AppContent: React.FC = () => {
 
 const App: React.FC = () => {
   return (
-    <Router>
+    <Router basename="/shield-web-app">
       <ScrollToTop />
       <AppContent />
     </Router>
