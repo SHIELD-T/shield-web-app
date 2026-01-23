@@ -29,7 +29,7 @@ const Footer = () => {
           <div className="footer-column address-column">
             <h4 className="column-title">Address</h4>
             <div className="address-content">
-              <p className="address-text">Olympic Estate, Hse no 1</p>
+              <p className="address-text">Olympic Estate, House NO: 1</p>
               <div className="contact-items">
                 <div className="contact-item">
                   <PhoneIcon size={20} weight="regular" className="contact-icon" />
@@ -37,7 +37,7 @@ const Footer = () => {
                 </div>
                 <div className="contact-item">
                   <EnvelopeSimpleIcon size={20} weight="regular" className="contact-icon" />
-                  <span>admin@shieldintl.org</span>
+                  <span>info@shieldintl.org</span>
                 </div>
               </div>
             </div>
